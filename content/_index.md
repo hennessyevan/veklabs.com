@@ -1,3 +1,4 @@
 +++
-title = "Hello"
+title = "Home"
+type = "top"
 +++

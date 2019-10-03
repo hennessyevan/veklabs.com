@@ -1,0 +1,17 @@
+{{ define "main" }}
+
+<section id="home">
+	{{ range where .Pages "Section" "videos" }}
+
+	{{ range where .Pages "Params.main" true }}
+	{{ block "videos/hero" . }}{{ partial "videos/hero.html" . }}{{ end }}
+	{{ end }}
+
+	{{ range where .Pages "Params.main" "!=" true }}
+	{{ block "videos/list" .}}{{ partial "videos/list.html" . }}{{ end }}
+	{{ end }}
+
+	{{ end }}
+</section>
+
+{{ end }}

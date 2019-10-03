@@ -1,0 +1,7 @@
+<div class="hero-video">
+	{{.Title}}
+	{{ .Page.Parent.Parent.Resources }}
+	{{ $resource := .Params.image | resources.FromString .Params.image }}
+	{{ $image := $resource.Resize "100x q50" }}
+	<img src="resources{{ $image.RelPermalink }}" alt="{{.Title}}" />
+</div>
