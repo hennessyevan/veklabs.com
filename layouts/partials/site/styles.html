@@ -1,0 +1,1 @@
+{{ $s := resources.Get "css/main.css" | toCSS | postCSS (dict "config" "postcss.config.js") | minify }} <link rel="stylesheet" href="{{ $s.Permalink }}" />
