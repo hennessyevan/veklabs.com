@@ -4,7 +4,7 @@
 	"private": true,
 	"scripts": {
 		"start": "hugo server",
-		"build": "hugo && npm run build:functions",
+		"build": "hugo",
 		"build:functions": "netlify-lambda build assets/lambda",
 		"server": "hugo server"
 	},
