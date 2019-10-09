@@ -1,3 +1,9 @@
-<div class="list-video">
-	<img src="{{.Params.image}}" alt="{{.Title}}" />
+<div class="video">
+  <span class="title">
+    {{.Title}}
+  </span>
+  {{ with .Params.type }}
+  <span class="type {{ anchorize . }}">{{.}}</span>
+  {{end}}
+  {{block "site/img" . }} {{ partial "site/img" . }}{{ end }}
 </div>

@@ -1,7 +1,16 @@
 <footer class="site-footer" role="contentinfo">
 
-    <p class="site-footer__copyright">
-        &copy; {{ now.Format "2006" }} &middot; <a href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
-    </p>
+  <p class="site-footer__copyright">
+    &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>
+    Proudly based in Canada <img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
+  </p>
+
+  <ul class="social-media">
+    {{ range .Site.Data.social.channel }}
+    <a href="{{ .url }}" target="_blank" class="icon">
+      <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
+    </a>
+    {{ end }}
+  </ul>
 
 </footer>

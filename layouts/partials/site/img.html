@@ -1,0 +1,22 @@
+{{ $image := resources.Get .Params.image }}
+<!-- variables used for img tag -->
+{{ $imgSrc := "" }}
+{{ $imgSrcSet := slice }}
+
+<!-- uses settings from config.toml depending on orientation -->
+{{ $widths := $.Site.Params.imgSizes }}
+
+<!--
+  Add URL for each width to $imgSrcSet variable
+  format: "/path/img_1000.jpg 1000w,/path/img_500.jpg 500w"
+  Note: the first URL is used as "fallback" src in $imgSrc.
+-->
+{{ range $widths }}
+{{ $srcUrl := (printf "%dx" . | $image.Resize).RelPermalink }}
+{{ if eq $imgSrc "" }}{{ $imgSrc = $srcUrl }}{{ end }}
+{{ $imgSrcSet = $imgSrcSet | append (printf "%s %dw" $srcUrl .) }}
+{{ end }}
+{{ $imgSrcSet = (delimit $imgSrcSet ",") }}
+
+<img src="{{ $imgSrc }}" width="{{ $image.Width }}" height="{{ $image.Height }}" srcset="{{ $imgSrcSet }}"
+  class="{{cond (eq .Params.featured true) "featured" "list"}}" />

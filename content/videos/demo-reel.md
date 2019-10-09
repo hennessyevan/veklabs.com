@@ -1,6 +1,6 @@
 +++
  title = 'Demo Reel'
- main = true
+ featured = true
  url = "example.com"
- image = "1_Demo_Reel.jpg"
+ image = "images/1_Demo_Reel.jpg"
 +++

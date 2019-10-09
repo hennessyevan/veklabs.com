@@ -9,6 +9,7 @@ staticDir = ["static"]
 
 [params]
 disallow_search_engines = false # set robots.txt to disallow everything
+imgSizes = [2500, 1500, 1000, 500]
 
 # add redirects/headers
 [outputs]
