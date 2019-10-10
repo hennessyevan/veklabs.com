@@ -1,0 +1,31 @@
+footer {
+	padding: 0.5maj 3maj;
+	text-align: right;
+	width: 100%;
+	border-top: 1px solid var(--gray5);
+	font-size: 1.8maj;
+	display: flex;
+	justify-content: space-between;
+
+	.footer-flag {
+		height: 1.5maj;
+		color: white;
+	}
+
+	a {
+		color: var(--white);
+		font-weight: 600;
+	}
+
+	.social-media {
+		display: grid;
+		grid-auto-flow: column;
+		grid-gap: 1maj;
+
+		.icon {
+			img {
+				width: 2maj;
+			}
+		}
+	}
+}

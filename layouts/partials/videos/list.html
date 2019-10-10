@@ -1,9 +1,10 @@
-<div class="video">
+<div class="video" data-videoID="{{ .Params.videoID }}">
   <span class="title">
     {{.Title}}
   </span>
+
   {{ with .Params.type }}
   <span class="type {{ anchorize . }}">{{.}}</span>
-  {{end}}
-  {{block "site/img" . }} {{ partial "site/img" . }}{{ end }}
+  <div class="preview"></div>
+  {{end}} {{block "site/img" . }} {{ partial "site/img" . }}{{ end }}
 </div>

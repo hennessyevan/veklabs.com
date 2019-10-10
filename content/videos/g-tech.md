@@ -1,6 +1,6 @@
 +++
  title = 'G Tech'
- url = "example.com"
+ videoID = "361404667"
  image = "images/6_G-Tech_Thumb.jpg"
  type = "Social Media"
 +++

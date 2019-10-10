@@ -1,12 +1,20 @@
 <header class="site-header" role="banner">
-	<a href="{{ .Site.BaseURL }}">
-		<img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
-	</a>
-	<div>
-		<a href="/work">Work</a>
-		<a href="#contact" class="contact-link">Contact</a>
-		<div class="contact-drawer">
-			Hello
+	<div class="wrapper">
+		<a href="{{ .Site.BaseURL }}">
+			<img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
+		</a>
+		<div>
+			<a href="/clients">Clients</a>
+			<a href="/team">Team</a>
+			<a href="#contact" id="contact-link">Contact</a>
+		</div>
+	</div>
+	<div id="contact-drawer">
+		<div id="inner-drawer">
+			<a href="mailto:info@veklabs.com" class="email" target="_blank">
+				info@veklabs.com
+			</a>
+			<a href="tel:403-648-3713" class="telephone" target="_blank">403-648-3713</a>
 		</div>
 	</div>
 </header>

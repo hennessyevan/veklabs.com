@@ -1,0 +1,67 @@
+.site-header {
+	padding: 2maj 3maj;
+	border-bottom: 0.5px solid rgba(255, 255, 255, 0.1);
+	position: fixed;
+	z-index: 2;
+	background: var(--gray-overlay);
+	backdrop-filter: var(--blur-filter);
+	top: 0;
+	width: 100%;
+
+	@media (max-width: 600px) {
+		padding: 2.5maj 2maj;
+	}
+
+	.wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.header-logo {
+		max-width: 14maj;
+		width: 100%;
+		justify-self: flex-start;
+
+		@media (max-width: 600px) {
+			max-width: 12maj;
+		}
+	}
+
+	a {
+		color: var(--white);
+		font-weight: 600;
+
+		@media (max-width: 600px) {
+			font-weight: 500;
+		}
+
+		&:hover {
+			text-decoration: underline;
+		}
+
+		&:not(:last-child) {
+			margin-right: 2maj;
+		}
+	}
+
+	#contact-drawer {
+		height: 0px;
+		opacity: 0;
+		overflow: hidden;
+		width: 100%;
+		display: flex;
+		justify-content: flex-end;
+
+		#inner-drawer {
+			display: inline-block;
+			flex-direction: column;
+			padding: 3maj 0;
+
+			a {
+				display: block;
+			}
+		}
+	}
+}

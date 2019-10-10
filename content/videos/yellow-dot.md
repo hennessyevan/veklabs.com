@@ -1,6 +1,6 @@
 +++
  title = 'Yellow Dot'
- url = "example.com"
- image = "images/5_Trickle_Creek_Thumb.jpg"
+ videoID = "365333005"
+ image = "images/7_Yellow_Dot_Thumb.jpg"
  type = "Advertisement"
 +++
