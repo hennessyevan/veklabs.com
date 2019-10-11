@@ -3,7 +3,7 @@
 <section id="videos">
  {{ range where .Pages "Section" "videos" }}
 
- {{ range where .Pages "Params.featured" true }}
+ {{ range where .Pages "Params.featured" "break" }}
  {{ block "videos/hero" . }}{{ partial "videos/hero.html" . }}{{ end }}
  {{ end }}
 
