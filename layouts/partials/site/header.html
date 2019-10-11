@@ -1,20 +1,32 @@
 <header class="site-header" role="banner">
-	<div class="wrapper">
-		<a href="{{ .Site.BaseURL }}">
-			<img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
-		</a>
-		<div>
-			<a href="/clients">Clients</a>
-			<a href="/team">Team</a>
-			<a href="#contact" id="contact-link">Contact</a>
-		</div>
-	</div>
-	<div id="contact-drawer">
-		<div id="inner-drawer">
-			<a href="mailto:info@veklabs.com" class="email" target="_blank">
-				info@veklabs.com
-			</a>
-			<a href="tel:403-648-3713" class="telephone" target="_blank">403-648-3713</a>
-		</div>
-	</div>
+ <div class="wrapper">
+  <a href="{{ .Site.BaseURL }}">
+   <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
+  </a>
+  <div>
+   <a href="/clients">Clients</a>
+   <a href="/team">Team</a>
+   <a href="#contact" id="contact-link">Contact</a>
+  </div>
+ </div>
+ <div id="contact-drawer">
+  <div id="inner-drawer">
+
+   <a href="mailto:info@veklabs.com" class="button email" target="_blank">
+    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg" aria-describedby="info@veklabs.com" alt="">
+    </div>
+    <span>
+     info@veklabs.com
+    </span>
+   </a>
+
+   <a href="tel:403-648-3713" class="button email" target="_blank">
+    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg" aria-describedby="403-648-3713" alt="">
+    </div>
+    <span>
+     403-648-3713
+    </span>
+   </a>
+  </div>
+ </div>
 </header>

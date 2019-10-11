@@ -1,4 +1,4 @@
-<div class="team-member" data-member-id="{{ .UniqueID }}">
+<div class="team-member" data-member-id="{{ .File.UniqueID }}">
  {{if isset .Params "image"}}
  {{ block "site/img" . }} {{ partial "site/img" . }}{{ end }}
  {{end}}
@@ -17,7 +17,7 @@
 
 </div>
 
-<div class="overlay" data-overlay-id="{{ .UniqueID }}">
+<div class="overlay" data-overlay-id="{{ .File.UniqueID }}">
  <span class="dismiss-message"> to dismiss</span>
  <div class="member-info">
 
