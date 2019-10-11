@@ -1,6 +1,6 @@
 +++
- title = 'Demo Reel'
+ title = ''
  featured = true
  videoID = "365340844"
- image = "images/1_Demo_Reel.jpg"
+ image = "images/tempHero.jpg"
 +++

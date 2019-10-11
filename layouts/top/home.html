@@ -3,6 +3,10 @@
 <section id="videos">
  {{ range where .Pages "Section" "videos" }}
 
+ {{ range where .Pages "Params.featured" true }}
+ {{ block "videos/hero" .}}{{ partial "videos/hero.html" . }}{{ end }}
+ {{ end }}
+
  <div class="video-grid">
   {{ range where .Pages "Params.featured" "!=" true }}
   {{ block "videos/list" .}}{{ partial "videos/list.html" . }}{{ end }}

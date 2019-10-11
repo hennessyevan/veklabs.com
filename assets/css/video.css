@@ -126,12 +126,14 @@
 }
 
 .hero-video {
- max-height: 80vh;
+ /* max-height: 80vh; */
+ max-height: 65vh;
  min-height: 20vw;
  margin: 3maj;
  margin-bottom: 7maj;
  border-radius: 2maj;
  box-shadow: var(--big-shadow);
+ cursor: default;
 
  @media (max-width: 1000px) {
   height: 40vh;
@@ -142,14 +144,22 @@
   margin-bottom: 4maj;
  }
 
- &:hover {
-  transform: translateY(-1maj);
-  box-shadow: var(--hover-shadow);
+ @media (pointer: "fine") {
+  &:hover {
+   transform: none;
+   box-shadow: var(--big-shadow);
+   /* transform: translateY(-1maj);
+   box-shadow: var(--hover-shadow); */
+  }
  }
 
  .title {
   bottom: 6maj;
   left: 6maj;
+
+  &::before {
+   display: none;
+  }
 
   @media (max-width: 1000px) {
    bottom: 17maj;
@@ -181,6 +191,8 @@
 
  img {
   width: 100%;
+  max-height: 65vh;
   object-fit: cover;
+  object-position: center;
  }
 }
