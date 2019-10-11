@@ -7,9 +7,15 @@ footer {
  display: flex;
  justify-content: space-between;
 
+ .left {
+  display: flex;
+  flex-wrap: wrap;
+ }
+
  .footer-flag {
   height: 1.5maj;
   color: white;
+  margin-right: 1maj;
  }
 
  a {
