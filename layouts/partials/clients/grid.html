@@ -2,7 +2,7 @@
  {{$base := .Site.BaseURL }}
  {{ range $index, $val := readDir "/static/logos" }}
 
- <div class="logo {{ if gt $index 13 }}extra{{ end }}">
+ <div class="logo {{ if gt $index 15 }}extra{{ end }}">
 
   <img src="{{ $base }}/logos/{{.Name}}" alt="{{.Name}}">
  </div>
