@@ -1,6 +1,10 @@
 #team {
  margin: 14maj 0 6maj;
 
+ @media (max-width: 600px) {
+  margin: 8maj 0 0;
+ }
+
  .overlay {
   display: none;
   justify-content: center;
@@ -109,6 +113,7 @@
   padding: 3maj;
   overflow-y: visible;
   overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 
   @media (max-width: 768px) {
    justify-content: flex-start;
@@ -137,14 +142,16 @@
     width: 5maj;
    }
 
-   &:hover {
-    img.team {
-     transform: translateY(-1maj);
-     box-shadow: var(--hover-shadow);
-    }
+   @media (pointer: "fine") {
+    &:hover {
+     img.team {
+      transform: translateY(-1maj);
+      box-shadow: var(--hover-shadow);
+     }
 
-    .cta {
-     opacity: 1;
+     .cta {
+      opacity: 1;
+     }
     }
    }
 

@@ -1,8 +1,9 @@
 <div class="logos">
  {{$base := .Site.BaseURL }}
- {{ range readDir "/static/logos" }}
+ {{ range $index, $val := readDir "/static/logos" }}
 
- <div class="logo">
+ <div class="logo {{ if gt $index 13 }}extra{{ end }}">
+
   <img src="{{ $base }}/logos/{{.Name}}" alt="{{.Name}}">
  </div>
 
