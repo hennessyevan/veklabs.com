@@ -36,6 +36,7 @@
   padding: 1maj 2maj;
   border-radius: 2maj;
   transition: 225ms;
+  color: white;
 
   &:hover {
    text-decoration: none;
@@ -44,6 +45,11 @@
   span {
    font-weight: 500;
    font-size: 2maj;
+   white-space: nowrap;
+
+   @media (max-width: 600px) {
+    font-size: 1.7maj;
+   }
   }
 
   .icon {
@@ -55,12 +61,26 @@
 
  .email {
   background: var(--blue);
+
   &:hover {
    background: var(--solid-blue);
   }
  }
 
- a {
+ .phone {
+  background: var(--green);
+
+  &:hover {
+   background: var(--solid-green);
+  }
+ }
+
+ a.active {
+  font-weight: bold;
+ }
+
+ a.top,
+ a.active {
   color: var(--white);
   font-weight: 600;
   transition: 225ms;
@@ -87,8 +107,10 @@
   justify-content: flex-end;
 
   #inner-drawer {
-   display: flex;
-   flex-direction: row;
+   display: grid;
+   grid-auto-flow: column;
+   grid-gap: 2maj;
+   grid-template-columns: repeat(auto-fill, 1fr);
    align-items: center;
    justify-content: flex-end;
   }

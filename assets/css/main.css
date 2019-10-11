@@ -17,6 +17,7 @@
  --blue: #0a84ff65;
  --solid-blue: #0a84ff;
  --green: #30d15865;
+ --solid-green: #30d158;
  --indigo: #5e5ce665;
  --orange: #ff9f0a65;
  --pink: #ff375f65;
@@ -100,3 +101,4 @@ a {
 @import "footer";
 @import "video";
 @import "team";
+@import "clients";

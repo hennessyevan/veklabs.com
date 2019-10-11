@@ -27,6 +27,14 @@
  {{ end }}
 </section>
 
+<section id="clients">
+ <h2 class="title">Clients</h2>
+ <h4 class="sub-title">Some of the clients we have had the privilege of creating with.</h4>
+
+ {{ block "clients/grid" . }}{{ partial "clients/grid.html" . }}{{ end }}
+
+</section>
+
 <div id="overlay">
  <div class="close">
   <span>

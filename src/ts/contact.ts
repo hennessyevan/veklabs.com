@@ -12,14 +12,14 @@ link.addEventListener("click", async e => {
 
   spring({
    to: { opacity: 0, height: 0 },
-   from: { height: 100, opacity: 1 }
+   from: { height: 80, opacity: 1 }
   }).start(v => drawer.set(v))
  } else {
   link.setAttribute("class", "active")
 
   spring({
    from: { opacity: 0, height: 0 },
-   to: { height: 100, opacity: 1 }
+   to: { height: 80, opacity: 1 }
   }).start(v => drawer.set(v))
  }
 })
