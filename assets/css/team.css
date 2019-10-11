@@ -1,0 +1,187 @@
+#team {
+ margin-top: 8maj;
+
+ .overlay {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: fixed;
+  z-index: 9;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  min-height: 100vh;
+  overflow-y: auto;
+  background: var(--black-overlay);
+ }
+
+ .dismiss-message {
+  transform: translateY(-100%);
+  font-weight: 500;
+  pointer-events: none;
+  cursor: pointer;
+
+  &::before {
+   content: "Click";
+
+   @media (max-width: 600px) {
+    content: "Swipe down";
+   }
+  }
+ }
+
+ .member-info {
+  padding: 5maj;
+  border-radius: 2maj;
+  backdrop-filter: var(--blur-filter);
+  background-color: var(--gray-overlay);
+  font-weight: 500;
+  font-size: 2.25maj;
+  max-width: 120maj;
+  line-height: 1.5;
+
+  p {
+   font-size: 1.75maj;
+  }
+
+  .header {
+   display: flex;
+   height: auto;
+   align-items: center;
+
+   @media (max-width: 600px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+   }
+
+   h1 {
+    margin: 0;
+   }
+
+   h4 {
+    margin: 0;
+    font-weight: 500;
+    margin-bottom: 1maj;
+    color: var(--solid-blue);
+   }
+
+   .competencies {
+    color: var(--gray1);
+   }
+
+   img.team {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 20maj;
+    object-fit: cover;
+    box-shadow: var(--med-shadow);
+
+    @media (max-width: 600px) {
+     flex-basis: 100%;
+    }
+   }
+
+   .name {
+    margin-left: 5maj;
+
+    @media (max-width: 600px) {
+     margin-left: 0;
+     margin-bottom: 3maj;
+     font-size: 80%;
+    }
+   }
+  }
+ }
+
+ .title {
+  margin-top: 5maj;
+  margin-left: 3maj;
+ }
+
+ .team-grid {
+  display: flex;
+  padding: 3maj;
+  overflow-y: visible;
+  overflow-x: auto;
+
+  .team-member {
+   position: relative;
+
+   &:not(:first-child) {
+    margin-left: 5maj;
+
+    @media (max-width: 600px) {
+     margin-left: 2.5maj;
+    }
+   }
+
+   .cta {
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
+    z-index: 9;
+    transition: 300ms;
+    width: 5maj;
+   }
+
+   &:hover {
+    img.team {
+     transform: translateY(-1maj);
+     box-shadow: var(--hover-shadow);
+    }
+
+    .cta {
+     opacity: 1;
+    }
+   }
+
+   .name {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h4 {
+     margin: 0;
+     margin-top: 2maj;
+    }
+
+    h6 {
+     margin: 1maj 0;
+    }
+   }
+
+   .competencies {
+    font-size: 1.35maj;
+    max-width: 25maj;
+    word-wrap: break-word;
+    margin: 1maj auto;
+    color: var(--solid-blue);
+   }
+
+   img.team {
+    min-width: 20maj;
+    transition: 225ms;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 100%;
+    max-width: 30maj;
+    object-fit: cover;
+    box-shadow: var(--med-shadow);
+
+    &:before {
+     content: "View";
+     position: absolute;
+     top: 0;
+     left: 0;
+     z-index: 3;
+    }
+   }
+  }
+ }
+}

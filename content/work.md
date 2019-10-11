@@ -1,4 +1,0 @@
-+++
-title = "Work"
-type = "work"
-+++

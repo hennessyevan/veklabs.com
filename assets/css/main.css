@@ -1,98 +1,102 @@
 @import "normalize.css";
 
 :root {
-	--body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+ --body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+  Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
-	--white: #ffffff;
-	--gray1: #8e8e93;
-	--gray2: #636366;
-	--gray3: #48484a;
-	--gray4: #3a3a3c;
-	--gray5: #2c2c2e;
-	--gray6: #1c1c1e;
-	--gray-overlay: rgba(28, 28, 30, 0.65);
-	--black-overlay: rgba(0, 0, 0, 0.8);
+ --white: #ffffff;
+ --gray1: #8e8e93;
+ --gray2: #636366;
+ --gray3: #48484a;
+ --gray4: #3a3a3c;
+ --gray5: #2c2c2e;
+ --gray6: #1c1c1e;
+ --gray-overlay: rgba(28, 28, 30, 0.65);
+ --black-overlay: rgba(0, 0, 0, 0.8);
 
-	--blue: #0a84ff65;
-	--green: #30d15865;
-	--indigo: #5e5ce665;
-	--orange: #ff9f0a65;
-	--pink: #ff375f65;
-	--purple: #bf5af265;
-	--red: #ff453a65;
-	--teal: #64d2ff65;
-	--yellow: #ffd60a65;
+ --blue: #0a84ff65;
+ --solid-blue: #0a84ff;
+ --green: #30d15865;
+ --indigo: #5e5ce665;
+ --orange: #ff9f0a65;
+ --pink: #ff375f65;
+ --purple: #bf5af265;
+ --red: #ff453a65;
+ --teal: #64d2ff65;
+ --solid-teal: #64d2ff;
+ --yellow: #ffd60a65;
 
-	--med-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
-	--big-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
-	--hover-shadow: 0 30px 65px rgba(0, 0, 0, 0.45);
+ --med-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
+ --big-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
+ --hover-shadow: 0 30px 65px rgba(0, 0, 0, 0.45);
 
-	--blur-filter: blur(20px) saturate(180%);
+ --blur-filter: blur(20px) saturate(180%);
 }
 
 * {
-	box-sizing: border-box;
+ box-sizing: border-box;
 }
 
 body {
-	font-family: var(--body-font);
-	background-color: var(--gray6);
-	color: var(--white);
+ font-family: var(--body-font);
+ background-color: var(--gray6);
+ color: var(--white);
 }
 
 a {
-	color: var(--blue);
-	text-decoration: none;
+ color: var(--blue);
+ text-decoration: none;
 }
 
 .site-main {
-	margin-top: 10maj;
+ margin-top: 10maj;
 }
 
 #overlay {
-	display: none;
-	opacity: 0;
-	position: fixed;
-	z-index: 50;
-	user-select: none;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	overflow: hidden;
-	background: var(--black-overlay);
-	/* backdrop-filter: var(--blur-filter); */
+ display: none;
+ opacity: 0;
+ position: fixed;
+ z-index: 50;
+ user-select: none;
+ top: 0;
+ left: 0;
+ width: 100vw;
+ height: 100vh;
+ overflow: hidden;
+ background: var(--black-overlay);
+ /* backdrop-filter: var(--blur-filter); */
 
-	#player {
-		z-index: 80;
-		position: absolute;
-		top: 50%;
-		width: 88vw;
-		height: 49.5vw;
-		left: 50%;
-		transform: translateY(-50%) translateX(-50%);
-		border-radius: 1maj;
-		overflow: hidden;
-		box-shadow: var(--big-shadow);
-	}
+ #player {
+  z-index: 80;
+  position: absolute;
+  top: 50%;
+  width: 88vw;
+  height: 49.5vw;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  border-radius: 1maj;
+  overflow: hidden;
+  box-shadow: var(--big-shadow);
+ }
 
-	.close {
-		position: absolute;
-		top: 3maj;
-		right: 3maj;
-		display: flex;
-		align-items: center;
-		font-weight: 600;
-		cursor: pointer;
-		z-index: 81;
+ .close {
+  position: absolute;
+  top: 3maj;
+  right: 3maj;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  cursor: pointer;
+  z-index: 81;
 
-		img {
-			margin-left: 2maj;
-			width: 3maj;
-		}
-	}
+  img {
+   margin-left: 2maj;
+   width: 3maj;
+  }
+ }
 }
 
 @import "header";
 @import "footer";
 @import "video";
+@import "team";

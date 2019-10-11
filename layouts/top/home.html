@@ -1,29 +1,44 @@
 {{ define "main" }}
 
-<section id="home">
-  {{ range where .Pages "Section" "videos" }}
+<section id="videos">
+ {{ range where .Pages "Section" "videos" }}
 
-  {{ range where .Pages "Params.featured" true }}
-  {{ block "videos/hero" . }}{{ partial "videos/hero.html" . }}{{ end }}
+ {{ range where .Pages "Params.featured" true }}
+ {{ block "videos/hero" . }}{{ partial "videos/hero.html" . }}{{ end }}
+ {{ end }}
+
+ <div class="video-grid">
+  {{ range where .Pages "Params.featured" "!=" true }}
+  {{ block "videos/list" .}}{{ partial "videos/list.html" . }}{{ end }}
   {{ end }}
+ </div>
 
-  <div class="video-grid">
-    {{ range where .Pages "Params.featured" "!=" true }}
-    {{ block "videos/list" .}}{{ partial "videos/list.html" . }}{{ end }}
-    {{ end }}
-  </div>
-
-  <div id="overlay">
-    <div class="close">
-      <span>
-        Close
-      </span>
-      <img src="{{ .Site.BaseURL }}/assets/close.svg" alt="Close">
-    </div>
-    <div id="player"></div>
-  </div>
-
-  {{ end }}
+ {{ end }}
 </section>
+
+<section id="team">
+ <h2 class="title">Team</h2>
+ {{ range where .Pages "Section" "team" }}
+
+ <div class="team-grid">
+  {{ range .Pages.ByParam "order" }}
+
+  {{ block "team/member" . }}{{ partial "team/member.html" . }}{{ end }}
+
+  {{ end }}
+ </div>
+
+ {{ end }}
+</section>
+
+<div id="overlay">
+ <div class="close">
+  <span>
+   Close
+  </span>
+  <img src="{{ .Site.BaseURL }}/assets/close.svg" alt="Close" />
+ </div>
+ <div id="player"></div>
+</div>
 
 {{ end }}

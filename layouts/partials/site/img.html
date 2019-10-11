@@ -18,5 +18,6 @@
 {{ end }}
 {{ $imgSrcSet = (delimit $imgSrcSet ",") }}
 
-<img src="{{ $imgSrc }}" width="{{ $image.Width }}" height="{{ $image.Height }}" srcset="{{ $imgSrcSet }}"
-  class="{{cond (eq .Params.featured true) "featured" "list"}}" />
+{{ $class := cond (eq .Params.featured true) "featured" "list" }}
+
+<img src="{{ $imgSrc }}" srcset="{{ $imgSrcSet }}" class="{{ $class }} {{ .Page.Type }}" />
