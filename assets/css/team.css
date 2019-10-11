@@ -140,6 +140,7 @@
     z-index: 9;
     transition: 300ms;
     width: 5maj;
+    pointer-events: none;
    }
 
    @media (pointer: "fine") {
