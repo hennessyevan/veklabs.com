@@ -1,5 +1,20 @@
+{{ $image := ((resources.Get "images/tempHero.jpg").Resize "600x").RelPermalink }}
+
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta property="og:title" content="Veklabs" />
+<meta property="og:type" content="website" />
+<meta property="og:description"
+ content="We are a team of videographers and editors working with people and on productions that inspire us." />
+<meta property="og:image" content="{{ $image }}" />
 
-{{ with.Description }}<meta name="description" content="{{ . }}" />{{ end }}
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@veklabs" />
+<meta name="twitter:title" content="Veklabs" />
+<meta name="twitter:description"
+ content="We are a team of videographers and editors working with people and on productions that inspire us." />
+<meta name="twitter:image" content="{{ $image }}" />
+
+{{ with.Description }}
+<meta name="description" content="{{ . }}" />{{ end }}
