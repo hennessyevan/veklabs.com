@@ -1,6 +1,7 @@
 <footer class="site-footer" role="contentinfo">
  <div class="left">
-  <p>Proudly based in Canada <img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
+  <p>{{ .Site.Data.en.FOOTER_PRETEXT}} <img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg"
+    alt="Canadian Flag">
   </p>
   <p class="site-footer__copyright">
    &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>

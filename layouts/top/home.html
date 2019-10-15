@@ -17,7 +17,7 @@
 </section>
 
 <section id="team">
- <h2 class="title">Team</h2>
+ <h2 class="title">{{ .Site.Data.en.TEAM_TITLE }}</h2>
  {{ range where .Pages "Section" "team" }}
 
  <div class="team-grid">
@@ -32,8 +32,8 @@
 </section>
 
 <section id="clients">
- <h2 class="title">Clients</h2>
- <h4 class="sub-title">Some of the clients we have had the privilege of creating with.</h4>
+ <h2 class="title">{{ .Site.Data.en.CLIENT_TITLE }}</h2>
+ <h4 class="sub-title">{{.Site.Data.en.CLIENT_SUB_TITLE}}</h4>
 
  {{ block "clients/grid" . }}{{ partial "clients/grid.html" . }}{{ end }}
 

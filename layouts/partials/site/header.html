@@ -12,19 +12,20 @@
  <div id="contact-drawer">
   <div id="inner-drawer">
 
-   <a href="mailto:info@veklabs.com" class="button email" target="_blank">
-    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg" aria-describedby="info@veklabs.com" alt="">
+   <a href="mailto:{{.Site.Data.en.EMAIL}}" class="button email" target="_blank">
+    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg" aria-describedby="{{.Site.Data.en.EMAIL}}"
+      alt="">
     </div>
     <span>
-     info@veklabs.com
+     {{.Site.Data.en.EMAIL}}
     </span>
    </a>
 
-   <a href="tel:403-648-3713" class="button phone" target="_blank">
-    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/phone.svg" aria-describedby="403-648-3713" alt="">
+   <a href="tel:{{.Site.Data.en.PHONE}}" class="button phone" target="_blank">
+    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/phone.svg" aria-describedby="{{.Site.Data.en.PHONE}}" alt="">
     </div>
     <span>
-     403-648-3713
+     {{.Site.Data.en.PHONE}}
     </span>
    </a>
   </div>
