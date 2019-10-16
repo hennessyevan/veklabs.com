@@ -7,15 +7,24 @@ footer {
  display: flex;
  justify-content: space-between;
 
- .left {
-  display: flex;
-  flex-wrap: wrap;
+ @media (max-width: 600px) {
+  text-align: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+
+  p {
+   margin: 2maj 0;
+
+   &.site-footer__copyright {
+    margin-bottom: 0;
+   }
+  }
  }
 
  .footer-flag {
   height: 1.5maj;
   color: white;
-  margin-right: 1maj;
  }
 
  a {
@@ -27,10 +36,19 @@ footer {
   display: grid;
   grid-auto-flow: column;
   grid-gap: 2maj;
+  align-items: center;
+
+  @media (max-width: 600px) {
+   margin-top: 2maj;
+  }
 
   .icon {
    img {
     height: 2maj;
+
+    @media (max-width: 600px) {
+     height: 3maj;
+    }
    }
   }
  }

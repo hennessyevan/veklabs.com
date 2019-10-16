@@ -3,8 +3,6 @@
  {{ block "site/img" . }} {{ partial "site/img" . }}{{ end }}
  {{end}}
 
- <img class="cta" src="{{ .Site.BaseURL }}/assets/user.svg" alt="View">
-
  <div class="name">
   <h4>
    {{ with .Params.name }}{{.}}{{end}}

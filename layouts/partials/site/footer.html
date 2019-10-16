@@ -1,19 +1,17 @@
 <footer class="site-footer" role="contentinfo">
- <div class="left">
-  <p>{{ .Site.Data.en.FOOTER_PRETEXT}} <img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg"
-    alt="Canadian Flag">
-  </p>
-  <p class="site-footer__copyright">
-   &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>
-  </p>
- </div>
+ <p><img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
+  {{ .Site.Data.en.FOOTER_PRETEXT}}
+ </p>
+ <p class="site-footer__copyright">
+  &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>
+ </p>
 
- <ul class="social-media">
+ <div class="social-media">
   {{ range .Site.Data.social.channel }}
   <a href="{{ .url }}" target="_blank" class="icon">
    <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
   </a>
   {{ end }}
- </ul>
+ </div>
 
 </footer>

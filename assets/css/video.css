@@ -40,6 +40,7 @@
   z-index: 2;
   transition: 225ms;
   object-fit: cover;
+  border-radius: 1.5maj;
   object-position: center;
  }
 
