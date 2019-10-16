@@ -1,6 +1,6 @@
 +++
  name = "Andrew Peloso"
- image = "images/andrew.jpg"
+ image = "images/andrew_1a.jpg"
  competencies = ["Cinematography", "Audio Production"]
  title = "Owner/Director"
  order = 1
