@@ -8,6 +8,6 @@
 
  {{ with.Params.type }}
  <span class="type {{ anchorize . }}">{{.}}</span>
- <video class="preview" src="{{ $preview }}" preload="none" muted loop></video>
+ <video class="preview" src="{{ $preview }}" preload="none" muted loop playsinline></video>
  {{ end }} {{block "site/img" . }} {{ partial "site/img" . }}{{ end }}
 </div>

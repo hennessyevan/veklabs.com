@@ -52,7 +52,7 @@ videos.forEach(video => {
 
   const video = `
   <div class="video-wrapper">
-   <video id="player" src="${videoSrc}" poster="${poster}" playsinline controls autoplay type='video/mp4'></video>
+   <video id="player" src="${videoSrc}" poster="${poster}" controls autoplay type='video/mp4'></video>
   </div>
  `
 
