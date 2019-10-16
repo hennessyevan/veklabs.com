@@ -1,10 +1,13 @@
-<div class="video" data-videoID="{{ .Params.videoID }}" data-url="{{ .Params.videoURL }}">
+{{$video :=  .Params.videoURL}}
+{{$preview :=  .Params.previewURL}}
+{{$image := (resources.Get .Params.image).RelPermalink}}
+<div class="video" data-poster="{{ (resources.Get .Params.image).RelPermalink }}" data-url="{{ $video }}">
  <span class="title">
   {{.Title}}
  </span>
 
  {{ with.Params.type }}
  <span class="type {{ anchorize . }}">{{.}}</span>
- <div class="preview"></div>
+ <video class="preview" src="{{ $preview }}" preload="none" muted loop></video>
  {{ end }} {{block "site/img" . }} {{ partial "site/img" . }}{{ end }}
 </div>
