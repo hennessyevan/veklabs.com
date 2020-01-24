@@ -13,29 +13,33 @@ videos.forEach(video => {
  const previewStyler = preview && styler(preview)
  if (!videoSrc) return
 
- preview.addEventListener("mouseover", function() {
-  this.play()
-  let hit = false
-  this.addEventListener("timeupdate", e => {
-   if (this.currentTime >= 15 && !hit) {
-    hit = true
-    tween({
-     from: 1,
-     to: 0,
-     duration: 1500
-    }).start(v => previewStyler.set("opacity", v))
-
-    setTimeout(() => {
-     this.currentTime = 0
+ preview.addEventListener("mouseover", async function() {
+  try {
+   await this.play()
+   let hit = false
+   this.addEventListener("timeupdate", e => {
+    if (this.currentTime >= 15 && !hit) {
+     hit = true
      tween({
-      from: 0,
-      to: 1,
-      duration: 500
+      from: 1,
+      to: 0,
+      duration: 1500
      }).start(v => previewStyler.set("opacity", v))
-     hit = false
-    }, 1500)
-   }
-  })
+
+     setTimeout(() => {
+      this.currentTime = 0
+      tween({
+       from: 0,
+       to: 1,
+       duration: 500
+      }).start(v => previewStyler.set("opacity", v))
+      hit = false
+     }, 1500)
+    }
+   })
+  } catch (error) {
+   console.log(error)
+  }
  })
 
  preview.addEventListener("mouseout", function() {
@@ -80,6 +84,6 @@ document.addEventListener("keyup", e => {
 })
 
 // Configure close button
-document.querySelector(".close").addEventListener("click", async e => {
+document.querySelector(".close").addEventListener("click", e => {
  cleanUp()
 })

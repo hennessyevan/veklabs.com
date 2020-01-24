@@ -1,4 +1,7 @@
 {{ $image := ((resources.Get "images/tempHero.jpg").Resize "600x").RelPermalink }}
+{{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
+{{ $darkFavicon := (resources.Get "images/logodark.png").RelPermalink }}
+{{ $lightFavicon := (resources.Get "images/logo.png").RelPermalink }}
 
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -16,6 +19,10 @@
 <meta name="twitter:description"
  content="We are a team of videographers and editors working with people and on productions that inspire us." />
 <meta name="twitter:image" content="{{ $image }}" />
+
+<link rel="shortcut icon" href="{{ $faviconSVG }}" />
+<link rel="shortcut icon" href="{{ $darkFavicon }}" id="dark-scheme-icon" />
+<link rel="shortcut icon" href="{{ $lightFavicon }}" id="light-scheme-icon" />
 
 {{ with.Description }}
 <meta name="description" content="{{ . }}" />{{ end }}
