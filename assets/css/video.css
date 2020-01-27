@@ -212,7 +212,6 @@
   box-sizing: content-box;
   width: 2maj;
   height: 2maj;
-  z-index: 100;
   transition: 225ms;
   padding: 1.5maj 2maj;
   fill: white;
@@ -241,7 +240,6 @@
   box-sizing: content-box;
   width: 2maj;
   height: 2maj;
-  z-index: 100;
   transition: 225ms;
   padding: 1.5maj 2maj;
   fill: white;
