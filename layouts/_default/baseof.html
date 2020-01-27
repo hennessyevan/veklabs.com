@@ -1,33 +1,37 @@
 <!doctype html>
 <html lang="{{ .Site.LanguageCode | default "en" }}">
-    <head>
 
-        {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+<head>
 
-        <title>{{ block "title" . }}
-            {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
-        {{ end }}</title>
+ {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
 
-        {{ range .AlternativeOutputFormats }}
-            <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
-        {{ end }}
+ <title>{{ block "title" . }}
+  {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
+  {{ end }}</title>
 
-        {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+ {{ range .AlternativeOutputFormats }}
+ <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
+ {{ end }}
 
-    </head>
-    <body>
+ {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
 
-        {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+</head>
 
-        <main class="site-main" role="main">
+<body>
 
-            {{ block "main" . }}{{ end }}
+ {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
 
-        </main>
+ <main class="site-main" role="main">
 
-        {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+  {{ block "main" . }}{{ end }}
 
-        {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+ </main>
 
-    </body>
+ {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+
+
+
+</body>
+{{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+
 </html>
