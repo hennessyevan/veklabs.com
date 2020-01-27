@@ -212,7 +212,6 @@
   box-sizing: content-box;
   width: 2maj;
   height: 2maj;
-  display: block;
   z-index: 100;
   transition: 225ms;
   padding: 1.5maj 2maj;
@@ -232,6 +231,35 @@
    border-radius: 1maj;
    top: 1maj;
    right: 1maj;
+  }
+ }
+
+ img.play-icon {
+  position: absolute;
+  top: 3maj;
+  right: 12maj;
+  box-sizing: content-box;
+  width: 2maj;
+  height: 2maj;
+  z-index: 100;
+  transition: 225ms;
+  padding: 1.5maj 2maj;
+  fill: white;
+  border-radius: 1.5maj;
+  backdrop-filter: var(--blur-filter);
+  background-color: var(--gray-overlay);
+  cursor: pointer;
+
+  &:hover {
+   background-color: var(--black-overlay);
+  }
+
+  @media (max-width: 1000px) {
+   width: 1.5maj;
+   height: 1.5maj;
+   border-radius: 1maj;
+   top: 1maj;
+   right: 8maj;
   }
  }
 }
