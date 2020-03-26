@@ -2,12 +2,20 @@
  padding: 20maj 3maj;
  margin: 15maj auto 6maj;
  z-index: -2;
- position: relative;
  background: black;
+ position: relative;
 
  .container {
   max-width: 150maj;
   margin: 0 auto;
+ }
+
+ .disclaimer {
+  position: absolute;
+  bottom: 3maj;
+  right: 3maj;
+  font-size: 0.75rem;
+  color: var(--gray1);
  }
 
  .title {
