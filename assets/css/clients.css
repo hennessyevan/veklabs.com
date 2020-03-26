@@ -1,9 +1,9 @@
 #clients {
- padding: 6maj 3maj 10maj;
+ padding: 6maj 0 10maj;
  text-align: center;
 
  @media (max-width: 600px) {
-  padding: 4maj 2maj;
+  padding: 4maj 0;
  }
 
  .title {
@@ -13,7 +13,7 @@
  .sub-title {
   margin: 1maj 0 2maj;
   font-weight: 400;
-  color: var(--solid-blue);
+  color: var(--accentColor);
  }
 
  .logos {

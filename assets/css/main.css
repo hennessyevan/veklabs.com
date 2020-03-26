@@ -14,6 +14,9 @@
  --gray-overlay: rgba(28, 28, 30, 0.65);
  --black-overlay: rgba(0, 0, 0, 0.8);
 
+ --background: var(--gray6);
+ --text: var(--white);
+
  --blue: #0a84ff65;
  --solid-blue: #0a84ff;
  --green: #30d15865;
@@ -23,9 +26,12 @@
  --pink: #ff375f65;
  --purple: #bf5af265;
  --red: #ff453a65;
+ --solid-red: #ff453a;
  --teal: #64d2ff65;
  --solid-teal: #64d2ff;
  --yellow: #ffd60a65;
+
+ --accentColor: var(--solid-blue);
 
  --med-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
  --big-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
@@ -33,24 +39,6 @@
 
  --blur-filter: blur(20px) saturate(180%);
 }
-
-/* @media (prefers-color-scheme: light) {
- :root {
-  --white: #000000;
-  --gray6: #ffffff;
-  --gray5: #636366;
-  --gray4: #48484a;
-  --gray3: #3a3a3c;
-  --gray2: #2c2c2e;
-  --gray1: #1c1c1e;
-  --gray-overlay: rgba(200, 200, 210, 0.65);
-  --black-overlay: rgba(255, 255, 255, 0.8);
-
-  --med-shadow: 0 18px 45px rgba(150, 150, 150, 0.24);
-  --big-shadow: 0 25px 60px rgba(150, 150, 150, 0.4);
-  --hover-shadow: 0 30px 65px rgba(150, 150, 150, 0.45);
- }
-} */
 
 * {
  box-sizing: border-box;
@@ -63,12 +51,30 @@ body {
 }
 
 a {
- color: var(--blue);
+ color: var(--accentColor);
  text-decoration: none;
+}
+
+h1 {
+ margin: 0;
+ font-size: 3rem;
+ font-weight: 600;
+}
+
+.accent-color {
+ color: var(--accentColor);
 }
 
 .site-main {
  margin-top: 10maj;
+}
+
+.padding {
+ margin: 3maj;
+
+ @media (max-width: 600px) {
+  margin: 1.5maj;
+ }
 }
 
 #overlay {
@@ -121,3 +127,5 @@ a {
 @import "video";
 @import "team";
 @import "clients";
+@import "stats";
+@import "guarantee";

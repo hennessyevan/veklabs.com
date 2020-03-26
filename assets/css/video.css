@@ -136,18 +136,15 @@
  display: grid;
  grid-template-columns: repeat(auto-fit, minmax(60maj, 1fr));
  grid-gap: 3maj;
- margin: 3maj;
 
  @media (max-width: 600px) {
   grid-template-columns: repeat(auto-fit, minmax(50%, 1fr));
-  margin: 1.5maj;
  }
 }
 
 .hero-video {
  max-height: 80vh;
  min-height: 20vw;
- margin: 3maj;
  margin-bottom: 7maj;
  border-radius: 1.5maj;
  box-shadow: var(--big-shadow);
@@ -159,7 +156,6 @@
  }
 
  @media (max-width: 600px) {
-  margin: 1.5maj;
   margin-bottom: 4maj;
  }
 

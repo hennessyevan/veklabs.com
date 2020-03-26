@@ -7,7 +7,6 @@
 
  .title {
   margin-top: 5maj;
-  margin-left: 3maj;
   text-align: center;
  }
 
@@ -82,7 +81,7 @@
     max-width: 25maj;
     word-wrap: break-word;
     margin: 1maj auto;
-    color: var(--solid-blue);
+    color: var(--accentColor);
    }
 
    img.team {
@@ -169,7 +168,7 @@
    margin: 0;
    font-weight: 500;
    margin-bottom: 1maj;
-   color: var(--solid-blue);
+   color: var(--accentColor);
   }
 
   .competencies {

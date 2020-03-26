@@ -1,0 +1,46 @@
+#stats {
+ padding: 20maj 3maj;
+ margin: 15maj auto 6maj;
+ z-index: -2;
+ position: relative;
+ background: black;
+
+ .container {
+  max-width: 150maj;
+  margin: 0 auto;
+ }
+
+ .title {
+  margin-bottom: 6maj;
+ }
+
+ .grid {
+  list-style-type: none;
+  align-items: start;
+  justify-content: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20maj, 1fr));
+  grid-gap: 5maj;
+  max-width: 75maj;
+
+  .item {
+   display: flex;
+   align-items: flex-start;
+   justify-content: flex-start;
+   flex-direction: column;
+
+   .number,
+   .number-support {
+    font-size: 3.5rem;
+    font-weight: 600;
+    font-family: monospace;
+   }
+
+   .description {
+    margin-top: 2maj;
+    font-size: 1.25rem;
+    color: var(--accentColor);
+   }
+  }
+ }
+}
