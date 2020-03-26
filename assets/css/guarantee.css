@@ -37,7 +37,6 @@
  .guarantee-container {
   width: 100%;
   max-width: 50maj;
-  min-width: 50maj;
   margin-left: auto;
   background: rgba(0, 0, 0, 0.24);
   border: 1px solid var(--gray5);
@@ -47,6 +46,7 @@
   @media (max-width: 1000px) {
    margin-top: 5maj;
    max-width: 100%;
+   padding: 3maj 3maj;
   }
  }
 

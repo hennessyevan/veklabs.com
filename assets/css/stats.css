@@ -5,6 +5,10 @@
  background: black;
  position: relative;
 
+ @media (max-width: 1000px) {
+  margin: 8maj auto;
+ }
+
  .container {
   max-width: 150maj;
   margin: 0 auto;
@@ -14,6 +18,7 @@
   position: absolute;
   bottom: 3maj;
   right: 3maj;
+  margin-left: 3maj;
   font-size: 0.75rem;
   color: var(--gray1);
  }
