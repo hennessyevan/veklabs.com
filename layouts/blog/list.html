@@ -1,0 +1,40 @@
+{{ define "main" }}
+
+<main id="blog" class="padding">
+ <div class="container">
+
+  <h1>Lab Reports</h1>
+
+  <div class="post-list">
+
+   {{ range $index, $page := .Pages }}
+
+   <a href="{{ .Permalink }}" class="listing" id="index-{{ $index }}">
+    <article>
+     <div class="image">
+
+      {{ with .Params.category}}
+      <span class="type {{ anchorize . }}">{{.}}</span>
+      {{end}}
+
+      <img src="https://picsum.photos/1000/60{{$index}}" alt="">
+      {{/*  {{if isset .Params "image"}}
+      {{ partial "site/img" . }}
+      {{ end }} */}}
+
+     </div>
+     <div class="content">
+      <h2 class="title">{{ .Title }}</h2>
+      <p class="excerpt">{{ .Summary }}</p>
+      {{ partial "blog/readtime" . }}
+     </div>
+    </article>
+   </a>
+
+   {{ end }}
+
+  </div>
+ </div>
+</main>
+
+{{ end }}

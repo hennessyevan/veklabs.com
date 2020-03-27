@@ -1,0 +1,7 @@
+{{ $estimatedReadTime := math.Round (div .WordCount 200.0) }}
+
+{{ if (gt $estimatedReadTime 0)}}
+<span class="time-to-read">
+ {{ $estimatedReadTime }} minute{{ cond ( gt $estimatedReadTime 1 ) "s" ""}} read
+</span>
+{{end}}
