@@ -4,6 +4,7 @@ title = "Veklabs"
 
 enableRobotsTXT = true
 disableAliases = true
+summaryLength = 25
 
 staticDir = ["static"]
 

@@ -1,0 +1,142 @@
+#blog {
+ .container {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 10maj 0;
+  min-height: calc(100vh - 135px);
+ }
+}
+
+.post-list {
+ display: grid;
+ grid-template-columns: repeat(10, 1fr);
+ grid-gap: 8maj;
+ margin-top: 6maj;
+
+ .listing {
+  grid-column: span 5;
+  border-radius: 1.5maj;
+  transition: var(--default);
+
+  &:hover {
+   .image {
+    box-shadow: var(--med-shadow);
+    transform: scale(1.025);
+    z-index: 9;
+   }
+
+   .content {
+    background: #00000080;
+   }
+  }
+
+  article {
+   display: flex;
+   width: 100%;
+   flex-direction: column;
+  }
+
+  .content {
+   padding: 3maj;
+   margin: 1maj 1.5maj;
+   color: var(--text);
+   border-radius: 1.5maj;
+   transition: var(--default);
+
+   .title {
+    margin: 0;
+    font-weight: 500;
+   }
+
+   .excerpt {
+    color: var(--gray1);
+    font-size: 0.85rem;
+    display: box;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    margin-top: 1.5maj;
+   }
+
+   .time-to-read {
+    font-size: 0.85rem;
+    color: var(--accentColor);
+    display: block;
+    margin-top: 1.5maj;
+   }
+  }
+
+  .image {
+   height: 30maj;
+   transition: var(--default);
+   position: relative;
+
+   .type {
+    position: absolute;
+    top: 2maj;
+    right: 2maj;
+    text-transform: uppercase;
+    font-size: 1.5maj;
+    font-weight: 500;
+    background: var(--teal);
+    backdrop-filter: var(--blur-filter);
+    padding: 0.5maj 0.75maj;
+    border-radius: 0.5maj;
+    z-index: 3;
+    color: var(--text);
+
+    &.marketing {
+     background: var(--green);
+    }
+
+    &.promotional {
+     background: var(--red);
+    }
+
+    &.social-media {
+     background: var(--indigo);
+    }
+
+    &.corporate {
+     background: var(--yellow);
+    }
+
+    &.short-documentary {
+     background: var(--blue);
+    }
+   }
+
+   img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.5maj;
+    border: 1px solid var(--gray5);
+   }
+  }
+
+  /*FIRST*/
+  &#index-0 {
+   grid-column: 1 / -1;
+   flex-direction: row;
+
+   article {
+    flex-direction: row;
+   }
+
+   .image {
+    height: 300px;
+    flex-basis: 65%;
+   }
+   .content {
+    flex-basis: 35%;
+   }
+   .excerpt {
+    -webkit-line-clamp: 4;
+   }
+  }
+ }
+}
