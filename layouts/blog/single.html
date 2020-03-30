@@ -1,0 +1,47 @@
+{{ define "main" }}
+
+<div id="post" class="padding">
+
+ <article>
+
+  {{ if isset .Params "image" }}
+  <div class="hero-image">
+   <a class="back-button" href="/blog">
+    <svg viewBox="0 0 24 24" class="back-arrow">
+     <use href="/assets/arrow-left.svg#icon"></use>
+    </svg>
+    All Posts</a>
+
+   {{ if hasPrefix .Params.image "http"}}
+   <img src="{{ .Params.image }}" alt="">
+   {{ else }}
+   {{ partial "site/img" . }}
+   {{ end }}
+
+   {{ with .Params.category}}
+   <span class="type {{ anchorize . }}">{{.}}</span>
+   {{end}}
+
+
+  </div>
+  {{else}}
+  <a class="back-button" href="/blog">
+   <svg viewBox="0 0 24 24" class="back-arrow">
+    <use href="/assets/arrow-left.svg#icon"></use>
+   </svg>
+   All Posts</a>
+  {{ end }}
+
+  <section class="content">
+   <h1 class="title">{{ .Title }}</h1>
+   <p>
+    {{ .Content }}
+   </p>
+  </section>
+
+ </article>
+
+ {{ partial "blog/more.html" . }}
+
+</div>
+{{ end }}

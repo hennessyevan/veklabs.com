@@ -17,3 +17,48 @@ The structure is written in [TOML](https://learnxinyminutes.com/docs/toml/) but 
 +++
 ```
 _Place the thumbnail image in the [content](content) directory._
+
+
+#### Posts
+
+Blog Posts are stored in [content/blog](content/blog)
+
+Frontmatter is also in [TOML](https://learnxinyminutes.com/docs/toml/) and currently has the following structure:
+
+```md
++++
+ title = "Some Post" (required)
+ date = 2020-03-23 (required)
+ image = "images/andrew_1a.jpg" (required)
+ category = "Marketing" (required)
++++
+```
+
+> The Hero Image occupies a 5:2 aspect ratio
+
+Markdown in this blog follows the CommonMark Spec with some additions.
+
+For a good markdown reference refer to: [Github Markdown Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+This site also includes some quality-of-life improvements but also some workarounds to be aware of.
+
+##### Images
+Images are shown with the syntax: `![float](url "caption")`.
+
+The float is either `left`, `right` or `full` for positioning images on the left or right of text in blog posts or spanning the across the whole post.
+
+The url specifies the url of the image and is required.
+
+The caption is optional and adds a caption.
+
+> Important: The hero image is specified in the frontmatter as `title = "Your Title"` and must be placed in `assets/images` so that we can do some fancy SEO stuff. Images that are used in the markdown, i.e. in the content of the post, must be placed in `static/images` instead.
+
+#### Shortcodes
+There are a few shortcodes available for use.
+
+They are wrapped with `{{< shortcode >}}`
+
+All shortcodes can be found here: [Hugo Shortcodes](https://gohugo.io/content-management/shortcodes/#youtube)
+
+For vimeo use this shortcode with the video ID:
+`{{< vimeo 146022717 >}}`

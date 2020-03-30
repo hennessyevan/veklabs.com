@@ -7,9 +7,12 @@
 
   <div class="post-list">
 
-   {{ range $index, $page := .Pages }}
+   {{ $paginator := .Paginate .Pages }}
+   {{ range $index, $page := $paginator.Pages }}
 
-   <a href="{{ .Permalink }}" class="listing" id="index-{{ $index }}">
+   {{ $id := cond (ne $paginator.HasPrev true) (printf "index-%v" $index) "" }}
+
+   <a href="{{ .Permalink }}" class="listing" id="{{ $id }}">
     <article>
      <div class="image">
 
@@ -17,10 +20,11 @@
       <span class="type {{ anchorize . }}">{{.}}</span>
       {{end}}
 
-      <img src="https://picsum.photos/1000/60{{$index}}" alt="">
-      {{/*  {{if isset .Params "image"}}
+      {{ if hasPrefix .Params.image "http"}}
+      <img src="{{ .Params.image }}" alt="">
+      {{ else }}
       {{ partial "site/img" . }}
-      {{ end }} */}}
+      {{ end }}
 
      </div>
      <div class="content">
@@ -34,6 +38,9 @@
    {{ end }}
 
   </div>
+
+
+  {{ partial "site/pagination.html" $paginator }}
  </div>
 </main>
 
