@@ -9,6 +9,22 @@ Paginate = 5
 
 staticDir = ["static"]
 
+[taxonomies]
+ category = "category"
+ type = "type"
+
+[related]
+threshold = 50.0
+includeNewer = true
+toLower = true
+
+[[related.indices]]
+ name = "category"
+ weight = 100.0
+
+[[related.indices]]
+ name = "author"
+ weight = 50.0
 
 [params]
 disallow_search_engines = false # set robots.txt to disallow everything

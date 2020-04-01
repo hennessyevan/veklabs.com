@@ -18,25 +18,70 @@
    {{ partial "site/img" . }}
    {{ end }}
 
-   {{ with .Params.category}}
+   {{ with .Params.category }}
    <span class="type {{ anchorize . }}">{{.}}</span>
    {{end}}
+
+   {{ with .Params.date }}
+   <span class="date">
+    {{ dateFormat "01 2 06" . }}
+   </span>
+   {{ end }}
 
 
   </div>
   {{else}}
-  <a class="back-button" href="/blog">
-   <svg viewBox="0 0 24 24" class="back-arrow">
-    <use href="/assets/arrow-left.svg#icon"></use>
-   </svg>
-   All Posts</a>
+  <div class="hero-image empty">
+   <a class="back-button" href="/blog">
+    <svg viewBox="0 0 24 24" class="back-arrow">
+     <use href="/assets/arrow-left.svg#icon"></use>
+    </svg>
+    All Posts</a>
+   {{ with .Params.category }}
+   <span class="type {{ anchorize . }}">{{.}}</span>
+   {{end}}
+  </div>
   {{ end }}
 
   <section class="content">
-   <h1 class="title">{{ .Title }}</h1>
+   <div class="title-container">
+    <h1 class="title">{{ .Title }}</h1>
+   </div>
+
    <p>
     {{ .Content }}
    </p>
+
+   {{ if isset .Params "author" }}
+   <div class="author">
+    {{ $author := .Params.author }}
+    {{ with .Site.GetPage "/team"}}
+    {{ with .GetPage $author }}
+
+    {{if isset .Params "image"}}
+    <div class="avatar">
+     {{ partial "site/img" . }}
+    </div>
+    {{ end }}
+
+    <div class="name">
+     <span class="authorName">
+      {{ .Params.name }}
+     </span>
+
+     {{with .Params.competencies}}
+     <span class="competencies">
+      {{delimit . ", "}}
+     </span>
+     {{end}}
+    </div>
+    {{ else }}
+    {{ $author }}
+    {{ end }}
+
+    {{ end }}
+   </div>
+   {{ end }}
   </section>
 
  </article>

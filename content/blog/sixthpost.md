@@ -3,6 +3,7 @@
  date = 2020-03-25
  image = "https://picsum.photos/id/94/1000/401"
  category = "Update"
+ author = "Andrew Peloso"
 +++
 
 Farm-to-table beard messenger bag wolf hell of. Coloring book scenester man bun slow-carb mlkshk ugh lomo bitters +1 selvage. Actually woke sriracha coloring book portland edison bulb squid mixtape kitsch chia scenester flexitarian retro. Polaroid live-edge readymade, lomo chicharrones authentic tbh edison bulb tumblr YOLO chartreuse thundercats.

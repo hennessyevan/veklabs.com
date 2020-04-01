@@ -3,6 +3,7 @@
  date = 2018-03-23
  image = "https://picsum.photos/id/678/1000/400"
  category = "Update"
+ author = "Jon Cubid"
 +++
 
 Bespoke vinyl vaporware swag jianbing neutra lo-fi forage truffaut. Seitan migas sriracha pop-up cronut coloring book. Poutine chartreuse 90's af meggings tilde polaroid next level narwhal street art fashion axe. Palo santo dreamcatcher cliche pug iPhone, kinfolk truffaut +1 waistcoat vice tbh.
