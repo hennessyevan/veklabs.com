@@ -29,3 +29,18 @@ icon = "linkedin.svg"
 name = "Unsplash"
 url = "https://unsplash.com/@veklabs"
 icon = "camera.svg"
+
+[[channel]]
+  name = "Twitter"
+  url = "https://twitter.com/VekLabs"
+  icon = "twitter.svg"
+
+[[channel]]
+ name = "Anchor"
+ url = "https://anchor.fm/vek-labs"
+ icon = "anchor.svg"
+
+[[channel]]
+ name = "Vimeo"
+ url = "https://vimeo.com/veklabs"
+ icon = "vimeo.svg"
