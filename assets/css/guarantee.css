@@ -3,7 +3,7 @@
  margin: 15maj auto 6maj;
 
  @media (max-width: 1000px) {
-  margin: 4maj auto;
+  margin: 0 auto;
  }
 
  .container {
@@ -20,6 +20,11 @@
  .title {
   margin-bottom: 6maj;
   max-width: 75maj;
+
+  @media (max-width: 600px) {
+   font-size: 1.75rem;
+   margin-bottom: 3maj;
+  }
  }
 
  .premium-text {
@@ -28,6 +33,10 @@
   font-size: 1.25rem;
   font-weight: normal;
   line-height: 1.25;
+
+  @media (max-width: 600px) {
+   font-size: 1rem;
+  }
  }
 
  .guarantee-title {
