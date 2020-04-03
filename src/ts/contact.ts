@@ -9,6 +9,7 @@ link.addEventListener("click", async e => {
 
  if (link.getAttribute("data-active") === "true") {
   link.setAttribute("data-active", "false")
+  link.classList.remove("active")
 
   spring({
    to: { opacity: 0, height: 0 },
@@ -16,6 +17,7 @@ link.addEventListener("click", async e => {
   }).start(v => drawer.set(v))
  } else {
   link.setAttribute("data-active", "true")
+  link.classList.add("active")
 
   spring({
    from: { opacity: 0, height: 0 },

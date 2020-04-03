@@ -23,6 +23,7 @@
  --solid-green: #30d158;
  --indigo: #5e5ce665;
  --orange: #ff9f0a65;
+ --solid-orange: #ff9f0a;
  --pink: #ff375f65;
  --purple: #bf5af265;
  --red: #ff453a65;
@@ -126,6 +127,7 @@ h1 {
  }
 }
 
+@import "partials";
 @import "header";
 @import "footer";
 @import "video";
@@ -134,3 +136,5 @@ h1 {
 @import "stats";
 @import "guarantee";
 @import "blog";
+@import "products";
+@import "services";

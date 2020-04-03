@@ -1,6 +1,7 @@
 module.exports = {
  plugins: [
   require("postcss-partial-import")(),
+  require("postcss-for")(),
   require("autoprefixer")(),
   require("postcss-nesting")(),
   require("postcss-short")(),

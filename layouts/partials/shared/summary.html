@@ -1,0 +1,30 @@
+<div class="summary">
+
+ <div class="inner">
+
+  {{ $direction := index (seq 0 1 | shuffle) 0 }}
+  {{ $imageSeq := cond (eq $direction 1) (seq -2 -1) (seq 2 4)}}
+  {{ $textSeq := cond (eq $direction 1) (seq 0 1) (seq -1 0)}}
+  {{ $textSpeed := index ( $textSeq | shuffle ) 0 }}
+
+
+  {{ with .Params.image }}
+  <div class="image rellax" data-rellax-speed="{{ index ( $imageSeq | shuffle ) 0 }}">
+   <img src="{{ . }}">
+  </div>
+  {{ end }}
+
+
+  <div class="text" data-rellax-speed="{{ $textSpeed }}">
+
+   <h2 class="title">
+    {{ .Title }}
+   </h2>
+
+   <div class="excerpt">
+    {{ .Content }}
+   </div>
+
+  </div>
+ </div>
+</div>

@@ -6,6 +6,7 @@ footer {
  font-size: 1.8maj;
  display: flex;
  justify-content: space-between;
+ background: var(--background);
 
  @media (max-width: 600px) {
   text-align: center;
