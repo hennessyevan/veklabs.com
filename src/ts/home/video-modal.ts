@@ -1,5 +1,4 @@
 import { listen, styler, tween } from "popmotion"
-import "./contact"
 
 const videos = document.querySelectorAll(".video")
 const overlayEl = document.getElementById("overlay")

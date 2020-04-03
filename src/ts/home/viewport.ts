@@ -1,4 +1,4 @@
-import { styler, inertia, spring, tween, decay } from "popmotion"
+import { styler, tween } from "popmotion"
 
 const headerAnchors = document.querySelectorAll(".anchor")
 

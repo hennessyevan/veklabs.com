@@ -5,11 +5,14 @@ module.exports = {
   extensions: [".js", ".jsx", ".ts", ".tsx"],
   modules: ["node_modules"]
  },
- entry: "./src/ts/index.ts",
+ entry: {
+  home: "./src/ts/home/index.ts",
+  parallax: "./src/ts/parallax/index.ts",
+  global: "./src/ts/global/index.ts"
+ },
  target: "web",
  devtool: "cheap-eval-source-map",
  output: {
-  filename: "app.js",
   path: path.join(__dirname, "assets/js"),
   publicPath: ""
  },
