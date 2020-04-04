@@ -7,6 +7,7 @@
 
   @media (max-width: 932px) {
    overflow: hidden;
+   padding: 0 3maj;
   }
  }
 
@@ -96,7 +97,8 @@
    }
 
    .excerpt {
-    line-height: 1.25;
+    line-height: 1.35;
+    font-weight: 500;
    }
   }
 

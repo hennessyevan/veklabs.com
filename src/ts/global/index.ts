@@ -1,2 +1,2 @@
-import "./contact"
+import "./header"
 import "./favicon"

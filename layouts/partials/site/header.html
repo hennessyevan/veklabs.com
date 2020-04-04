@@ -1,37 +1,77 @@
 <header class="site-header" role="banner">
  <div class="wrapper">
-  <a class="anchor left" href="{{ .Site.BaseURL }}">
-   <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
-  </a>
-  <div class="center">
-   {{ $currentPage := . }}
-   {{ range .Site.Menus.main }}
-   <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-   {{ end }}
+
+  <div class="large">
+
+   <a class="anchor left" href="{{ .Site.BaseURL }}">
+    <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
+   </a>
+   <div class="center">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+   </div>
+   <div class="right">
+    <a class="top menu-link" href="#contact">Contact</a>
+   </div>
+
   </div>
-  <div class="right">
-   <a class="top" href="#contact" id="contact-link">Contact</a>
+
+  <div class="small">
+
+   <a class="anchor left" href="{{ .Site.BaseURL }}">
+    <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
+   </a>
+
+   <div class="center">
+    {{ cond (eq .Title "Home") "" .Title }}
+   </div>
+
+   <div class="right">
+    <div class="menu">
+     <span class="hamburger menu-link">
+      <svg viewBox="0 0 24 24">
+       <use href="/assets/menu.svg#icon"></use>
+      </svg>
+     </span>
+    </div>
+   </div>
+
   </div>
+
  </div>
- <div id="contact-drawer">
+ <div class="drawer">
   <div id="inner-drawer">
 
-   <a href="mailto:{{.Site.Data.en.EMAIL}}" class="button email" target="_blank">
-    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg" aria-describedby="{{.Site.Data.en.EMAIL}}"
-      alt="">
-    </div>
-    <span>
-     {{.Site.Data.en.EMAIL}}
-    </span>
-   </a>
+   <div class="submenu small">
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+    <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+    {{ end }}
+    <a class="top" href="#contact">Contact</a>
+   </div>
 
-   <a href="tel:{{.Site.Data.en.PHONE}}" class="button phone" target="_blank">
-    <div class="icon"><img src="{{ .Site.BaseURL }}/assets/phone.svg" aria-describedby="{{.Site.Data.en.PHONE}}" alt="">
-    </div>
-    <span>
-     {{.Site.Data.en.PHONE}}
-    </span>
-   </a>
+   <div class="contact">
+    <a href="mailto:{{.Site.Data.en.EMAIL}}" class="button email" target="_blank">
+     <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg" aria-describedby="{{.Site.Data.en.EMAIL}}"
+       alt="">
+     </div>
+     <span>
+      {{.Site.Data.en.EMAIL}}
+     </span>
+
+    </a>
+
+    <a href="tel:{{.Site.Data.en.PHONE}}" class="button phone" target="_blank">
+     <div class="icon"><img src="{{ .Site.BaseURL }}/assets/phone.svg" aria-describedby="{{.Site.Data.en.PHONE}}"
+       alt="">
+     </div>
+     <span>
+      {{.Site.Data.en.PHONE}}
+     </span>
+    </a>
+   </div>
   </div>
  </div>
 </header>
