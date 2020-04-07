@@ -1,0 +1,23 @@
+{{ define "main" }}
+
+<section id="testimonials">
+
+ <div class="container">
+
+  <div class="testimonial-list">
+
+   <h1 class="main title">{{ .Title }}</h1>
+
+   {{ range(.Pages.ByParam "order") }}
+
+   {{ partial "shared/summary" . }}
+
+   {{ end }}
+
+  </div>
+
+ </div>
+
+</section>
+
+{{ end }}

@@ -22,9 +22,9 @@ staticDir = ["static"]
  url = "/services/"
 
  [[menu.main]]
- identifier = "testimontials"
- name = "Testimontials"
- url = "/testimontials/"
+ identifier = "testimonials"
+ name = "Testimonials"
+ url = "/testimonials/"
 
  [[menu.main]]
  identifier = "blog"

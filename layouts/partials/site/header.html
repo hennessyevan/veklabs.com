@@ -8,6 +8,9 @@
    </a>
    <div class="center">
     {{ $currentPage := . }}
+    {{ if (ne $currentPage.URL "/") }}
+    <a class="top" href="/">Home</a>
+    {{ end }}
     {{ range .Site.Menus.main }}
     <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
