@@ -11,25 +11,37 @@ staticDir = ["static"]
 
 [menu]
 
- [[menu.main]]
- identifier = "products"
- name = "Products"
- url = "/products/"
+
+[[menu.main]]
+ identifier = "features"
+ name = "Features"
+ url = "/features/"
+ weight = 1
 
  [[menu.main]]
  identifier = "services"
  name = "Services"
  url = "/services/"
+ weight = 2
+
+ [[menu.main]]
+ identifier = "products"
+ name = "Products"
+ url = "/products/"
+ weight = 3
+ 
+ [[menu.main]]
+ identifier = "reports"
+ name = "Reports"
+ url = "/reports/"
+ weight = 4
 
  [[menu.main]]
  identifier = "testimonials"
  name = "Testimonials"
  url = "/testimonials/"
+ weight = 5
 
- [[menu.main]]
- identifier = "blog"
- name = "Blog"
- url = "/blog/"
 
 [taxonomies]
  category = "category"

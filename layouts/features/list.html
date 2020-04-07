@@ -1,0 +1,66 @@
+<head>
+ {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+
+ <style>
+  body {
+   height: 100vh;
+   overflow: hidden;
+  }
+ </style>
+</head>
+
+{{ block "header" . }} {{ partial "site/header.html" . }} {{ end }}
+
+<main>
+
+ <div id="features">
+
+  <div class="container">
+
+   {{ range(.Pages.ByParam "publishDate") }}
+
+   <div class="card">
+
+    <div class="left">
+
+
+     <div class="image">
+      {{ if hasPrefix .Params.image "http"}}
+      <img src="{{ .Params.image }}" alt="">
+      {{ else }}
+      {{ partial "site/img" . }}
+      {{ end }}
+     </div>
+
+    </div>
+
+    <div class="right">
+     <div class="start">
+      <h1 class="title">{{ .Title }}</h1>
+      <h4 class="category">{{ .Params.category }}</h4>
+      <p class="excerpt">{{ .Content }}</p>
+     </div>
+
+     {{ with .Params.awards }}
+     <div class="awards end">
+
+      {{ range . }}
+      {{ $slash := cond ( hasPrefix . "http" ) "" "/" }}
+      <img class="award" src="{{ $slash }}{{ . | safeURL }}" />
+      {{ end }}
+
+     </div>
+     {{ end }}
+    </div>
+
+   </div>
+
+   {{ end }}
+
+  </div>
+
+ </div>
+
+</main>
+
+{{ block "footer" . }} {{ partial "site/footer.html" . }} {{ end }}
