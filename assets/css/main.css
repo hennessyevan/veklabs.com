@@ -136,5 +136,4 @@ h1 {
 @import "stats";
 @import "guarantee";
 @import "blog";
-@import "products";
-@import "services";
+@import "products-services";
