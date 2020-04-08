@@ -1,6 +1,6 @@
 baseURL = "/"
 languageCode = "en-ca"
-title = "Veklabs"
+title = "Vek Labs"
 
 enableRobotsTXT = true
 disableAliases = true

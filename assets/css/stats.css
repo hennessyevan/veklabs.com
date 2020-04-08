@@ -44,7 +44,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20maj, 1fr));
   grid-gap: 5maj;
-  max-width: 75maj;
+  max-width: 125maj;
 
   .item {
    display: flex;
@@ -67,6 +67,7 @@
     margin-top: 2maj;
     font-size: 1.25rem;
     color: var(--accentColor);
+    white-space: nowrap;
 
     @media (max-width: 600px) {
      font-size: 1rem;
