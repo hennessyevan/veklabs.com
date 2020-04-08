@@ -1,5 +1,5 @@
 +++
- title = "First Post"
+ title = "First Posts"
  date = 2016-03-23
  image = "images/1_Demo_Reel.jpg"
  category = "Photography"
