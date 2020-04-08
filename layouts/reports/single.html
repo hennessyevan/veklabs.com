@@ -6,7 +6,7 @@
 
   {{ if isset .Params "image" }}
   <div class="hero-image">
-   <a class="back-button" href="/blog">
+   <a class="back-button" href="/reports">
     <svg viewBox="0 0 24 24" class="back-arrow">
      <use href="/assets/arrow-left.svg#icon"></use>
     </svg>
@@ -53,34 +53,7 @@
    </p>
 
    {{ if isset .Params "author" }}
-   <div class="author">
-    {{ $author := .Params.author }}
-    {{ with .Site.GetPage "/team"}}
-    {{ with .GetPage $author }}
-
-    {{if isset .Params "image"}}
-    <div class="avatar">
-     {{ partial "site/img" . }}
-    </div>
-    {{ end }}
-
-    <div class="name">
-     <span class="authorName">
-      {{ .Params.name }}
-     </span>
-
-     {{with .Params.competencies}}
-     <span class="competencies">
-      {{delimit . ", "}}
-     </span>
-     {{end}}
-    </div>
-    {{ else }}
-    {{ $author }}
-    {{ end }}
-
-    {{ end }}
-   </div>
+   {{ partial "blog/author.html" . }}
    {{ end }}
   </section>
 

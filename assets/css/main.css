@@ -96,12 +96,15 @@ h1 {
  height: 100vh;
  overflow: hidden;
  background: var(--gray-overlay);
+ outline: none;
 
  .video-wrapper {
   padding: 3maj 0;
+  outline: none;
  }
 
  #player {
+  outline: none;
   z-index: 80;
   width: 100%;
   max-width: 1600px;
@@ -120,7 +123,7 @@ h1 {
   cursor: pointer;
   z-index: 81;
 
-  img {
+  svg {
    margin-left: 2maj;
    width: 3maj;
   }

@@ -27,8 +27,8 @@
    position: absolute;
    z-index: -1;
    border-radius: 1.5maj;
-   backdrop-filter: blur(20px);
    box-shadow: var(--med-shadow);
+   backdrop-filter: blur(20px);
 
    @media (max-width: 600px) {
     max-width: 20maj;
@@ -43,6 +43,30 @@
    }
   }
 
+  .text {
+   text-shadow: 0 0 3maj #00000065, 0 0 10maj #000000, 0 0 5maj #00000075;
+   z-index: 1;
+   position: relative;
+
+   .title {
+    font-size: 2rem;
+   }
+
+   .excerpt {
+    line-height: 1.35;
+    font-weight: 500;
+   }
+  }
+
+  .inner {
+   width: 100%;
+   max-width: 50maj;
+  }
+ }
+}
+
+#products {
+ .summary {
   &:nth-of-type(1),
   &:nth-of-type(4),
   &:nth-of-type(7) {
@@ -74,86 +98,64 @@
    justify-content: center;
   }
 
-  &:nth-of-type(7),
-  &:nth-of-type(1) {
-   .image {
-    left: 60%;
-   }
-  }
-
-  &:nth-of-type(4),
+  &:nth-of-type(3),
   &:nth-of-type(8) {
    .image {
-    left: 20%;
+    left: 4maj;
    }
   }
 
-  .text {
-   text-shadow: 0 0 3maj #00000065, 0 0 10maj #000000, 0 0 5maj #00000075;
-   z-index: 1;
-   position: relative;
-
-   .title {
-    font-size: 2rem;
+  &:nth-of-type(6) {
+   .image {
+    right: 4maj;
    }
-
-   .excerpt {
-    line-height: 1.35;
-    font-weight: 500;
-   }
-  }
-
-  .inner {
-   width: 100%;
-   max-width: 50maj;
   }
  }
 }
 
 #services {
  .summary {
+  &:nth-of-type(1),
+  &:nth-of-type(4),
+  &:nth-of-type(7) {
+   justify-content: flex-end;
+
+   .image {
+    right: -20maj;
+
+    @media (max-width: 600px) {
+     right: -15maj;
+    }
+   }
+  }
+
   &:nth-of-type(2),
   &:nth-of-type(5),
-  &:nth-of-type(8) {
+  &:nth-of-type(9) {
    justify-content: flex-start;
 
    .image {
-    left: -20maj;
-
-    @media (max-width: 600px) {
-     left: -15maj;
-    }
+    left: -10maj;
    }
   }
 
   &:nth-of-type(3),
   &:nth-of-type(6),
+  &:nth-of-type(8),
   &:nth-of-type(10) {
-   justify-content: flex-end;
-
-   .image {
-    right: -10maj;
-   }
-  }
-
-  &:nth-of-type(4),
-  &:nth-of-type(7),
-  &:nth-of-type(9),
-  &:nth-of-type(1) {
    justify-content: center;
   }
 
-  &:nth-of-type(7),
-  &:nth-of-type(12) {
+  &:nth-of-type(3),
+  &:nth-of-type(8) {
    .image {
-    left: 60%;
+    right: 4maj;
    }
   }
 
-  &:nth-of-type(4),
-  &:nth-of-type(9) {
+  &:nth-of-type(6) {
    .image {
-    left: 20%;
+    right: 4maj;
    }
   }
  }

@@ -134,7 +134,7 @@
   }
 
   &:hover:not(.active) {
-   background: var(--gray5);
+   background: #ffffff15;
   }
 
   &:not(:last-child) {

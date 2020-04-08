@@ -1,0 +1,34 @@
+<div class="author">
+ {{ $author := .Params.author }}
+ {{ with .Site.GetPage "/team"}}
+ {{ with .GetPage $author }}
+
+ {{if isset .Params "image"}}
+ <div class="avatar">
+  {{ partial "site/img" . }}
+ </div>
+ {{ end }}
+
+ <div class="name">
+  <span class="authorName">
+   {{ .Params.name }}
+  </span>
+
+  {{with .Params.competencies}}
+  <span class="competencies">
+   {{delimit . ", "}}
+  </span>
+  {{end}}
+
+  <div id="author-modal">
+   <embed src="/team/{{ urlize .Params.name }}" type="">
+  </div>
+ </div>
+ {{ else }}
+
+ {{ $author }}
+
+ {{ end }}
+
+ {{ end }}
+</div>

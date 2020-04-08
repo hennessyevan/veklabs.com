@@ -293,6 +293,8 @@
     object-fit: cover;
     width: 100%;
     height: 100%;
+    position: absolute;
+    z-index: -1;
    }
   }
 
@@ -305,6 +307,10 @@
    border-radius: 2maj;
    transition: var(--default);
    cursor: pointer;
+
+   @media (max-width: 768px) {
+    flex-direction: column;
+   }
 
    &:hover {
     background: #00000080;
@@ -322,10 +328,20 @@
     .competencies {
      color: var(--accentColor);
     }
+
+    .biography {
+     flex-shrink: 1;
+    }
    }
 
    .avatar {
     max-width: 12maj;
+    width: 100%;
+    flex-grow: 15;
+
+    @media (max-width: 768px) {
+     margin-bottom: 3maj;
+    }
 
     img {
      object-fit: cover;

@@ -3,6 +3,7 @@
  <div class="inner">
 
   {{ $speed := .Params.speed }}
+  {{ $order := .Params.order | default 2 }}
 
   {{ with .Params.image }}
   <div class="image rellax" data-rellax-speed="{{ $speed | default 1 }}">
@@ -11,7 +12,7 @@
   {{ end }}
 
 
-  <div class="text">
+  <div class="text" style="z-index: {{ .Params.order | default 2 }}">
 
    <h2 class="title">
     {{ .Title }}

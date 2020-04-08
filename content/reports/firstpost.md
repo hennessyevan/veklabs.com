@@ -1,7 +1,7 @@
 +++
  title = "First Post"
  date = 2016-03-23
- image = "https://picsum.photos/id/250/1000/402"
+ image = "images/1_Demo_Reel.jpg"
  category = "Photography"
  author = "Andrew Peloso"
 +++

@@ -48,9 +48,16 @@
   <span>
    Close
   </span>
-  <img src="{{ .Site.BaseURL }}/assets/close.svg" alt="Close" />
+  <svg viewBox="0 0 24 24" alt="Close Modal">
+   <use href="/assets/close.svg#icon"></use>
+  </svg>
  </div>
  <div id="player"></div>
 </div>
+
+
+{{ $s := resources.Get "js/home.js" | minify }}
+
+<script src="{{ $s.Permalink }}"></script>
 
 {{ end }}
