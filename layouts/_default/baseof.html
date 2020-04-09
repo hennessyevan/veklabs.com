@@ -5,9 +5,11 @@
 
  {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
 
- <title>{{ block "title" . }}
+ <title>
+  {{ block "title" . }}
   {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
-  {{ end }}</title>
+  {{ end }}
+ </title>
 
  {{ range .AlternativeOutputFormats }}
  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">

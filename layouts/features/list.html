@@ -1,4 +1,5 @@
 <head>
+ {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
  {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
 
  <style>
@@ -17,7 +18,7 @@
 
   <div class="container">
 
-   {{ range(.Pages.ByParam "publishDate") }}
+   {{ range $index, $feature := (.Pages.ByParam "publishDate") }}
 
    <div class="card">
 
