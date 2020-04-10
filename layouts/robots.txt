@@ -4,3 +4,7 @@ Disallow: /
 {{ else }}
 Disallow: {{ if ne (getenv "HUGO_ENV") "production" }}/{{ end }}
 {{ end }}
+
+{{range .Pages}}
+Disallow: {{.RelPermalink}}
+{{end}}
