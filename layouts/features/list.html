@@ -81,4 +81,8 @@
 
 <script src="{{ $s.Permalink }}"></script>
 
+{{ $g := resources.Get "js/global.js" | minify }}
+
+<script src="{{ $g.Permalink }}"></script>
+
 {{ block "footer" . }} {{ partial "site/footer.html" . }} {{ end }}

@@ -8,6 +8,11 @@
  top: 0;
  width: 100%;
 
+ @supports (padding: minmax(0px)) {
+  padding-left: minmax(env(safe-area-inset-left), 3maj);
+  padding-right: minmax(env(safe-area-inset-right), 3maj);
+ }
+
  @media (max-width: 600px) {
   padding: 2.5maj 2maj;
  }
@@ -143,17 +148,45 @@
  }
 
  .drawer {
-  height: 0px;
-  opacity: 0;
-  overflow: hidden;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  transition: 1s;
+  max-height: 100vh;
+  overflow: auto;
+  transition-timing-function: ease-in-out;
+
+  &:not(.active) {
+   max-height: 0;
+   overflow: hidden;
+  }
+
+  @media (max-width: 768px) {
+   justify-content: flex-start;
+  }
+
+  #inner-drawer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 3maj 0 1maj;
+  }
 
   .submenu {
-   height: 0;
-   width: 0;
-   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+   padding: 6maj 0;
+
+   .top {
+    font-size: 1.5rem;
+    padding: 2maj;
+    border-radius: 0;
+    width: 100%;
+
+    &:not(:last-child) {
+     border-bottom: 1px solid #ffffff20;
+    }
+   }
 
    @media (min-width: 781px) {
     display: none;
