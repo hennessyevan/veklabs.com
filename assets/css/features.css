@@ -6,6 +6,10 @@
   overflow-y: scroll;
   padding: 6maj;
 
+  @media (max-width: 768px) {
+   padding: 6maj 1maj;
+  }
+
   .card {
    scroll-padding-top: 7maj;
    width: 100%;
@@ -41,6 +45,11 @@
 
   @media (max-width: 1500px) {
    width: 100%;
+  }
+
+  @media (max-width: 768px) {
+   padding-left: initial;
+   padding: 2maj;
   }
  }
 
