@@ -62,4 +62,7 @@
  {{ partial "blog/more.html" . }}
 
 </div>
+
+{{ $s := resources.Get "js/blog.js" | minify }}
+<script src="{{ $s.Permalink }}"></script>
 {{ end }}
