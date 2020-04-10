@@ -5,6 +5,8 @@
 
  {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
 
+ {{ block "site/extrameta" . }}{{ end }}
+
  <title>
   {{ block "title" . }}
   {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}

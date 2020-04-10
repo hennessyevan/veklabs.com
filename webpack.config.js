@@ -8,6 +8,7 @@ module.exports = {
  entry: {
   home: "./src/ts/home/index.ts",
   blog: "./src/ts/blog/index.ts",
+  features: "./src/ts/features/index.ts",
   parallax: "./src/ts/parallax/index.ts",
   global: "./src/ts/global/index.ts",
  },

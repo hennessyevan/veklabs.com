@@ -7,7 +7,7 @@
 
  <title>
   {{ block "title" . }}
-  {{ .Site.Title -}}{{ .Site.Data.en.subtitle }}
+  {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
   {{ end }}
  </title>
 
