@@ -63,4 +63,19 @@
   margin: 0;
   margin-top: 2maj;
  }
+
+ .logos {
+  display: flex;
+  padding-top: 4maj;
+
+  .credibility-logo {
+   &:not(:first-child) {
+    margin-left: 4maj;
+   }
+   img {
+    width: 12maj;
+    height: 12maj;
+   }
+  }
+ }
 }

@@ -8,7 +8,7 @@
    </a>
    <div class="center">
     {{ $currentPage := . }}
-    {{ if (ne $currentPage.URL "/") }}
+    {{ if (ne $currentPage.RelPermalink "/") }}
     <a class="top" href="/">Home</a>
     {{ end }}
     {{ range .Site.Menus.main }}
