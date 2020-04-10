@@ -36,11 +36,6 @@ url = "https://unsplash.com/@veklabs"
 icon = "camera.svg"
 
 [[channel]]
-  name = "Twitter"
-  url = "https://twitter.com/VekLabs"
-  icon = "twitter.svg"
-
-[[channel]]
  name = "Anchor"
  url = "https://anchor.fm/vek-labs"
  icon = "anchor.svg"
