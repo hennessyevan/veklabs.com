@@ -1,31 +1,43 @@
 +++
- title = "First Posts"
- date = 2016-03-23
- image = "images/1_Demo_Reel.jpg"
- category = "Photography"
+ title = "Make Your Content Work For You"
+ date = 2020-03-23
+ image = "images/Make-Your-Content-Work-For-You-Vek-Labs.png"
+ category = "Content Creation"
  author = "Andrew Peloso"
 +++
 
-Bespoke vinyl vaporware swag jianbing neutra lo-fi forage truffaut. Seitan migas sriracha pop-up cronut coloring book. Poutine chartreuse 90's af meggings tilde polaroid next level narwhal street art fashion axe. Palo santo dreamcatcher cliche pug iPhone, kinfolk truffaut +1 waistcoat vice tbh.
+We all have to deal with it. The desire to be a significant contributor online, balanced with the stress of visioning, finding voice, uploading, rendering, aspect ratios, hashtags etc... And will people even relate to our work! With respect to video production, we have a few thoughts on how to make the process more palatable. It all begins with discerning the ratio of **quantity** vs **quality**:  
 
-Snackwave sriracha locavore normcore iPhone. Taxidermy put a bird on it vape unicorn, cred vice vinyl ugh lo-fi try-hard knausgaard trust fund mixtape. Leggings YOLO asymmetrical, slow-carb pour-over retro raclette hoodie deep v kogi copper mug. Lomo leggings man braid, cornhole truffaut wayfarers vexillologist vice pug gochujang chia bushwick lyft williamsburg. Craft beer jianbing locavore quinoa master cleanse pinterest. Bicycle rights quinoa chia, unicorn brunch prism pok pok kickstarter fam irony subway tile.
+## The Quality Matrix
+
+Every agency, brand, company or influencer has to navigate the waters of *what* and *when* to post. But let's assume you are already convicted to execute your content strategy... you are probably still thinking about how often you should post and if your frequency is feasible. Do you have enough time to create a beautiful production every week or is this a quarterly goal? Is my video on brand? Will it match the voice of my initiative or get lost as a meaningless post? Whatever you decide is the right balance between making a connection on your social media, and creating legendary products is an intimate brand decision. Regardless, you should reflect on what your threshold is, and identity KPI's that are useful. Once you have mulled over this we suggest looking at a **"batch approach"** to content creation...
 
 ![left](https://picsum.photos/400/400 "Locavore quinoa master cleanse pinterest")
 
-Farm-to-table beard messenger bag wolf hell of. Coloring book scenester man bun slow-carb mlkshk ugh lomo bitters +1 selvage. Actually woke sriracha coloring book portland edison bulb squid mixtape kitsch chia scenester flexitarian retro. Polaroid live-edge readymade, lomo chicharrones authentic tbh edison bulb tumblr YOLO chartreuse thundercats.
+## The Batch Approach
 
-Small batch glossier meditation, gentrify four loko pabst shaman chicharrones lyft pork belly forage. Banjo fixie lomo kombucha viral. Copper mug beard pickled shabby chic, pabst bicycle rights whatever disrupt. Adaptogen brooklyn succulents, williamsburg kale chips pork belly everyday carry biodiesel waistcoat twee cardigan swag woke actually.
+**Batch Approach**: Scheduling dedicated times to create certain types of content, with the intent to post regularly for your followings consumption. 
 
-Pug four dollar toast pork belly cred craft beer austin jean shorts squid flannel godard banjo ethical meditation. Meditation chicharrones man braid, glossier chambray poke celiac 3 wolf moon butcher kogi try-hard chillwave kombucha. Meh viral affogato copper mug. Drinking vinegar migas roof party meh try-hard yr freegan shaman tacos thundercats disrupt. Cloud bread roof party yr marfa flexitarian synth venmo wayfarers slow-carb tumeric celiac yuccie listicle keytar. Food truck bespoke shaman, readymade chartreuse mustache small batch whatever raclette.
+**Why We Do This**: In 2019 our team found it challenging to create consistent content, frequently enough. We would have weeks or months of great success with creating videos or posts on a schedule, but then when a big production was about to start... our social media presence disappeared. It was frustrating because we always felt like we were taking 2 steps forward just to slide another 3. After feeling enough frustration we decided to do something about it. It was October and we had a slower week with client work. We triaged our efforts and booked out a studio for the week to focus solely on content for us. This week proved successful. We reflected on our positioning in the industry and decided to film 30 videos describing our video production process. Catering to the professional community, to flex our muscles as industry professionals. 
 
-Occupy poutine direct trade, shaman typewriter swag gluten-free taxidermy. Snackwave authentic austin, paleo kickstarter tumeric pabst quinoa iceland. Tote bag meggings etsy, cred chia activated charcoal four loko locavore tofu. Brunch retro viral cornhole sriracha gastropub.
+**The Result**: After a week of dedicated content creation, we edited the footage into *bite-sized* clips to post once a week on our social media. Our team then enjoyed about 20-30 weeks of engaging, focused content that set us apart from many small production firms. We started receiving comments and messages about how much people enjoyed this content. Over time our new business revenue increased. This was the proof we needed, and frankly the only way we would be able to consistently post while staying wedded to client projects. 
 
-Heirloom venmo schlitz locavore migas YOLO. Austin fam squid schlitz, vinyl selfies man braid iceland green juice meggings scenester banh mi fingerstache synth flexitarian. Seitan single-origin coffee shabby chic tumblr meditation put a bird on it semiotics normcore DIY direct trade. Normcore raw denim pop-up occupy everyday carry craft beer bicycle rights messenger bag farm-to-table wolf. Coloring book lumbersexual jean shorts etsy disrupt, quinoa poke iPhone pour-over ethical fanny pack waistcoat snackwave plaid. Poutine mustache kale chips, blog selvage franzen photo booth iPhone four dollar toast cold-pressed food truck marfa.
+## Real-Time *vs* Batch Content Creation
 
-![right](https://picsum.photos/300/400 "Poutine mustache kale chips")
+Some will argue, "I already have a marketing manager or team whose sole purpose is content creation for our brand". Good point. Posting real-time content, live videos and capturing *moments of inspiration* is important, but it is not a stand-alone solution. 
 
-Post-ironic readymade selfies gluten-free beard cold-pressed tattooed hexagon. Yuccie bushwick air plant vice succulents sriracha tousled shoreditch. Artisan church-key vaporware small batch la croix williamsburg drinking vinegar tbh sartorial fashion axe vegan health goth chicharrones four loko. Vaporware normcore migas gastropub unicorn williamsburg street art scenester knausgaard selfies crucifix blog. Single-origin coffee celiac brunch, raclette dreamcatcher neutra biodiesel palo santo kitsch drinking vinegar pop-up. Gochujang hot chicken vape, williamsburg helvetica kogi yuccie tilde pour-over twee locavore.
+By creating consistent segments, series or types of content that are produced using a batched approach you have more flexibility to communicate. Foundational content becomes a consistent post that your followers become accustomed to seeing and hopefully look forward to. Combine foundational content with *off-the-cuff* posts, and you have a model that will really start paying dividends. 
 
-Tbh pok pok raclette keffiyeh leggings. Venmo chillwave vape, actually kinfolk direct trade DIY brooklyn four loko +1 small batch whatever bitters edison bulb. Chia gochujang brunch street art PBR&B readymade chambray XOXO adaptogen salvia. Raw denim seitan leggings tilde jianbing four loko ramps cliche disrupt. Marfa disrupt kinfolk fingerstache polaroid. Neutra VHS ugh kombucha prism. YOLO fam occupy photo booth la croix.
+This strategy has been useful and we will continue to create using this model for Vek Labs. The principle echoes the all too *cliché* "work smart, not hard" statement. But we find it to be true.   
 
-Cloud bread glossier chia, meggings vexillologist man bun man braid. Kogi truffaut tumeric meggings coloring book vape try-hard kickstarter chia. Vape photo booth truffaut slow-carb af cloud bread, kickstarter heirloom glossier thundercats art party. Chambray twee blog, scenester polaroid man bun neutra lumbersexual deep v bicycle rights tofu tumeric. Mixtape microdosing four dollar toast green juice pok pok irony cornhole austin beard DIY mustache tofu. Twee banh mi tacos literally freegan poke.
+## Social Media Management Tools
+
+Combining batch content creation with a powerful social media management tool allows you to schedule content across all platforms. Vek Labs' uses [Buffer](https://buffer.com/). Having used other social media management web apps, we find Buffer to be the best, simplest platform based on price point. But here are some more great alternatives for you to consider: 
+
+* [Sendible](https://www.sendible.com/): Streamline how you manage social media for brands - from planning and collaboration to engagement and analytics.
+* [AlgoraPulse](https://www.agorapulse.com/): Schedule your content, get reports, and engage followers with one simple tool.
+* [Hootsuite](https://hootsuite.com/): Connect with customers, get results on every social platform. Hootsuite has the tools you need to succeed on social media.
+
+Regardless which tool you use, the importance should be that you are creating content series that are being posted well into the future. **Free up your time!** 
+
+Hope this was useful. From the **Vek Team** to yours... ROCK ON... Stay hungry. 
