@@ -1,6 +1,6 @@
 +++
 title = "Production [On Locaton & Studio]"
-image = "images/video-production-vek.png"
+image = "images/Video-Production-Vek.png"
 order = 4
 speed = -1
 +++

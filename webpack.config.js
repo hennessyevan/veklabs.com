@@ -11,7 +11,6 @@ module.exports = {
   features: "./src/ts/features/index.ts",
   parallax: "./src/ts/parallax/index.ts",
   global: "./src/ts/global/index.ts",
-  404: "./src/ts/404/index.ts",
  },
  target: "web",
  devtool: "cheap-eval-source-map",
