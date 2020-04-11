@@ -1,5 +1,5 @@
 +++
-title = "Pre-Production & Production Management"
+title = "Pre-Production & Management"
 image = "images/Pre-Production-Video.png"
 order = 2
 speed = 2
