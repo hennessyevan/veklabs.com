@@ -5,11 +5,13 @@
   {{ $speed := .Params.speed }}
   {{ $order := .Params.order | default 2 }}
 
-  {{ with .Params.image }}
   <div class="image rellax" data-rellax-speed="{{ $speed | default 1 }}">
-   <img src="{{ . }}">
+   {{ if hasPrefix .Params.image "http" }}
+   <img src="{{ .Params.image }}" alt="">
+   {{ else }}
+   {{ partial "site/img" . }}
+   {{ end }}
   </div>
-  {{ end }}
 
 
   <div class="text" style="z-index: {{ .Params.order | default 2 }}">
