@@ -4,7 +4,7 @@
   <div class="large">
 
    <a class="anchor left" href="{{ .Site.BaseURL }}">
-    <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
+    <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Vek Labs" />
    </a>
    <div class="center">
     {{ $currentPage := . }}
@@ -24,11 +24,13 @@
   <div class="small">
 
    <a class="anchor left" href="{{ .Site.BaseURL }}">
-    <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Veklabs" />
+    <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Vek Labs" />
    </a>
 
    <div class="center">
-    {{ cond (eq .Title "Home") "" .Title }}
+    {{ if (and (not $currentPage.IsHome) (eq .Params.type "top"))}}
+    {{ $currentPage.Name }}
+    {{end}}
    </div>
 
    <div class="right">

@@ -1,3 +1,4 @@
 +++
 title = "Features"
+type = "top"
 +++

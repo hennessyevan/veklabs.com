@@ -1,28 +1,35 @@
 {{ $imageRel := .Params.image | default "images/tempHero.jpg" }}
+{{ $image := "" }}
+{{ if resources.GetMatch $imageRel }}
 {{ $image := ((resources.Get $imageRel).Resize "600x") }}
+{{ end }}
+
 {{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
 {{ $darkFavicon := (resources.Get "images/logodark.png").RelPermalink }}
 {{ $lightFavicon := (resources.Get "images/logo.png").RelPermalink }}
 
-{{ $title := .Title | default "Veklabs" }}
-{{ $description := .Description | default "We are a team of videographers and editors working with people and on productions that inspire us." }}
+{{ $title := .Title | default "Vek Labs" }}
 
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta name="description" content="{{ $description }}" />
 <meta property="og:title" content="{{ $title }}" />
+<meta property="og:locale" content="en_CA">
+<meta property="og:site_name" content="Vek Labs">
+
+
+{{ $description := .Summary | default "We are a team of videographers and editors working with people and on productions that inspire us." }}
+<meta name="description" content="{{ $description }}" />
 <meta property="og:description" content="{{ $description }}" />
+<meta name="twitter:description" content="{{ $description }}" />
 
 <meta property="og:url" content="{{ .Page.Permalink }}" />
 
 <meta name="twitter:card" content="player" />
 <meta name="twitter:site" content="@veklabs" />
 <meta name="twitter:title" content="{{ $title }}" />
-<meta name="twitter:description" content="{{ $description }}" />
 
-
-{{ if isset .Params "image" }}
+{{ if (and (isset .Params "image") (ne $image "")) }}
 <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />

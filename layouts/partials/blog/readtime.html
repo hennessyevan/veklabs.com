@@ -1,4 +1,4 @@
-{{ $estimatedReadTime := math.Round (div .WordCount 200.0) }}
+{{ $estimatedReadTime := .ReadingTime }}
 
 {{ if (gt $estimatedReadTime 0)}}
 <span class="time-to-read">

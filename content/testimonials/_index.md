@@ -1,3 +1,4 @@
 +++
  title = "Testimonials"
+ type = "top"
 +++

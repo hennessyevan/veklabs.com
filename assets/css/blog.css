@@ -186,6 +186,16 @@
  article {
   .title-container {
    margin: 6maj 0;
+
+   @media (max-width: 768px) {
+    margin: 3maj 0;
+   }
+  }
+
+  .title {
+   @media (max-width: 768px) {
+    font-size: 2rem;
+   }
   }
 
   .content {
@@ -304,7 +314,7 @@
    display: flex;
    align-items: center;
    padding: 6maj;
-   margin-top: 6maj;
+   margin: 6maj 0;
    background: #00000050;
    border-radius: 2maj;
    transition: var(--default);
@@ -312,6 +322,8 @@
 
    @media (max-width: 768px) {
     flex-direction: column;
+    padding: 3maj;
+    text-align: center;
    }
 
    &:hover {
@@ -322,6 +334,10 @@
     padding-left: 3maj;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 768px) {
+     padding-left: 0;
+    }
 
     .authorName {
      font-size: 1.5rem;
