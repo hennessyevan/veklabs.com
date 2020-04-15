@@ -66,22 +66,6 @@ h1 {
  font-weight: 600;
 }
 
-::-webkit-scrollbar {
- width: 1.25maj;
- background: transparent;
-}
-
-::-webkit-scrollbar-thumb {
- background: var(--black-overlay);
- border: 1px solid #ffffff20;
- -webkit-border-radius: 1maj;
- -webkit-box-shadow: var(--med-shadow);
-}
-
-::-webkit-scrollbar-corner {
- background: transparent;
-}
-
 .accent-color {
  color: var(--accentColor);
 }

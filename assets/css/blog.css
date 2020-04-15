@@ -5,6 +5,7 @@
   padding: 10maj 0;
   min-height: calc(100vh - 135px);
  }
+
  .post-list {
   display: grid;
   grid-template-columns: repeat(10, 1fr);
@@ -13,13 +14,14 @@
 
   @media (max-width: 900px) {
    grid-gap: 6maj;
-   grid-template-columns: repeat(auto-fit, 1fr);
+   grid-template-columns: 1fr;
   }
 
   .listing {
    grid-column: span 5;
    border-radius: 1.5maj;
    transition: var(--default);
+   width: 100%;
 
    @media (max-width: 900px) {
     grid-column: 1/-1;
