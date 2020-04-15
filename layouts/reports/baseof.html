@@ -4,6 +4,7 @@
 <head>
 
  {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+ {{ block "single/meta" . }}{{ end }}
 
  <title>{{ block "title" . }}
   {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
