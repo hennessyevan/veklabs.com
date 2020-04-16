@@ -70,10 +70,15 @@ videos.forEach((video) => {
  `
 
   overlayEl.innerHTML = video
+
+  document
+   .querySelector("#player")
+   .addEventListener("ended", cleanUp, { once: true })
  })
 })
 
 overlayEl.addEventListener("click", (e) => {
+ if (e.target !== overlayEl) return
  cleanUp()
 })
 
