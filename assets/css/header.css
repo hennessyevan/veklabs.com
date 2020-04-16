@@ -180,12 +180,8 @@
    .top {
     font-size: 1.5rem;
     padding: 2maj;
-    border-radius: 0;
+    border-radius: 1.5maj;
     width: 100%;
-
-    &:not(:last-child) {
-     border-bottom: 1px solid #ffffff20;
-    }
    }
 
    @media (min-width: 781px) {
