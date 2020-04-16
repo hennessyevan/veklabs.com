@@ -4,6 +4,10 @@
   margin: 0 auto;
   padding: 10maj 0;
   min-height: calc(100vh - 135px);
+
+  @media (max-width: 900px) {
+   padding: 2maj 0 6maj;
+  }
  }
 
  .post-list {

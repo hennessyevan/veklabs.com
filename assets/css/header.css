@@ -157,18 +157,12 @@
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  transition: 1s;
-  max-height: 100vh;
-  overflow: auto;
-  transition-timing-function: ease-in-out;
-
-  &:not(.active) {
-   max-height: 0;
-   overflow: hidden;
-  }
+  overflow: hidden;
+  height: 0;
 
   @media (max-width: 768px) {
    justify-content: flex-start;
+   align-items: flex-start;
   }
 
   #inner-drawer {

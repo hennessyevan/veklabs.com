@@ -55,7 +55,6 @@
     {{ range .Site.Menus.main }}
     <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
     {{ end }}
-    <a class="top" href="#contact">Contact</a>
    </div>
 
    <div class="contact">

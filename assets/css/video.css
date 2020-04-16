@@ -146,8 +146,6 @@
 .hero-video {
  max-height: 80vh;
  overflow: hidden;
- height: 0;
- padding-bottom: calc(700 / 1920 * 100%);
  margin-bottom: 7maj;
  border-radius: 1.5maj;
  box-shadow: var(--big-shadow);
@@ -160,6 +158,11 @@
 
  @media (max-width: 600px) {
   margin-bottom: 4maj;
+ }
+
+ .preview-container {
+  height: 0;
+  padding-bottom: calc(700 / 1920 * 100%);
  }
 
  .preview {
