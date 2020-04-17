@@ -169,6 +169,7 @@
   height: 100%;
   object-fit: cover;
   object-position: center;
+  position: absolute;
   border-radius: 1.5maj;
   border: 0.5px solid rgba(255, 255, 255, 0.1);
  }
