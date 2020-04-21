@@ -198,3 +198,24 @@
   }
  }
 }
+
+#member-info {
+ padding: 3maj;
+
+ .avatar {
+  max-width: 15maj;
+  width: 100%;
+  flex-grow: 15;
+
+  @media (max-width: 768px) {
+   margin-bottom: 3maj;
+  }
+
+  img {
+   object-fit: cover;
+   width: 100%;
+   border-radius: 50%;
+   box-shadow: var(--med-shadow);
+  }
+ }
+}

@@ -1,12 +1,64 @@
 baseURL = "/"
 languageCode = "en-ca"
-title = "Veklabs"
+title = "Vek Labs"
 
 enableRobotsTXT = true
 disableAliases = true
+summaryLength = 25
+Paginate = 5
 
 staticDir = ["static"]
 
+[menu]
+
+
+[[menu.main]]
+ identifier = "features"
+ name = "Features"
+ url = "/features/"
+ weight = 1
+
+ [[menu.main]]
+ identifier = "services"
+ name = "Services"
+ url = "/services/"
+ weight = 2
+
+ # [[menu.main]]
+ # identifier = "products"
+ # name = "Products"
+ # url = "/products/"
+ # weight = 3
+ 
+ [[menu.main]]
+ identifier = "reports"
+ name = "Reports"
+ url = "/reports/"
+ weight = 4
+
+ [[menu.main]]
+ identifier = "testimonials"
+ name = "Testimonials"
+ url = "/testimonials/"
+ weight = 5
+
+
+[taxonomies]
+ category = "category"
+ type = "type"
+
+[related]
+threshold = 50.0
+includeNewer = true
+toLower = true
+
+[[related.indices]]
+ name = "category"
+ weight = 100.0
+
+[[related.indices]]
+ name = "author"
+ weight = 50.0
 
 [params]
 disallow_search_engines = false # set robots.txt to disallow everything

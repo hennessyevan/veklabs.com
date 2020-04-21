@@ -1,4 +1,5 @@
 <footer class="site-footer" role="contentinfo">
+
  <p><img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
   {{ .Site.Data.en.FOOTER_PRETEXT}}
  </p>
@@ -9,7 +10,14 @@
  <div class="social-media">
   {{ range .Site.Data.social.channel }}
   <a href="{{ .url }}" target="_blank" class="icon">
+
+   {{ if hasPrefix .icon "http" }}
+   <img src="{{ .icon }}" alt="{{ .name }}">
+   {{ else }}
    <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
+   {{ end }}
+
+
   </a>
   {{ end }}
  </div>

@@ -1,5 +1,7 @@
 EMAIL="info@veklabs.com"
 PHONE="403-648-3713"
+subtitle = " | Top Calgary Video Production Company"
+
 
 HERO_EXCERPT="We are a team of videographers and editors working with people and on productions that inspire us. | Welcome to the lab."
 
@@ -8,6 +10,7 @@ TEAM_TITLE="Team"
 PROJECTS_FILMED = 521
 VIDEOS_RENDERED = 1162
 FOOTAGE_PROCESSED_TB = 36
+TOTAL_VIEWS = 12
 
 CLIENT_TITLE="Clients"
 CLIENT_SUB_TITLE="Some of the clients we have had the privilege of creating with."

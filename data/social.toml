@@ -1,6 +1,11 @@
 # Add a new channel by adding a new [[channel]] block with a name, url and icon from static/assets
 
 [[channel]]
+  name = "Upcity"
+  url = "https://upcity.com/profiles/vek-labs"
+  icon = "https://app.upcity.com/images/badges/tla.png"
+
+[[channel]]
   name = "Facebook"
   url = "https://www.facebook.com/veklabs/"
   icon = "facebook.svg"
@@ -29,11 +34,6 @@ icon = "linkedin.svg"
 name = "Unsplash"
 url = "https://unsplash.com/@veklabs"
 icon = "camera.svg"
-
-[[channel]]
-  name = "Twitter"
-  url = "https://twitter.com/VekLabs"
-  icon = "twitter.svg"
 
 [[channel]]
  name = "Anchor"

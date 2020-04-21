@@ -8,15 +8,64 @@
  top: 0;
  width: 100%;
 
+ @supports (padding: minmax(0px)) {
+  padding-left: minmax(env(safe-area-inset-left), 3maj);
+  padding-right: minmax(env(safe-area-inset-right), 3maj);
+ }
+
  @media (max-width: 600px) {
   padding: 2.5maj 2maj;
  }
 
  .wrapper {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  > div {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   .center {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: auto;
+   }
+
+   // Small screen
+   @media (max-width: 780px) {
+    &.large {
+     display: none;
+    }
+
+    &.small {
+     justify-content: flex-start;
+
+     .center {
+      padding-left: 1maj;
+     }
+
+     .right {
+      margin-left: auto;
+     }
+    }
+   }
+
+   // Large screen
+   @media (min-width: 781px) {
+    &.small {
+     display: none;
+    }
+   }
+  }
+ }
+
+ .menu {
+  .hamburger {
+   fill: var(--text);
+
+   svg {
+    width: 1.5rem;
+   }
+  }
  }
 
  .header-logo {
@@ -36,7 +85,7 @@
   padding: 1maj 2maj;
   border-radius: 2maj;
   transition: 225ms;
-  color: white;
+  color: var(--text);
 
   &:hover {
    text-decoration: none;
@@ -79,18 +128,24 @@
   font-weight: bold;
  }
 
- a.top,
- a.active {
+ a.top {
   color: var(--white);
   font-weight: 600;
-  transition: 225ms;
+  transition: var(--slow);
+  padding: 1maj 2maj;
+  border-radius: 1maj;
+
+  &.active {
+   color: var(--background);
+   background: var(--text);
+  }
 
   @media (max-width: 600px) {
    font-weight: 500;
   }
 
-  &:hover {
-   text-decoration: underline;
+  &:hover:not(.active) {
+   background: #ffffff15;
   }
 
   &:not(:last-child) {
@@ -98,15 +153,43 @@
   }
  }
 
- #contact-drawer {
-  height: 0px;
-  opacity: 0;
-  overflow: hidden;
+ .drawer {
   width: 100%;
   display: flex;
   justify-content: flex-end;
+  overflow: hidden;
+  height: 0;
+
+  @media (max-width: 768px) {
+   justify-content: flex-start;
+   align-items: flex-start;
+  }
 
   #inner-drawer {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   padding: 3maj 0 1maj;
+  }
+
+  .submenu {
+   display: flex;
+   flex-direction: column;
+   padding: 6maj 0;
+
+   .top {
+    font-size: 1.5rem;
+    padding: 2maj;
+    border-radius: 1.5maj;
+    width: 100%;
+   }
+
+   @media (min-width: 781px) {
+    display: none;
+   }
+  }
+
+  .contact {
    display: grid;
    grid-auto-flow: column;
    grid-gap: 2maj;

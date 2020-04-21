@@ -1,0 +1,8 @@
++++
+title = "Corporate Headshots & Action Photography"
+order = 5
+speed = 3
+image= "https://images.unsplash.com/photo-1492621039513-9dd8ea1b6c08?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&h=900&q=80"
++++
+
+Bespoke vinyl vaporware swag jianbing neutra lo-fi forage truffaut. Seitan migas sriracha pop-up cronut coloring book. Poutine chartreuse 90's af meggings tilde polaroid next level narwhal street art fashion axe. Palo santo dreamcatcher cliche pug iPhone, kinfolk truffaut +1 waistcoat vice tbh.

@@ -20,12 +20,12 @@
   display: flex;
   margin: 0 auto;
   justify-content: center;
-  max-width: 100maj;
+  max-width: 120maj;
   flex-wrap: wrap;
 
   .logo,
   .logo img {
-   width: 10maj;
+   width: 12maj;
 
    @media (max-width: 768px) {
     width: 7maj;

@@ -1,0 +1,63 @@
+{{ $author := .Params.author }}
+{{ with .Site.GetPage "/team"}}
+{{ with .GetPage $author }}
+<div class="author">
+
+ {{if isset .Params "image"}}
+ <div class="avatar">
+  {{ partial "site/img" . }}
+ </div>
+ {{ end }}
+
+ <div class="name">
+  <span class="authorName">
+   {{ .Params.name }}
+  </span>
+
+  {{with .Params.competencies}}
+  <span class="competencies">
+   {{delimit . ", "}}
+  </span>
+  {{end}}
+
+ </div>
+
+ <div class="overlay">
+  <div class="inner">
+   <div id="member-info">
+
+    <div class="header">
+
+     {{if isset .Params "image"}}
+     <div class="avatar">
+      {{ partial "site/img" . }}
+     </div>
+     {{ end }}
+
+     <div class="name">
+      <h1>{{.Params.name}}</h1>
+
+      <h4>{{.Params.title}}</h4>
+
+      {{with .Params.competencies}}
+      <span class="competencies">
+       {{delimit . ", "}}
+      </span>
+      {{end}}
+     </div>
+
+    </div>
+
+
+    <p class="biography">{{ .Content }}</p>
+   </div>
+  </div>
+ </div>
+</div>
+
+{{ else }}
+
+{{ $author }}
+
+{{ end }}
+{{ end }}

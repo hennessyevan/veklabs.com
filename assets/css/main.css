@@ -23,6 +23,7 @@
  --solid-green: #30d158;
  --indigo: #5e5ce665;
  --orange: #ff9f0a65;
+ --solid-orange: #ff9f0a;
  --pink: #ff375f65;
  --purple: #bf5af265;
  --red: #ff453a65;
@@ -32,6 +33,10 @@
  --yellow: #ffd60a65;
 
  --accentColor: var(--solid-blue);
+
+ --fast: 125ms;
+ --default: 225ms;
+ --slow: 350ms;
 
  --med-shadow: 0 18px 45px rgba(0, 0, 0, 0.24);
  --big-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
@@ -91,12 +96,15 @@ h1 {
  height: 100vh;
  overflow: hidden;
  background: var(--gray-overlay);
+ outline: none;
 
  .video-wrapper {
   padding: 3maj 0;
+  outline: none;
  }
 
  #player {
+  outline: none;
   z-index: 80;
   width: 100%;
   max-width: 1600px;
@@ -115,13 +123,26 @@ h1 {
   cursor: pointer;
   z-index: 81;
 
-  img {
+  svg {
    margin-left: 2maj;
    width: 3maj;
   }
  }
 }
 
+#testimonials {
+ .container {
+  max-width: 980px;
+  padding: 0 6maj;
+  margin: 0 auto;
+ }
+
+ .title {
+  padding: 6maj 0;
+ }
+}
+
+@import "partials";
 @import "header";
 @import "footer";
 @import "video";
@@ -129,3 +150,6 @@ h1 {
 @import "clients";
 @import "stats";
 @import "guarantee";
+@import "blog";
+@import "products-services";
+@import "features";

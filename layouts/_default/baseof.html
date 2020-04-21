@@ -5,9 +5,13 @@
 
  {{ block "site/meta" . }}{{ partial "site/meta.html" . }}{{ end }}
 
- <title>{{ block "title" . }}
+ {{ block "site/extrameta" . }}{{ end }}
+
+ <title>
+  {{ block "title" . }}
   {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
-  {{ end }}</title>
+  {{ end }}
+ </title>
 
  {{ range .AlternativeOutputFormats }}
  <link rel="{{ .Rel }}" type="{{ .MediaType.Type }}" href="{{ .Permalink | safeURL }}">
@@ -28,8 +32,6 @@
  </main>
 
  {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
-
-
 
 </body>
 {{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}

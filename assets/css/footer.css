@@ -6,6 +6,8 @@ footer {
  font-size: 1.8maj;
  display: flex;
  justify-content: space-between;
+ background: var(--background);
+ padding-bottom: env(safe-area-inset-bottom);
 
  @media (max-width: 600px) {
   text-align: center;
@@ -33,16 +35,19 @@ footer {
  }
 
  .social-media {
-  display: grid;
-  grid-auto-flow: column;
-  grid-gap: 2maj;
+  display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -1maj;
 
   @media (max-width: 600px) {
    margin-top: 2maj;
   }
 
   .icon {
+   margin: 0 1maj;
+
    img {
     height: 2maj;
 

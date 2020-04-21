@@ -1,41 +1,59 @@
-{{ $image := ((resources.Get "images/tempHero.jpg").Resize "600x").RelPermalink }}
+{{ $imageRel := .Params.image | default "images/tempHero.jpg" }}
+{{ $image := "" }}
+{{ if resources.GetMatch $imageRel }}
+{{ $image := ((resources.Get $imageRel).Resize "600x") }}
+{{ end }}
+
 {{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
 {{ $darkFavicon := (resources.Get "images/logodark.png").RelPermalink }}
 {{ $lightFavicon := (resources.Get "images/logo.png").RelPermalink }}
 
+{{ $title := .Title | default "Vek Labs" }}
+
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<meta property="og:title" content="Veklabs" />
-<meta property="og:type" content="video">
-<meta property="og:description"
- content="We are a team of videographers and editors working with people and on productions that inspire us." />
-<meta property="og:image" content="{{ $image }}" />
-<meta property="og:url" content="https://veklabs.com" />
-<meta property="og:video"
- content="https://player.vimeo.com/external/386087032.hd.mp4?s=31f3678079d9a32b9cce6d70fe44b2ef7988e292&profile_id=175" />
-<meta property="og:video:url"
- content="https://player.vimeo.com/external/386087032.hd.mp4?s=31f3678079d9a32b9cce6d70fe44b2ef7988e292&profile_id=175" />
-<meta property="og:video:secure_url"
- content="https://player.vimeo.com/external/386087032.hd.mp4?s=31f3678079d9a32b9cce6d70fe44b2ef7988e292&profile_id=175" />
-<meta property="og:video:width" content="1854" />
-<meta property="og:video:height" content="608" />
-<meta property="og:video:type" content="video/mp4" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+<meta property="og:title" content="{{ $title }}" />
+<meta property="og:locale" content="en_CA">
+<meta property="og:site_name" content="Vek Labs">
+
+
+{{ $description := .Summary | default "We are a team of videographers and editors working with people and on productions that inspire us." }}
+<meta name="description" content="{{ $description }}" />
+<meta property="og:description" content="{{ $description }}" />
+<meta name="twitter:description" content="{{ $description }}" />
+
+<meta property="og:url" content="{{ .Page.Permalink }}" />
 
 <meta name="twitter:card" content="player" />
 <meta name="twitter:site" content="@veklabs" />
-<meta name="twitter:title" content="Veklabs" />
-<meta name="twitter:description"
- content="We are a team of videographers and editors working with people and on productions that inspire us." />
-<meta name="twitter:image" content="{{ $image }}" />
+<meta name="twitter:title" content="{{ $title }}" />
+
+{{ if (and (isset .Params "image") (ne $image "")) }}
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
+<meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
+<meta property="og:image:width" content="{{ $image.Width }}">
+<meta property="og:image:height" content="{{ $image.Height }}">
+<meta property="og:image:type" content="{{ $image.MediaType }}">
+<meta property="og:type" content="article">
+{{ else }}
+<meta property="og:type" content="website">
+<meta property="og:video"
+ content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+<meta property="og:video:url"
+ content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+<meta property="og:video:secure_url"
+ content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+<meta property="og:video:width" content="1920" />
+<meta property="og:video:height" content="700" />
+<meta property="og:video:type" content="video/mp4" />
 <meta name="twitter:player"
- content="https://player.vimeo.com/external/386087032.hd.mp4?s=31f3678079d9a32b9cce6d70fe44b2ef7988e292&profile_id=175" />
-<meta property="twitter:player:width" content="1854" />
-<meta property="twitter:player:height" content="608" />
+ content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+<meta property="twitter:player:width" content="1920" />
+<meta property="twitter:player:height" content="700" />
+{{ end }}
 
 <link rel="shortcut icon" href="{{ $faviconSVG }}" />
 <link rel="shortcut icon" href="{{ $darkFavicon }}" id="dark-scheme-icon" />
 <link rel="shortcut icon" href="{{ $lightFavicon }}" id="light-scheme-icon" />
-
-{{ with.Description }}
-<meta name="description" content="{{ . }}" />{{ end }}
