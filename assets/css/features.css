@@ -23,6 +23,9 @@
    align-items: center;
 
    @media (max-width: 1500px) {
+    scroll-snap-align: start;
+    scroll-padding-top: 17maj;
+    padding: 12maj 0;
     flex-direction: column;
    }
   }
