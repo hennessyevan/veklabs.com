@@ -74,6 +74,11 @@ videos.forEach((video) => {
   document
    .querySelector("#player")
    .addEventListener("ended", cleanUp, { once: true })
+
+  // Configure close button
+  document.querySelector(".close").addEventListener("click", (e) => {
+   cleanUp()
+  })
  })
 })
 
@@ -97,9 +102,4 @@ document.addEventListener("keyup", (e) => {
  if (e.keyCode === 27) {
   cleanUp()
  }
-})
-
-// Configure close button
-document.querySelector(".close").addEventListener("click", (e) => {
- cleanUp()
 })
