@@ -3,7 +3,7 @@
  {{ partial "site/styles.html" . }}
 
  <title>
-  {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}
+  {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ .Site.Data.en.subtitle }}
  </title>
 
  <style>

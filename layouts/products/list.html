@@ -1,6 +1,8 @@
 {{ define "main" }}
 
-<section id="products">
+<script>window.location.pathname = '/'</script>
+
+{{/*  <section id="products">
 
  <div class="container">
 
@@ -8,20 +10,20 @@
 
    <h1 class="main title">{{ .Title }}</h1>
 
-   {{ range(.Pages.ByParam "order") }}
+{{ range(.Pages.ByParam "order") }}
 
-   {{ partial "shared/summary" . }}
+{{ partial "shared/summary" . }}
 
-   {{ end }}
+{{ end }}
 
-  </div>
+</div>
 
- </div>
+</div>
 
 </section>
 
 {{ $s := resources.Get "js/parallax.js" | minify }}
 
-<script src="{{ $s.Permalink }}"></script>
+<script src="{{ $s.Permalink }}"></script> */}}
 
 {{ end }}
