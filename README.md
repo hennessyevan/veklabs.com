@@ -1,19 +1,5 @@
 # Veklabs
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b8fd8ebd-5695-4874-a618-046c1b284833/deploy-status)](https://app.netlify.com/sites/veklabs/deploys)
 
-## Adding Content
-#### Videos
-
-Video data is stored in [content/videos](content/videos).
-
-Each video is made with an md file. You can either copy/paste to create new videos or use the terminal command `hugo new videos/{video name}.md`
-
-The structure is written in [TOML](https://learnxinyminutes.com/docs/toml/) but can also be in JSON or YAML and is as follows:
-```md
-+++ <- Indicates beginning/end of data
- title = 'Demo Reel'
- main = true <- Whether this is the hero video (set on only one video)
- url = "vimeo.com/x" <- vimeo url
- image = "1_Demo_Reel.jpg" <- thumbnail file name
-+++
-```
-_Place the thumbnail image in the [content](content) directory._
+## How to add content
+Documentation for adding content can be found in the [wiki](/wiki)
