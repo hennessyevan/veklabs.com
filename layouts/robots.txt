@@ -1,9 +1,2 @@
 User-agent: *
-{{- if .Site.Params.disallow_search_engines }}
-{{range .Pages}}
-Disallow: {{.RelPermalink}}
-{{end}}
-Disallow: /
-{{ else }}
-Disallow: {{ if ne (getenv "HUGO_ENV") "production" }}/{{ end }}
-{{ end }}
+Disallow:
