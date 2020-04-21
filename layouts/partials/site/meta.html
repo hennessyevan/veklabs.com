@@ -8,12 +8,12 @@
 {{ $darkFavicon := (resources.Get "images/logodark.png").RelPermalink }}
 {{ $lightFavicon := (resources.Get "images/logo.png").RelPermalink }}
 
-{{ $title := .Title | default "Vek Labs" }}
+{{ $title := printf "%s | %s%s" .Title .Site.Title .Site.Data.en.subtitle | default (printf "%s%s" .Site.Title .Site.Data.en.subtitle ) }}
 
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta property="og:title" content="{{ $title }}{{ .Site.Data.en.subtitle }}" />
+<meta property="og:title" content="{{ $title }}{{ .Site.Params.Title }}" />
 <meta property="og:locale" content="en_CA">
 <meta property="og:site_name" content="Vek Labs">
 
@@ -30,6 +30,7 @@
 <meta name="twitter:title" content="{{ $title }}" />
 
 {{ if ($image) }}
+<meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
