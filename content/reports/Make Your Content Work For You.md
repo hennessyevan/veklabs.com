@@ -13,7 +13,7 @@ We all have to deal with it. The desire to be a significant contributor online, 
 
 Every agency, brand, company or influencer has to navigate the waters of _what_ and _when_ to post. But let's assume you are already convicted to execute your content strategy... you are probably still thinking about how often you should post and if your frequency is feasible. Do you have enough time to create a beautiful production every week or is this a quarterly goal? Is my video on brand? Will it match the voice of my initiative or get lost as a meaningless post? Whatever you decide is the right balance between making a connection on your social media, and creating legendary products is an intimate brand decision. Regardless, you should reflect on what your threshold is, and identity KPI's that are useful. Once you have mulled over this we suggest looking at a **"batch approach"** to content creation...
 
-![left](https://picsum.photos/400/400 "Locavore quinoa master cleanse pinterest")
+![left](https://picsum.photos/id/1048/400/400)
 
 ## The Batch Approach
 
