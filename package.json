@@ -4,7 +4,7 @@
  "private": true,
  "scripts": {
   "start": "run-p serve-hugo watch-webpack",
-  "build": "hugo --gc --minify && webpack --mode=production",
+  "build": "webpack --mode=production && hugo --gc --minify",
   "watch-webpack": "webpack --mode=development --watch",
   "serve-hugo": "wait-on assets/css/main.css && hugo server -b http://$(hostname)/ --bind 0.0.0.0"
  },

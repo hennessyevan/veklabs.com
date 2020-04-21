@@ -1,7 +1,7 @@
 {{ $imageRel := .Params.image | default "images/tempHero.jpg" }}
 {{ $image := "" }}
 {{ if resources.GetMatch $imageRel }}
-{{ $image := ((resources.Get $imageRel).Resize "600x") }}
+{{ $image = ((resources.Get $imageRel).Resize "600x") }}
 {{ end }}
 
 {{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
@@ -13,7 +13,7 @@
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta property="og:title" content="{{ $title }}" />
+<meta property="og:title" content="{{ $title }}{{ .Site.Data.en.subtitle }}" />
 <meta property="og:locale" content="en_CA">
 <meta property="og:site_name" content="Vek Labs">
 
@@ -29,7 +29,7 @@
 <meta name="twitter:site" content="@veklabs" />
 <meta name="twitter:title" content="{{ $title }}" />
 
-{{ if (and (isset .Params "image") (ne $image "")) }}
+{{ if ($image) }}
 <meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
