@@ -37,7 +37,7 @@
 <meta property="og:image:height" content="{{ $image.Height }}">
 <meta property="og:image:type" content="{{ $image.MediaType }}">
 <meta property="og:type" content="article">
-{{ else }}
+{{ end }}
 <meta property="og:type" content="website">
 <meta property="og:video"
  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
@@ -52,7 +52,6 @@
  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
 <meta property="twitter:player:width" content="1920" />
 <meta property="twitter:player:height" content="700" />
-{{ end }}
 
 <link rel="shortcut icon" href="{{ $faviconSVG }}" />
 <link rel="shortcut icon" href="{{ $darkFavicon }}" id="dark-scheme-icon" />
