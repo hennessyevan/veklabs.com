@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Vek Labs">
 
 
-{{ $description := .Summary | default "We are a team of videographers and editors working with people and on productions that inspire us." }}
+{{ $description := .Summary | default .Site.Data.en.description }}
 <meta name="description" content="{{ $description }}" />
 <meta property="og:description" content="{{ $description }}" />
 <meta name="twitter:description" content="{{ $description }}" />
