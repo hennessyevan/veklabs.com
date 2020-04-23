@@ -1,3 +1,4 @@
+import { ResizeObserver } from "@juggle/resize-observer"
 import { spring, styler } from "popmotion"
 
 const links = document.querySelectorAll(".menu-link")
