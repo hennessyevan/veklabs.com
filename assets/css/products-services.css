@@ -32,6 +32,7 @@
 
    @media (max-width: 600px) {
     max-width: 20maj;
+    display: none;
    }
 
    img {
