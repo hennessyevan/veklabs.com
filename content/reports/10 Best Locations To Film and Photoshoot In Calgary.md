@@ -13,19 +13,19 @@ Location scouting is an important part of creating engaging content that will re
 
 ## Outdoor Locations
 
-### [East Village Square](https://goo.gl/maps/XgJuT2fnf9hKTYe48):
+### [East Village Square](https://goo.gl/maps/XgJuT2fnf9hKTYe48)
 
 East Village is a happening area where hip eateries, indie music venues, galleries and clothing stores fill converted warehouses. Landmarks include the New Central Library and Studio Bell, home of the National Music Centre, with displays of vintage instruments and memorabilia. The RiverWalk path follows the Bow River, and revitalized St. Patrick’s Island has wooded trails, wetlands and a fishing cove.
 
-### [Fish Creek Park](https://goo.gl/maps/R6yhR4GRL6awRxMt9):
+### [Fish Creek Park](https://goo.gl/maps/R6yhR4GRL6awRxMt9)
 
 Fish Creek Provincial Park in Calgary, boasts beautiful paths and places to explore. Plenty of lush scenery and panoramic views for your next project. The meadows and creek pass are excellent to explore.
 
-### [Scotsman's Hill](https://goo.gl/maps/GbhBsuxFvL8c5nAn9):
+### [Scotsman's Hill](https://goo.gl/maps/GbhBsuxFvL8c5nAn9)
 
 This lookout point offers striking vistas of skyscrapers & landmarks in downtown Calgary. The iconic ‘Hockey Night In Canada’, Calgary Flames opening game video shots were taken here. 
 
-### [Mt. Pleasant View Point](https://goo.gl/maps/GbhBsuxFvL8c5nAn9):
+### [Mt. Pleasant View Point](https://goo.gl/maps/GbhBsuxFvL8c5nAn9)
 
 This lookout of the downtown skyline is our Directors favorite view of downtown calgary. You truly get the sense of the sprawling downtown core from this vantage point. When the sun sets, beautiful reflections from the skyline glazing emerge and interesting shadows passing through the East/West bound streets of downtown. 
 
