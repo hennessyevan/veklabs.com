@@ -53,6 +53,8 @@ A frequent hotspot for the avid hiker and explorer, but a hidden gem to most. Gr
 
 Studio 8 is Calgary's newest production studio available for commercial photo and video shoots located ten minutes from downtown Calgary. It features a 1000 sq. foot industrial space, 16-foot ceilings, two East-facing large bay doors, hair & makeup station, changing room, wi-fi, parking, and a half-ton movable I-beam to hang gear and objects from across the entire space; even the art director.  
 
-### [Something Orange Studio](https://goo.gl/maps/FF1CjiGmTHzZsyF77) A Full service black-box photography & video studio in the heart of inglewood. The guys at Something Orange are beauties. Located in the same building as Cold Garden Brewing Company. Take advantage of a ‘cold-one’ when you are taking a break in between shoots! 
+### [Something Orange Studio](https://goo.gl/maps/FF1CjiGmTHzZsyF77) 
+
+A Full service black-box photography & video studio in the heart of inglewood. The guys at Something Orange are beauties. Located in the same building as Cold Garden Brewing Company. Take advantage of a ‘cold-one’ when you are taking a break in between shoots! 
 
 Hopefully this list is helpful and will allow you to make your time in Calgary full of great content and beautiful moments. Reach out to us if you know of any hidden gems our team should explore! 
