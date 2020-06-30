@@ -2,7 +2,6 @@
  "name": "veklabs.com",
  "repository": "@github:veklabs/veklabs.com",
  "private": true,
- "version": "3.2",
  "scripts": {
   "start": "run-p serve-hugo watch-webpack",
   "build": "webpack --mode=production && hugo --gc --minify",
