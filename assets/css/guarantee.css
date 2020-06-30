@@ -1,5 +1,60 @@
+#featured-logos {
+ padding: 12maj 0 0;
+
+ @media (max-width: 1000px) {
+  margin: 0 auto;
+ }
+
+ .container {
+  max-width: calc(100vw - 2maj);
+  margin: 0 auto;
+ }
+
+ .logos {
+  --size: 8maj;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(calc(var(--size) * 2.5), 1fr));
+  grid-gap: 3maj;
+
+  @media (max-width: 480px) {
+   --size: 4maj;
+   grid-gap: 1maj;
+  }
+
+  .logo {
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: center;
+   background: rgba(0, 0, 0, 0.24);
+   border: 1px solid var(--gray5);
+   padding: 4maj 2maj;
+   border-radius: 2maj;
+
+   svg {
+    width: var(--size);
+    height: var(--size);
+    color: var(--gray4);
+    fill: currentColor;
+   }
+
+   .brand {
+    white-space: nowrap;
+    text-align: center;
+    padding-top: 2maj;
+    color: var(--gray1);
+    text-transform: capitalize;
+
+    @media (max-width: 480px) {
+     font-size: 0.75rem;
+    }
+   }
+  }
+ }
+}
+
 #guarantee {
- padding: 8maj 3maj;
+ padding: 6maj 3maj;
  margin: 15maj auto 6maj;
 
  @media (max-width: 1000px) {
