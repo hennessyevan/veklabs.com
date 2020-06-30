@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ if eq .Section "reports" }}
-{{ $image = printf "%s%s%s" "/social-images/" (urlize .Title) ".jpg" }}
+{{ $image = printf "%s%s%s" "social-images/" (urlize .Title) ".jpg" }}
 {{ end }}
 
 {{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
@@ -39,8 +39,8 @@
 <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image }}" />
 {{ else if isset $image "RelPermalink" }}
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
+<meta name="twitter:image" content="{{ .Site.BaseURL }}/{{ $image.RelPermalink }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}/{{ $image.RelPermalink }}" />
 <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image:width" content="{{ $image.Width }}">
 <meta property="og:image:height" content="{{ $image.Height }}">
