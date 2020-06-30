@@ -27,16 +27,13 @@
    position: absolute;
    z-index: -1;
    border-radius: 1.5maj;
-   box-shadow: var(--med-shadow);
-   backdrop-filter: blur(20px);
+   filter: var(--med-filter-shadow);
 
    @media (max-width: 600px) {
     max-width: 20maj;
-    display: none;
    }
 
    img {
-    opacity: 0.75;
     object-fit: cover;
     width: 100%;
     border-radius: 1.5maj;
@@ -45,7 +42,7 @@
   }
 
   .text {
-   text-shadow: 0 0 3maj #00000065, 0 0 10maj #000000, 0 0 5maj #00000075;
+   filter: drop-shadow(0 0 2maj #000000) drop-shadow(0 0 6maj #000000);
    z-index: 1;
    position: relative;
 
