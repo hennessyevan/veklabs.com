@@ -10,8 +10,6 @@ Paginate = 5
 staticDir = ["static"]
 
 [menu]
-
-
 [[menu.main]]
  identifier = "features"
  name = "Features"
@@ -66,7 +64,7 @@ imgSizes = [2500, 1500, 1000, 500]
 
 # add redirects/headers
 [outputs]
-home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
+home = ["HTML", "RSS", "REDIRECTS", "HEADERS", "JSON"]
 
 # remove .{ext} from text/netlify
 [mediaTypes."text/netlify"]
@@ -86,4 +84,3 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
-

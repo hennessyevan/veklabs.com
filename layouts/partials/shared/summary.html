@@ -1,32 +1,41 @@
 <div class="summary">
 
- <div class="inner">
+  <div class="inner">
 
-  {{ $speed := .Params.speed }}
-  {{ $order := .Params.order | default 2 }}
+    {{ $speed := .Params.speed }}
+    {{ $order := .Params.order | default 2 }}
 
 
-  {{ if isset .Params "image" }}
-  <div class="image rellax" data-rellax-speed="{{ $speed | default 1 }}">
-   {{ if hasPrefix .Params.image "http" }}
-   <img src="{{ .Params.image }}" alt="">
-   {{ else }}
-   {{ partial "site/img" . }}
-   {{ end }}
+    {{ if isset .Params "image" }}
+    <div class="image rellax" data-rellax-speed="{{ $speed | default 1 }}">
+      {{ if hasPrefix .Params.image "http" }}
+      <img src="{{ .Params.image }}" alt="">
+      {{ else }}
+      {{ partial "site/img" . }}
+      {{ end }}
+    </div>
+    {{ end }}
+
+
+    <div class="text" style="z-index: {{ .Params.order | default 2 }}">
+
+      <h2 class="title">
+        {{ .Title }}
+      </h2>
+
+      <div class="excerpt">
+        {{ .Content }}
+      </div>
+
+      {{ if .Params.hasOwnPage }}
+      <a class="learn-more" href="{{ .Permalink }}">
+        Learn More
+        <svg>
+          <use href="/assets/arrow-right.svg#icon"></use>
+        </svg>
+      </a>
+      {{ end }}
+
+    </div>
   </div>
-  {{ end }}
-
-
-  <div class="text" style="z-index: {{ .Params.order | default 2 }}">
-
-   <h2 class="title">
-    {{ .Title }}
-   </h2>
-
-   <div class="excerpt">
-    {{ .Content }}
-   </div>
-
-  </div>
- </div>
 </div>
