@@ -1,13 +1,18 @@
 #featured-logos {
  padding: 12maj 0 0;
 
- @media (max-width: 1000px) {
+ /* @media (max-width: 1000px) {
   margin: 0 auto;
- }
+ } */
 
  .container {
-  max-width: calc(100vw - 2maj);
+  max-width: 150maj;
   margin: 0 auto;
+
+  @media (max-width: 150maj) {
+   max-width: 100%;
+   padding: 3maj 3maj;
+  }
  }
 
  .logos {
@@ -58,7 +63,8 @@
  margin: 15maj auto 6maj;
 
  @media (max-width: 1000px) {
-  margin: 0 auto;
+  margin-top: 0;
+  margin-bottom: 0;
  }
 
  .container {
@@ -124,12 +130,14 @@
   padding-top: 4maj;
 
   .credibility-logo {
+   flex-basis: 50%;
+   max-width: 17maj;
    &:not(:first-child) {
     margin-left: 4maj;
    }
+
    img {
-    width: 17maj;
-    height: 17maj;
+    width: 100%;
    }
   }
  }

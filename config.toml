@@ -24,11 +24,11 @@ staticDir = ["static"]
  url = "/services/"
  weight = 2
 
- # [[menu.main]]
- # identifier = "products"
- # name = "Products"
- # url = "/products/"
- # weight = 3
+ [[menu.main]]
+ identifier = "products"
+ name = "Products"
+ url = "/products/"
+ weight = 3
  
  [[menu.main]]
  identifier = "reports"
