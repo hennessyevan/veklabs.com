@@ -187,6 +187,29 @@
   overflow: hidden;
  }
 
+ .member-info {
+  padding: 3maj 4maj;
+  border: 1px solid var(--gray5);
+
+  .header {
+   h1 {
+    font-size: 2rem;
+   }
+
+   h4,
+   .competencies {
+    font-size: 1.15rem;
+   }
+  }
+
+  p {
+   font-size: 1rem;
+   padding-block-start: 1maj;
+   margin: 0;
+   font-weight: 400;
+  }
+ }
+
  article {
   .title-container {
    margin: 6maj 0;
@@ -311,82 +334,6 @@
     height: 100%;
     position: absolute;
     z-index: -1;
-   }
-  }
-
-  .author {
-   display: flex;
-   align-items: center;
-   padding: 6maj;
-   margin: 6maj 0;
-   background: #00000050;
-   border-radius: 2maj;
-   transition: var(--default);
-   cursor: pointer;
-
-   @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 3maj;
-    text-align: center;
-   }
-
-   &:hover {
-    background: #00000080;
-   }
-
-   .name {
-    padding-left: 3maj;
-    display: flex;
-    flex-direction: column;
-
-    @media (max-width: 768px) {
-     padding-left: 0;
-    }
-
-    .authorName {
-     font-size: 1.5rem;
-    }
-
-    .competencies {
-     color: var(--accentColor);
-    }
-
-    .biography {
-     flex-shrink: 1;
-    }
-   }
-
-   .avatar {
-    max-width: 12maj;
-    width: 100%;
-    flex-grow: 15;
-
-    @media (max-width: 768px) {
-     margin-bottom: 3maj;
-    }
-
-    img {
-     object-fit: cover;
-     width: 100%;
-     border-radius: 50%;
-     box-shadow: var(--med-shadow);
-    }
-   }
-  }
-
-  .gallery,
-  .image {
-   figcaption {
-    z-index: -1;
-    margin: 0;
-    position: relative;
-    margin-top: -1maj;
-    margin-right: auto;
-    padding: 1maj 2maj;
-    padding-top: 2maj;
-    background: #00000050;
-    border-radius: 0 1.5maj 1.5maj 1.5maj;
-    font-size: 0.85rem;
    }
   }
  }
