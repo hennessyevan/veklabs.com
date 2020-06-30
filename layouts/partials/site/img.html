@@ -13,7 +13,7 @@
   Note: the first URL is used as "fallback" src in $imgSrc.
 -->
 {{ range $widths }}
-{{ $srcUrl := (printf "%dx" . | $image.Resize).RelPermalink }}
+{{ $srcUrl := (printf "%dx Lanczos" . | $image.Resize).RelPermalink }}
 {{ if eq $imgSrc "" }}{{ $imgSrc = $srcUrl }}{{ end }}
 {{ $imgSrcSet = $imgSrcSet | append (printf "%s %dw" $srcUrl .) }}
 {{ end }}

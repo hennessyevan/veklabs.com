@@ -1,0 +1,23 @@
+<main class="padding single-product-service">
+  <div class="container">
+
+    {{ if isset .Params "image" }}
+    <div class="image">
+      {{ if hasPrefix .Params.image "http" }}
+      <img src="{{ .Params.image }}" alt="">
+      {{ else }}
+      {{ partial "site/img" . }}
+      {{ end }}
+    </div>
+    {{ end }}
+
+    <h1 class="title">
+      {{ .Title }}
+    </h1>
+
+    <p>
+      {{ .Content }}
+    </p>
+
+  </div>
+</main>

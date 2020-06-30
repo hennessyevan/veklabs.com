@@ -4,25 +4,25 @@ type = "top"
 
 [[featured]]
 brand = "unsplash"
-logo = "images/unsplash.svg"
+logo = "assets/unsplash.svg"
 
 [[featured]]
 brand = "adobe spark"
-logo = "images/adobe.svg"
+logo = "assets/adobe.svg"
 
 [[featured]]
 brand = "trello"
-logo = "images/trello.svg"
+logo = "assets/trello.svg"
 
 [[featured]]
 brand = "tencent"
-logo = "images/tencent-weibo.svg"
+logo = "assets/tencent-weibo.svg"
 
 [[featured]]
 brand = "instructure"
-logo = "images/instructure.svg"
+logo = "assets/instructure.svg"
 
 [[featured]]
 brand = "picsart"
-logo = "images/picsart.svg"
+logo = "assets/picsart.svg"
 +++
