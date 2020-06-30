@@ -1,0 +1,27 @@
+<div class="member-info">
+
+  <div class="header">
+    <div>
+      {{if isset .Params "image"}}
+      {{ block "site/overlayimg" . }} {{ partial "site/img" . }}{{ end }}
+      {{end}}
+    </div>
+
+    <div class="name">
+      <h1>{{.Params.name}}</h1>
+
+      <h4>{{.Params.title}}</h4>
+
+      {{with .Params.competencies}}
+      <span class="competencies">
+        {{delimit . ", "}}
+      </span>
+      {{end}}
+    </div>
+  </div>
+
+  {{with .Content}}
+  {{.}}
+  {{end}}
+
+</div>

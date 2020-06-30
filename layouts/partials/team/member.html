@@ -1,47 +1,21 @@
 <div class="team-member" data-member-id="{{ .File.UniqueID }}">
- {{if isset .Params "image"}}
- {{ block "site/img" . }} {{ partial "site/img" . }} {{ end }}
- {{end}}
+  {{if isset .Params "image"}}
+  {{ block "site/img" . }} {{ partial "site/img" . }} {{ end }}
+  {{end}}
 
- <div class="name">
-  <h4>
-   {{ with .Params.name }}{{.}}{{end}}
-  </h4>
+  <div class="name">
+    <h4>
+      {{ with .Params.name }}{{.}}{{end}}
+    </h4>
 
-  <span class="competencies">
-   {{.Title}}
-  </span>
- </div>
+    <span class="competencies">
+      {{.Title}}
+    </span>
+  </div>
 
 </div>
 
 <div class="team-overlay" data-overlay-id="{{ .File.UniqueID }}">
- <span class="dismiss-message"> to dismiss</span>
- <div class="member-info">
-
-  <div class="header">
-   <div>
-    {{if isset .Params "image"}}
-    {{ block "site/overlayimg" . }} {{ partial "site/img" . }}{{ end }}
-    {{end}}
-   </div>
-
-   <div class="name">
-    <h1>{{.Params.name}}</h1>
-
-    <h4>{{.Params.title}}</h4>
-
-    {{with .Params.competencies}}
-    <span class="competencies">
-     {{delimit . ", "}}
-    </span>
-    {{end}}
-   </div>
-  </div>
-
-  {{with .Content}}
-  {{.}}
-  {{end}}
-
- </div>
+  <span class="dismiss-message"> to dismiss</span>
+  {{ partial "team/member-info" . }}
 </div>
