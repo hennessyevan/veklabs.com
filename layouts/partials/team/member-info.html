@@ -24,4 +24,21 @@
   {{.}}
   {{end}}
 
+  {{ with .Params.channel }}
+  <div class="social-media">
+    {{ range . }}
+    <a href="{{ .url }}" target="_blank" class="icon">
+
+      {{ if hasPrefix .icon "http" }}
+      <img src="{{ .icon }}" alt="{{ .name }}">
+      {{ else }}
+      <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
+      {{ end }}
+
+
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
 </div>
