@@ -27,7 +27,7 @@
   {{ with .Params.channel }}
   <div class="social-media">
     {{ range . }}
-    <a href="{{ .url }}" target="_blank" class="icon">
+    <a href="{{ .url }}" target="_blank" class="icon" rel="noopener">
 
       {{ if hasPrefix .icon "http" }}
       <img src="{{ .icon }}" alt="{{ .name }}">

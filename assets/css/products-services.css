@@ -211,6 +211,7 @@
  }
 }
 
+/* MARK: Single Product */
 .single-product-service {
  .container {
   max-width: 980px;
@@ -253,5 +254,10 @@
    border-radius: 1.5maj;
    border: 1px solid var(--gray5);
   }
+ }
+
+ .content {
+  padding-inline-start: 2maj;
+  padding-inline-end: 2maj;
  }
 }
