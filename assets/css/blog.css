@@ -1,3 +1,30 @@
+.member-info {
+ .social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -1maj;
+  padding-block-start: 2maj;
+
+  @media (max-width: 600px) {
+   margin-top: 2maj;
+  }
+
+  .icon {
+   margin: 0 1maj;
+
+   img {
+    height: 2maj;
+
+    @media (max-width: 600px) {
+     height: 3maj;
+    }
+   }
+  }
+ }
+}
+
 #blog {
  .container {
   max-width: 980px;
@@ -199,31 +226,6 @@
    h4,
    .competencies {
     font-size: 1.15rem;
-   }
-  }
-
-  .social-media {
-   display: flex;
-   justify-content: flex-start;
-   align-items: center;
-   flex-wrap: wrap;
-   margin: 0 -1maj;
-   padding-block-start: 2maj;
-
-   @media (max-width: 600px) {
-    margin-top: 2maj;
-   }
-
-   .icon {
-    margin: 0 1maj;
-
-    img {
-     height: 2maj;
-
-     @media (max-width: 600px) {
-      height: 3maj;
-     }
-    }
    }
   }
 
