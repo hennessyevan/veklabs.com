@@ -65,7 +65,7 @@ imgSizes = [2500, 1500, 1000, 500]
 
 # add redirects/headers
 [outputs]
-home = ["HTML", "RSS", "REDIRECTS", "HEADERS", "JSON"]
+home = ["HTML", "RSS", "REDIRECTS", "HEADERS"]
 
 # remove .{ext} from text/netlify
 [mediaTypes."text/netlify"]
