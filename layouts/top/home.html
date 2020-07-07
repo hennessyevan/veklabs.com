@@ -2,6 +2,10 @@
 {{ .Site.Title -}}{{ .Site.Data.en.subtitle }}
 {{ end }}
 
+{{ define "page/styles" }}
+{{ partial "site/pageStyle" "css/home.css" }}
+{{ end }}
+
 {{ define "main" }}
 
 <section id="videos">

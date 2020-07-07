@@ -1,7 +1,7 @@
 <div class="member-info">
 
   <div class="header">
-    <div>
+    <div class="avatar">
       {{if isset .Params "image"}}
       {{ block "site/overlayimg" . }} {{ partial "site/img" . }}{{ end }}
       {{end}}

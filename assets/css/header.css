@@ -13,12 +13,12 @@
   padding-right: minmax(env(safe-area-inset-right), 3maj);
  }
 
- @media (max-width: 600px) {
+ @media (--mobile) {
   padding: 2.5maj 2maj;
  }
 
  & .wrapper {
-  & > div {
+  & .menu {
    width: 100%;
    display: flex;
    justify-content: space-between;
@@ -30,8 +30,8 @@
     overflow: auto;
    }
 
-   // Small screen
-   @media (max-width: 780px) {
+   /* Small screen */
+   @media (--mobile) {
     &.large {
      display: none;
     }
@@ -49,8 +49,8 @@
     }
    }
 
-   // Large screen
-   @media (min-width: 781px) {
+   /* Large screen */
+   @media (min-width: 769px) {
     &.small {
      display: none;
     }
@@ -73,12 +73,12 @@
   width: 100%;
   justify-self: flex-start;
 
-  @media (max-width: 600px) {
+  @media (--mobile) {
    max-width: 12maj;
   }
  }
 
- a.button {
+ & .button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -96,7 +96,7 @@
    font-size: 2maj;
    white-space: nowrap;
 
-   @media (max-width: 600px) {
+   @media (--mobile) {
     font-size: 1.7maj;
    }
   }
@@ -140,7 +140,7 @@
    background: var(--text);
   }
 
-  @media (max-width: 600px) {
+  @media (--mobile) {
    font-weight: 500;
   }
 
@@ -160,7 +160,7 @@
   overflow: hidden;
   height: 0;
 
-  @media (max-width: 768px) {
+  @media (--mobile) {
    justify-content: flex-start;
    align-items: flex-start;
   }
@@ -184,7 +184,7 @@
     width: 100%;
    }
 
-   @media (min-width: 781px) {
+   @media (min-width: 769px) {
     display: none;
    }
   }

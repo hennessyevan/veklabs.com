@@ -6,7 +6,7 @@
   overflow-y: scroll;
   padding: 6maj;
 
-  @media (max-width: 768px) {
+  @media (--mobile) {
    padding: 6maj 1maj;
   }
 
@@ -22,7 +22,7 @@
    justify-content: center;
    align-items: center;
 
-   @media (max-width: 1500px) {
+   @media (--desktop) {
     scroll-snap-align: start;
     scroll-padding-top: 17maj;
     padding: 12maj 0;
@@ -33,7 +33,7 @@
 
  .left {
   width: 65%;
-  @media (max-width: 1500px) {
+  @media (--desktop) {
    width: 100%;
   }
  }
@@ -46,11 +46,11 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (max-width: 1500px) {
+  @media (--desktop) {
    width: 100%;
   }
 
-  @media (max-width: 768px) {
+  @media (--mobile) {
    padding-left: initial;
    padding: 2maj;
   }

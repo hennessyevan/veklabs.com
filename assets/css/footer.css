@@ -9,13 +9,13 @@ footer {
  background: var(--background);
  padding-bottom: env(safe-area-inset-bottom);
 
- @media (max-width: 600px) {
+ @media (--tablet) {
   text-align: center;
   flex-direction: column-reverse;
   align-items: center;
   justify-content: center;
 
-  p {
+  & p {
    margin: 2maj 0;
 
    &.site-footer__copyright {
@@ -24,34 +24,34 @@ footer {
   }
  }
 
- .footer-flag {
+ & .footer-flag {
   height: 1.5maj;
   color: white;
  }
 
- a {
+ & a {
   color: var(--white);
   font-weight: 600;
  }
 
- .social-media {
+ & .social-media {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 -1maj;
 
-  @media (max-width: 600px) {
+  @media (--tablet) {
    margin-top: 2maj;
   }
 
-  .icon {
+  & .icon {
    margin: 0 1maj;
 
-   img {
+   & img {
     height: 2maj;
 
-    @media (max-width: 600px) {
+    @media (--tablet) {
      height: 3maj;
     }
    }

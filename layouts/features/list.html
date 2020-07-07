@@ -1,79 +1,80 @@
 <head>
- {{ partial "site/meta.html" . }}
- {{ partial "site/styles.html" . }}
+  {{ partial "site/meta.html" . }}
+  {{ partial "site/styles.html" . }}
+  {{ partial "site/pageStyle" "css/features.css" }}
 
- <title>
-  {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ .Site.Data.en.subtitle }}
- </title>
+  <title>
+    {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ .Site.Data.en.subtitle }}
+  </title>
 
- <style>
-  body {
-   height: 100vh;
-   overflow: hidden;
-  }
- </style>
+  <style>
+    body {
+      height: 100vh;
+      overflow: hidden;
+    }
+  </style>
 </head>
 
 {{ block "header" . }} {{ partial "site/header.html" . }} {{ end }}
 
 <main>
 
- <div id="features">
+  <div id="features">
 
-  <div class="container">
+    <div class="container">
 
-   {{ range .Pages.ByParam "publishDate" }}
+      {{ range .Pages.ByParam "publishDate" }}
 
-   <div class="card">
+      <div class="card">
 
-    <div class="left">
+        <div class="left">
 
-     <div class="trailer" playing="false">
-      <img class="play-icon" src="/assets/controls-play.svg" alt="Play">
-      <img class="fullscreen-icon" src="/assets/controls-fullscreen.svg" alt="Fullscreen">
-      <video class="preview" poster="{{ (resources.Get .Params.image).RelPermalink }}"
-       src="{{ .Params.videoURL }}"></video>
-     </div>
+          <div class="trailer" playing="false">
+            <img class="play-icon" src="/assets/controls-play.svg" alt="Play">
+            <img class="fullscreen-icon" src="/assets/controls-fullscreen.svg" alt="Fullscreen">
+            <video class="preview" poster="{{ (resources.Get .Params.image).RelPermalink }}"
+              src="{{ .Params.videoURL }}"></video>
+          </div>
+
+        </div>
+
+        <div class="right">
+          <div class="start">
+            <h1 class="title">{{ .Title }}</h1>
+            <h4 class="category">{{ .Params.category }}</h4>
+            <p class="excerpt">{{ .Content }}</p>
+            {{ with .Params.site }}
+            <a href="{{.}}" target="_blank" rel="noopener" class="website">Visit Website</a>
+            {{ end }}
+          </div>
+
+          {{ with .Params.awards }}
+          <div class="awards end">
+
+            {{ range . }}
+            {{ $slash := cond ( hasPrefix . "http" ) "" "/" }}
+            <img class="award" src="{{ $slash }}{{ . | safeURL }}" />
+            {{ end }}
+
+          </div>
+          {{ end }}
+        </div>
+
+      </div>
+
+      {{ end }}
+
+      {{ if le (len .Pages) 1 }}
+      <div class="more-coming">
+        <span>
+          More Coming Soon
+        </span>
+      </div>
+      {{ end }}
 
     </div>
-
-    <div class="right">
-     <div class="start">
-      <h1 class="title">{{ .Title }}</h1>
-      <h4 class="category">{{ .Params.category }}</h4>
-      <p class="excerpt">{{ .Content }}</p>
-      {{ with .Params.site }}
-      <a href="{{.}}" target="_blank" rel="noopener" class="website">Visit Website</a>
-      {{ end }}
-     </div>
-
-     {{ with .Params.awards }}
-     <div class="awards end">
-
-      {{ range . }}
-      {{ $slash := cond ( hasPrefix . "http" ) "" "/" }}
-      <img class="award" src="{{ $slash }}{{ . | safeURL }}" />
-      {{ end }}
-
-     </div>
-     {{ end }}
-    </div>
-
-   </div>
-
-   {{ end }}
-
-   {{ if le (len .Pages) 1 }}
-   <div class="more-coming">
-    <span>
-     More Coming Soon
-    </span>
-   </div>
-   {{ end }}
 
   </div>
-
- </div>
 
 </main>
 
