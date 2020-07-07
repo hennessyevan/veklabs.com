@@ -4,8 +4,9 @@ title = "Vek Labs"
 
 enableRobotsTXT = true
 disableAliases = true
-summaryLength = 25
 Paginate = 5
+
+googleAnalytics = "GTM-MNN7HSW"
 
 staticDir = ["static"]
 

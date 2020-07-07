@@ -1,3 +1,5 @@
 {{ $s := resources.Get "js/global.js" | minify }}
 
 <script src="{{ $s.Permalink }}"></script>
+
+{{ template "_internal/google_analytics_async.html" . }}

@@ -27,7 +27,7 @@
         {{ .Summary }}
       </div>
 
-      {{ if .Truncated }}
+      {{ if gt .WordCount 1 }}
       <a class="learn-more" href="{{ .Permalink }}">
         Learn More
         <svg>

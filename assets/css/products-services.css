@@ -220,7 +220,7 @@
   padding: 6maj 0;
   min-height: calc(100vh - 135px);
 
-  @media (max-width: 900px) {
+  @media (--tablet) {
    padding: 2maj 0 6maj;
   }
  }
@@ -245,7 +245,7 @@
  & .title {
   padding: 3maj;
   background-color: var(--gray-overlay);
-  border: 1px solid var(--gray5);
+  /* border: 1px solid var(--gray5); */
   border-radius: 1maj;
   display: inline-block;
   backdrop-filter: var(--blur-filter);
@@ -253,9 +253,9 @@
   font-size: 1.75rem;
   position: absolute;
   bottom: 0;
-  margin: 1maj;
+  margin: 2maj;
 
-  @media (max-width: 900px) {
+  @media (--tablet) {
    padding: 2maj;
    font-size: 4vw;
   }
