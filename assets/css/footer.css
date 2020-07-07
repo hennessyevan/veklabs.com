@@ -1,9 +1,9 @@
 footer {
  background: var(--background);
 
- .inner {
-  padding: 2maj 3maj;
-  /* padding-bottom: max(3maj, env(safe-area-inset-bottom)); */
+ @media (--tablet) {
+  text-align: center;
+  flex-direction: column-reverse;
   align-items: center;
   width: 100%;
   border-top: 1px solid var(--gray5);
@@ -16,7 +16,7 @@ footer {
    align-items: center;
    justify-content: center;
 
-   > div {
+   & p {
     margin: 2maj 0;
 
     &.site-footer__copyright {
@@ -26,65 +26,34 @@ footer {
   }
  }
 
- .sub-footer {
-  border-top: 1px solid var(--gray5);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 2maj 3maj;
-  background: var(--black-overlay);
-
-  @media (max-width: 600px) {
-   flex-direction: column;
-  }
- }
-
- .left,
- .center,
- .right {
-  flex-basis: 33%;
- }
-
- .left {
-  text-align: left;
- }
-
- .center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
- }
-
- .footer-flag {
+ & .footer-flag {
   height: 1.5maj;
   color: white;
  }
 
- a {
+ & a {
   color: var(--white);
   font-weight: 600;
  }
 
- .right {
+ & .social-media {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 -1maj;
 
-  @media (max-width: 600px) {
+  @media (--tablet) {
    margin-top: 2maj;
   }
 
-  .icon {
+  & .icon {
    margin: 0 1maj;
 
-   img {
+   & img {
     height: 2maj;
 
-    @media (max-width: 600px) {
+    @media (--tablet) {
      height: 3maj;
     }
    }

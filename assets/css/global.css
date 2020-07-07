@@ -1,3 +1,9 @@
+@import-normalize;
+
+@import "./variables.css";
+@import "./header.css";
+@import "./footer.css";
+
 * {
  box-sizing: border-box;
 }
@@ -6,6 +12,7 @@ body {
  font-family: var(--body-font);
  background-color: var(--gray6);
  color: var(--white);
+ margin: 0;
 }
 
 a {
@@ -92,5 +99,95 @@ h1 {
 
  & .title {
   padding: 6maj 0;
+ }
+}
+
+.member-info {
+ padding: 5maj;
+ display: block;
+ border-radius: 2maj;
+ backdrop-filter: var(--blur-filter);
+ background-color: var(--gray-overlay);
+ font-weight: 500;
+ font-size: 2.25maj;
+ max-width: 120maj;
+ line-height: 1.5;
+
+ & p {
+  font-size: 1.75maj;
+ }
+
+ & .header {
+  display: flex;
+  height: auto;
+  align-items: center;
+
+  @media (max-width: 600px) {
+   flex-wrap: wrap;
+   justify-content: center;
+   text-align: center;
+  }
+
+  & h1 {
+   margin: 0;
+  }
+
+  & h4 {
+   margin: 0;
+   font-weight: 500;
+   margin-bottom: 1maj;
+   color: var(--accentColor);
+  }
+
+  & .competencies {
+   color: var(--gray1);
+  }
+
+  & img.team {
+   border-radius: 50%;
+   width: 100%;
+   max-width: 20maj;
+   object-fit: cover;
+   box-shadow: var(--med-shadow);
+
+   @media (max-width: 600px) {
+    flex-basis: 100%;
+   }
+  }
+
+  & .name {
+   margin-left: 5maj;
+
+   @media (max-width: 600px) {
+    margin-left: 0;
+    margin-bottom: 3maj;
+    font-size: 80%;
+   }
+  }
+ }
+
+ & .social-media {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 -1maj;
+  padding-block-start: 2maj;
+
+  @media (max-width: 600px) {
+   margin-top: 2maj;
+  }
+
+  & .icon {
+   margin: 0 1maj;
+
+   & img {
+    height: 2maj;
+
+    @media (max-width: 600px) {
+     height: 3maj;
+    }
+   }
+  }
  }
 }

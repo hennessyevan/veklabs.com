@@ -1,32 +1,5 @@
-.member-info {
- .social-media {
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 -1maj;
-  padding-block-start: 2maj;
-
-  @media (max-width: 600px) {
-   margin-top: 2maj;
-  }
-
-  .icon {
-   margin: 0 1maj;
-
-   img {
-    height: 2maj;
-
-    @media (max-width: 600px) {
-     height: 3maj;
-    }
-   }
-  }
- }
-}
-
 #blog {
- .container {
+ & .container {
   max-width: 980px;
   margin: 0 auto;
   padding: 10maj 0;
@@ -48,35 +21,35 @@
    grid-template-columns: 1fr;
   }
 
-  .listing {
+  & .listing {
    grid-column: span 5;
    border-radius: 1.5maj;
    transition: var(--default);
    width: 100%;
 
    @media (max-width: 900px) {
-    grid-column: 1/-1;
+    grid-column: 1 / -1;
    }
 
    &:hover {
-    .image {
+    & .image {
      box-shadow: var(--med-shadow);
      transform: scale(1.025);
      z-index: 9;
     }
 
-    .content {
+    & .content {
      background: #00000080;
     }
    }
 
-   article {
+   & article {
     display: flex;
     width: 100%;
     flex-direction: column;
    }
 
-   .content {
+   & .content {
     padding: 3maj;
     padding-top: 4maj;
     margin: 1maj 1.5maj;
@@ -85,12 +58,12 @@
     border-radius: 0 0 1.5maj 1.5maj;
     transition: var(--default);
 
-    .title {
+    & .title {
      margin: 0;
      font-weight: 500;
     }
 
-    .excerpt {
+    & .excerpt {
      color: var(--gray1);
      font-size: 0.85rem;
      display: box;
@@ -103,7 +76,7 @@
      margin-top: 1.5maj;
     }
 
-    .time-to-read {
+    & .time-to-read {
      font-size: 0.85rem;
      color: var(--accentColor);
      display: block;
@@ -111,12 +84,12 @@
     }
    }
 
-   .image {
+   & .image {
     height: 30maj;
     transition: var(--default);
     position: relative;
 
-    img {
+    & img {
      object-fit: cover;
      width: 100%;
      height: 100%;
@@ -131,22 +104,24 @@
      grid-column: 1 / -1;
      flex-direction: row;
 
-     article {
+     & article {
       flex-direction: row;
      }
 
-     .image {
+     & .image {
       height: 300px;
       flex-basis: 65%;
      }
-     .content {
+
+     & .content {
       flex-basis: 35%;
       padding-left: 4maj;
       padding-top: 3maj;
       margin: 1maj 1.5maj 1maj 0;
       border-radius: 0 1.5maj 1.5maj 0;
      }
-     .excerpt {
+
+     & .excerpt {
       -webkit-line-clamp: 4;
      }
     }
@@ -197,7 +172,7 @@
  grid-gap: 3maj;
  padding: 3maj 0;
 
- img {
+ & img {
   border-radius: 1.5maj;
   width: 100%;
  }
@@ -214,22 +189,22 @@
   overflow: hidden;
  }
 
- .member-info {
+ & .member-info {
   padding: 3maj 4maj;
   border: 1px solid var(--gray5);
 
-  .header {
-   h1 {
+  & .header {
+   & h1 {
     font-size: 2rem;
    }
 
-   h4,
-   .competencies {
+   & h4,
+   & .competencies {
     font-size: 1.15rem;
    }
   }
 
-  p {
+  & p {
    font-size: 1rem;
    padding-block-start: 1maj;
    margin: 0;
@@ -237,8 +212,8 @@
   }
  }
 
- article {
-  .title-container {
+ & article {
+  & .title-container {
    margin: 6maj 0;
 
    @media (max-width: 768px) {
@@ -246,13 +221,13 @@
    }
   }
 
-  .title {
+  & .title {
    @media (max-width: 768px) {
     font-size: 2rem;
    }
   }
 
-  .content {
+  & .content {
    @media (min-width: 1000px) {
     padding: 0 3maj;
    }
@@ -267,7 +242,7 @@
     text-decoration: underline;
    }
 
-   .image {
+   & .image {
     max-width: 100%;
     max-height: 100vh;
     margin: 0 auto;
@@ -290,14 +265,14 @@
      float: right;
     }
 
-    img {
+    & img {
      width: 100%;
      border-radius: 1.5maj;
     }
    }
   }
 
-  .hero-image {
+  & .hero-image {
    width: 100%;
    height: 0;
    padding-bottom: 40%;
@@ -307,7 +282,7 @@
    position: relative;
    box-shadow: var(--med-shadow);
 
-   .date {
+   & .date {
     font-weight: 500;
     position: absolute;
     bottom: 2maj;
@@ -333,7 +308,7 @@
     }
    }
 
-   .back-button {
+   & .back-button {
     background: #00000050;
     backdrop-filter: var(--blur-filter);
     position: absolute;
@@ -350,12 +325,12 @@
     }
    }
 
-   .back-arrow {
+   & .back-arrow {
     fill: currentColor;
     width: 0.65rem;
    }
 
-   img {
+   & img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -375,7 +350,7 @@
  justify-content: center;
  list-style: none;
 
- .page-number {
+ & .page-number {
   padding: 1maj 1.5maj;
   background: #00000050;
   border-radius: 0.75maj;
@@ -383,7 +358,7 @@
   transition: var(--fast);
   color: var(--text);
 
-  svg {
+  & svg {
    width: 1.5maj;
    margin: 0;
    fill: #ffffff;
@@ -412,7 +387,7 @@
  align-items: center;
  justify-content: center;
 
- .inner {
+ & .inner {
   padding: 5maj;
   display: block;
   border-radius: 2maj;
@@ -423,7 +398,7 @@
   max-width: 120maj;
   line-height: 1.5;
 
-  .header {
+  & .header {
    display: flex;
    height: auto;
    align-items: center;
@@ -434,22 +409,22 @@
     text-align: center;
    }
 
-   h1 {
+   & h1 {
     margin: 0;
    }
 
-   h4 {
+   & h4 {
     margin: 0;
     font-weight: 500;
     margin-bottom: 1maj;
     color: var(--accentColor);
    }
 
-   .competencies {
+   & .competencies {
     color: var(--gray1);
    }
 
-   img.team {
+   & img.team {
     border-radius: 50%;
     width: 100%;
     max-width: 20maj;
@@ -461,7 +436,7 @@
     }
    }
 
-   .name {
+   & .name {
     margin-left: 5maj;
 
     @media (max-width: 600px) {
@@ -472,7 +447,7 @@
    }
   }
 
-  p {
+  & p {
    font-size: 1.75maj;
   }
  }
@@ -480,11 +455,9 @@
 
 #more-articles {
  max-width: 100%;
- border-top: 1px solid var(--gray3);
- margin-top: 10maj;
  padding-top: 6maj;
 
- .posts-container {
+ & .posts-container {
   overflow: auto;
   padding: 6maj;
   margin: -6maj;
@@ -493,37 +466,37 @@
   grid-template-columns: repeat(3, minmax(250px, 300px));
  }
 
- .title {
+ & .title {
   position: sticky;
   left: 0;
   top: 0;
  }
 
- .post {
+ & .post {
   cursor: pointer;
   color: var(--text);
   z-index: 47;
 
   &:hover {
-   .image {
+   & .image {
     box-shadow: var(--med-shadow);
     transform: scale(1.025);
     z-index: 9;
    }
 
-   .content {
+   & .content {
     background: #00000080;
    }
   }
 
-  .content {
+  & .content {
    padding: 2maj;
    margin: -2maj 1maj 1maj;
    transition: var(--default);
    border-radius: 0 0 1maj 1maj;
   }
 
-  .excerpt {
+  & .excerpt {
    color: var(--gray1);
    font-size: 0.85rem;
    display: box;
@@ -536,12 +509,12 @@
    margin-top: 1.5maj;
   }
 
-  .title {
+  & .title {
    width: 100%;
    display: flex;
    flex-direction: column;
 
-   .readtime {
+   & .readtime {
     white-space: nowrap;
     font-weight: normal;
     color: var(--accentColor);
@@ -549,7 +522,7 @@
    }
   }
 
-  .image {
+  & .image {
    height: 0;
    width: 100%;
    padding-bottom: 50%;
@@ -558,7 +531,7 @@
    background: var(--background);
    border-radius: 1maj;
 
-   img {
+   & img {
     position: absolute;
     height: 100%;
     width: 100%;
