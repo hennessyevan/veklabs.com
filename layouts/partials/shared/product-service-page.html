@@ -8,12 +8,12 @@
       {{ else }}
       {{ partial "site/img" . }}
       {{ end }}
+
+      <h1 class="title">
+        {{ .Title }}
+      </h1>
     </div>
     {{ end }}
-
-    <h1 class="title">
-      {{ .Title }}
-    </h1>
 
     <article class="content">
       {{ .Content }}
