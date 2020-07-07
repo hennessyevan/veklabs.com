@@ -1,22 +1,15 @@
 module.exports = {
- plugins: [
-  require("postcss-partial-import")(),
-  require("postcss-for")(),
-  require("autoprefixer")(),
-  require("postcss-nesting")(),
-  require("postcss-short")(),
-  require("postcss-color-hex-alpha")(),
-  require("postcss-hexrgba")(),
-  require("postcss-custom-unit")({
-   units: [
-    {
-     // Major Scale
-     from: "maj",
-     convert: function(val) {
-      return val * 8 + "px"
-     }
-    }
-   ]
-  })
- ]
+ plugins: {
+  "postcss-normalize": {},
+  "postcss-relaxed-unit": {
+   rules: {
+    maj: "mul(8).unit(px)",
+    min: "mul(4).unit(px)",
+   },
+  },
+  "postcss-preset-env": {
+   stage: 0,
+   importFrom: "assets/css/variables.css",
+  },
+ },
 }

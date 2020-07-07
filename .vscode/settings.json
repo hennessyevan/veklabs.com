@@ -1,5 +1,6 @@
 {
-	"files.associations": {
-		"*.css": "postcss"
-	},
+ "files.associations": {
+  "*.css": "postcss"
+ },
+ "postcss.validate": false
 }
