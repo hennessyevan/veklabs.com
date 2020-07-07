@@ -5,5 +5,4 @@
 /resources
 .DS_Store
 
-assets/js
-assets/js/blog.js
+/assets/js
