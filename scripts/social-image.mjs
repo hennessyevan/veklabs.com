@@ -44,20 +44,20 @@ for (const post of posts) {
   const outFileName = _.kebabCase(data.title)
 
   if (
-   //  isStale({
-   //   originalFile: path.join(__dirname, "../assets", data.image),
-   //   cachedFile: path.join(
-   //    __dirname,
-   //    "../static/social-images",
-   //    outFileName + ".jpg"
-   //   ),
-   //  })
-   true
+   isStale({
+    originalFile: path.join(__dirname, "../assets", data.image),
+    cachedFile: path.join(
+     __dirname,
+     "../static/social-images",
+     outFileName + ".jpg"
+    ),
+   })
   ) {
    renderSocialImage.default({
     templateBody: `
     <div class="social{{#if logo}} social--has-logo{{/if}}{{#if subtitle}} social--has-subtitle{{/if}}" {{#if imageUrl}} style="background-image: url('{{imageUrl}}');"{{/if}}>
     {{#if logo}}<div><img class="logo" src="{{logo}}" /></div>{{/if}}
+    <!--{{#if category}}<span class="category">{{category}}</span>{{/if}}-->
       <div class="content">
         <div class="content-inner">
           <h1 class="truncate">{{title}}</h1>
@@ -152,12 +152,14 @@ for (const post of posts) {
       -webkit-line-clamp: 2;
     }
     `,
+    type: "png",
     templateParams: {
      title: data.title,
      subtitle: data.author,
      logo: `data:image/png;base64,${fs
       .readFileSync(path.join(__dirname, "../assets/images/logo.png"))
       .toString("base64")}`,
+     category: data.category,
      imageUrl: `data:image/jpeg;base64,${fs
       .readFileSync(path.join(__dirname, "../assets", data.image))
       .toString("base64")}`,
