@@ -1,7 +1,8 @@
 #products,
 #services {
  overflow-y: hidden;
- .container {
+
+ & .container {
   max-width: 980px;
   padding: 0 6maj;
   margin: 0 auto;
@@ -12,17 +13,28 @@
   }
  }
 
- .main.title {
+ & .main.title {
   padding: 6maj 0;
  }
 
- .summary {
+ & .summary {
   padding-bottom: 15maj;
   max-width: 980px;
   display: flex;
   position: relative;
 
-  .image {
+  & .inner {
+   width: 100%;
+   max-width: 50maj;
+   display: block;
+   color: var(--text);
+
+   &.more:hover {
+    transform: translateY(-10%);
+   }
+  }
+
+  & .image {
    max-width: 35maj;
    position: absolute;
    z-index: -1;
@@ -33,7 +45,7 @@
     max-width: 20maj;
    }
 
-   img {
+   & img {
     object-fit: cover;
     width: 100%;
     border-radius: 1.5maj;
@@ -41,42 +53,37 @@
    }
   }
 
-  .text {
+  & .text {
    filter: drop-shadow(0 0 2maj #000000) drop-shadow(0 0 6maj #000000);
    z-index: 1;
    position: relative;
 
-   .title {
+   & .title {
     font-size: 2rem;
    }
 
-   .excerpt {
+   & .excerpt {
     line-height: 1.35;
     font-weight: 500;
    }
-
-   .learn-more {
-    display: flex;
-    align-items: center;
-    margin-block-start: 2maj;
-
-    &:hover {
-     text-decoration: underline;
-    }
-
-    svg {
-     width: 1ch;
-     height: 1ch;
-     margin-block-start: 2px;
-     margin-inline-start: 1maj;
-     fill: currentColor;
-    }
-   }
   }
 
-  .inner {
-   width: 100%;
-   max-width: 50maj;
+  & .learn-more {
+   display: flex;
+   align-items: center;
+   margin-block-start: 2maj;
+
+   &:hover {
+    text-decoration: underline;
+   }
+
+   & svg {
+    width: 1ch;
+    height: 1ch;
+    margin-block-start: 2px;
+    margin-inline-start: 1maj;
+    fill: currentColor;
+   }
   }
  }
 }
@@ -88,7 +95,7 @@
   &:nth-of-type(7) {
    justify-content: flex-start;
 
-   .image {
+   & .image {
     left: -20maj;
 
     @media (max-width: 600px) {
@@ -102,7 +109,7 @@
   &:nth-of-type(9) {
    justify-content: flex-end;
 
-   .image {
+   & .image {
     right: -10maj;
    }
   }
@@ -116,13 +123,13 @@
 
   &:nth-of-type(3),
   &:nth-of-type(8) {
-   .image {
+   & .image {
     left: 4maj;
    }
   }
 
   &:nth-of-type(6) {
-   .image {
+   & .image {
     right: 4maj;
    }
   }
@@ -130,13 +137,13 @@
 }
 
 #services {
- .summary {
+ & .summary {
   &:nth-of-type(1),
   &:nth-of-type(4),
   &:nth-of-type(7) {
    justify-content: flex-end;
 
-   .image {
+   & .image {
     right: -20maj;
 
     @media (max-width: 600px) {
@@ -150,7 +157,7 @@
   &:nth-of-type(9) {
    justify-content: flex-start;
 
-   .image {
+   & .image {
     left: -10maj;
    }
   }
@@ -164,38 +171,38 @@
 
   &:nth-of-type(3),
   &:nth-of-type(8) {
-   .image {
+   & .image {
     right: 4maj;
    }
   }
 
   &:nth-of-type(6) {
-   .image {
+   & .image {
     right: 4maj;
    }
   }
  }
- .inventory {
+ & .inventory {
   padding: 10maj 0;
 
-  .title {
+  & .title {
    padding: 6maj 0;
   }
 
-  table {
+  & table {
    border-collapse: collapse;
    width: 100%;
 
-   th {
+   & th {
     border-bottom: 1px solid var(--text);
     padding: 1.5maj 1maj;
    }
 
-   tr:nth-child(even) {
+   & tr:nth-child(even) {
     background: #00000050;
    }
 
-   td {
+   & td {
     padding: 1.5maj;
     border: 1px solid var(--text);
     border-width: 0 1px;
