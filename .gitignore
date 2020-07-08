@@ -6,5 +6,6 @@
 .DS_Store
 
 /assets/js
+/dist
 # Local Netlify folder
 .netlify
