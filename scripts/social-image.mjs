@@ -17,7 +17,7 @@ const cache = JSON.parse(fs.readFileSync(cacheFile)) || {}
 function isStale({ originalFile, cachedFile }) {
  if (!fs.existsSync(cachedFile)) return true
  if (!cache[cachedFile]) {
-  cache[path] = new Date()
+  cache[cachedFile] = new Date()
   fs.writeFileSync(cacheFile, JSON.stringify(cache))
   return true
  }
@@ -31,15 +31,15 @@ function isStale({ originalFile, cachedFile }) {
 }
 
 for (const post of posts) {
- // Ignore root
- if (post === "_index.md") continue
-
  try {
   const { data } = frontmatter.read(path.join(postsDir, post), {
    engines: { toml: toml.parse.bind(toml) },
    delimiters: "+++",
    language: "toml",
   })
+
+  if (typeof data.image !== "string") break
+  console.log("image", data.image)
 
   const outFileName = _.kebabCase(data.title)
 
