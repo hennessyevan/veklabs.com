@@ -5,6 +5,9 @@
  "scripts": {
   "start": "run-p serve-hugo watch-webpack social-images",
   "build": "webpack --mode=production && yarn social-images && hugo --gc --minify",
+  "build:deploy-preview": "webpack --mode=production && yarn social-images && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
+  "build:branch": "webpack --mode=production && yarn social-images && hugo --gc --minify -b $DEPLOY_PRIME_URL",
+  "build:split": "webpack --mode=production && yarn social-images && hugo --gc --minify --enableGitInfo",
   "watch-webpack": "webpack --mode=development --watch",
   "social-images": "node scripts/social-image.mjs",
   "serve-hugo": "hugo server -b http://$(hostname)/ --bind 0.0.0.0"
