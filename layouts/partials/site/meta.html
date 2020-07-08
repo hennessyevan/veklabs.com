@@ -5,7 +5,7 @@
 {{ end }}
 
 {{ if eq .Section "reports" }}
-{{ $image = printf "%s%s%s" "social-images/" (urlize .Title) ".jpg" }}
+{{ $image = printf "%s%s%s" "/social-images/" (urlize .Title) ".jpg" }}
 {{ end }}
 
 {{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
