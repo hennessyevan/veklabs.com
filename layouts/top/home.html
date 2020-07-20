@@ -24,7 +24,13 @@
   {{ end }}
 </section>
 
-{{ partial "home/featured-logos" . }}
+<section id="featured-logos" class="padding">
+  <div class="container">
+    {{ partial "home/featured-logos" . }}
+
+    {{ partial "home/seen-on-tv" . }}
+  </div>
+</section>
 
 {{ block "home/guarantee" . }}{{ partial "home/guarantee.html" }}{{ end }}
 
