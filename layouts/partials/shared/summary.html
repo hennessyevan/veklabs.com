@@ -5,13 +5,16 @@
     {{ $speed := .Params.speed }}
     {{ $order := .Params.order | default 2 }}
 
+    {{ $image := .Params.summary_image | default .Params.image }}
 
-    {{ if isset .Params "image" }}
+    {{ if $image }}
     <div class="image rellax" data-rellax-speed="{{ $speed | default 1 }}">
-      {{ if hasPrefix .Params.image "http" }}
-      <img src="{{ .Params.image }}" alt="" />
+      {{ if hasPrefix $image "http" }}
+      <img src="{{ $image }}" alt="" />
       {{ else }}
-      {{ partial "site/img" . }}
+      {{ $_image := resources.Get $image }}
+      {{ $srcUrl := ("600x900 Lanczos" | $_image.Resize).RelPermalink }}
+      <img src="{{ $srcUrl }}" alt="" />
       {{ end }}
     </div>
     {{ end }}
@@ -36,5 +39,7 @@
       {{ end }}
 
     </div>
+
   </div>
+
 </div>
