@@ -25,4 +25,8 @@ logo = "assets/instructure.svg"
 [[featured]]
 brand = "picsart"
 logo = "assets/picsart.svg"
+
+[[seenOn]]
+brand = "Yes TV"
+logo = "assets/yestv.svg"
 +++
