@@ -1,22 +1,18 @@
-<section id="featured-logos" class="padding">
-  <div class="container">
+<div class="work-featured-on">
 
-    <h2 class="title">Work featured on</h2>
+  <h2 class="title">Work featured on</h2>
 
-    <div class="logos">
-      {{ range .Params.featured }}
-      <div class="logo">
-        <svg role="img" aria-label="{{ .brand }}">
-          <use href="{{ .logo }}#icon"></use>
-        </svg>
-        <span class="brand">
-          {{ .brand }}
-        </span>
-      </div>
-      {{ end }}
+  <div class="logos">
+    {{ range .Params.featured }}
+    <div class="logo">
+      <svg role="img" aria-label="{{ .brand }}">
+        <use href="{{ .logo }}#icon"></use>
+      </svg>
+      <span class="brand">
+        {{ .brand }}
+      </span>
     </div>
-
+    {{ end }}
   </div>
 
-
-</section>
+</div>
