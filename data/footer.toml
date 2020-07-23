@@ -1,46 +1,49 @@
+address = "255 17 Ave SW Suite 401, Calgary, AB T2S 2T8"
+mail = "PO Box 46068 Inglewood, Calgary, AB T2G5H7"
+
 # Add a new channel by adding a new [[channel]] block with a name, url and icon from static/assets
 
-[[channel]]
+[[social.channel]]
   name = "Upcity"
   url = "https://upcity.com/profiles/vek-labs"
   icon = "https://app.upcity.com/images/badges/tla.png"
 
-[[channel]]
+[[social.channel]]
   name = "Facebook"
   url = "https://www.facebook.com/veklabs/"
   icon = "facebook.svg"
 
-[[channel]]
+[[social.channel]]
   name = "Twitter"
   url = "https://twitter.com/VekLabs"
   icon = "twitter.svg"
 
-[[channel]]
+[[social.channel]]
 name = "Instagram"
 url = "https://www.instagram.com/veklabs/"
 icon = "instagram.svg"
 
-[[channel]]
+[[social.channel]]
 name = "Youtube"
-url = "https://www.youtube.com/channel/UC_8CmynHCINGSOZftHJGoUQ"
+url = "https://www.youtube.com/social.channel/UC_8CmynHCINGSOZftHJGoUQ"
 icon = "youtube.svg"
 
-[[channel]]
+[[social.channel]]
 name = "LinkedIn"
 url = "https://www.linkedin.com/company/veklabs/"
 icon = "linkedin.svg"
 
-[[channel]]
+[[social.channel]]
 name = "Unsplash"
 url = "https://unsplash.com/@veklabs"
 icon = "camera.svg"
 
-[[channel]]
+[[social.channel]]
  name = "Anchor"
  url = "https://anchor.fm/vek-labs"
  icon = "anchor.svg"
 
-[[channel]]
+[[social.channel]]
  name = "Vimeo"
  url = "https://vimeo.com/veklabs"
  icon = "vimeo.svg"

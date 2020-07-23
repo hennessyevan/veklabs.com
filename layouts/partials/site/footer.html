@@ -1,25 +1,41 @@
 <footer class="site-footer" role="contentinfo">
 
- <p><img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
-  {{ .Site.Data.en.FOOTER_PRETEXT}}
- </p>
- <p class="site-footer__copyright">
-  &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>
- </p>
+  <div class="inner">
+    <div class="left">
+      <img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
+      {{ .Site.Data.en.FOOTER_PRETEXT}}
+    </div>
 
- <div class="social-media">
-  {{ range .Site.Data.social.channel }}
-  <a href="{{ .url }}" target="_blank" class="icon">
-
-   {{ if hasPrefix .icon "http" }}
-   <img src="{{ .icon }}" alt="{{ .name }}">
-   {{ else }}
-   <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
-   {{ end }}
+    <div class="center">
+      <div class="site-footer__codivyright">
+        &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>
+      </div>
+    </div>
 
 
-  </a>
-  {{ end }}
- </div>
+    <div class="right">
+      {{ range .Site.Data.footer.social.channel }}
+      <a href="{{ .url }}" target="_blank" class="icon">
+
+        {{ if hasPrefix .icon "http" }}
+        <img src="{{ .icon }}" alt="{{ .name }}">
+        {{ else }}
+        <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
+        {{ end }}
+
+
+      </a>
+      {{ end }}
+    </div>
+  </div>
+
+  <div class="sub-footer">
+    <div class="address">
+      {{ .Site.Data.footer.address }}
+    </div>
+    <div class="mail">
+      {{ .Site.Data.footer.mail }}
+    </div>
+  </div>
 
 </footer>
