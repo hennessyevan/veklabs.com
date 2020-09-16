@@ -1,8 +1,8 @@
 +++
-title = "Promotional Videos"
-image = "https://images.unsplash.com/photo-1489394209342-a88eb0274fe2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1200&h=500&q=80"
-summary_image = "https://images.unsplash.com/photo-1489394209342-a88eb0274fe2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&h=900&q=80"
+title = "Promotional Content"
+image = "images/Promo-Videos-Calgary.png"
+summary_image = "images/Promo-Videos-Calgary.png"
 order = 0
 speed = 4
-summary = "Bespoke vinyl vaporware swag jianbing neutra lo-fi forage truffaut. Seitan migas sriracha pop-up cronut coloring book. Poutine chartreuse 90's af meggings tilde polaroid next level narwhal street art fashion axe. Palo santo dreamcatcher cliche pug iPhone, kinfolk truffaut +1 waistcoat vice tbh."
+summary = "Specializing in B2B services, Vek Labs will work with your team to plan, script, capture and produce content to be distributed. Our filming methodology allows you to maximize the content captured for longer cycles than our competitors. By curating content for usability, we partner with you to future-proof your objectives, engaging your customers for a longer period."
 +++

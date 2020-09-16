@@ -1,5 +1,5 @@
 +++
-title = "Corporate & Event Coverage"
+title = "Photography"
 order = 1
 speed = 6
 image = "images/Event-Video.png"

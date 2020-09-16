@@ -1,5 +1,5 @@
 +++
-title = "Drone Videography & Photography"
+title = "Drone Video & Photo"
 order = 5
 speed = 3
 image = "images/drone-video-calgary.png"

@@ -1,5 +1,5 @@
 +++
-title = "Equipment Rentals [Calgary]"
+title = "Equipment Rentals"
 image = "images/video-rentals.png"
 order = 7
 speed = -5

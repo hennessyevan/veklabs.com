@@ -1,5 +1,5 @@
 +++
-title = "Production [On Location & Studio]"
+title = "Production"
 image = "images/Video-Production-Vek.png"
 order = 4
 speed = -1
