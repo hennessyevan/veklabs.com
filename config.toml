@@ -1,17 +1,16 @@
-baseURL = "/"
+baseURL = ""
 languageCode = "en-ca"
 title = "Vek Labs"
 
 enableRobotsTXT = true
 disableAliases = true
-summaryLength = 25
 Paginate = 5
+
+googleAnalytics = "GTM-MNN7HSW"
 
 staticDir = ["static"]
 
 [menu]
-
-
 [[menu.main]]
  identifier = "features"
  name = "Features"
@@ -24,11 +23,11 @@ staticDir = ["static"]
  url = "/services/"
  weight = 2
 
- # [[menu.main]]
- # identifier = "products"
- # name = "Products"
- # url = "/products/"
- # weight = 3
+ [[menu.main]]
+ identifier = "products"
+ name = "Products"
+ url = "/products/"
+ weight = 3
  
  [[menu.main]]
  identifier = "reports"
@@ -86,4 +85,3 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
-

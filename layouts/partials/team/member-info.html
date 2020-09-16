@@ -1,0 +1,44 @@
+<div class="member-info">
+
+  <div class="header">
+    <div class="avatar">
+      {{if isset .Params "image"}}
+      {{ block "site/overlayimg" . }} {{ partial "site/img" . }}{{ end }}
+      {{end}}
+    </div>
+
+    <div class="name">
+      <h1>{{.Params.name}}</h1>
+
+      <h4>{{.Params.title}}</h4>
+
+      {{with .Params.competencies}}
+      <span class="competencies">
+        {{delimit . ", "}}
+      </span>
+      {{end}}
+    </div>
+  </div>
+
+  {{with .Content}}
+  {{.}}
+  {{end}}
+
+  {{ with .Params.channel }}
+  <div class="social-media">
+    {{ range . }}
+    <a href="{{ .url }}" target="_blank" class="icon" rel="noopener">
+
+      {{ if hasPrefix .icon "http" }}
+      <img src="{{ .icon }}" alt="{{ .name }}">
+      {{ else }}
+      <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
+      {{ end }}
+
+
+    </a>
+    {{ end }}
+  </div>
+  {{ end }}
+
+</div>

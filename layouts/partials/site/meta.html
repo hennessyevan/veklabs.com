@@ -1,7 +1,11 @@
 {{ $imageRel := .Params.image | default "images/tempHero.jpg" }}
 {{ $image := "" }}
 {{ if resources.GetMatch $imageRel }}
-{{ $image = ((resources.Get $imageRel).Resize "600x") }}
+{{ $image = ((resources.Get $imageRel).Resize "600x").RelPermalink }}
+{{ end }}
+
+{{ if eq .Section "reports" }}
+{{ $image = printf "%s%s%s" "/social-images/" (urlize .Title) ".jpg" }}
 {{ end }}
 
 {{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
@@ -10,13 +14,14 @@
 
 {{ $title := printf "%s | %s%s" .Title .Site.Title .Site.Data.en.subtitle | default (printf "%s%s" .Site.Title .Site.Data.en.subtitle ) }}
 
+{{ template "_internal/schema.html" }}
+
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 <meta property="og:title" content="{{ $title }}{{ .Site.Params.Title }}" />
 <meta property="og:locale" content="en_CA">
 <meta property="og:site_name" content="Vek Labs">
-
 
 {{ $description := .Summary | default .Site.Data.en.description }}
 <meta name="description" content="{{ $description }}" />
@@ -29,30 +34,37 @@
 <meta name="twitter:site" content="@veklabs" />
 <meta name="twitter:title" content="{{ $title }}" />
 
-{{ if ($image) }}
+{{ if eq .Section "reports" }}
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
+<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}{{ $image }}" />
+<meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image }}" />
+{{ else if isset $image "RelPermalink" }}
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="{{ .Site.BaseURL }}/{{ $image.RelPermalink }}" />
+<meta property="og:image" content="{{ .Site.BaseURL }}/{{ $image.RelPermalink }}" />
 <meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
 <meta property="og:image:width" content="{{ $image.Width }}">
 <meta property="og:image:height" content="{{ $image.Height }}">
 <meta property="og:image:type" content="{{ $image.MediaType }}">
 <meta property="og:type" content="article">
 {{ end }}
+{{ if ne .Section "reports" }}
 <meta property="og:type" content="website">
 <meta property="og:video"
- content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
 <meta property="og:video:url"
- content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
 <meta property="og:video:secure_url"
- content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
 <meta property="og:video:width" content="1920" />
 <meta property="og:video:height" content="700" />
 <meta property="og:video:type" content="video/mp4" />
 <meta name="twitter:player"
- content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
+  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
 <meta property="twitter:player:width" content="1920" />
 <meta property="twitter:player:height" content="700" />
+{{ end }}
 
 <link rel="shortcut icon" href="{{ $faviconSVG }}" />
 <link rel="shortcut icon" href="{{ $darkFavicon }}" id="dark-scheme-icon" />

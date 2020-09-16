@@ -2,22 +2,34 @@
 {{ .Site.Title -}}{{ .Site.Data.en.subtitle }}
 {{ end }}
 
+{{ define "page/styles" }}
+{{ partial "site/pageStyle" "css/home.css" }}
+{{ end }}
+
 {{ define "main" }}
 
 <section id="videos">
- {{ range where .Pages "Section" "videos" }}
+  {{ range where .Pages "Section" "videos" }}
 
- {{ range first 1 (where .Pages "Params.featured" true) }}
- {{ block "videos/hero" .}}{{ partial "videos/hero.html" . }}{{ end }}
- {{ end }}
-
- <div class="video-grid padding">
-  {{ range where .Pages "Params.featured" "!=" true }}
-  {{ block "videos/list" .}}{{ partial "videos/list.html" . }}{{ end }}
+  {{ range first 1 (where .Pages "Params.featured" true) }}
+  {{ block "videos/hero" .}}{{ partial "videos/hero.html" . }}{{ end }}
   {{ end }}
- </div>
 
- {{ end }}
+  <div class="video-grid padding">
+    {{ range where .Pages "Params.featured" "!=" true }}
+    {{ block "videos/list" .}}{{ partial "videos/list.html" . }}{{ end }}
+    {{ end }}
+  </div>
+
+  {{ end }}
+</section>
+
+<section id="featured-logos" class="padding">
+  <div class="container">
+    {{ partial "home/featured-logos" . }}
+
+    {{ partial "home/seen-on-tv" . }}
+  </div>
 </section>
 
 {{ block "home/guarantee" . }}{{ partial "home/guarantee.html" }}{{ end }}
@@ -25,38 +37,38 @@
 {{ block "home/stats" . }}{{ partial "home/stats.html" . }}{{ end }}
 
 <section id="team" class="padding">
- <h2 class="title">{{ .Site.Data.en.TEAM_TITLE }}</h2>
- {{ range where .Pages "Section" "team" }}
+  <h2 class="title">{{ .Site.Data.en.TEAM_TITLE }}</h2>
+  {{ range where .Pages "Section" "team" }}
 
- <div class="team-grid">
-  {{ range .Pages.ByParam "order" }}
+  <div class="team-grid">
+    {{ range .Pages.ByParam "order" }}
 
-  {{ block "team/member" . }}{{ partial "team/member.html" . }}{{ end }}
+    {{ block "team/member" . }}{{ partial "team/member.html" . }}{{ end }}
+
+    {{ end }}
+  </div>
 
   {{ end }}
- </div>
-
- {{ end }}
 </section>
 
 <section id="clients" class="padding">
- <h2 class="title">{{ .Site.Data.en.CLIENT_TITLE }}</h2>
- <h4 class="sub-title">{{.Site.Data.en.CLIENT_SUB_TITLE}}</h4>
+  <h2 class="title">{{ .Site.Data.en.CLIENT_TITLE }}</h2>
+  <h4 class="sub-title">{{.Site.Data.en.CLIENT_SUB_TITLE}}</h4>
 
- {{ block "clients/grid" . }}{{ partial "clients/grid.html" . }}{{ end }}
+  {{ block "clients/grid" . }}{{ partial "clients/grid.html" . }}{{ end }}
 
 </section>
 
 <div id="overlay">
- <div class="close">
-  <span>
-   Close
-  </span>
-  <svg viewBox="0 0 24 24" alt="Close Modal">
-   <use href="/assets/close.svg#icon"></use>
-  </svg>
- </div>
- <div id="player"></div>
+  <div class="close">
+    <span>
+      Close
+    </span>
+    <svg viewBox="0 0 24 24" alt="Close Modal">
+      <use href="/assets/close.svg#icon"></use>
+    </svg>
+  </div>
+  <div id="player"></div>
 </div>
 
 

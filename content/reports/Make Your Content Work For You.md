@@ -1,10 +1,10 @@
 +++
- title = "Make Your Content Work For You"
- date = 2020-03-23
- image = "images/Make-Your-Content-Work-For-You-Vek-Labs.png"
- category = "Content Creation"
- author = "Andrew Peloso"
- keywords = "marketing,content creation,brand"
+title = "Make Your Content Work For You"
+date = 2020-03-23
+image = "images/Make-Your-Content-Work-For-You-Vek-Labs.png"
+category = "Content Creation"
+author = "Andrew Peloso"
+keywords = "marketing,content creation,brand"
 +++
 
 We all have to deal with it. The desire to be a significant contributor online, balanced with the stress of visioning, finding voice, uploading, rendering, aspect ratios, hashtags etc... And will people even relate to our work! With respect to video production, we have a few thoughts on how to make the process more palatable. It all begins with discerning the ratio of **quantity** vs **quality**:

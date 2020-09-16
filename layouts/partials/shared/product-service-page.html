@@ -1,0 +1,27 @@
+{{ define "page/styles" }}
+{{ partial "site/pageStyle" "css/products-services.css" }}
+{{ end }}
+
+<main class="padding single-product-service">
+  <div class="container">
+
+    {{ if isset .Params "image" }}
+    <div class="image">
+      {{ if hasPrefix .Params.image "http" }}
+      <img src="{{ .Params.image }}" alt="">
+      {{ else }}
+      {{ partial "site/img" . }}
+      {{ end }}
+
+      <h1 class="title">
+        {{ .Title }}
+      </h1>
+    </div>
+    {{ end }}
+
+    <article class="content">
+      {{ .Content }}
+    </article>
+
+  </div>
+</main>

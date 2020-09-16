@@ -1,29 +1,31 @@
-{{ define "main" }}
-
-<script>window.location.pathname = '/'</script>
-
-{{/*  <section id="products">
-
- <div class="container">
-
-  <div class="product-list">
-
-   <h1 class="main title">{{ .Title }}</h1>
-
-{{ range(.Pages.ByParam "order") }}
-
-{{ partial "shared/summary" . }}
-
+{{ define "page/styles" }}
+{{ partial "site/pageStyle" "css/products-services.css" }}
 {{ end }}
 
-</div>
+{{ define "main" }}
 
-</div>
+<section id="products">
+
+  <div class="container">
+
+    <div class="product-list">
+
+      <h1 class="main title">{{ .Title }}</h1>
+
+      {{ range(.Pages.ByParam "order") }}
+
+      {{ partial "shared/summary" . }}
+
+      {{ end }}
+
+    </div>
+
+  </div>
 
 </section>
 
-{{ $s := resources.Get "js/parallax.js" | minify }}
+{{ $s := resources.Get "js/services.js" | minify }}
 
-<script src="{{ $s.Permalink }}"></script> */}}
+<script src="{{ $s.Permalink }}"></script>
 
 {{ end }}

@@ -1,19 +1,31 @@
 [build]
-    command = "hugo -b $URL"
-    publish = "public"
+  publish = "public"
+  command = "yarn build"
 
 [build.environment]
-    HUGO_VERSION = "0.69.0"
-    GO_VERSION = "1.12"
+  HUGO_VERSION = "0.73.0"
+  GO_VERSION = "1.12"
+
+[context.split1]
+  command = "yarn build:split"
 
 [context.production.environment]
-    HUGO_VERSION = "0.69.0"
-    GO_VERSION = "1.12"
-    HUGO_ENV = "production"
-    NODE_ENV = "production"
+  HUGO_VERSION = "0.73.0"
+  HUGO_ENV = "production"
+  HUGO_ENABLEGITINFO = "true"
+  NODE_ENV = "production"
 
 [context.deploy-preview]
-    command = "hugo -b $DEPLOY_PRIME_URL"
+  command = "yarn build:deploy-preview"
+
+[context.deploy-preview.environment]
+  HUGO_VERSION = "0.73.0"
 
 [context.branch-deploy]
-    command = "hugo -b $DEPLOY_PRIME_URL"
+  command = "yarn build:branch"
+
+[context.branch-deploy.environment]
+  HUGO_VERSION = "0.73.0"
+
+[context.next.environment]
+  HUGO_ENABLEGITINFO = "true"
