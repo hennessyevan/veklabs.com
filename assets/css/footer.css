@@ -1,13 +1,5 @@
 footer {
- padding: 0.5maj 3maj;
- text-align: right;
- width: 100%;
- border-top: 1px solid var(--gray5);
- font-size: 1.8maj;
- display: flex;
- justify-content: space-between;
  background: var(--background);
- padding-bottom: env(safe-area-inset-bottom);
 
  @media (--tablet) {
   text-align: center;
@@ -18,9 +10,10 @@ footer {
   & p {
    margin: 2maj 0;
 
-   &.site-footer__copyright {
-    margin-bottom: 0;
-   }
+  & .left,
+  & .right,
+  & .center {
+   flex-basis: 33%;
   }
  }
 
@@ -36,7 +29,17 @@ footer {
 
  & .social-media {
   display: flex;
+  align-items: center;
   justify-content: center;
+
+  & .divider {
+   padding-inline: 2maj;
+  }
+ }
+
+ & .right {
+  display: flex;
+  justify-content: flex-end;
   align-items: center;
   flex-wrap: wrap;
   margin: 0 -1maj;
