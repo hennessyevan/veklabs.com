@@ -23,7 +23,9 @@
   "popmotion": "^8.7.0",
   "postcss-cli": "^7.1.0",
   "ramjet": "^0.5.0",
-  "rellax": "^1.12.1"
+  "rellax": "^1.12.1",
+  "puppeteer": "^4.0.1",
+  "puppeteer-social-image": "^0.8.1"
  },
  "browserslist": [
   "ie >= 10",
@@ -56,8 +58,6 @@
   "postcss-normalize": "^9.0.0",
   "postcss-preset-env": "^6.7.0",
   "postcss-relaxed-unit": "^1.1.1",
-  "puppeteer": "^4.0.1",
-  "puppeteer-social-image": "^0.8.1",
   "remark-frontmatter": "^2.0.0",
   "remark-parse": "^8.0.2",
   "remark-stringify": "^8.1.0",
