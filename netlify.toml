@@ -4,7 +4,7 @@
 
 [build.environment]
   HUGO_VERSION = "0.75.0"
-  GO_VERSION = "1.12"
+  GO_VERSION = "1.15"
 
 [context.split1]
   command = "yarn build:split"
