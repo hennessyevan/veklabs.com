@@ -1,7 +1,7 @@
 +++
 title = "Finch"
 category = "Short Film"
-awards = ["images/okotoksfilmfestival.png"]
+awards = ["images/okotoksfilmfestival.png", "images/GNIFF_LAUREL_2020_white.png", "images/Award-Winner---Film-for-Peace---2020.png"]
 videoURL = "https://player.vimeo.com/external/399541496.hd.mp4?s=44a74f288039643d7dee6df8ebfd10a6d7e773ad"
 publishDate = 2020-04-01
 image = "images/FinchThumbnail.jpg"
