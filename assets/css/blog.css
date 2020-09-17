@@ -158,11 +158,13 @@
   background: var(--green);
  }
 
- &.news {
+ &.news,
+ &.vekcast {
   background: var(--red);
  }
 
- &.photography {
+ &.photography,
+ &.production {
   background: var(--indigo);
  }
 
@@ -369,6 +371,7 @@
 
   & svg {
    width: 1.5maj;
+   height: 1.5maj;
    margin: 0;
    fill: #ffffff;
   }
