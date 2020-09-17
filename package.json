@@ -40,13 +40,7 @@
   "remark-parse": "^8.0.2",
   "remark-stringify": "^8.1.0",
   "to-vfile": "^6.1.0",
-  "unified": "^9.0.0"
- },
- "browserslist": [
-  "ie >= 10",
-  "last 3 versions"
- ],
- "devDependencies": {
+  "unified": "^9.0.0",
   "@babel/core": "^7.9.0",
   "@babel/plugin-proposal-object-rest-spread": "^7.9.5",
   "@babel/plugin-transform-runtime": "^7.9.0",
@@ -71,5 +65,9 @@
   "wait-on": "^4.0.2",
   "webpack": "^4.42.1",
   "webpack-cli": "^3.3.11"
- }
+ },
+ "browserslist": [
+  "ie >= 10",
+  "last 3 versions"
+ ]
 }
