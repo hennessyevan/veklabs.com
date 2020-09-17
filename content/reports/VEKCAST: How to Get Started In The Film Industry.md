@@ -7,9 +7,9 @@ author = "Andrew Peloso"
 keywords = "calgary video production, video production calgary, calgary video company"
 +++
 
-{{< youtube iZ6Dn-kFeUg >}}
+{{< youtube fBClSB5ZXz0 >}}
 
-Shae shares his journey on his beginnings in film and gives tips on how to get started in the film industry! Shae Paterson is a Canadian Director of Photography with over 8 years professional experience in the industry. He has worked with a variety of companies including Google, CBC, Rogers Media, GMC, Bell Media, The United Nations and many more. [Shae Paterson's Website](https://www.shaepaterson.ca/)
+Shae shares his journey on his beginnings in film and gives tips on how to get started in the film industry! Shae Paterson is a Canadian Director of Photography with over 8 years professional experience in the industry. He has worked with a variety of companies including Google, CBC, Rogers Media, GMC, Bell Media, The United Nations and many more. [Shae Paterson's Website](https://www.shaepaterson.ca/):
 
 ### [Full Podcast](https://anchor.fm/vek-labs)
 ### [Instagram](https://www.instagram.com/veklabs/)
