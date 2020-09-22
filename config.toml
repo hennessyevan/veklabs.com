@@ -2,6 +2,16 @@ baseURL = ""
 languageCode = "en-ca"
 title = "Vek Labs"
 
+[params]
+disallow_search_engines = false # set robots.txt to disallow everything
+imgSizes = [2500, 1500, 1000, 500]
+title = "Vek Labs"
+videos = ["https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175"]
+locale = "en_CA"
+images = ["/images/tempHero.jpg"]
+subtitle = "Top Calgary Video Production Company"
+description = "We're a video production company working with people on productions that inspire us. Meet Calgary's pro content team."
+
 enableRobotsTXT = true
 disableAliases = true
 Paginate = 5
@@ -58,10 +68,6 @@ toLower = true
 [[related.indices]]
  name = "author"
  weight = 50.0
-
-[params]
-disallow_search_engines = false # set robots.txt to disallow everything
-imgSizes = [2500, 1500, 1000, 500]
 
 # add redirects/headers
 [outputs]

@@ -12,60 +12,36 @@
 {{ $darkFavicon := (resources.Get "images/logodark.png").Permalink }}
 {{ $lightFavicon := (resources.Get "images/logo.png").Permalink }}
 
-{{ $title := printf "%s | %s%s" .Title .Site.Title .Site.Data.en.subtitle | default (printf "%s%s" .Site.Title .Site.Data.en.subtitle ) }}
-
-{{ template "_internal/schema.html" }}
+{{ $title := printf "%s | %s | %s" .Title .Site.Params.Title .Site.Params.subtitle | default (printf "%s%s" .Site.Params.Title .Site.Params.subtitle ) }}
 
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<meta property="og:title" content="{{ $title }}{{ .Site.Params.Title }}" />
-<meta property="og:locale" content="en_CA">
-<meta property="og:site_name" content="Vek Labs">
+
+<title>{{ $title }}</title>
+
+<!-- OpenGraph -->
+{{ block "meta/opengraph" . }}
+{{ template "_internal/opengraph.html" . }}
+{{ end }}
+
+<!-- Twitter -->
+{{ block "meta/twitter" . }}
+{{ template "_internal/twitter_cards.html" . }}
+{{ end }}
+
+<!-- Schema JSON/LD -->
+{{ block "meta/json" . }}
+{{ template "_internal/schema.html" . }}
+{{ end }}
+
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
 
 {{ $description := .Summary | default .Site.Data.en.description }}
 <meta name="description" content="{{ $description }}" />
-<meta property="og:description" content="{{ $description }}" />
-<meta name="twitter:description" content="{{ $description }}" />
-
-<meta property="og:url" content="{{ .Page.Permalink }}" />
-
-<meta name="twitter:card" content="player" />
-<meta name="twitter:site" content="@veklabs" />
-<meta name="twitter:title" content="{{ $title }}" />
-
-{{ if eq .Section "reports" }}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="{{ $image }}" />
-<meta property="og:image" content="{{ $image }}" />
-<meta property="og:image:secure_url" content="{{ $image }}" />
-{{ else if isset $image "Permalink" }}
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="{{ $image.Permalink }}" />
-<meta property="og:image" content="{{ $image.Permalink }}" />
-<meta property="og:image:secure_url" content="{{ $image.Permalink }}" />
-<meta property="og:image:width" content="{{ $image.Width }}">
-<meta property="og:image:height" content="{{ $image.Height }}">
-<meta property="og:image:type" content="{{ $image.MediaType }}">
-<meta property="og:type" content="article">
-{{ end }}
-{{ if ne .Section "reports" }}
-<meta property="og:type" content="website">
-<meta property="og:video"
-  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
-<meta property="og:video:url"
-  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
-<meta property="og:video:secure_url"
-  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
-<meta property="og:video:width" content="1920" />
-<meta property="og:video:height" content="700" />
-<meta property="og:video:type" content="video/mp4" />
-<meta name="twitter:player"
-  content="https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175" />
-<meta property="twitter:player:width" content="1920" />
-<meta property="twitter:player:height" content="700" />
-{{ end }}
-
 <link rel="shortcut icon" href="{{ $faviconSVG }}" />
 <link rel="shortcut icon" href="{{ $darkFavicon }}" id="dark-scheme-icon" />
 <link rel="shortcut icon" href="{{ $lightFavicon }}" id="light-scheme-icon" />
