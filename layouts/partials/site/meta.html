@@ -1,13 +1,3 @@
-{{ $imageRel := .Params.image | default "images/tempHero.jpg" }}
-{{ $image := "" }}
-{{ if resources.GetMatch $imageRel }}
-{{ $image = ((resources.Get $imageRel).Resize "600x").Permalink }}
-{{ end }}
-
-{{ if eq .Section "reports" }}
-{{ $image = printf "%s%s%s%s" .Site.BaseURL "social-images/" (urlize .Title) ".jpg" }}
-{{ end }}
-
 {{ $faviconSVG := (resources.Get "images/logo.svg").Permalink }}
 {{ $darkFavicon := (resources.Get "images/logodark.png").Permalink }}
 {{ $lightFavicon := (resources.Get "images/logo.png").Permalink }}
