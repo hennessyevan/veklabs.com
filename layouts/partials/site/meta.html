@@ -1,16 +1,16 @@
 {{ $imageRel := .Params.image | default "images/tempHero.jpg" }}
 {{ $image := "" }}
 {{ if resources.GetMatch $imageRel }}
-{{ $image = ((resources.Get $imageRel).Resize "600x").RelPermalink }}
+{{ $image = ((resources.Get $imageRel).Resize "600x").Permalink }}
 {{ end }}
 
 {{ if eq .Section "reports" }}
-{{ $image = printf "%s%s%s" "/social-images/" (urlize .Title) ".jpg" }}
+{{ $image = printf "%s%s%s%s" .Site.BaseURL "social-images/" (urlize .Title) ".jpg" }}
 {{ end }}
 
-{{ $faviconSVG := (resources.Get "images/logo.svg").RelPermalink }}
-{{ $darkFavicon := (resources.Get "images/logodark.png").RelPermalink }}
-{{ $lightFavicon := (resources.Get "images/logo.png").RelPermalink }}
+{{ $faviconSVG := (resources.Get "images/logo.svg").Permalink }}
+{{ $darkFavicon := (resources.Get "images/logodark.png").Permalink }}
+{{ $lightFavicon := (resources.Get "images/logo.png").Permalink }}
 
 {{ $title := printf "%s | %s%s" .Title .Site.Title .Site.Data.en.subtitle | default (printf "%s%s" .Site.Title .Site.Data.en.subtitle ) }}
 
@@ -36,14 +36,14 @@
 
 {{ if eq .Section "reports" }}
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="{{ .Site.BaseURL }}{{ $image }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}{{ $image }}" />
-<meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image }}" />
-{{ else if isset $image "RelPermalink" }}
+<meta name="twitter:image" content="{{ $image }}" />
+<meta property="og:image" content="{{ $image }}" />
+<meta property="og:image:secure_url" content="{{ $image }}" />
+{{ else if isset $image "Permalink" }}
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:image" content="{{ .Site.BaseURL }}/{{ $image.RelPermalink }}" />
-<meta property="og:image" content="{{ .Site.BaseURL }}/{{ $image.RelPermalink }}" />
-<meta property="og:image:secure_url" content="{{ .Site.BaseURL }}{{ $image.RelPermalink }}" />
+<meta name="twitter:image" content="{{ $image.Permalink }}" />
+<meta property="og:image" content="{{ $image.Permalink }}" />
+<meta property="og:image:secure_url" content="{{ $image.Permalink }}" />
 <meta property="og:image:width" content="{{ $image.Width }}">
 <meta property="og:image:height" content="{{ $image.Height }}">
 <meta property="og:image:type" content="{{ $image.MediaType }}">
