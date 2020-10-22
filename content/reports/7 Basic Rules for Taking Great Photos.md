@@ -2,7 +2,7 @@
 title = "7  Basic Rules for Taking Great Photos"
 date = 2020-10-21
 image = "images/Calgary_Video_Production_VL_C.jpg"
-category = "Calgary"
+category = "Photography"
 author = "Riley Patten"
 keywords = "calgary video production, video production calgary, calgary video company"
 +++
