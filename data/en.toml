@@ -6,12 +6,12 @@ description = "We are a team of award-winning videographers and editors working 
 
 HERO_EXCERPT="We are a team of award-winning videographers and editors working with people and on productions that inspire us | Welcome to the lab."
 
-TEAM_TITLE="Team"
+TEAM_TITLE="Core Team"
 
-PROJECTS_FILMED = 589
-VIDEOS_RENDERED = 1253
-FOOTAGE_PROCESSED_TB = 42
-TOTAL_VIEWS = 12
+PROJECTS_FILMED = 687
+VIDEOS_RENDERED = 1687
+FOOTAGE_PROCESSED_TB = 71
+TOTAL_VIEWS = 13
 
 CLIENT_TITLE="Clients"
 CLIENT_SUB_TITLE="Some of the clients we have had the privilege of creating with."
