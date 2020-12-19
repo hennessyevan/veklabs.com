@@ -36,8 +36,6 @@ When it comes to the power of video within social media, [93% of brands](https:/
 
 Audience engagement is one of the most important metrics when it comes to social media marketing, and video content is the [second most used technique](https://www.hubspot.com/state-of-marketing) to garner these metrics. Followed closely by [Live Video streams](https://www.hubspot.com/state-of-marketing) (which are just going to continue to get more and more common as time goes on).
 
-![full](https://www.VekLabs.com/assets/images/videoproductionin2021_calgary.png "video production")
-
 ## Video Production Tips: How To Do It The Right Way
 
 Video production may seem like it's the best way to go about creating a strategy to market your brand, company, or yourself in 2021. But it’s important to understand that you need to do this the right way or else you can end up wasting time and resources. Building a proper video marketing strategy is essential to your success online. So let’s go over a few ways to do this and save you the headache, time, and money that comes along with video production.
