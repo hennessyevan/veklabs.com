@@ -1,6 +1,6 @@
 +++
  name = "Jon Cubid"
- image = "images/Spring2020_VekLabs-182.jpg"
+ image = "images/jon_cubid_vek.jpg"
  order = 2
  title = "Senior Editor"
  competencies = ["Post-Production and Narrative","Motion Graphics"]
