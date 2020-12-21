@@ -11,7 +11,7 @@
 
     <div class="post-list">
 
-      {{ $paginator := .Paginate .Pages }}
+      {{ $paginator := .Paginate .Pages 5 }}
       {{ range $index, $page := $paginator.Pages }}
 
       {{ $id := cond (ne $paginator.HasPrev true) (printf "index-%v" $index) "" }}
