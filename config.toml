@@ -10,7 +10,7 @@ videos = ["https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63
 locale = "en_CA"
 images = ["/images/tempHero.jpg"]
 subtitle = "Top Calgary Video Production Company"
-description = "We're a video production company working with people on productions that inspire us. Meet Calgary's pro content team."
+description = "We're a Calgary video production company working with people on productions that inspire us. Meet Calgary's pro content team."
 
 enableRobotsTXT = true
 disableAliases = true
