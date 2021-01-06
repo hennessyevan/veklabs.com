@@ -5541,6 +5541,11 @@ schema-utils@^2.6.5:
     ajv "^6.12.2"
     ajv-keywords "^3.4.1"
 
+scroll-snap-api@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/scroll-snap-api/-/scroll-snap-api-1.0.1.tgz#528032417a1abe610136ffd222ee7413785e6251"
+  integrity sha512-2XEtrHSgQvGhaw2q/XqamHZYwS+X7f77FJEWBRGCNyLz2AuBig0kOueC6d9fJ8RWHiSK/ODIVunRlOa4HltpRA==
+
 section-matter@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/section-matter/-/section-matter-1.0.0.tgz#e9041953506780ec01d59f292a19c7b850b84167"
