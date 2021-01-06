@@ -20,7 +20,7 @@ Strong, successful companies across the world are utilizing the power of video t
 
 Typically, most consumers would rather watch a short video than read a blog post. Don’t get me wrong here, blogs are still a powerful tool (and cost much less than a video to produce) but nothing is as impactful as a well-crafted video production done by professionals.
 
-This brand awareness video example was taken from Coca-Cola, and they did an amazing job with this one. Brand awareness videos are made to spread the message of the company, rather than sell an individual product or service. These types of videos are extremely powerful if done correctly.
+Brand awareness videos are extremely powerful if done correctly.
 
 
 ### DWK Brand Awareness Video - Example
