@@ -52,6 +52,6 @@
  --padding: 3maj;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
  --padding: 1.5maj;
 }
