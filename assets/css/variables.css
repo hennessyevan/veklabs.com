@@ -48,4 +48,10 @@
  --hover-shadow: 0 30px 65px rgba(0, 0, 0, 0.45);
 
  --blur-filter: blur(20px) saturate(180%);
+
+ --padding: 3maj;
+}
+
+@media (max-width: 768px) {
+ --padding: 1.5maj;
 }
