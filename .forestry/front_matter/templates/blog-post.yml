@@ -8,12 +8,14 @@ fields:
 - type: datetime
   name: date
   label: date
+  default: now
 - type: file
   name: image
   label: image
 - type: text
   name: category
   label: category
+  default: blog
 - type: text
   name: author
   label: author
