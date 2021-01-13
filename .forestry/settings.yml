@@ -20,7 +20,7 @@ sections:
   label: Team
   create: all
   match: "**/*"
-upload_dir: static/images
+upload_dir: assets/images
 public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
