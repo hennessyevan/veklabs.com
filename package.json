@@ -14,7 +14,7 @@
   "watch-webpack": "webpack --mode=development --watch",
   "social-images": "node scripts/social-image.mjs",
   "serve-hugo": "hugo server -b http://$(hostname) --bind 0.0.0.0",
-  "forestry-hugo": "hugo server -b https://$(hostname) --bind 0.0.0.0 --port 8080 -D -E -F",
+  "forestry-hugo": "hugo server --port 8080 -D -E -F --renderToDisk -d public",
   "forestry": "run-p forestry-hugo watch-webpack"
  },
  "dependencies": {
