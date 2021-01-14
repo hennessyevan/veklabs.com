@@ -42,6 +42,5 @@ build:
   preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: yarn run-p 'serve-hugo --port 8080 -D -E -F --renderToDisk'
-    watch-webpack
+  instant_preview_command: yarn forestry
 version: 0.63.2
