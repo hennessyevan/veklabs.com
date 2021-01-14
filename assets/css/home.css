@@ -414,7 +414,7 @@
  align-items: center;
  justify-content: center;
  list-style: none;
- z-index: 999;
+ z-index: 9;
  position: relative;
 
  @media (pointer: "coarse") {
