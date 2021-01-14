@@ -5,7 +5,6 @@
  "sideEffects": false,
  "scripts": {
   "start": "run-p serve-hugo watch-webpack social-images",
-  "rollup:watch": "",
   "build": "run-s social-images build-hugo",
   "build:deploy-preview": "webpack --mode=production && yarn social-images && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
   "build:branch": "webpack --mode=production && yarn social-images && hugo --gc --minify -b $DEPLOY_PRIME_URL",
@@ -14,7 +13,8 @@
   "build-webpack": "webpack -p",
   "watch-webpack": "webpack --mode=development --watch",
   "social-images": "node scripts/social-image.mjs",
-  "serve-hugo": "hugo server -b http://$(hostname) --bind 0.0.0.0"
+  "serve-hugo": "hugo server -b http://$(hostname) --bind 0.0.0.0",
+  "forestry": "run-p 'serve-hugo --port 8080 -D -E -F' watch-webpack"
  },
  "dependencies": {
   "@babel/core": "^7.9.0",
