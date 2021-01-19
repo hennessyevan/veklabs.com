@@ -23,7 +23,7 @@
 
 {{ $class := cond (eq .Params.featured true) "featured" "list" }}
 
-<img src="{{ $imgSrc }}" srcset="{{ $imgSrcSet }}" class="{{ $class }} {{ .Page.Type }}" />
+<img src="{{ $imgSrc }}" srcset="{{ $imgSrcSet }}" class="{{ $class }} {{ .Page.Type }}" loading="lazy" />
 {{ end }}
 
 {{ end }}
