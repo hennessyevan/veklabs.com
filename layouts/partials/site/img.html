@@ -1,4 +1,6 @@
 {{ if isset .Params "image" }}
+
+{{ if ne .Params.image "" }}
 {{ $image := resources.Get .Params.image }}
 <!-- variables used for img tag -->
 {{ $imgSrc := "" }}
@@ -8,10 +10,10 @@
 {{ $widths := $.Site.Params.imgSizes }}
 
 <!--
-  Add URL for each width to $imgSrcSet variable
-  format: "/path/img_1000.jpg 1000w,/path/img_500.jpg 500w"
-  Note: the first URL is used as "fallback" src in $imgSrc.
--->
+    Add URL for each width to $imgSrcSet variable
+    format: "/path/img_1000.jpg 1000w,/path/img_500.jpg 500w"
+    Note: the first URL is used as "fallback" src in $imgSrc.
+  -->
 {{ range $widths }}
 {{ $srcUrl := (printf "%dx Lanczos" . | $image.Resize).RelPermalink }}
 {{ if eq $imgSrc "" }}{{ $imgSrc = $srcUrl }}{{ end }}
@@ -21,5 +23,7 @@
 
 {{ $class := cond (eq .Params.featured true) "featured" "list" }}
 
-<img src="{{ $imgSrc }}" srcset="{{ $imgSrcSet }}" class="{{ $class }} {{ .Page.Type }}" />
+<img src="{{ $imgSrc }}" srcset="{{ $imgSrcSet }}" class="{{ $class }} {{ .Page.Type }}" loading="lazy" />
+{{ end }}
+
 {{ end }}

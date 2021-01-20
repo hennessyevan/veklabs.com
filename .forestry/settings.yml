@@ -4,34 +4,43 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: heading
+  label: Blog Content
 - type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
+  path: content/reports
+  label: Reports
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
+  templates:
+  - blog-post
+- type: heading
+  label: Site Content
 - type: directory
   path: content/videos
   label: Videos
   create: all
   match: "**/*"
+- type: heading
+  label: Team
 - type: directory
   path: content/team
-  label: Team
+  label: Members
   create: all
   match: "**/*"
-upload_dir: static/uploads
-public_path: "/uploads"
+upload_dir: assets/images
+public_path: "/images"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_env:
   - HUGO_ENV=staging
-  - HUGO_VERSION=0.63.2
+  - HUGO_VERSION=0.75.0
   preview_output_directory: public
-  preview_docker_image: forestryio/hugo:latest
+  install_dependencies_command: yarn
+  preview_docker_image: forestryio/hugo:node12
   mount_path: "/srv"
   working_dir: "/srv"
-  instant_preview_command: hugo server -D -E -F --port 8080 --bind 0.0.0.0 --renderToDisk
-    -d public
+  instant_preview_command: yarn forestry
 version: 0.63.2

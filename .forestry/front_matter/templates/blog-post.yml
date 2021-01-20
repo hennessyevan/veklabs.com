@@ -1,0 +1,27 @@
+---
+label: Blog Post
+hide_body: false
+display_field: title
+fields:
+- type: text
+  name: title
+  label: title
+- type: datetime
+  name: date
+  label: date
+  default: now
+- type: file
+  name: image
+  label: image
+- type: text
+  name: category
+  label: category
+  default: blog
+- type: text
+  name: author
+  label: author
+- type: text
+  name: keywords
+  label: keywords
+pages:
+- content/reports/this-is-a-title.md

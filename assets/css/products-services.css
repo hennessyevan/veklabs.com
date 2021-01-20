@@ -35,28 +35,26 @@
   }
 
   & .image {
-   max-width: 35maj;
    position: absolute;
    z-index: -1;
    border-radius: 1.5maj;
    filter: var(--med-filter-shadow);
-   padding-top: 44%;
-   width: 100%;
+   width: 35maj;
+   height: 50maj;
 
    @media (max-width: 600px) {
-    max-width: 20maj;
+    width: 20maj;
+    height: 29maj;
    }
 
    & img {
     top: 0;
     left: 0;
-    bottom: 0;
-    right: 0;
     position: absolute;
-    object-fit: cover;
     width: 100%;
-    border-radius: 1.5maj;
     height: 100%;
+    object-fit: cover;
+    border-radius: 1.5maj;
    }
   }
 
