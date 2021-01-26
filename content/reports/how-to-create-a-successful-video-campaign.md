@@ -2,7 +2,6 @@
 author = "Andrew Peloso"
 category = "blog"
 date = 2021-01-26T23:16:11Z
-draft = true
 image = "/images/how-to-create-a-successful-video-campaign.jpg"
 keywords = "how to create a successful video campaign"
 title = "How To Create A Successful Video Campaign"
