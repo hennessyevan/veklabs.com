@@ -4,11 +4,6 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
-- type: document
-  path: docs
-  label: Documentation
-  match: "**/*"
-  read_only: true
 - type: heading
   label: Blog Content
 - type: directory
@@ -33,6 +28,10 @@ sections:
   label: Members
   create: all
   match: "**/*"
+- type: document
+  path: docs
+  label: Documentation
+  read_only: true
 upload_dir: assets/images
 public_path: "/images"
 front_matter_path: ''
