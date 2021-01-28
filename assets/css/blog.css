@@ -193,6 +193,7 @@
  max-width: 980px;
  margin: 0 auto;
  padding: 3maj 0 10maj;
+ filter: blur(0px);
 
  @media (--tablet) {
   max-width: 100vw;
@@ -403,7 +404,7 @@
   padding: 5maj;
   display: block;
   border-radius: 2maj;
-  backdrop-filter: var(--blur-filter);
+  /* backdrop-filter: var(--blur-filter); */
   background-color: var(--gray-overlay);
   font-weight: 500;
   font-size: 2.25maj;
