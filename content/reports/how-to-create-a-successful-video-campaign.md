@@ -33,7 +33,7 @@ Better yet, create an intro describing the point of the video, then lead into a 
 
 When you are trying to promote a product with video, you can’t spend time talking about your company. When we take a look at cult classic commercials such as Oxiclean or the Shamwow, do they spend any time talking about who they are? Not really. They get right to the point of their product straight away! These companies invest hundreds of thousands of dollars into their campaigns, and they only have a few minutes to try and sell you. The first 10 seconds are where they lock you in and keep you there for the duration of the commercial.
 
-{{< youtube 1Q39yGLPkMY >}}
+{{< youtube 1Q39yfGLPkMY >}}
 
 ## Meaningful Storytelling and How To Engage Your Audience
 
@@ -49,7 +49,7 @@ Creating an emotional connection goes hand-in-hand with great storytelling! By t
 
 For an example check out this advertisement from Adidas about ‘breaking free’ from your constraints:
 
-{{< youtube gXfLl3qYy0k&t >}}
+{{< youtube "gXfLl3qYy0k&t" >}}
 
 ### Guide Them Through The Story
 
@@ -69,7 +69,7 @@ One way to do this is through humor, such as Old Spice has done throughout the y
 
 Just take a look at the Old Spice Terry Crews collaborations from a few years back:
 
-{{< youtube Hq2SlCja3zo&t >}}
+{{< youtube "Hq2SlCja3zo&t" >}}
 
 Here are a few tips for coming up with ways to highlight product/brand strengths:
 
