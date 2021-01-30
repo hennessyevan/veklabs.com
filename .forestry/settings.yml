@@ -28,6 +28,12 @@ sections:
   label: Members
   create: all
   match: "**/*"
+- type: directory
+  path: docs
+  label: Documentation
+  create: documents
+  match: "**/*"
+  new_doc_ext: md
 upload_dir: assets/images
 public_path: "/images"
 front_matter_path: ''

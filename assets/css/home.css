@@ -488,6 +488,7 @@
 
  @media (max-width: 600px) {
   --col-size: calc(100vw - (var(--padding) * 2));
+  grid-gap: calc(var(--padding) / 2);
  }
 }
 
