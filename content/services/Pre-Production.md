@@ -17,7 +17,7 @@ What is the scope and purpose of your production project? What are the milestone
 
 Creative projects can be very subjective but they do not have to be unclear. During the pre-production process we meet with your team to brainstorm. Establishing a clear vision around the mood of your production. What is the tone? Considerations we look at are: Emotive elements important for your brand, colour pallets, lighting aesthetics and thematic refinement. Coherent story flow allows us to plan the necessary interview questions and acted scenes that will make your project successful. 
 
-### Resoource Allocation: 
+### Resource Allocation: 
 
 Identifying resources needed to turn your vision into reality is so important. Together we secure the right resources for your production: 
 
