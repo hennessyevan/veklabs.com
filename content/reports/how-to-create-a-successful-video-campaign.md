@@ -49,7 +49,7 @@ Creating an emotional connection goes hand-in-hand with great storytelling! By t
 
 For an example check out this advertisement from Adidas about ‘breaking free’ from your constraints:
 
-{{< youtube "gXfLl3qYy0k&t" >}}
+{{< youtube gXfLl3qYy0k&t >}}
 
 ### Guide Them Through The Story
 
@@ -69,7 +69,7 @@ One way to do this is through humor, such as Old Spice has done throughout the y
 
 Just take a look at the Old Spice Terry Crews collaborations from a few years back:
 
-{{< youtube "Hq2SlCja3zo&t" >}}
+{{< youtube Hq2SlCja3zo&t >}}
 
 Here are a few tips for coming up with ways to highlight product/brand strengths:
 
