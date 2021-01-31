@@ -1,5 +1,5 @@
 +++
-title = "In-House Services"
+title = "Services [In-House]"
 type = "top"
 +++
 
