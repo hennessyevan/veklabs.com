@@ -5,7 +5,7 @@ order = 4
 speed = -1
 summary = "On location filming, studio capture, camera operation, lighting and grip setup, principal and auxillary photography, facilitation of interviews at directorial or assistant directorial capacity; as required."
 +++
-Having successfully produced hundreds of video projects for our clients, Vek Labs brings refined problem-solving and creative solutions when filming a wide range of content. At Vek Labs our motto is **"Premium Video. Painless Production."** and we live by this statement. The film industry has been changing. Gone are the days of burdensome processes and huge crews associated with film production. As leaders in the new era of video production we balance quality, time and cost for the benefit of our clients. 
+Having successfully produced hundreds of video projects for our clients, Vek Labs brings refined problem-solving and creative solutions when filming a wide range of content. At Vek Labs our motto is **"Premium Video. Painless Production."** and we live by this statement. The film industry has been changing. Gone are the days of burdensome processes and conventions. As leaders in the new era of video production we balance quality, time and cost for the benefit of our clients. 
 
 ## Calgary's Video Production Experts
 
