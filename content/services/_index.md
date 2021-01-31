@@ -7,9 +7,10 @@ type = "top"
 | ------------- | ---------------------------------------------------- |
 | Camera        | Sony PXW-FS5M2 4K XDCAM Super 35mm Compact Camcorder |
 | Camera        | Sony PXW-FS5M2 4K XDCAM Super 35mm Compact Camcorder |
-| Camera        | Sony Alpha a7 III Mirrorless Digital Camera          |
+| Camera        | Sony FX6 Full-Frame Cinema Camera                    |
 | Camera        | Sony Alpha a7 III Mirrorless Digital Camera          |
 | Aerial        | DJI Mavic Air 2 & FlyMore Combo                      |
+| Aerial        | DJI Mavic Mini 2                                     |
 | Aerial        | DJI Mavic Mini                                       |
 | Ext. Recorder | Atomos Shogun Inferno 4K Monitor/Recorder            |
 | Ext. Recorder | Atomos Shogun Inferno 4K Monitor/Recorder            |
@@ -22,6 +23,7 @@ type = "top"
 | Lens          | Sony FE 24-70mm f/2.8 GM OSS Lens                    |
 | Lens          | Sigma 50mm f/1.4 DG HSM Art Lens for Sony E          |
 | Lens          | Sony 28mm-70mm f3.5-f5.6                             |
+| Gimbal        | DJI Ronin RS 2 - Pro Combo                           |
 | Gimbal        | DJI Ronin S                                          |
 | Gimbal        | DJI Ronin M                                          |
 | Stab.         | Shoulder Rig Mount                                   |
