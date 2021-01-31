@@ -19,7 +19,7 @@ With the sheer amount of content online in this era, you need product photograph
 
 ### Campaign / Government Relations: 
 
-If you are in Government Relations or Public Relation industries you are painfully aware of the pressure involved in capturing and crafting the correct image. Leaders, delegates and influencers have a lot on their shoulders. Most times you only have one shot… One chance to get the perfect photo. Vek Labs’ team hasextensive experience in the political space crafting media for campaigns. We are well versed in the type of shots needed to propel candidates and leaders forward. 
+If you are in Government Relations or Public Relation industries you are painfully aware of the pressure involved in capturing and crafting the correct image. Leaders, delegates and influencers have a lot on their shoulders. Most times you only have one shot… One chance to get the perfect photo. Vek Labs’ team has extensive experience in the political space crafting media for campaigns. We are well versed in the type of shots needed to propel candidates and leaders forward. 
 
 ### Aerial: 
 

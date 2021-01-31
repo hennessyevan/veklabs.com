@@ -5,7 +5,7 @@ order = 2
 speed = 2
 summary = "Ideation and creative meetings, mood boards, location scouts and templated production files. Ensuring your project hits the ground running before any principal photography commences."
 +++
-Before filming or editing any project, the most important considerations will always materialize during the planning phase. Vek Labs stands by a focused pre-production process that ensures all crutial conversations and pain points have been addressed before hitting 'record'. We manage your content creation by addressing the following areas: 
+Before filming or editing any project, the most important considerations will always materialize during the planning phase. Vek Labs stands by a focused pre-production process that ensures all crucial conversations and pain points have been addressed before hitting 'record'. We manage your content creation by addressing the following areas: 
 
 ## The Planning Phase
 
@@ -15,7 +15,7 @@ What is the scope and purpose of your production project? What are the milestone
 
 ### Mood and Story: 
 
-Creative projects can be very subjective but they do not have to be unclear. During the pre-production process we meet with your team to brainstorm. Establishing a clear vision around the mood of your production. What is the tone? Considerations we look at are: Emotive elements important for your brand, colour palletes, lighting aesthetics and thematic refinement. Coherent story archs allow us to plan the necessary interview questions and acted scenes that will make yoor project successful. 
+Creative projects can be very subjective but they do not have to be unclear. During the pre-production process we meet with your team to brainstorm. Establishing a clear vision around the mood of your production. What is the tone? Considerations we look at are: Emotive elements important for your brand, colour pallets, lighting aesthetics and thematic refinement. Coherent story flow allows us to plan the necessary interview questions and acted scenes that will make your project successful. 
 
 ### Resoource Allocation: 
 
@@ -23,7 +23,7 @@ Identifying resources needed to turn your vision into reality is so important. T
 
 1. **Location Selection:** Securing Studio Space, Outdoor Locations, Drone and film permitting as required. 
 2. **Talent Selection:** Vek Labs works with close partners to secure the right talent for your production. 
-3. **Props and Equipment:** Selection of vehichles, staging and equipment as needed. 
+3. **Props and Equipment:** Selection of vehicles, staging and equipment as needed. 
 
 ### The Shotlist: 
 
