@@ -24,7 +24,7 @@ Your project really comes together in the editing booth! From sequencing of foot
 
 ### Typography:
 
-## VEK Guarentee: 
+## VEK Guarantee: 
 
 When specified, we deliver a RAW video render of all usable content to you within 24 hours of filming at no additional cost.
 
