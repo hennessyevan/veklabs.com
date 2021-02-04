@@ -12,6 +12,12 @@ const postsDir = path.join(path.dirname(""), "./content/reports")
 const posts = fs.readdirSync(postsDir)
 
 const cacheFile = path.join(__dirname, "./cache.json")
+let cacheData
+try {
+ cacheData = fs.readFileSync(cacheData)
+} catch {
+ cacheData = fs.writeFileSync(cacheFile, "{}")
+}
 const cache = JSON.parse(fs.readFileSync(cacheFile)) || {}
 
 function isStale({ originalFile, cachedFile }) {
@@ -39,7 +45,6 @@ for (const post of posts) {
   })
 
   if (typeof data.image !== "string") break
-  console.log("image", data.image)
 
   const outFileName = _.kebabCase(data.title)
 
