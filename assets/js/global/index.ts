@@ -1,5 +1,6 @@
 import "./header"
 import "./favicon"
+import "./lqip"
 
 /**
  * Delete all service workers from previous

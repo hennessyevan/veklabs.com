@@ -78,12 +78,8 @@
 
 </main>
 
-{{ $s := resources.Get "js/features.js" | minify }}
+{{ $s := resources.Get "js/features/index.ts" | js.Build "features.js" }}
 
-<script src="{{ $s.Permalink }}"></script>
-
-{{ $g := resources.Get "js/global.js" | minify }}
-
-<script src="{{ $g.Permalink }}"></script>
+<script src="{{ $s.Permalink }}" defer></script>
 
 {{ block "footer" . }} {{ partial "site/footer.html" . }} {{ end }}

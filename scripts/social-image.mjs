@@ -1,11 +1,13 @@
-import renderSocialImage from "puppeteer-social-image"
-import _ from "lodash"
 import toml from "@iarna/toml"
-import frontmatter from "gray-matter"
-import fs from "fs"
-import url from "url"
-import path from "path"
 import DateFNS from "date-fns"
+import fs from "fs"
+import frontmatter from "gray-matter"
+import _ from "lodash"
+import path from "path"
+import renderSocialImage from "puppeteer-social-image"
+import url from "url"
+
+process.setMaxListeners(0)
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
 const postsDir = path.join(path.dirname(""), "./content/reports")

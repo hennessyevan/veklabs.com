@@ -31,8 +31,8 @@
 
 </section>
 
-{{ $s := resources.Get "js/services.js" | minify }}
+{{ $s := resources.Get "js/parallax/index.ts" | js.Build "parallax.js" }}
 
-<script src="{{ $s.Permalink }}"></script>
+<script src="{{ $s.Permalink }}" defer></script>
 
 {{ end }}
