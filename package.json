@@ -4,8 +4,8 @@
  "private": true,
  "sideEffects": false,
  "scripts": {
-  "start": "run-p serve-hugo watch-webpack social-images",
-  "build": "run-s social-images build-hugo",
+  "start": "npm run serve-hugo",
+  "build": "run-p social-images build-hugo",
   "build:deploy-preview": "webpack --mode=production && yarn social-images && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
   "build:branch": "webpack --mode=production && yarn social-images && hugo --gc --minify -b $DEPLOY_PRIME_URL",
   "build:split": "webpack --mode=production && yarn social-images && hugo --gc --minify --enableGitInfo",

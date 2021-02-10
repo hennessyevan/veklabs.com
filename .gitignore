@@ -6,7 +6,8 @@
 /resources
 .DS_Store
 
-# /assets/js
 /dist
 # Local Netlify folder
 .netlify
+scripts/cache.json
+static/social-images/**.jpg
