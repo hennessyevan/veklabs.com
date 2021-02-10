@@ -4,7 +4,7 @@
  "private": true,
  "sideEffects": false,
  "scripts": {
-  "start": "serve-hugo",
+  "start": "yarn serve-hugo",
   "build": "run-p social-images build-hugo",
   "build:deploy-preview": "webpack --mode=production && yarn social-images && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
   "build:branch": "webpack --mode=production && yarn social-images && hugo --gc --minify -b $DEPLOY_PRIME_URL",
