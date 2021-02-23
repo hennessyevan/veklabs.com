@@ -2,7 +2,6 @@
 author = "Andrew Peloso"
 category = "blog"
 date = 2021-02-23T17:47:31Z
-draft = true
 image = "/images/aspects-of-a-professionally-written-script.jpg"
 keywords = "professionally written script"
 title = "Aspects of a Professionally Written Script"
