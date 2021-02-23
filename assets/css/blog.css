@@ -226,7 +226,7 @@
 
  & article {
   & .title-container {
-   margin: 6maj 0;
+   margin: 6maj 0 3maj;
 
    @media (--tablet) {
     margin: 3maj 0;
@@ -240,8 +240,15 @@
   }
 
   & .content {
+   max-width: 80ch;
+   margin-inline: auto;
+
    @media (min-width: 1000px) {
     padding: 0 3maj;
+   }
+
+   p {
+    line-height: 3maj;
    }
 
    p::before {
@@ -252,6 +259,10 @@
 
    a:hover {
     text-decoration: underline;
+   }
+
+   iframe {
+    padding-block: 2maj;
    }
 
    & .image {
