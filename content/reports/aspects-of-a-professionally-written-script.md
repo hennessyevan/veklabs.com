@@ -43,8 +43,6 @@ Companies create almost mascot-like characters for their videos because their au
 
 {{< youtube QTDm1kdwo >}}
 
-[https://www.youtube.com/watch?v=q-QTDm1kdwo](https://www.youtube.com/watch?v=q-QTDm1kdwo "https://www.youtube.com/watch?v=q-QTDm1kdwo")
-
 ## Now, Start Writing Your Script
 
 It’s time to actually begin writing your script!
@@ -72,8 +70,6 @@ Now it’s time to start shooting your video. We want to stick to the script as 
 Keep an eye on your resources and if the script is asking for too much as well. Sometimes writers need to go back to the drawing board because their video simply takes up too much of their budget in order to complete the tasks at hand. This can lead to the script being changed or rewritten entirely if it doesn’t line up with the resources dedicated to the project.
 
 {{< youtube Su_4OjIjqok >}}
-
-[https://www.youtube.com/watch?v=Su_4OjIjqok](https://www.youtube.com/watch?v=Su_4OjIjqok "https://www.youtube.com/watch?v=Su_4OjIjqok")
 
 ## Conclusion
 
