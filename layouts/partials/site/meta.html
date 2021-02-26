@@ -2,7 +2,7 @@
 {{ $darkFavicon := (resources.Get "images/logodark.png").Permalink }}
 {{ $lightFavicon := (resources.Get "images/logo.png").Permalink }}
 
-{{ $title := printf "%s | %s | %s" .Title .Site.Params.Title .Site.Params.subtitle | default (printf "%s%s" .Site.Params.Title .Site.Params.subtitle ) }}
+{{ $title := printf "%s | %s" (.Params.meta_title | default .Title) .Site.Params.Title | default (printf "%s%s" .Site.Params.Title .Site.Params.subtitle ) }}
 
 <meta charset="utf-8" />
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
