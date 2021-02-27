@@ -41,6 +41,7 @@
    filter: var(--med-filter-shadow);
    width: 35maj;
    height: 50maj;
+   overflow: hidden;
 
    @media (max-width: 600px) {
     width: 20maj;
@@ -74,12 +75,18 @@
   }
 
   & .learn-more {
-   display: flex;
+   display: inline-flex;
    align-items: center;
    margin-block-start: 2maj;
+   background-color: rgba(0, 0, 0, 0.6);
+   padding: 1maj 1.5maj;
+   border-radius: 1maj;
+   backdrop-filter: var(--blur-filter);
+   transition: var(--default);
 
    &:hover {
-    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 0 1px var(--blue);
    }
 
    & svg {
