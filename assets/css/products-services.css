@@ -43,6 +43,14 @@
    height: 50maj;
    overflow: hidden;
 
+   & .image-wrapper {
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+   }
+
    @media (max-width: 600px) {
     width: 20maj;
     height: 29maj;
@@ -244,20 +252,24 @@
   }
  }
 
- & .image {
+ & .header-image {
   width: 100%;
   padding-bottom: 38%;
   transition: var(--default);
   position: relative;
   filter: var(--med-filter-shadow);
+  border: 1px solid var(--gray5);
+
+  &,
+  & img {
+   border-radius: 1.5maj;
+  }
 
   & img {
    position: absolute;
    object-fit: cover;
    width: 100%;
    height: 100%;
-   border-radius: 1.5maj;
-   border: 1px solid var(--gray5);
   }
  }
 

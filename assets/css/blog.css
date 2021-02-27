@@ -94,15 +94,22 @@
     transition: var(--default);
     position: relative;
 
+    & .image-wrapper,
+    & img {
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     position: absolute;
+     border-radius: 1.5maj;
+    }
+
     @media (--mobile) {
      height: 22maj;
     }
 
     & img {
      object-fit: cover;
-     width: 100%;
-     height: 100%;
-     border-radius: 1.5maj;
      border: 1px solid var(--gray5);
     }
    }
@@ -305,6 +312,14 @@
    position: relative;
    box-shadow: var(--med-shadow);
 
+   & .image-wrapper {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+   }
+
    & .date {
     font-weight: 500;
     position: absolute;
@@ -342,6 +357,7 @@
     font-size: 0.85rem;
     color: var(--text);
     transition: var(--default);
+    z-index: 2;
 
     &:hover {
      background: #00000075;
@@ -358,7 +374,6 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: -1;
    }
   }
  }
@@ -448,18 +463,6 @@
     color: var(--gray1);
    }
 
-   & img.team {
-    border-radius: 50%;
-    width: 100%;
-    max-width: 20maj;
-    object-fit: cover;
-    box-shadow: var(--med-shadow);
-
-    @media (--mobile) {
-     flex-basis: 100%;
-    }
-   }
-
    & .name {
     margin-left: 5maj;
 
@@ -474,6 +477,28 @@
   & p {
    font-size: 1.75maj;
   }
+ }
+}
+
+.team-image {
+ box-shadow: var(--med-shadow);
+ position: relative;
+ transition: 225ms;
+ padding-bottom: 100%;
+ width: 20maj;
+
+ &,
+ & img {
+  border-radius: 50%;
+ }
+
+ & img {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
  }
 }
 

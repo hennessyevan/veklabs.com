@@ -1,6 +1,7 @@
 {{$video := .Params.videoURL}}
 {{$preview := .Params.previewURL}}
 {{$image := (resources.Get .Params.image).RelPermalink}}
+
 <div class="video" data-poster="{{ $image }}" data-url="{{ $video }}">
   <span class="title">
     {{.Title}}
@@ -10,5 +11,7 @@
   <span class="type {{ anchorize . }}">{{.}}</span>
   <video loading="lazy" class="preview" src="{{ $preview }}" preload="none" muted="true" loop="true"
     playsinline="true"></video>
-  {{ end }} {{block "site/img" . }} {{ partial "site/img" . }}{{ end }}
+  {{ end }}
+
+  {{ partial "site/img" (dict "image" .Params.image "width" 478 "height" 269) }}
 </div>

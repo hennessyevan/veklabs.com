@@ -19,7 +19,7 @@
         {{ if hasPrefix .Params.image "http" }}
         <img src="{{ .Params.image }}" alt="">
         {{ else }}
-        {{ partial "site/img" . }}
+        {{ partial "site/img" (dict "image" .Params.image "width" 300 "height" 150) }}
         {{ end }}
 
         {{ end }}

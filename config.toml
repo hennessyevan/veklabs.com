@@ -20,6 +20,8 @@ googleAnalytics = "GTM-MNN7HSW"
 
 staticDir = ["static"]
 
+invisibleSections = ["team", "videos", "category", "type"]
+
 [menu]
 [[menu.main]]
  identifier = "features"

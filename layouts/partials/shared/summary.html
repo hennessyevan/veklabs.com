@@ -12,9 +12,7 @@
       {{ if hasPrefix $image "http" }}
       <img src="{{ $image }}" alt="" />
       {{ else }}
-      {{ $_image := resources.Get $image }}
-      {{ $srcUrl := ("600x900 Lanczos" | $_image.Resize).RelPermalink }}
-      <img src="{{ $srcUrl }}" alt="" />
+      {{ partial "site/img" (dict "image" $image "width" 280 "height" 400) }}
       {{ end }}
     </div>
     {{ end }}

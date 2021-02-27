@@ -187,3 +187,7 @@ h1 {
   }
  }
 }
+
+.img {
+ transition: opacity 300ms;
+}

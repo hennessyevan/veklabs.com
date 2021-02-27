@@ -1,6 +1,6 @@
 <div class="team-member" data-member-id="{{ .File.UniqueID }}">
   {{if isset .Params "image"}}
-  {{ block "site/img" . }} {{ partial "site/img" . }} {{ end }}
+  {{ partial "site/img" (dict "image" .Params.image "width" 250 "height" 250 "class" "team-image") }}
   {{end}}
 
   <div class="name">

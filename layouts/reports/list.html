@@ -26,7 +26,7 @@
             {{ if hasPrefix .Params.image "http"}}
             <img src="{{ .Params.image }}" alt="">
             {{ else }}
-            {{ partial "site/img" . }}
+            {{ partial "site/img" (dict "image" .Params.image "width" 630 "height" 300) }}
             {{ end }}
 
           </div>
@@ -60,7 +60,7 @@
             {{ if hasPrefix .Params.image "http"}}
             <img src="{{ .Params.image }}" alt="">
             {{ else }}
-            {{ partial "site/img" . }}
+            {{ partial "site/img" (dict "image" .Params.image "width" 458 "height" 240) }}
             {{ end }}
 
           </div>
