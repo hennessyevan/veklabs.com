@@ -69,3 +69,60 @@ footer {
   }
  }
 }
+
+.call-to-action {
+ position: fixed;
+ background-color: var(--gray-overlay);
+ backdrop-filter: var(--blur-filter);
+ filter: var(--med-filter-shadow);
+ bottom: clamp(2maj, 5vh, 10maj);
+ right: clamp(2maj, 5vw, 10maj);
+ padding: 1.5maj 3maj;
+ border-radius: 999px;
+ z-index: 100;
+ box-shadow: 0 0 0 1px var(--gray4);
+ user-select: none;
+ display: flex;
+ align-items: center;
+
+ & .title {
+  font-weight: 500;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+
+ & .description {
+  color: var(--gray1);
+  padding-block-start: 1min;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-overflow: ellipsis;
+ }
+
+ & .text {
+  max-width: min(300px, 90vw);
+  padding-inline: 3maj;
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+  cursor: default;
+ }
+
+ & .button {
+  background-color: var(--accentColor);
+  color: var(--white);
+  padding: 1.5maj 3.5maj;
+  margin-right: -1.5maj;
+  border-radius: 999px;
+  transition: var(--default);
+
+  &:hover {
+   box-shadow: 0 13px 36px var(--blue);
+   transform: translateY(-2px);
+  }
+ }
+}
