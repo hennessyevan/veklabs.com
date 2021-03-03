@@ -1,5 +1,6 @@
 +++
-title = "Video Production Services Calgary"
+title = "Production"
+page_title = "Video Production Services Calgary"
 image = "images/Video-Production-Vek.png"
 order = 4
 speed = -1
