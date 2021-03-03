@@ -1,5 +1,6 @@
 +++
-title = "Video Pre-Production Services Calgary"
+title = "Pre-Production"
+page_title = "Video Pre-Production Services Calgary
 image = "images/Pre-Production-Video.png"
 order = 2
 speed = 2
