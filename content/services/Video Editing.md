@@ -1,5 +1,6 @@
 +++
-title = "Post-Production Services Calgary"
+title = "Post-Production"
+page_title = "Post-Production Services Calgary"
 image = "images/video-editing.png"
 order = 8
 speed = 5
