@@ -1,5 +1,6 @@
 +++
-title = "Aerial Drone Video and Photography Services"
+title = "Drone Videography"
+page_title = "Aerial Drone Video and Photography Services"
 order = 5
 speed = 3
 image = "images/drone-video-calgary.png"
