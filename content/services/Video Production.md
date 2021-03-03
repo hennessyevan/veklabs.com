@@ -25,7 +25,7 @@ In order to properly understand the different steps involved with video producti
 
 The first step in our journey is capturing your vision and plan exactly how the video will play out over the course of our journey together. We will create a captivating story that drives emotion and takes the viewer throughout the video. Next, we will draft up a fascinating script that helps encapsulate the theme and vision of the story for our talent to use. Afterward, we will make sure all resources are allocated properly so that the location, talent, and any props or equipment are handled with care.
 
-Check out our <a href="pre-production/">Pre-Production Services</a> page for more information.
+Check out our <a href="services/pre-production/">Pre-Production Services</a> page for more information.
 
 ### Production Stage
 
