@@ -1,6 +1,6 @@
 +++
 title = "Services [In-House]"
-meta_title = "Services"
+meta_title = "Video, Film, and Photography Services"
 type = "top"
 +++
 
