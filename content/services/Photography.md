@@ -1,5 +1,5 @@
 +++
-title = "Photography"
+title = "Professional Photography Services Calgary"
 page_title = "Professional Photography Services"
 order = 1
 speed = 6
