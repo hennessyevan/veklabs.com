@@ -1,5 +1,6 @@
 +++
-title = "Video and Photography Equipment Rentals in Calgary"
+title = "Equipment Rentals"
+page_title = "Video and Photography Equipment Rentals in Calgary"
 image = "images/video-rentals.png"
 order = 7
 speed = -5
