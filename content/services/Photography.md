@@ -1,6 +1,6 @@
 +++
 title = "Photography"
-page_title = "Professional Photography Services"
+page_title = "Professional Photography Services Calgary"
 order = 1
 speed = 6
 image = "images/Event-Video.png"
