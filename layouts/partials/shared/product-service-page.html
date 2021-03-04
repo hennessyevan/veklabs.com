@@ -6,7 +6,7 @@
   <div class="container">
 
     {{ if (or (isset .Params "image") (isset .Params "page_image")) }}
-    <div>
+    <div style="position: relative;">
       {{ $image := .Params.page_image | default .Params.image }}
       {{ partial "site/img" (dict "image" $image "width" 980 "height" 373 "class" "header-image") }}
 
