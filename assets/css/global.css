@@ -191,3 +191,32 @@ h1 {
 .img {
  transition: opacity 300ms;
 }
+
+/* TABLES */
+table {
+ border-collapse: collapse;
+ width: 100%;
+
+ & th {
+  border-bottom: 1px solid var(--text);
+  padding: 1.5maj 1maj;
+ }
+
+ & tr:nth-child(even) {
+  background: #00000050;
+ }
+
+ & td {
+  padding: 1.5maj;
+  border: 1px solid var(--text);
+  border-width: 0 1px;
+
+  &:first-child {
+   border-left: none;
+  }
+
+  &:last-child {
+   border-right: none;
+  }
+ }
+}
