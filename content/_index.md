@@ -6,7 +6,7 @@ type = "top"
 title = "Get In Touch"
 description = "Our team is here for you!"
 button_title = "Email"
-button_link = "info@veklabs.com"
+button_link = "mailto:info@veklabs.com"
 
 [[featured]]
 brand = "unsplash"
