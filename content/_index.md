@@ -4,7 +4,7 @@ type = "top"
 
 [cta]
 title = "Get In Touch"
-description = "Our team is here for you!"
+description = "info@veklabs.com"
 button_title = "Email"
 button_link = "mailto:info@veklabs.com"
 
