@@ -93,3 +93,9 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
+
+[cta]
+title = "Get In Touch"
+description = "Our team is here for you!"
+button_title = "Email"
+button_link = "info@veklabs.com"
