@@ -3,7 +3,7 @@
  image = "images/bence_veklabs.jpg"
  competencies = ["Cinematography", "Photography"]
  title = "Creative Content Manager"
- order = 1
+ order = 4
 
 [[channel]]
   name = "LinkedIn"
