@@ -1,10 +1,11 @@
 +++
-title = "How To Create A Strong Corporate Video Production"
-date = 2020-12-19
-image = "images/corporate_video_production_calgary_canada.png"
-category = "Corporate Video"
 author = "Riley Patten"
+category = "Corporate Video"
+date = 2020-12-19T00:00:00Z
+image = "images/corporate_video_production_calgary_canada.png"
 keywords = "calgary video production, video production calgary, calgary video company"
+title = "How To Create A Strong Corporate Video Production"
+
 +++
 Creating a strong corporate video for your company or organization can be a tough job. It requires some careful planning, proper execution, and the right team to pull it off successfully.
 
@@ -18,10 +19,9 @@ Strong, successful companies across the world are utilizing the power of video t
 
 ## Why Corporate Videos Work
 
-Typically, most consumers would rather watch a short video than read a blog post. Don’t get me wrong here, blogs are still a powerful tool (and cost much less than a video to produce) but nothing is as impactful as a well-crafted video production done by professionals.
+Typically, most consumers would rather watch a short video than read a blog post. Don’t get me wrong here, blogs are still a powerful tool (and cost much less than a video to produce) but nothing is as impactful as a well-crafted [video production done by professionals](https://www.veklabs.com/services/video-production/).
 
 Brand awareness videos are extremely powerful if done correctly.
-
 
 ### DWK Brand Awareness Video - Example
 
@@ -29,7 +29,7 @@ Brand awareness videos are extremely powerful if done correctly.
 
 These videos can help extend the expertise and authority of your brand while bringing in new potential customers and catch the eye of people who were maybe not sold on your brand the first time around.
 
-The amount of people who retain information through video versus text content is dramatic. A report done by [Forbes Magazine](https://www.forbes.com/sites/yec/2017/07/13/how-to-incorporate-video-into-your-social-media-strategy/?sh=281442577f2e), says viewers retain 95% of a message when they watch it in a video format versus a 10% retention rate in a text format. In order to truly establish your brand within the minds of your consumers, it is imperative that you start producing video content that appeals to your audience.
+The amount of people who retain information through video versus text content is dramatic. A report done by [Forbes Magazine](https://www.forbes.com/sites/yec/2017/07/13/how-to-incorporate-video-into-your-social-media-strategy/?sh=281442577f2e), says viewers retain 95% of a message when they watch it in a video format versus a 10% retention rate in a text format. In order to truly establish your brand within the minds of your consumers, it is imperative that you start [producing video content](https://www.veklabs.com/reports/how-to-create-a-successful-video-campaign/) that appeals to your audience.
 
 ## How To Create a Strong Corporate Video
 
@@ -43,7 +43,7 @@ Once we determine the purpose, we can begin brainstorming using this as a basis 
 
 For example, investor relations videos should send an important message about the current state of a company or product. It's important to highlight these things intuitively throughout the video. We also don’t want to keep the investor watching a video for longer than it’s needed. Make sure to create a video that accentuates your message and is clear to the audience of its purpose. We don’t want to overdo things here.
 
-### Step #2 - Create an Emotional Impact 
+### Step #2 - Create an Emotional Impact
 
 Any video or film company will tell you this. Your production must strike an emotion in some way or else the video has failed its purpose. Humans are emotional creatures, and we make most of our decisions through emotion alone subconsciously.
 
@@ -67,6 +67,6 @@ It’s important to think about the best way to reach your target audience. If y
 
 Ultimately, the world is your oyster. Proper diligence is key when deciding how to distribute your video. Do the research, determine the audience, master the method, and release your video into the wild! If you need any help to decipher these key factors, maybe it’s time to consult with your team or contact a professional marketing company.
 
-## Conclusion 
+## Conclusion
 
 Creating a corporate video can be quite a journey. It takes time, effort, expertise, and the right team to get it done. In order to avoid wasting precious dollars and time on a video that results in nothing, it is crucial to look into hiring the right company for the job. Vek Labs is prepared and experienced enough to handle your corporate video. We are an award-winning video production company with the portfolio to back us up. Feel free to contact us by phone or email anytime.
