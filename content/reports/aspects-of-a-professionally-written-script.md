@@ -9,6 +9,8 @@ title = "Aspects of a Professionally Written Script"
 +++
 When you are thinking about creating a new video for your company, social media, or YouTube page there are a few things you should always keep in mind in order to create an engaging video. One of the first places you should begin is writing a compelling and professional script that encapsulates your video and guides the viewer through the different parts of your story.
 
+Looking for more information? Check out our article on [how to create a successful video campaign](https://www.veklabs.com/reports/how-to-create-a-successful-video-campaign/).
+
 ## Creating a Compelling Script
 
 Scriptwriting is an art in its own right. It takes time and practice to get good at and should be one of your top priorities if you want to progress as a filmmaker. It’s one of the first places you should start after brainstorming your idea and coming up with the premise for your video. Here are some tips to help you write an amazing and compelling script:
@@ -23,7 +25,7 @@ By creating a script that is directed at your target demographic and audience yo
 
 ### Make Your Video’s Purpose Clear and Concise
 
-Your video should have a clear and concise purpose and your audience should be able to see this right away. Your script is where this purpose is laid out and formulated before the video is even shot. The goal of your video should be at the forefront of your scriptwriting. Make sure that every line of a script you write leads the viewer to the end goal of the video.
+Your video should have a clear and concise purpose and your audience should be able to see this right away. Your script is where this purpose is laid out and formulated before the video is even shot. The goal of your [video production](https://www.veklabs.com/) should be at the forefront of your scriptwriting. Make sure that every line of a script you write leads the viewer to the end goal of the video.
 
 Some questions you should ask yourself are “where does my video fit into the sales funnel of my campaign?” “What does my video want to achieve?” “How can I best guide my audience through the video to reach our end goal?"
 
@@ -73,7 +75,7 @@ Keep an eye on your resources and if the script is asking for too much as well. 
 
 ## Conclusion
 
-Writing a script involves many different aspects being intertwined together to create a masterpiece. It will take time and lots of practice to become great at this fine art. But it’s not impossible! Keep at it, improve, learn, and recognize where you made mistakes in your past productions. Move forward and always keep writing and producing. You will only get better as time goes on.
+Writing a script involves many different aspects being intertwined together to create a masterpiece. It will take time and lots of practice to become great at this fine art. But it’s not impossible! Keep at it, improve, learn, and recognize where you made mistakes in your past [productions](https://www.veklabs.com/services/video-production/). Move forward and always keep writing and producing. You will only get better as time goes on.
 
 Remember to identify your audience and write your script in a way that creates an emotional connection and resonates with the viewer. Make the purpose of your video clear and concise, and demonstrate that to the audience. Create an interesting main character that is at the forefront of your story, encapsulating the purpose of your video within them using your script. Begin writing your script and plan out the length of your video. Afterward, start shooting your video and determine the number of resources you’ll need moving forward. Adjust your script and video accordingly.
 
