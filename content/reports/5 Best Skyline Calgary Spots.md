@@ -1,13 +1,13 @@
 +++
-title = "The 5 Best Calgary Skyline Photo Spots"
-date = 2020-10-22
-image = "images/Calgary_Video_Production_VL_P.png"
-category = "Calgary"
 author = "Andrew Peloso"
+category = "Calgary"
+date = 2020-10-22T00:00:00Z
+image = "images/Calgary_Video_Production_VL_P.png"
 keywords = "calgary video production, video production calgary, calgary video company"
-+++
+title = "The 5 Best Calgary Skyline Photo Spots"
 
-With the blend of modern architecture and nature's beauty, the city of Calgary offers a unique subject for a photograph. There are many viewpoints and hidden gems where you can capture some of the best skyline views of Calgary's distinctive beauty.
++++
+With the blend of modern architecture and nature's beauty, the city of Calgary offers a unique subject for a [photograph](https://www.veklabs.com/services/photography/). There are many viewpoints and hidden gems where you can capture some of the best skyline views of Calgary's distinctive beauty.
 
 In this article, we're sharing some of Calgary's most famous photographers' secret spots for taking the best skyline photo of Calgary.
 
@@ -33,7 +33,7 @@ Another great spot of the city is from **Nose Hill Park**.
 
 [Nose Hill Park](https://www.google.ca/maps/place/Nose+Hill+Park/@51.109537,-114.108906,15z/data=!4m2!3m1!1s0x0:0x7576f90d970ea8af?sa=X&ved=0ahUKEwip_LOj2_bbAhVosVQKHel7DUQQ_BIIwQEwDg) is one of the largest parks in Calgary and offers an amazing view of the entire city. The park has a great off-leash area and bike trails when you’re looking to get away in the outdoors but not stray too far away from the city.
 
-There’s a small free parking lot right at the start of the trails. Also, they have paved paths as well making it accessibility friendly.  
+There’s a small free parking lot right at the start of the trails. Also, they have paved paths as well making it accessibility friendly.
 
 ## The Best View of Calgary at Night
 
