@@ -252,10 +252,10 @@
   border-radius: 1maj;
   display: inline-block;
   backdrop-filter: var(--blur-filter);
-  line-height: 1ch;
   font-size: 1.75rem;
   position: absolute;
   bottom: 0;
+  line-height: 1.15;
   margin: 2maj;
 
   @media (--tablet) {
