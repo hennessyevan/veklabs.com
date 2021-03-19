@@ -1,12 +1,12 @@
 +++
-title = "10 Best Locations to Film and Photoshoot In Calgary"
-date = 2020-05-21
-image = "images/Calgary_Video_Production_VL.jpg"
-category = "Production"
 author = "Andrew Peloso"
+category = "Production"
+date = 2020-05-21T00:00:00Z
+image = "images/Calgary_Video_Production_VL.jpg"
 keywords = "calgary video production, video production calgary, calgary video company"
-+++
+title = "10 Best Locations to Film and Photoshoot In Calgary"
 
++++
 We have all seen those amazing photos and videos capturing iconic scenes of Calgary, Alberta. Whether along the Bow River, in one of the many urban cores, or heading towards the mountains.
 
 Location scouting is an important part of creating engaging content that will resonate with viewers. Our team has selected some popular and hidden gems worth exploring in Calgary for your next video production, or photoshoot:
@@ -37,7 +37,7 @@ Quirky Inglewood is home to shops selling vintage furniture, indie fashion and r
 
 ### [Stephen Ave](https://goo.gl/maps/gPSMQ5gyiRwp8U7PA)
 
-Home to the Globe Cinema and hustle-n-bustle of Calgary’s business core, Stephen Avenue is more than just a great place to eat and enjoy a beer. This location offers excellent urban backdrops for any videographer or photographer looking to capture. Pro Tip: Reach out to the team at [National on 8th](https://goo.gl/maps/A3zVnqoLRAH41N3S6). They have a beautiful open patio on 8th Ave that makes for some really cool shots of an outdoor party within the city core.
+Home to the Globe Cinema and hustle-n-bustle of Calgary’s business core, Stephen Avenue is more than just a great place to eat and enjoy a beer. This location offers excellent urban backdrops for any [videographer](https://www.veklabs.com/services/video-production/) or [photographer](https://www.veklabs.com/services/photography/) looking to capture. Pro Tip: Reach out to the team at [National on 8th](https://goo.gl/maps/A3zVnqoLRAH41N3S6). They have a beautiful open patio on 8th Ave that makes for some really cool shots of an outdoor party within the city core.
 
 ### [The Peace Bridge & Inner City Bow River](https://goo.gl/maps/tDTkqyyoYr7AQWoz9)
 
