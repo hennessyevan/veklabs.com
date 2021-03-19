@@ -7,11 +7,11 @@ keywords = "marketing,content creation,brand"
 title = "Make Your Content Work For You"
 
 +++
-We all have to deal with it. The desire to be a significant contributor online, balanced with the stress of visioning, finding voice, uploading, rendering, aspect ratios, hashtags etc... And will people even relate to our work! With respect to [video production](https://www.veklabs.com/), we have a few thoughts on how to make the process more palatable. It all begins with discerning the ratio of **quantity** vs **quality**:
+We all have to deal with it. The desire to be a significant contributor online, balanced with the stress of visioning, finding your voice, uploading, rendering, aspect ratios, hashtags, etc... And will people even relate to our work! With respect to [video production](https://www.veklabs.com/), we have a few thoughts on how to make the process more palatable. It all begins with discerning the ratio of **quantity** vs **quality**:
 
 ## The Quality Matrix
 
-Every agency, brand, company or influencer has to navigate the waters of _what_ and _when_ to post. But let's assume you are already convicted to execute your content strategy... you are probably still thinking about how often you should post and if your frequency is feasible. Do you have enough time to create a beautiful production every week or is this a quarterly goal? Is my video on brand? Will it match the voice of my initiative or get lost as a meaningless post? Whatever you decide is the right balance between making a connection on your social media, and creating legendary products is an intimate brand decision. Regardless, you should reflect on what your threshold is, and identity KPI's that are useful. Once you have mulled over this we suggest looking at a **"batch approach"** to content creation...
+Every agency, brand, company, or influencer has to navigate the waters of _what_ and _when_ to post. But let's assume you are already convicted to execute your content strategy... you are probably still thinking about how often you should post and if your frequency is feasible. Do you have enough time to create a beautiful production every week or is this a quarterly goal? Is my video on brand? Will it match the voice of my initiative or get lost as a meaningless post? Whatever you decide is the right balance between making a connection on your social media, and creating legendary products is an intimate brand decision. Regardless, you should reflect on what your threshold is, and identity KPI's that are useful. Once you have mulled over this we suggest looking at a **"batch approach"** to content creation...
 
 ![left](https://picsum.photos/id/1048/400/400)
 
@@ -39,6 +39,6 @@ Combining batch content creation with a powerful social media management tool al
 * [AlgoraPulse](https://www.agorapulse.com/): Schedule your content, get reports, and engage followers with one simple tool.
 * [Hootsuite](https://hootsuite.com/): Connect with customers, get results on every social platform. Hootsuite has the tools you need to succeed on social media.
 
-Regardless which tool you use, the importance should be that you are creating content series that are being posted well into the future. **Free up your time!**
+Regardless of which tool you use, the importance should be that you are creating content series that are being posted well into the future. **Free up your time!**
 
 Hope this was useful. From the **Vek Team** to yours... ROCK ON... Stay hungry.
