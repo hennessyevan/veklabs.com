@@ -31,6 +31,8 @@ overloading the viewer with extensive animations and effects can only go so far.
 
 Better yet, create an intro describing the point of the video, then lead into a cool set of animations to keep the user intrigued after they have decided to continue watching.
 
+Intrigued by our video editing process? Take a look at our [post-production](https://www.veklabs.com/services/video-editing/) page for more information.
+
 ### Don’t Spend Time Talking About Yourself/Company
 
 When you are trying to promote a product with video, you can’t spend time talking about your company. When we take a look at cult classic commercials such as Oxiclean or the Shamwow, do they spend any time talking about who they are? Not really. They get right to the point of their product straight away! These companies invest hundreds of thousands of dollars into their campaigns, and they only have a few minutes to try and sell you. The first 10 seconds are where they lock you in and keep you there for the duration of the commercial.
