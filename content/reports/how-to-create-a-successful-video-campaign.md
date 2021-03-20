@@ -7,7 +7,6 @@ keywords = "how to create a successful video campaign"
 title = "How To Create A Successful Video Campaign"
 
 +++
-
 Video campaigns are a ton of work. They require a strong team, the right equipment, a meticulous strategy, and a compelling story.
 
 Undertaking this venture can be quite stressful and costly if done incorrectly. It’s important to follow a set of instructions and priorities when going through the creation of your videos.
@@ -15,6 +14,8 @@ Undertaking this venture can be quite stressful and costly if done incorrectly. 
 Vek Labs helps our clients succeed in their video campaigns, and has a strong history of achieving this through our workflow strategy. We are writing this article to help you understand the methods you should use when coming up with an idea for your next video campaign.
 
 We will walk you through some of the core principles that video marketers follow when they are determining how to structure a video marketing campaign. So without further ado, this is our guide on how to create a successful video campaign for your company!
+
+Check out our article on [why video production is important in 2021](https://www.veklabs.com/reports/why-video-production-is-important-in-2021/).
 
 ## The First 10 Seconds To A Minute Are The Most Important Part
 
@@ -30,11 +31,13 @@ overloading the viewer with extensive animations and effects can only go so far.
 
 Better yet, create an intro describing the point of the video, then lead into a cool set of animations to keep the user intrigued after they have decided to continue watching.
 
+Intrigued by our video editing process? Take a look at our [post-production](https://www.veklabs.com/services/video-editing/) page for more information.
+
 ### Don’t Spend Time Talking About Yourself/Company
 
 When you are trying to promote a product with video, you can’t spend time talking about your company. When we take a look at cult classic commercials such as Oxiclean or the Shamwow, do they spend any time talking about who they are? Not really. They get right to the point of their product straight away! These companies invest hundreds of thousands of dollars into their campaigns, and they only have a few minutes to try and sell you. The first 10 seconds are where they lock you in and keep you there for the duration of the commercial.
 
-{{< youtube "1Q39yfGLPkMY" >}}
+{{< youtube 1Q39yfGLPkMY >}}
 
 ## Meaningful Storytelling and How To Engage Your Audience
 
@@ -86,7 +89,7 @@ Dollar Shave Club did a magnificent job highlighting their products in their ama
 
 I don’t know, something about men’s shaving product advertisements that just stick with me...
 
-{{< youtube "ZUG9qYTJMsI" >}}
+{{< youtube ZUG9qYTJMsI >}}
 
 ## Conclusion
 
