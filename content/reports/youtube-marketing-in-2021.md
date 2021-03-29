@@ -179,11 +179,11 @@ This can be done pretty easily too. Most streamers will simply include a logo or
 
 ## YouTube Advertising
 
-If influencer marketing and shorts aren’t your fancies, then you can start dedicating a budget to creating ads and running campaigns on YouTube.
+If influencer marketing and shorts aren’t your fancies, then you can start dedicating a budget to creating ads and [running campaigns](https://www.veklabs.com/reports/how-to-create-a-successful-video-campaign/) on YouTube.
 
 This can require a large budget as YouTube can be a little expensive depending on what you are marketing, and you also have to create the videos yourself.
 
-This can often lead to employing a company like us here at Vek Labs to help create this content for you with extremely high production value.
+This can often lead to employing a company like us here at Vek Labs to help create this content for you with extremely high [production](https://www.veklabs.com/services/video-production/) value.
 
 But high production value doesn’t always lead to major gains on the platform. The way you set up your ads, must align with your goals, and the purpose of the video has to be valuable first and foremost.
 
@@ -223,4 +223,4 @@ YouTube is a monster that nearly any company can benefit from if done correctly.
 
 Even if you don’t have the production budget to do so, you can still create high-performing ads that can make you a few dollars. However, if you are looking for a company to help you produce stunning visuals for your advertisements, the team here at Vek Labs can help out with that.
 
-We have lots of experience creating videos for companies that want their products to look their best throughout their campaigns. From photography to video production and editing, we will give you the assets you need to make the competition pale in comparison. For more information, contact us today to see how we can help transform your brand’s image online.
+We have lots of experience creating videos for companies that want their products to look their best throughout their campaigns. From [photography](https://www.veklabs.com/services/photography/) to video production and [editing](https://www.veklabs.com/services/video-editing/), we will give you the assets you need to make the competition pale in comparison. For more information, contact us today to see how we can help transform your brand’s image online.
