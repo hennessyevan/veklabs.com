@@ -2,7 +2,6 @@
 author = "Andrew Peloso"
 category = "blog"
 date = 2021-03-25T21:13:35Z
-draft = true
 image = "/images/youtube-marketing-2021.jpg"
 keywords = "youtube marketing"
 title = "YouTube Marketing in 2021"
@@ -83,8 +82,6 @@ Here is an example of one YouTube creator that is absolutely exploding due to th
 
 **Jake Fellman** skyrocketed to nearly 4 million subscribers in less than 5 months
 
-![](https://lh3.googleusercontent.com/4ITpaVM_XjfmM3RmAWwG_teD5hsfl9Qc9Pq9_8qo3vg9q_ZZizluNMXrz2evZgoq1MGxQ8CK_LPWd3X3yS0-tIH6G9C5HXFNjFywZu8WnS23swwgSudSf6Ca4hSe51naViP3xOYn =602x159)
-
 Throughout most of 2020, Jake Fellman had very few subscribers gained until he started posting his videos in the Shorts beta that started late 2020.
 
 He has been growing exponentially since then, reaching almost 4 million subscribers in less than half a year.
@@ -99,7 +96,6 @@ As there is a low-supply for this type of content and high demand for it, his vi
 
 ### How do I make YouTube Shorts?
 
-  
 Creating a YouTube Short is relatively easy.
 
 Here is a list of things you need to do to make sure you can get placed on the Short Shelf:
@@ -112,7 +108,7 @@ Here is a list of things you need to do to make sure you can get placed on the S
 
 Currently, creators on YouTube aren’t paid much money for creating Shorts. This leaves a wide-open door for marketers to entice channels to showcase their products within their videos.
 
-Now, Shorts can only be 60 seconds long or shorter, so the content needs to be quick on its feet and captivate the user instantly. 
+Now, Shorts can only be 60 seconds long or shorter, so the content needs to be quick on its feet and captivate the user instantly.
 
 You also need to figure out innovative ways to slip your products or brand into these videos so that it doesn’t deter the user from skipping to the next video.
 
@@ -122,8 +118,8 @@ In other words, you need to make sure that your product is being used within the
 
 Let’s take Jake Fellman again as an example. If you were a video animation software and wanted to be showcased in one of Jake’s shorts, he could include a snippet at the end or during the video that it was created in said software.
 
-Other examples of how you could potentially insert your products into Shorts videos include:  
-  
+Other examples of how you could potentially insert your products into Shorts videos include:
+
 _Sports gear > Sports Shorts_  
 _Gaming gear > Gaming Shorts  
 Software > Quick How-To Shorts  
