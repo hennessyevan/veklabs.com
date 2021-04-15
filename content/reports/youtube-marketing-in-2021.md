@@ -1,6 +1,6 @@
 +++
 author = "Andrew Peloso"
-category = "blog"
+category = "press"
 date = 2021-03-25T21:13:35Z
 image = "/images/youtube-marketing-2021.jpg"
 keywords = "youtube marketing"
