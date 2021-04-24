@@ -1,13 +1,9 @@
-import { confetti } from "dom-confetti"
+import { chain, tween, styler, delay } from "popmotion"
 
-const button: HTMLElement = document.querySelector(".banner")
+const banner = styler(document.querySelector(".banner"))
 
-document.addEventListener("DOMContentLoaded", () => {
- setTimeout(() => {
-  confetti(button, {
-   angle: 110,
-   elementCount: 75,
-   colors: ["#d37829", "#ffffff", "#394053"],
-  })
- }, 2000)
-})
+chain(
+ delay(10000),
+ tween({ from: { opacity: 1 }, to: { opacity: 0 } }),
+ tween({ from: { display: "initial" }, to: { display: "none" } })
+).start((v) => banner.set(v))
