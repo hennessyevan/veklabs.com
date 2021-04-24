@@ -170,10 +170,10 @@
   padding-top: 4maj;
 
   & .credibility-logo {
-   flex-basis: 50%;
-   max-width: 17maj;
+   flex-basis: 33%;
+   max-width: 15maj;
    &:not(:first-child) {
-    margin-left: 4maj;
+    margin-left: 3maj;
    }
 
    & img {
