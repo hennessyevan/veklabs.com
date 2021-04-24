@@ -55,6 +55,8 @@
 
 {{ block "home/stats" . }}{{ partial "home/stats.html" . }}{{ end }}
 
+{{ partial "home/offerings" . }}
+
 <section id="team" class="padding">
   <h2 class="title">{{ .Site.Data.en.TEAM_TITLE }}</h2>
   {{ range where .Pages "Section" "team" }}
