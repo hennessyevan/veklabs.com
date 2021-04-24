@@ -1,6 +1,10 @@
-{{ with .Params.cta }}
-{{ partial "site/cta" . }}
+{{ if (isset .Params "cta") }}
+{{ with .Params.cta }}{{ partial "site/cta" . }}{{ end }}
+{{ else if (isset .Site.Params "cta")}}
+{{ with .Site.Params.cta }}{{ partial "site/cta" . }}{{ end }}
 {{ end }}
+
+{{ .Site.Params.cta }}
 
 <footer class="site-footer" role="contentinfo">
 

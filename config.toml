@@ -1,6 +1,7 @@
 baseURL = "https://www.veklabs.com"
 languageCode = "en-ca"
 title = "Vek Labs"
+ISO8601 = "2006-01-02T15:04:05JST"
 
 [params]
 disallow_search_engines = false # set robots.txt to disallow everything
@@ -21,6 +22,13 @@ googleAnalytics = "GTM-MNN7HSW"
 staticDir = ["static"]
 
 invisibleSections = ["team", "videos", "category", "type"]
+
+# Global CTA
+[params.cta]
+title = "Get In Touch"
+description = "Our team is here for you!"
+button_title = "Email"
+button_link = "info@veklabs.com"
 
 [menu]
 [[menu.main]]
@@ -93,9 +101,3 @@ mediatype = "text/netlify"
 baseName = "_headers"
 isPlainText = true
 notAlternative = true
-
-[cta]
-title = "Get In Touch"
-description = "Our team is here for you!"
-button_title = "Email"
-button_link = "info@veklabs.com"
