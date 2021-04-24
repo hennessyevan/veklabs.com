@@ -2,7 +2,7 @@
 {{$preview := .Params.previewURL}}
 {{$image := (resources.Get .Params.image).RelPermalink}}
 
-<div class="video" data-poster="{{ $image }}" data-url="{{ $video }}">
+<div class="video" data-poster="{{ $image }}" id="{{ .Params.videoID }}" data-url="{{ $video }}">
   <span class="title">
     {{.Title}}
   </span>

@@ -1,4 +1,5 @@
 import { listen, styler, tween } from "popmotion"
+import Player from "@vimeo/player"
 
 const videos = document.querySelectorAll(".video")
 const overlayEl = document.getElementById("overlay")
@@ -7,6 +8,7 @@ const overlay = styler(overlayEl)
 // modals
 videos.forEach((video) => {
  const videoSrc = video.getAttribute("data-url")
+ const videoId = video.getAttribute("id")
  const poster = video.getAttribute("data-poster")
  const preview: HTMLVideoElement = video.querySelector(".preview")
  const previewStyler = preview && styler(preview)
@@ -65,20 +67,25 @@ videos.forEach((video) => {
    <use href="/assets/close.svg#icon"></use>
   </svg>
  </div>
-   <video id="player" src="${videoSrc}" poster="${poster}" controls autoplay type='video/mp4'></video>
+  <div id="player" data-vimeo-width="${window.innerWidth * 0.8}"></div>
   </div>
  `
 
   overlayEl.innerHTML = video
 
-  document
-   .querySelector("#player")
-   .addEventListener("ended", cleanUp, { once: true })
+  const videoPlayer = new Player("player", {
+   autoplay: true,
+   byline: false,
+   id: Number(videoId),
+   color: "ffffff",
+   playsinline: false,
+   title: false,
+  })
+
+  videoPlayer.on("ended", cleanUp)
 
   // Configure close button
-  document.querySelector(".close").addEventListener("click", (e) => {
-   cleanUp()
-  })
+  document.querySelector(".close").addEventListener("click", cleanUp)
  })
 })
 

@@ -79,7 +79,7 @@ footer {
  right: clamp(2maj, 5vw, 10maj);
  padding: 1.5maj 3maj;
  border-radius: 999px;
- z-index: 100;
+ z-index: 70;
  box-shadow: 0 0 0 1px var(--gray4);
  user-select: none;
  display: flex;

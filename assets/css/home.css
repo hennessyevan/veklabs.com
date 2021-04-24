@@ -319,8 +319,7 @@
 
  @media (pointer: "fine") {
   &:hover {
-   transform: translateY(-1maj);
-   box-shadow: var(--big-shadow);
+   box-shadow: var(--big-shadow), 0 0 0 3px #ffffff20;
   }
  }
 
