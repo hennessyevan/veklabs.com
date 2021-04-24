@@ -4,7 +4,7 @@
  "private": true,
  "sideEffects": false,
  "scripts": {
-  "start": "hugo server",
+  "start": "yarn && hugo server",
   "build": "run-p social-images build-hugo",
   "build:deploy-preview": "webpack --mode=production && yarn social-images && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
   "build:branch": "webpack --mode=production && yarn social-images && hugo --gc --minify -b $DEPLOY_PRIME_URL",
@@ -41,6 +41,7 @@
   "babel-loader": "^8.1.0",
   "browserslist": "^4.14.2",
   "date-fns": "^2.14.0",
+  "dom-confetti": "^0.2.2",
   "get-height": "^0.2.0",
   "gray-matter": "^4.0.2",
   "lazysizes": "^5.3.0",

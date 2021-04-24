@@ -1,4 +1,5 @@
 import "./header"
+import "./footer"
 import "./favicon"
 import "./lqip"
 

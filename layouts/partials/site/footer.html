@@ -1,10 +1,13 @@
-{{ if (isset .Params "cta") }}
-{{ with .Params.cta }}{{ partial "site/cta" . }}{{ end }}
-{{ else if (isset .Site.Params "cta")}}
-{{ with .Site.Params.cta }}{{ partial "site/cta" . }}{{ end }}
-{{ end }}
+<div class="banners">
+  <canvas id="confetti"></canvas>
+  {{ partial "site/local-excellence" . }}
 
-{{ partial "site/local-excellence" . }}
+  {{ if (isset .Params "cta") }}
+  {{ with .Params.cta }}{{ partial "site/cta" . }}{{ end }}
+  {{ else if (isset .Site.Params "cta")}}
+  {{ with .Site.Params.cta }}{{ partial "site/cta" . }}{{ end }}
+  {{ end }}
+</div>
 
 <footer class="site-footer" role="contentinfo">
 
