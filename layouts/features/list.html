@@ -81,5 +81,6 @@
 {{ $s := resources.Get "js/features/index.ts" | js.Build "features.js" }}
 
 <script src="{{ $s.Permalink }}" defer></script>
+{{ block "site/scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
 
 {{ block "footer" . }} {{ partial "site/footer.html" . }} {{ end }}
