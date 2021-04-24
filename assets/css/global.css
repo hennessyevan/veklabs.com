@@ -27,6 +27,13 @@ h1,
  font-weight: 600;
 }
 
+h2,
+.h2 {
+ margin: 0;
+ font-size: 1.5rem;
+ font-weight: 600;
+}
+
 .accent-color {
  color: var(--accentColor);
 }
@@ -223,5 +230,29 @@ table {
   &:last-child {
    border-right: none;
   }
+ }
+}
+
+.learn-more {
+ display: inline-flex;
+ align-items: center;
+ margin-block-start: 2maj;
+ background-color: rgba(0, 0, 0, 0.6);
+ padding: 1maj 1.5maj;
+ border-radius: 1maj;
+ backdrop-filter: var(--blur-filter);
+ transition: var(--default);
+
+ &:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  box-shadow: 0 0 0 1px var(--blue);
+ }
+
+ & svg {
+  width: 1ch;
+  height: 1ch;
+  margin-block-start: 2px;
+  margin-inline-start: 1maj;
+  fill: currentColor;
  }
 }
