@@ -781,20 +781,25 @@
 #offerings {
  & .heading {
   text-align: center;
-  margin: clamp(5maj, 10vw, 10maj) 0;
+  padding-block: 2maj;
  }
 
  & .offerings-wrapper {
   --padding: 32px;
+  --gap: 5maj;
 
   overflow-x: scroll;
   overscroll-behavior-x: none;
-  padding: calc(var(--padding) * 2) 0;
-  margin: calc(var(--padding) * -3) 0 calc(var(--padding) * -2);
+  padding: var(--padding) 0;
   display: grid;
-  grid-template-columns: 5maj 1fr 5maj;
-  scroll-snap-type: x mandatory;
-  scroll-padding-left: calc(var(--padding) * 1.5);
+  grid-template-columns: var(--gap) 1fr var(--gap);
+  scroll-snap-type: x proximity;
+  /* scroll-padding-left: calc(var(--padding) * 1.5);
+  scroll-padding-right: calc(var(--padding) * 1.5); */
+
+  @media (--tablet) {
+   --gap: 1maj;
+  }
 
   &::before,
   &::after {
@@ -811,11 +816,11 @@
  & .offerings-list {
   display: grid;
   align-content: start;
-  grid-gap: clamp(2maj, 10vw, 5maj);
+  grid-gap: var(--gap);
   grid-template-columns: repeat(var(--cards), clamp(100maj, 40vw, 200maj));
 
   @media (--tablet) {
-   grid-template-columns: repeat(var(--cards), 80%);
+   grid-template-columns: repeat(var(--cards), 90%);
   }
  }
 
@@ -835,6 +840,8 @@
    width: 50%;
    mask-image: linear-gradient(90deg, #000 75%, transparent);
    position: relative;
+   border-radius: 2maj;
+   overflow: hidden;
 
    @media (--tablet) {
     width: 100%;
@@ -861,6 +868,7 @@
 
    @media (--tablet) {
     width: 100%;
+    padding: 2.5maj;
    }
 
    & .description {
