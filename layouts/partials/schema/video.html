@@ -1,0 +1,15 @@
+{{ $videoJSON := getJSON "https://api.vimeo.com/videos/" .Params.videoID }}
+
+<script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type":"VideoObject",
+  "url": {{ .Permalink }},
+  "name": {{ .Title }},
+  "description": {{ .Params.description }},
+  "uploadDate": "2015-02-05T08:00:00+08:00",
+  "datePublished": "{{ .PublishDate.Format $.Site.Params.ISO8601 }}",
+  "dateModified" : "{{ .Date.Format $.Site.Params.ISO8601 }}",
+  "thumbnailUrl": "https://tedcdnpi-a.akamaihd.net/r/tedcdnpe-a.akamaihd.net/images/ted/b9693798223a4101be834398af15df5560d3f25c_1600x1200.jpg?quality=95&amp;w=480"
+  }
+</script>
