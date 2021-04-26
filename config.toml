@@ -4,6 +4,7 @@ title = "Vek Labs"
 ISO8601 = "2006-01-02T15:04:05JST"
 
 [params]
+bannerShow = 7500 # Time that the banner is shown for in milliseconds
 disallow_search_engines = false # set robots.txt to disallow everything
 imgSizes = [2500, 1500, 1000, 500]
 title = "Vek Labs"

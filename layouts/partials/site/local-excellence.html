@@ -1,4 +1,6 @@
-<aside class="local-excellence banner">
+{{ if .IsHome }}
+
+<aside class="local-excellence banner" data-delay="{{ .Site.Params.bannerShow }}">
   <img src="/images/local-excellence-badge.png" alt="2021 Winner for Local Excellence, Calgary" class="image">
 
   <span class="title">
@@ -7,3 +9,5 @@
 
   <a class="button" href="/reports/local_excellence_awards">Learn More</a>
 </aside>
+
+{{ end }}
