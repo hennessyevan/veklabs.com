@@ -12,12 +12,6 @@
 
 <title>{{ $title }}</title>
 
-{{ if and (eq .Section "reports") (ne .Params.type "top") }}
-{{ $image := printf "%s%s%s%s" .Site.BaseURL "/social-images/" (urlize .Title) ".jpg" }}
-<meta property="og:image" content="{{ $image }}" />
-<meta name="twitter:image" content="{{ $image }}">
-{{ end }}
-
 <!-- OpenGraph -->
 {{ block "meta/opengraph" . }}
 {{ template "_internal/opengraph.html" . }}
@@ -26,6 +20,12 @@
 <!-- Twitter -->
 {{ block "meta/twitter" . }}
 {{ template "_internal/twitter_cards.html" . }}
+{{ end }}
+
+{{ if and (eq .Section "reports") (ne .Params.type "top") }}
+{{ $image := printf "%s%s%s%s" .Site.BaseURL "/social-images/" (urlize .Title) ".jpg" }}
+<meta property="og:image" content="{{ $image }}" />
+<meta name="twitter:image" content="{{ $image }}">
 {{ end }}
 
 <!-- Schema JSON/LD -->
