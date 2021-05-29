@@ -11,7 +11,7 @@ process.setMaxListeners(0)
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url))
 const postsDir = path.join(path.dirname(""), "./content/reports")
-const posts = fs.readdirSync(postsDir)
+const posts = fs.readdirSync(postsDir).reverse()
 
 const cacheFile = path.join(__dirname, "./cache.json")
 let cacheData
@@ -23,6 +23,7 @@ try {
 const cache = JSON.parse(fs.readFileSync(cacheFile)) || {}
 
 function isStale({ originalFile, cachedFile }) {
+ return true
  if (!fs.existsSync(cachedFile)) return true
  if (!cache[cachedFile]) {
   cache[cachedFile] = new Date()
