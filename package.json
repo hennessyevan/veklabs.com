@@ -5,7 +5,7 @@
  "sideEffects": false,
  "scripts": {
   "start": "yarn && hugo server",
-  "build": "run-p social-images build-hugo",
+  "build": "hugo",
   "build:deploy-preview": "webpack --mode=production && yarn social-images && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
   "build:branch": "webpack --mode=production && yarn social-images && hugo --gc --minify -b $DEPLOY_PRIME_URL",
   "build:split": "webpack --mode=production && yarn social-images && hugo --gc --minify --enableGitInfo",
@@ -70,7 +70,7 @@
   "webpack-cli": "^3.3.11"
  },
  "browserslist": [
-  "ie >= 10",
   "last 3 versions"
- ]
+ ],
+ "devDependencies": {}
 }

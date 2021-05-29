@@ -29,3 +29,6 @@
 
 [context.next.environment]
   HUGO_ENABLEGITINFO = "true"
+
+[[plugins]]
+package = "./plugins/generate-social-images"
