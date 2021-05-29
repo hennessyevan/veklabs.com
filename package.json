@@ -6,9 +6,9 @@
  "scripts": {
   "start": "yarn && hugo server",
   "build": "hugo",
-  "build:deploy-preview": "webpack --mode=production && yarn social-images && hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
-  "build:branch": "webpack --mode=production && yarn social-images && hugo --gc --minify -b $DEPLOY_PRIME_URL",
-  "build:split": "webpack --mode=production && yarn social-images && hugo --gc --minify --enableGitInfo",
+  "build:deploy-preview": "webpack --mode=production &&hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
+  "build:branch": "webpack --mode=production && hugo --gc --minify -b $DEPLOY_PRIME_URL",
+  "build:split": "webpack --mode=production && hugo --gc --minify --enableGitInfo",
   "build-hugo": "hugo",
   "build-webpack": "webpack -p",
   "watch-webpack": "webpack --mode=development --watch",
