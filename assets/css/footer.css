@@ -74,7 +74,7 @@ footer {
  display: flex;
  position: fixed;
  flex-direction: column;
- bottom: clamp(2maj, 5vh, 10maj);
+ bottom: calc(env(safe-area-inset-bottom) + clamp(2maj, 5vh, 10maj));
  right: clamp(1.5maj, 3vw, 10maj);
  margin-left: clamp(1.5maj, 3vw, 10maj);
  z-index: 70;
