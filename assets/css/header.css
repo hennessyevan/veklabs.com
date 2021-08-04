@@ -8,6 +8,10 @@
  top: 0;
  width: 100%;
 
+ @supports (color: color-contrast(black vs white, tan)) {
+   background: var(--gray6);
+ }
+
  @supports (padding: minmax(0px)) {
   padding-left: minmax(env(safe-area-inset-left), 3maj);
   padding-right: minmax(env(safe-area-inset-right), 3maj);
