@@ -10,7 +10,15 @@ for (const trailer of trailers) {
  fullscreenElement.addEventListener("click", (e) => {
   e.stopPropagation()
 
-  video.requestFullscreen()
+  if (video.requestFullscreen) {
+   video.requestFullscreen()
+  } else if (video.mozRequestFullScreen) {
+   video.mozRequestFullScreen()
+  } else if (video.webkitRequestFullscreen) {
+   video.webkitRequestFullscreen()
+  } else if (video.msRequestFullscreen) {
+   video.msRequestFullscreen()
+  }
  })
 
  video.addEventListener("ended", () => {
