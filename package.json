@@ -6,16 +6,14 @@
  "scripts": {
   "start": "yarn && hugo server",
   "build": "hugo",
-  "build:deploy-preview": "webpack --mode=production &&hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
-  "build:branch": "webpack --mode=production && hugo --gc --minify -b $DEPLOY_PRIME_URL",
-  "build:split": "webpack --mode=production && hugo --gc --minify --enableGitInfo",
+  "build:deploy-preview": "hugo --gc --minify --buildFuture -b $DEPLOY_PRIME_URL",
+  "build:branch": "hugo --gc --minify -b $DEPLOY_PRIME_URL",
+  "build:split": "hugo --gc --minify --enableGitInfo",
   "build-hugo": "hugo",
-  "build-webpack": "webpack -p",
-  "watch-webpack": "webpack --mode=development --watch",
   "social-images": "node scripts/social-image.mjs",
   "serve-hugo": "hugo server -b http://$(hostname) --bind 0.0.0.0",
   "forestry-hugo": "hugo server --port 8080 -D -E -F --renderToDisk -d public",
-  "forestry": "run-p forestry-hugo watch-webpack"
+  "forestry": "forestry-hugo"
  },
  "dependencies": {
   "@babel/core": "^7.9.0",
@@ -36,7 +34,6 @@
   "@types/rellax": "^1.7.2",
   "@types/vimeo__player": "^2.9.0",
   "@types/wait-on": "^4.0.0",
-  "@types/webpack": "^4.41.11",
   "@vimeo/player": "^2.15.0",
   "babel-loader": "^8.1.0",
   "browserslist": "^4.14.2",
@@ -65,9 +62,7 @@
   "to-vfile": "^6.1.0",
   "typescript": "^3.8.3",
   "unified": "^9.0.0",
-  "wait-on": "^4.0.2",
-  "webpack": "^4.42.1",
-  "webpack-cli": "^3.3.11"
+  "wait-on": "^4.0.2"
  },
  "browserslist": [
   "last 3 versions"
