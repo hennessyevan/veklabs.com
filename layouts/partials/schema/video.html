@@ -6,6 +6,7 @@
   "@context": "https://schema.org",
   "@type":"VideoObject",
   "url": {{ $videoJSON.link | default .Permalink }},
+  "contentUrl": {{ $videoJSON.link | default .Permalink }},
   "name": {{ $videoJSON.name | default .Title }},
   "description": {{ $videoJSON.description | default .Params.description }},
   "uploadDate": {{ $videoJSON.created_time }},
