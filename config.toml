@@ -34,8 +34,8 @@ button_link = "info@veklabs.com"
 [menu]
 [[menu.main]]
  identifier = "features"
- name = "Features"
- url = "/features/"
+ name = "Vek Plus"
+ url = "/vekplus/"
  weight = 1
 
  [[menu.main]]

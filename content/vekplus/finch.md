@@ -11,10 +11,12 @@ site = "https://www.instagram.com/finchfilm2020/"
 
 Trapped in an abusive relationship, Sarah struggles to make sense of her past and present. After a brutal assault, Sarah realizes she’s not the only captive in her partner’s control. It’s time to accept or leave the prison of her daily life.
 
-Written & Directed By: James McLane
+**Written & Directed By:** James McLane
 
-Best Actress 2020 CAFF: Courtney Wilson //
-Best Short Film 2020 CAFF: Finch //
-Official Selection at: Great Northern Film Festival, Okotoks Film Festival, Film For Peace - Toronto
+**Best Actress 2020 CAFF:** Courtney Wilson
+
+**Best Short Film 2020 CAFF:** Finch
+
+**Official Selection at:** Great Northern Film Festival, Okotoks Film Festival, Film For Peace (Toronto)
 
 [Watch Trailer](https://vimeo.com/399541496)

@@ -10,11 +10,11 @@ site = "https://www.instagram.com/arellajoy/"
 
 ELLA, a young Mixed Martial Artist hailing from Edmonton, Canada brings passion and work-ethic like no other. We are excited to watch her career move forward!
 
-COMING SUMMER 2021
+*COMING SUMMER 2021*
 
 Vek Labs in association with BUDO BROTHERS
 
-Director: Andrew Peloso
-DP: Bence Horvai
-Editor: Bence Horvai & Jon Cubid
+**Director:** Andrew Peloso
+**DP:** Bence Horvai
+**Editor:** Bence Horvai & Jon Cubid
 

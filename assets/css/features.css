@@ -10,12 +10,43 @@
    padding: 6maj 1maj;
   }
 
+  .cta {
+   scroll-padding-top: 7maj;
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+   min-height: 50%;
+   padding: 6maj 0;
+   scroll-snap-align: center;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   .button {
+     font-weight: 500;
+     font-size: 3maj;
+     background-color: var(--black-overlay);
+     color: var(--white);
+     padding: 3maj 4maj;
+     border-radius: 2maj;
+     transition: var(--default);
+     cursor: pointer;
+     box-shadow: var(--med-shadow);
+
+     &:hover {
+       background-color: var(--white);
+       color: var(--black);
+       box-shadow: var(--hover-shadow);
+     }
+   }
+  }
+
   .card {
    scroll-padding-top: 7maj;
    width: 100%;
    max-width: 1200px;
    margin: 0 auto;
-   min-height: 100%;
+   min-height: 60%;
    padding: 6maj 0;
    scroll-snap-align: center;
    display: flex;
@@ -137,10 +168,13 @@
  }
 
  .awards {
-  margin-top: 6maj;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  padding-top: 6maj;
+  gap: 1maj;
 
   .award {
-   width: 125px;
+   width: 100%;
    object-fit: cover;
   }
  }
