@@ -1,11 +1,10 @@
-const trailers = document.querySelectorAll(".trailer")
+const trailers = document.querySelectorAll<HTMLDivElement>(".trailer")
 
 for (const trailer of trailers) {
  const video: HTMLVideoElement = trailer.querySelector("video")
  const controlElement: HTMLImageElement = trailer.querySelector(".play-icon")
- const fullscreenElement: HTMLImageElement = trailer.querySelector(
-  ".fullscreen-icon"
- )
+ const fullscreenElement: HTMLImageElement =
+  trailer.querySelector(".fullscreen-icon")
 
  fullscreenElement.addEventListener("click", (e) => {
   e.stopPropagation()

@@ -36,6 +36,7 @@ button_link = "info@veklabs.com"
  identifier = "features"
  name = "Vek Plus"
  url = "/vekplus/"
+ pre = '/images/vekplus.svg'
  weight = 1
 
  [[menu.main]]

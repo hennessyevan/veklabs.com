@@ -12,7 +12,16 @@
         <a class="top" href="/">Home</a>
         {{ end }}
         {{ range .Site.Menus.main }}
-        <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        <a class="top {{ if (or (eq $currentPage.URL .URL) ($currentPage.HasMenuCurrent "main" .  )) }}active{{ end }}"
+          href="{{ .URL }}">
+          {{ if .Pre }}
+          <svg class="icon" title="{{ .Name }}" viewBox="0 0 820 312">
+            <use href="{{ .Pre }}#icon"></use>
+          </svg>
+          {{ else }}
+          {{ .Name }}
+          {{ end }}
+        </a>
         {{ end }}
       </div>
       <div class="right">
@@ -53,7 +62,16 @@
       <div class="submenu small">
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
-        <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        <a class="top{{ if (or (eq $currentPage.URL .URL) ($currentPage.HasMenuCurrent "main" .  )) }} active{{ end }}"
+          href="{{ .URL }}">
+          {{ if .Pre }}
+          <svg class="icon" title="{{ .Name }}" viewBox="0 0 820 312">
+            <use href="{{ .Pre }}#icon"></use>
+          </svg>
+          {{ else }}
+          {{ .Name }}
+          {{ end }}
+        </a>
         {{ end }}
       </div>
 

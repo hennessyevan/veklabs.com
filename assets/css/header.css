@@ -9,7 +9,7 @@
  width: 100%;
 
  @supports (color: color-contrast(black vs white, tan)) {
-   background: var(--gray6);
+  background: var(--gray6);
  }
 
  @supports (padding: minmax(0px)) {
@@ -19,6 +19,10 @@
 
  @media (--mobile) {
   padding: 2.5maj 2maj;
+ }
+
+ & .icon {
+  height: 2maj;
  }
 
  & .wrapper {

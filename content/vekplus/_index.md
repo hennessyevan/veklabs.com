@@ -1,5 +1,5 @@
 +++
 title = "Vek Plus"
-icon = ""
+icon = "images/vekplus.svg"
 type = "top"
 +++
