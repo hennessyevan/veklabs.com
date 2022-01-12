@@ -6,9 +6,9 @@
   <div class="container">
 
     {{ if (or (isset .Params "image") (isset .Params "page_image")) }}
-    <div style="position: relative;">
+    <div class="image-wrapper">
       {{ $image := .Params.page_image | default .Params.image }}
-      {{ partial "site/img" (dict "image" $image "width" 980 "height" 373 "class" "header-image") }}
+      {{ partial "site/img" (dict "image" $image "width" 380 "height" 630 "class" "header-image") }}
 
       <h1 class="title">
         {{ .Params.page_title | default .Title }}
