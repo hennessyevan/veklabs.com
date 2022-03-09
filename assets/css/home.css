@@ -121,6 +121,7 @@
  & .title {
   margin-bottom: 6maj;
   max-width: 75maj;
+  width: 100%;
 
   @media (max-width: 600px) {
    font-size: 1.75rem;
