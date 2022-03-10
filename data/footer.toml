@@ -39,6 +39,11 @@ url = "https://unsplash.com/@veklabs"
 icon = "camera.svg"
 
 [[social.channel]]
+  name = "Pinterest"
+  url = "https://www.pinterest.ca/veklabs/"
+  icon = "pinterest.svg"
+
+[[social.channel]]
  name = "Anchor"
  url = "https://anchor.fm/vek-labs"
  icon = "anchor.svg"

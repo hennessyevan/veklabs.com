@@ -7,6 +7,11 @@ footer {
   padding: 2maj 3maj;
   border-top: 1px solid var(--gray5);
 
+  @media (--tablet) {
+    flex-direction: column;
+    gap: 3maj;
+  }
+
   & .left,
   & .right,
   & .center {
@@ -40,8 +45,17 @@ footer {
   align-items: center;
   justify-content: center;
 
+  @media (--tablet) {
+    flex-direction: column;
+    gap: 3maj;
+  }
+
   & .divider {
    padding-inline: 2maj;
+
+   @media (--tablet) {
+     display: none;
+   }
   }
  }
 
@@ -51,10 +65,6 @@ footer {
   align-items: center;
   flex-wrap: wrap;
   margin: 0 -1maj;
-
-  @media (--tablet) {
-   margin-top: 2maj;
-  }
 
   & .icon {
    margin: 0 1maj;
@@ -72,12 +82,13 @@ footer {
 
 .banners {
  display: flex;
- position: fixed;
+ position: sticky;
  flex-direction: column;
  bottom: calc(env(safe-area-inset-bottom) + clamp(2maj, 5vh, 10maj));
- right: clamp(1.5maj, 3vw, 10maj);
+ margin-right: clamp(1.5maj, 3vw, 10maj);
  margin-left: clamp(1.5maj, 3vw, 10maj);
  z-index: 70;
+ padding-bottom: 15px;
 
  & > * {
   margin-left: auto;
