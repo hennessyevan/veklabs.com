@@ -16,7 +16,7 @@
         {{ end }}
       </div>
       <div class="right">
-        <a class="top menu-link" href="#contact">Contact</a>
+        <a class="top menu-link" href="/contact">Contact</a>
       </div>
 
     </div>
@@ -45,39 +45,6 @@
 
     </div>
 
-  </div>
-
-  <div class="drawer">
-    <div id="inner-drawer">
-
-      <div class="submenu small">
-        {{ $currentPage := . }}
-        {{ range .Site.Menus.main }}
-        <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
-        {{ end }}
-      </div>
-
-      <div class="contact">
-        <a href="mailto:{{.Site.Data.en.EMAIL}}" class="button email" target="_blank">
-          <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg"
-              aria-describedby="{{.Site.Data.en.EMAIL}}" alt="">
-          </div>
-          <span>
-            {{.Site.Data.en.EMAIL}}
-          </span>
-
-        </a>
-
-        <a href="tel:{{.Site.Data.en.PHONE}}" class="button phone" target="_blank">
-          <div class="icon"><img src="{{ .Site.BaseURL }}/assets/phone.svg" aria-describedby="{{.Site.Data.en.PHONE}}"
-              alt="">
-          </div>
-          <span>
-            {{.Site.Data.en.PHONE}}
-          </span>
-        </a>
-      </div>
-    </div>
   </div>
 
 </header>

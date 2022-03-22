@@ -1,9 +1,7 @@
 import { ResizeObserver } from "@juggle/resize-observer"
-import { spring, styler } from "popmotion"
 
 const links = document.querySelectorAll(".menu-link")
-const drawerEl = document.querySelector(".drawer")
-const drawer = styler(drawerEl)
+const drawer = document.querySelector(".drawer")
 const menuItems = document.querySelector(".small.submenu").childElementCount
 
 let menuHeight: number = 0
