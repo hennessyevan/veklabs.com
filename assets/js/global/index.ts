@@ -1,6 +1,5 @@
-import "./header"
+// import "./header"
 import "./footer"
-import "./favicon"
 import "./lqip"
 
 /**

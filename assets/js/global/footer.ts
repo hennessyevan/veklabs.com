@@ -1,10 +1,6 @@
-import { chain, tween, styler, delay } from "popmotion"
+import { animate } from "motion"
 
-const bannerEl: HTMLElement = document.querySelector(".banner")
-const banner = styler(bannerEl)
+const banner: HTMLElement = document.querySelector(".banner")
+const delay = Number(banner.dataset.delay) / 1000
 
-chain(
- delay(Number(bannerEl.dataset.delay)),
- tween({ from: { opacity: 1 }, to: { opacity: 0 } }),
- tween({ from: { display: "initial" }, to: { display: "none" } })
-).start((v) => banner.set(v))
+animate(banner, { opacity: 0, display: "none" }, { delay }).play()
