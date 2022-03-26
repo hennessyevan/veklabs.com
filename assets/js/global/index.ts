@@ -1,6 +1,6 @@
 // import "./header"
 import "./footer"
-import "./lqip"
+// import "./lqip"
 
 /**
  * Delete all service workers from previous

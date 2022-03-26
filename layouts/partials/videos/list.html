@@ -9,7 +9,7 @@
 
   {{ with.Params.type }}
     <span class="type {{ anchorize . }}">{{.}}</span>
-    <video loading="lazy" class="preview" src="{{ $preview }}" preload="none" muted="true" loop="true"
+    <video class="preview" src="{{ $preview }}" preload="none" muted="true" loop="true"
       playsinline="true"></video>
   {{ end }}
 

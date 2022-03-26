@@ -5,15 +5,13 @@
  cursor: pointer;
  user-select: none;
  position: relative;
- -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
  border-radius: 1.5maj;
  box-shadow: var(--med-shadow);
  height: 100%;
  aspect-ratio: 16 / 9;
  overflow: hidden;
+ opacity: 0;
+ 
 
  @media (max-width: 768px) {
   scroll-snap-align: center;
