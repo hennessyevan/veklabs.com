@@ -13,11 +13,11 @@
   <div class="inner">
     <div class="left">
       <img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
-      {{ .Site.Data.en.FOOTER_PRETEXT}}
+      {{ i18n "footer.pre" }}
     </div>
 
     <div class="center">
-      <div class="site-footer__codivyright">
+      <div class="site-footer__copyright">
         &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>
       </div>
     </div>

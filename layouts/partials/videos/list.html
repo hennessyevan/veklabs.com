@@ -8,9 +8,9 @@
   </span>
 
   {{ with.Params.type }}
-  <span class="type {{ anchorize . }}">{{.}}</span>
-  <video loading="lazy" class="preview" src="{{ $preview }}" preload="none" muted="true" loop="true"
-    playsinline="true"></video>
+    <span class="type {{ anchorize . }}">{{.}}</span>
+    <video loading="lazy" class="preview" src="{{ $preview }}" preload="none" muted="true" loop="true"
+      playsinline="true"></video>
   {{ end }}
 
   {{ partial "site/img" (dict "image" .Params.image "width" 478 "height" 269) }}

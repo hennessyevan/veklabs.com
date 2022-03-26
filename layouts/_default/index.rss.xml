@@ -2,7 +2,7 @@
   <channel>
     <title>{{ .Site.Title }} Reports</title>
     <link>{{ .Permalink }}</link>
-    <description>{{ .Site.Data.en.description }}</description>
+    <description>{{ i18n "site.description" }}</description>
     <generator>Hugo {{ hugo.Version }}</generator>
     {{ with .Site.LanguageCode }}
     <language>{{.}}</language>

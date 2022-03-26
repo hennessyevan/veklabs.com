@@ -40,8 +40,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
 
 
-{{ $description := .Summary | default .Site.Data.en.description }}
+{{ $description := .Summary | default .Site.Params.description }}
 <meta name="description" content="{{ $description }}" />
 <link rel="shortcut icon" href="{{ $faviconSVG }}" />
-<link rel="shortcut icon" href="{{ $darkFavicon }}" id="dark-scheme-icon" />
-<link rel="shortcut icon" href="{{ $lightFavicon }}" id="light-scheme-icon" />

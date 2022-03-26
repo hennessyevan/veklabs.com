@@ -1,15 +1,16 @@
 baseURL = "https://www.veklabs.com"
-languageCode = "en-ca"
+languageCode = "en"
 title = "Vek Labs"
 ISO8601 = "2006-01-02T15:04:05JST"
+enableMissingTranslationPlaceholders = true
 
 [params]
-bannerShow = 7500 # Time that the banner is shown for in milliseconds
+bannerShow = 7.5 # Time that the banner is shown for in seconds
 disallow_search_engines = false # set robots.txt to disallow everything
 imgSizes = [2500, 1500, 1000, 500]
 title = "Vek Labs"
 videos = ["https://player.vimeo.com/external/407838186.hd.mp4?s=ddf843d553ee2d63b3c4c357ad3f59988342b03d&profile_id=175"]
-locale = "en_CA"
+locale = "en"
 images = ["/images/tempHero.jpg"]
 subtitle = "Top Calgary Video Production Company"
 description = "We're a Calgary video production company working with people on productions that inspire us. Meet Calgary's pro content team."
@@ -32,24 +33,6 @@ button_title = "Email"
 button_link = "info@veklabs.com"
 
 [menu]
-# [[menu.main]]
-#  identifier = "features"
-#  name = "Features"
-#  url = "/features/"
-#  weight = 1
-
-#  [[menu.main]]
-#  identifier = "services"
-#  name = "Services"
-#  url = "/services/"
-#  weight = 2
-
-#  [[menu.main]]
-#  identifier = "products"
-#  name = "Products"
-#  url = "/products/"
-#  weight = 3
-
  [[menu.main]]
  identifier = "about"
  name = "About"
@@ -67,12 +50,6 @@ button_link = "info@veklabs.com"
  name = "Careers"
  url = "/careers/"
  weight = 6
-
-#  [[menu.main]]
-#  identifier = "testimonials"
-#  name = "Testimonials"
-#  url = "/testimonials/"
-#  weight = 5
 
 
 [taxonomies]

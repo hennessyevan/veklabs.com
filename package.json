@@ -4,7 +4,7 @@
  "private": true,
  "sideEffects": false,
  "scripts": {
-  "start": "yarn && hugo server",
+  "start": "hugo server",
   "build": "hugo",
   "social-images": "node scripts/social-image.mjs",
   "serve-hugo": "hugo server -b http://$(hostname) --bind 0.0.0.0",

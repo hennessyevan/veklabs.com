@@ -1,0 +1,18 @@
+site: 
+  subtitle: " | Top Calgary Video Production Company"
+  description: We are a team of award-winning videographers and editors working with people and on productions that inspire us. Meet Calgary's pro content team.
+
+header:
+  home: Home
+  contact: Contact
+
+home:
+  core_team: Core Team
+  hero_text: We are a team of award-winning videographers and editors working with people and on productions that inspire us | Welcome to the lab.
+
+clients:
+  title: Clients
+  text: Some of the clients we have had the privilege of creating with.
+
+footer: 
+  pre: Proudly based in Canada

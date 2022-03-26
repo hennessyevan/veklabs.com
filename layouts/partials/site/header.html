@@ -9,14 +9,14 @@
       <div class="center">
         {{ $currentPage := . }}
         {{ if (ne $currentPage.RelPermalink "/") }}
-        <a class="top" href="/">Home</a>
+        <a class="top" href="/">{{ i18n "header.home" }}</a>
         {{ end }}
         {{ range .Site.Menus.main }}
         <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
       </div>
       <div class="right">
-        <a class="top menu-link" href="/contact">Contact</a>
+        <a class="top menu-link" href="/contact">{{ i18n "header.contact" }}</a>
       </div>
 
     </div>

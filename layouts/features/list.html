@@ -4,7 +4,7 @@
   {{ partial "site/pageStyle" "css/features.css" }}
 
   <title>
-    {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ .Site.Data.en.subtitle }}
+    {{- with .Title }}{{ . }} | {{ end }}{{ .Site.Title -}}{{ i18n "site.subtitle" }}
   </title>
 
   <style>

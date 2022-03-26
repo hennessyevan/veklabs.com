@@ -4,3 +4,4 @@
 // import "./video-modal"
 // import "./viewport"
 // import "./volume-button"
+import "./fade-in"
