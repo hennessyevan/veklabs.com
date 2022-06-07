@@ -23,7 +23,7 @@
 
     <div class="container">
 
-      {{ range .Pages.ByParam "publishDate" }}
+      {{ range .Pages.ByPublishDate.Reverse }}
 
 
       <div class="card">
@@ -44,6 +44,7 @@
           <div class="start">
             <h1 class="title">{{ .Title }}</h1>
             <h4 class="category">{{ .Params.category }}</h4>
+            <h4 class="category">{{ .PublishDate.Format "January 2006" }}</h4>
             <p class="excerpt">{{ .Content }}</p>
             {{ with .Params.site }}
             <a href="{{.}}" target="_blank" rel="noopener" class="website">Visit Website</a>
