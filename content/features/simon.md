@@ -18,7 +18,7 @@ An increasingly coveted remixer and engineer, Simon continues to showcase an eli
 
 Simon approaches music like basketball; eschewing self promotion in favour of a quiet, laid back demeanour that lets his music (or his jump shot) do the talking. 
 
-Vek Labs in association with RECESS & Rhetorical Music
+Vek Labs in association with RECESS & Rhetorical Music.
 
 Director: Riley Patten
 Post-Production Supervisor: Jon Cubid
