@@ -1,5 +1,5 @@
 +++
-title = "No Prophet: Simon Doty"
+title = "Simon Doty"
 category = "Mini-Documentary"
 videoURL = "https://player.vimeo.com/progressive_redirect/playback/716947682/rendition/1080p/file.mp4?loc=external&signature=d3370f98a68dc3709699c11a21b4e557127d18fed018b93806ec180cd380edc8"
 videoID = 716947682
