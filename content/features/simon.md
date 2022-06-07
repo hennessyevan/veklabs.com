@@ -4,7 +4,7 @@ category = "Mini-Documentary"
 videoURL = "https://player.vimeo.com/progressive_redirect/playback/716947682/rendition/1080p/file.mp4?loc=external&signature=d3370f98a68dc3709699c11a21b4e557127d18fed018b93806ec180cd380edc8"
 videoID = 716947682
 publishDate = 2022-06-07
-image = "images/ELLA.jpg"
+image = "images/No_Prophet_Documentary_Trailer.png"
 site = "https://simondoty.com/"
 +++
 
