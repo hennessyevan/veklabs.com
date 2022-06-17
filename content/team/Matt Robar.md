@@ -2,7 +2,7 @@
  name = "Matt Robar"
  image = "images/Matt_Robar_Vek.jpg"
  order = 5
- title = "Cinematographer/Editor"
+ title = "Cinematographer / Editor"
  competencies = ["Storyline Editing","Creative Ideation"]
 
 [[channel]]
