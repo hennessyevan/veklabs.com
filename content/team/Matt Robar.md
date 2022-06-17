@@ -7,7 +7,7 @@
 
 [[channel]]
   name = "LinkedIn"
-  url = "https://www.linkedin.com/in/riley-patten-7b8695190/"
+  url = "https://www.linkedin.com/in/mattrobar/"
   icon = "linkedin.svg"
 
 +++
