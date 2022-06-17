@@ -490,7 +490,7 @@
  align-content: start;
  grid-auto-flow: column;
  grid-template-columns: repeat(var(--cols), var(--col-size));
- grid-template-rows: repeat(2, var(--row-size));
+ grid-template-rows: repeat(3, var(--row-size));
  grid-gap: var(--padding);
 
  @media (max-width: 600px) {
