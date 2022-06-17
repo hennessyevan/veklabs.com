@@ -1,6 +1,6 @@
 +++
  name = "Riley Patten"
- image = "images/Spring2020_VekLabs-192.jpg"
+ image = "images/Riley_Patten_Vek.jpg"
  order = 3
  title = "Managing Director"
  competencies = ["Filming and Production Management","Pre-Production Development"]
