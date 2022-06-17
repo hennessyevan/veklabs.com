@@ -2,7 +2,7 @@
  name = "Riley Patten"
  image = "images/Spring2020_VekLabs-192.jpg"
  order = 3
- title = "Director of Photography"
+ title = "Managing Director"
  competencies = ["Filming and Production Management","Pre-Production Development"]
 
 [[channel]]

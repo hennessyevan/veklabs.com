@@ -2,7 +2,7 @@
  name = "Bence Horvai"
  image = "images/bence_veklabs.jpg"
  competencies = ["Cinematography", "Photography"]
- title = "Creative Content Manager"
+ title = "Director of Photography"
  order = 4
 
 [[channel]]

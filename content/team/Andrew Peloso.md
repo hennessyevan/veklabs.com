@@ -2,7 +2,7 @@
  name = "Andrew Peloso"
  image = "images/Spring2020_VekLabs-189.jpg"
  competencies = ["Cinematography", "Audio Production"]
- title = "Managing Director"
+ title = "Founder"
  order = 1
 
 [[channel]]
