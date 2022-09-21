@@ -1,7 +1,7 @@
 +++
 title = "Airborne"
 category = "Mini-Documentary"
-videoURL = "https://player.vimeo.com/external/752327385.m3u8?s=28bc0fc8afdf41521f3c28e2f2925b5dc51a2256"
+videoURL = "https://player.vimeo.com/progressive_redirect/playback/752327385/rendition/1080p/file.mp4?loc=external&signature=127b4575a1901e8d07c2da2a22318e5241389f1dbc0906b1c72a798de9d23049"
 videoID = 752327385
 publishDate = 2022-09-21
 image = "images/1_No_Prophet_Documentary_Trailer.png"
