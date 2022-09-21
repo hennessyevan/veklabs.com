@@ -5,7 +5,7 @@ videoURL = "https://player.vimeo.com/progressive_redirect/playback/752327385/ren
 videoID = 752327385
 publishDate = 2022-09-21
 image = "images/air_thumb.jpg"
-site = "https://veklabs.com"
+site = "https://niviuk.com/en/jonathan-klimow"
 +++
 
 Airborne: A Paraglider Story
