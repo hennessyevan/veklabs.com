@@ -1,8 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="160 74 63.731 40">
-  <g id="logo" data-name="Group 3" transform="translate(160 74)" style="fill: var(--text, white)">
-    <path id="Path_1" data-name="Path 1"
-      d="M25.445,39.99H14.237L0,0,11.248,3.367,17.963,25.5l2,7.213,1.943-7.1L28.732,3.367h9.714Z" />
-    <path id="Path_2" data-name="Path 2" d="M387.415,63.05v7.382H359.5V33.8h9.544V63.04h18.371Z"
-      transform="translate(-323.684 -30.433)" />
-  </g>
-</svg>
