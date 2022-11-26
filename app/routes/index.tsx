@@ -1,34 +1,43 @@
-import { MetaFunction } from '@remix-run/cloudflare'
+import type { LinksFunction } from "@remix-run/cloudflare"
+import styles from "styles/home.css"
+
+export const Links: LinksFunction = () => [{ rel: "stylesheet", href: styles }]
 
 export default function Index() {
-  return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', lineHeight: '1.4' }}>
-      <h1>Welcome to Remix</h1>
-      <ul>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/blog"
-            rel="noreferrer"
-          >
-            15m Quickstart Blog Tutorial
-          </a>
-        </li>
-        <li>
-          <a
-            target="_blank"
-            href="https://remix.run/tutorials/jokes"
-            rel="noreferrer"
-          >
-            Deep Dive Jokes App Tutorial
-          </a>
-        </li>
-        <li>
-          <a target="_blank" href="https://remix.run/docs" rel="noreferrer">
-            Remix Docs
-          </a>
-        </li>
-      </ul>
-    </div>
-  )
+	return (
+// 		<section id="videos">
+//   {{ range where .Pages "Section" "videos" }}
+
+//   {{ range first 1 (where .Pages "Params.featured" true) }}
+//   {{ block "videos/hero" .}}{{ partial "videos/hero.html" . }}{{ end }}
+//   {{ end }}
+
+//   <div class="video-grid-section">
+
+//     <div class="video-grid-wrapper"
+//       style='--cols: {{ math.Ceil (div (len (where .Pages "Params.featured" "!=" true)) 2.0) }};'>
+//       <div class="video-grid">
+//         {{ range where .Pages "Params.featured" "!=" true }}
+//         {{ block "videos/list" .}}{{ partial "videos/list.html" . }}{{ end }}
+//         {{ end }}
+//       </div>
+//     </div>
+
+//     <div class="scroll-arrows">
+//       <span class="arrow-left page-number">
+//         <svg viewBox="0 0 24 24">
+//           <use href="/assets/arrow-left.svg#icon"></use>
+//         </svg>
+//       </span>
+//       <span class="arrow-right page-number">
+//         <svg viewBox="0 0 24 24">
+//           <use href="/assets/arrow-right.svg#icon"></use>
+//         </svg>
+//       </span>
+//     </div>
+//   </div>
+
+//   {{ end }}
+// </section>
+	)
 }

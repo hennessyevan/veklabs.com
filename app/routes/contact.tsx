@@ -1,3 +1,3 @@
 export default function Blogs() {
-  return <h1>Blogs Page</h1>
+	return <h1>Contact Page</h1>
 }
