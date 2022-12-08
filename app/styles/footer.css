@@ -1,0 +1,216 @@
+footer {
+  background: var(--background);
+}
+
+footer .inner {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-top: 1px solid var(--gray5);
+  }
+
+@media (--tablet) {
+
+footer .inner {
+      flex-direction: column;
+      gap: 15px;
+  }
+    }
+
+footer .inner .left,
+    footer .inner .right,
+    footer .inner .center {
+      flex-basis: 33%;
+    }
+
+footer .center {
+    text-align: center;
+  }
+
+footer .right {
+    text-align: right;
+  }
+
+footer .footer-flag {
+    height: 7.5px;
+    color: white;
+  }
+
+footer a {
+    color: var(--white);
+    font-weight: 600;
+  }
+
+footer .sub-footer {
+    padding: 10px 15px;
+    border-top: 1px solid var(--gray5);
+    background: var(--black-overlay);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+@media (--tablet) {
+
+footer .sub-footer {
+      flex-direction: column;
+      gap: 15px;
+  }
+    }
+
+footer .sub-footer .divider {
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+@media (--tablet) {
+
+footer .sub-footer .divider {
+        display: none;
+    }
+      }
+
+footer .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 -5px;
+  }
+
+footer .right .icon {
+      margin: 0 5px;
+    }
+
+footer .right .icon img {
+        height: 10px;
+      }
+
+@media (--tablet) {
+
+footer .right .icon img {
+          height: 15px;
+      }
+        }
+
+.banners {
+  display: flex;
+  position: sticky;
+  flex-direction: column;
+  bottom: calc(env(safe-area-inset-bottom) + max(10px, min(5vh, 50px)));
+  margin-right: max(7.5px, min(3vw, 50px));
+  margin-left: max(7.5px, min(3vw, 50px));
+  z-index: 70;
+  padding-bottom: 15px;
+}
+
+.banners > * {
+    margin-left: auto;
+  }
+
+.banners > * + * {
+    margin-top: 10px;
+  }
+
+.call-to-action {
+  background-color: var(--gray-overlay);
+  -webkit-backdrop-filter: var(--blur-filter);
+          backdrop-filter: var(--blur-filter);
+  filter: var(--med-filter-shadow);
+  padding: 7.5px 15px;
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px var(--gray4);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  align-items: center;
+}
+
+.call-to-action .title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.call-to-action .description {
+    color: var(--gray1);
+    padding-top: 1min;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+.call-to-action .text {
+    max-width: min(300px, 90vw);
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    flex-direction: column;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+            user-select: none;
+    cursor: default;
+  }
+
+.call-to-action .button {
+    background-color: var(--accentColor);
+    color: var(--white);
+    padding: 7.5px 17.5px;
+    margin-right: -7.5px;
+    border-radius: 999px;
+    transition: var(--default);
+  }
+
+.call-to-action .button:hover {
+      box-shadow: 0 13px 36px var(--blue);
+      transform: translateY(-2px);
+    }
+
+/* BANNER */
+
+.banner {
+  --banner-color: #d37829;
+
+  border-radius: 999px;
+  z-index: 70;
+  box-shadow: 0 8px 15px rgba(211,120,41,0.25098);
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  display: flex;
+  padding: 1min;
+  padding-right: 10px;
+  align-items: center;
+  background-color: var(--banner-color); /* To match local excellence badge */
+  font-size: max(8.75px, min(2vw, 10px));
+}
+
+.banner .image {
+    width: max(35px, min(5vw, 50px));
+  }
+
+.banner .title {
+    padding: 0 5px;
+    max-width: 150px;
+    font-weight: 500;
+  }
+
+.banner .button {
+    color: var(--text);
+    border: 1px solid var(--text);
+    padding: 5px 10px;
+    margin-left: max(7.5px, min(2vw, 10px));
+    border-radius: 5px 10px 10px 5px;
+    background: rgba(255,255,255,0.18824);
+    transition: var(--fast);
+    white-space: nowrap;
+  }
+
+.banner .button:hover {
+      background: rgba(255,255,255,0.27059);
+    }

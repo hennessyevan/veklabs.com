@@ -1,7 +1,3 @@
-@custom-media --desktop (max-width: 1500px);
-@custom-media --tablet (max-width: 1024px);
-@custom-media --mobile (max-width: 768px);
-
 :root {
 	--body-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
 		Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -20,20 +16,20 @@
 	--background: var(--gray6);
 	--text: var(--white);
 
-	--blue: #0a84ff65;
+	--blue: rgba(10,132,255,0.39608);
 	--solid-blue: #0a84ff;
-	--green: #30d15865;
+	--green: rgba(48,209,88,0.39608);
 	--solid-green: #30d158;
-	--indigo: #5e5ce665;
-	--orange: #ff9f0a65;
+	--indigo: rgba(94,92,230,0.39608);
+	--orange: rgba(255,159,10,0.39608);
 	--solid-orange: #ff9f0a;
-	--pink: #ff375f65;
-	--purple: #bf5af265;
-	--red: #ff453a65;
+	--pink: rgba(255,55,95,0.39608);
+	--purple: rgba(191,90,242,0.39608);
+	--red: rgba(255,69,58,0.39608);
 	--solid-red: #ff453a;
-	--teal: #64d2ff65;
+	--teal: rgba(100,210,255,0.39608);
 	--solid-teal: #64d2ff;
-	--yellow: #ffd60a65;
+	--yellow: rgba(255,214,10,0.39608);
 
 	--accentColor: var(--solid-blue);
 
@@ -52,7 +48,6 @@
 
 	--padding: 15px;
 }
-
-@media (--mobile) {
+@media (max-width: 768px) {
 	--padding: 7.5px;
 }
