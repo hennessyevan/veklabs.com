@@ -1,30 +1,13 @@
-import { NavLink } from "@remix-run/react"
-import { base, headerMenu } from "~/config"
+import ThemeToggle from '~/components/ThemeToggle'
+import Logo from '~/components/Logo'
 
-export function Header() {
-	return (
-		<header className="site-header" role="banner">
-			<div className="wrapper">
-				<div className="large menu">
-					<a className="anchor left" href={base} title="Go Home">
-						<svg className="header-logo">
-							<use href="/logo.svg#logo" />
-						</svg>
-					</a>
-
-					<nav className="center">
-						{headerMenu.map((item) => (
-							<NavLink key={item.to} to={item.to} className="top">
-								{item.label}
-							</NavLink>
-						))}
-					</nav>
-
-					<div className="right">
-						<div className="top menu-link">Contact</div>
-					</div>
-				</div>
-			</div>
-		</header>
-	)
+export default function Header() {
+  return (
+    <header className="border-b border-gray-100 transition-colors duration-1000 ease-in-out dark:border-gray-900">
+      <div className="container mx-auto flex items-center justify-between p-4 lg:px-12">
+        <Logo />
+        <ThemeToggle />
+      </div>
+    </header>
+  )
 }

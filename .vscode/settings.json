@@ -1,8 +1,0 @@
-{
-	"editor.formatOnSaveMode": "file",
-	"editor.formatOnSave": true,
-	"files.exclude": {
-		"app/styles": true,
-		"app/styles/*.css": true
-	}
-}
