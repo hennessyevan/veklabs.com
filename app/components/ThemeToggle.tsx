@@ -1,15 +1,15 @@
-import { useFetcher, useLoaderData } from '@remix-run/react'
-import { Moon, Sun } from 'lucide-react'
+import { useFetcher, useLoaderData } from "@remix-run/react";
+import { Moon, Sun } from "lucide-react";
 
 export default function ThemeToggle() {
-  const cookieToggle = useFetcher()
-  const { themePreference } = useLoaderData()
+  const cookieToggle = useFetcher();
+  const { themePreference } = useLoaderData();
 
-  const isDarkMode = themePreference === `dark`
+  const isDarkMode = themePreference === `dark`;
 
   return (
     <cookieToggle.Form method="post" action="/resource/toggle-theme">
-      <button type="submit" disabled={cookieToggle.state === 'submitting'}>
+      <button type="submit" disabled={cookieToggle.state === "submitting"}>
         {isDarkMode ? (
           <Sun className="h-auto w-4" />
         ) : (
@@ -20,5 +20,5 @@ export default function ThemeToggle() {
         </div>
       </button>
     </cookieToggle.Form>
-  )
+  );
 }

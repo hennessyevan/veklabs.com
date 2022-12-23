@@ -33,7 +33,7 @@ export type VideoDocument = z.infer<typeof videoZ>
 
 export const videosZ = z.array(videoZ)
 
-export const videoStubZ = z.object({
+export const videoFragmentZ = z.object({
   _id: z.string(),
   title: z.string().nullable(),
   slug: z.string().nullable(),
@@ -41,4 +41,5 @@ export const videoStubZ = z.object({
   image: z.any().nullable(),
 })
 
-export const videoStubsZ = z.array(videoStubZ)
+export const videoFragmentsZ = z.array(videoFragmentZ)
+export type VideoFragment = z.infer<typeof videoFragmentZ>

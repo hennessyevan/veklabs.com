@@ -1,10 +1,22 @@
+const { toRadixVar, toRadixVars } = require('windy-radix-palette/vars')
+
 /** @type {import('tailwindcss').Config} */
-
-const {theme} = require('@sanity/demo/tailwind')
-
 module.exports = {
   content: ['./app/**/*.{js,ts,jsx,tsx}'],
   darkMode: 'class',
-  theme,
-  plugins: [require('@tailwindcss/typography')],
+  theme: {
+    extend: {
+      colors: {
+        'hi-contrast': toRadixVar('mauve', 12),
+        'lo-contrast': toRadixVar('mauve', 11),
+
+        neutral: toRadixVars('mauve'),
+      },
+    },
+  },
+  plugins: [
+    require('windy-radix-palette'),
+    require('@tailwindcss/typography'),
+    require('windy-radix-typography'),
+  ],
 }

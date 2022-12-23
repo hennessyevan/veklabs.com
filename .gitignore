@@ -7,3 +7,4 @@ node_modules
 !.env.template
 
 app/styles/app.css
+.DS_Store

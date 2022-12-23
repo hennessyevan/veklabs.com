@@ -1,6 +1,5 @@
-import {useFetcher, useLocation} from '@remix-run/react'
-import {ThumbsUp, ThumbsDown} from 'lucide-react'
-import React from 'react'
+import { useFetcher, useLocation } from '@remix-run/react'
+import { ThumbsDown, ThumbsUp } from 'lucide-react'
 
 type LikeDislikeProps = {
   id: string
@@ -9,13 +8,14 @@ type LikeDislikeProps = {
 }
 
 export default function LikeDislike(props: LikeDislikeProps) {
-  const {id} = props
+  const { id } = props
   const fetcher = useFetcher()
   const location = useLocation()
 
   // Use fresh data returned from the ActionFunction, if a mutation has just finished
   const likes = fetcher.type === 'done' ? fetcher.data.likes : props.likes
-  const dislikes = fetcher.type === 'done' ? fetcher.data.dislikes : props.dislikes
+  const dislikes =
+    fetcher.type === 'done' ? fetcher.data.dislikes : props.dislikes
 
   return (
     <fetcher.Form
