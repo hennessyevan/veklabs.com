@@ -2,6 +2,7 @@ import urlBuilder from '@sanity/image-url'
 import { projectDetails } from '~/sanity/projectDetails'
 import { VideoDocument } from '~/types/video'
 
+
 type VideoCardProps = Partial<VideoDocument> & {
   /**
    * If true, the component will render a link to the video's page
@@ -18,7 +19,7 @@ export function VideoCard({
 
   return (
     <ContainerComponent
-      className="aspect-video overflow-hidden rounded-xl border border-gray-4 bg-gray-2 shadow-lg"
+      className="aspect-video overflow-hidden rounded-xl border border-gray-4 bg-gray-2 shadow-lg transition-shadow hover:shadow-xl"
       href={withHref ? `/projects/${slug}` : undefined}
     >
       {image ? (
