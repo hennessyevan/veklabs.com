@@ -16,7 +16,7 @@
         {{ end }}
       </div>
       <div class="right">
-        <a class="top menu-link" href="#contact">Contact</a>
+        <a class="top" href="/contact">Contact</a>
       </div>
 
     </div>
@@ -55,9 +55,10 @@
         {{ range .Site.Menus.main }}
         <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
+        <a class="top" href="/contact">Contact</a>
       </div>
 
-      <div class="contact">
+      <!-- <div class="contact">
         <a href="mailto:{{.Site.Data.en.EMAIL}}" class="button email" target="_blank">
           <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg"
               aria-describedby="{{.Site.Data.en.EMAIL}}" alt="">
@@ -76,7 +77,7 @@
             {{.Site.Data.en.PHONE}}
           </span>
         </a>
-      </div>
+      </div> -->
     </div>
   </div>
 
