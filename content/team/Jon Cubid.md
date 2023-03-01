@@ -2,7 +2,7 @@
  name = "Jon Cubid"
  image = "images/jon_cubid_vek.jpg"
  order = 3
- title = "Senior Editor"
+ title = "Post-Supervisor / Sr. Editor"
  competencies = ["Post-Production and Narrative","Motion Graphics"]
 
 [[channel]]
