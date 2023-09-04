@@ -1,7 +1,7 @@
 +++
  name = "Alea Chen"
  image = "images/Alea_Chen.JPG"
- competencies = ["Editorial", "Storyline Compiling", "Project Planning"]
+ competencies = ["Editorial", "Storyline", "Project Planning"]
  title = "Editor"
  order = 4
 
