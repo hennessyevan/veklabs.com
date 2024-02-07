@@ -1,5 +1,5 @@
 +++
- name = "Danielle Baillargeon"
+ name = "Danielle Peloso"
  image = "images/Danielle_VekLabs.jpg"
  competencies = ["Research", "Writing", "Coordination"]
  title = "Research Coordinator"
