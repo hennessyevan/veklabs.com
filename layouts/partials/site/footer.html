@@ -1,6 +1,4 @@
 <div class="banners">
-  {{ partial "site/local-excellence" . }}
-
   {{ if (isset .Params "cta") }}
   {{ with .Params.cta }}{{ partial "site/cta" . }}{{ end }}
   {{ else if (isset .Site.Params "cta")}}
