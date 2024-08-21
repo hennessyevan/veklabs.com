@@ -11,6 +11,7 @@ collections:
  - name: "reports"
    label: "Reports"
    folder: "content/reports"
+   label_singular: "Report"
    create: true
    slug: "{{slug}}"
    delete: true
