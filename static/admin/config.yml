@@ -1,4 +1,4 @@
-# local_backend: true
+local_backend: true
 
 backend:
  name: git-gateway
@@ -137,3 +137,64 @@ collections:
     - { name: "speed", label: "speed", widget: "number" }
     - { name: "summary", label: "summary", widget: "text" }
     - { name: "body", label: "Body", widget: "markdown" }
+
+ - name: "settings"
+   label: "Settings"
+   files:
+    - label: "Site Settings"
+      name: "config"
+      file: config.toml
+      editor: { preview: false }
+      create: false
+      delete: false
+      format: toml
+      fields:
+       - { required: true, "Site Title", name: "title", widget: "string" }
+       - { label: Site URL, name: baseURL, widget: string }
+       - title: "Parameters"
+         name: "params"
+         widget: "object"
+         fields:
+          - { label: Site Description, name: description, widget: string }
+          - { label: Subtitle, name: subtitle, widget: string }
+          - {
+             label: Items per page,
+             name: Paginate,
+             widget: number,
+             hint: Number of items to show per page,
+            }
+          - label: Call to Action
+            name: cta
+            hint: This is the call to action that appears across the site
+            widget: object
+            summary: "{{fields.title}} - {{fields.description}}"
+            fields:
+             - { label: Title, name: title, widget: string }
+             - { label: Description, name: description, widget: string }
+             - { label: Button Text, name: button_title, widget: string }
+             - { label: Button URL, name: button_link, widget: string }
+          - {
+             label: Google Analytics ID,
+             name: googleAnalytics,
+             widget: string,
+            }
+          - {
+             label: Banner Shown Time,
+             name: bannerShow,
+             widget: number,
+             hint: Time that the banner is shown for in milliseconds,
+            }
+          - {
+             label: Open Graph Images,
+             name: images,
+             widget: "list",
+             label_singular: "Image",
+             fields: [{ label: Image, name: image, widget: "image" }],
+            }
+          - {
+             label: Open Graph Videos,
+             name: videos,
+             widget: "list",
+             label_singular: "Video",
+             fields: [{ label: URL, name: url, widget: "string" }],
+            }
