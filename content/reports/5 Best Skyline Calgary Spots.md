@@ -8,7 +8,6 @@ title = "The 5 Best Calgary Skyline Photo Spots"
 
 +++
 
-Edit
 With the blend of modern architecture and nature's beauty, the city of Calgary offers a unique subject for a [photograph](https://www.veklabs.com/services/photography/). There are many viewpoints and hidden gems where you can capture some of the best skyline views of Calgary's distinctive beauty.
 
 In this article, we're sharing some of Calgary's most famous photographers' secret spots for taking the best skyline photo of Calgary.

@@ -197,6 +197,7 @@
 }
 
 #post {
+ width: calc(100% - 24px);
  max-width: 980px;
  margin: 0 auto;
  padding: 3maj 0 10maj;

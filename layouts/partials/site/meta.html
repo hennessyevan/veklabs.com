@@ -22,7 +22,7 @@
 {{ template "_internal/twitter_cards.html" . }}
 {{ end }}
 
-{{ if and (eq .Section "reports") (ne .Params.type "top") }}
+{{ if and (eq .Section "reports") (ne .RelPermalink "/") }}
 {{ $image := printf "%s%s%s%s" .Site.BaseURL "/social-images/" (urlize .Title) ".jpg" }}
 <meta property="og:image" content="{{ $image }}" />
 <meta name="twitter:image" content="{{ $image }}">
@@ -45,3 +45,4 @@
 <link rel="shortcut icon" href="{{ $faviconSVG }}" />
 <link rel="shortcut icon" href="{{ $darkFavicon }}" id="dark-scheme-icon" />
 <link rel="shortcut icon" href="{{ $lightFavicon }}" id="light-scheme-icon" />
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
