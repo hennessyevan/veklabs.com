@@ -223,3 +223,68 @@ collections:
              label_singular: "Video",
              fields: [{ label: URL, name: url, widget: "string" }],
             }
+    - name: content-settings
+      label: Content Settings
+      file: data/en.toml
+      editor: { preview: false }
+      create: false
+      delete: false
+      format: toml
+      fields:
+       - {
+          name: EMAIL,
+          label: Email,
+          widget: string,
+          pattern: ["[^@]+@[^@]+", "Must be an email"],
+         }
+       - {
+          name: PHONE,
+          label: Phone,
+          widget: string,
+          pattern:
+           [
+            "[0-9]{3}-[0-9]{3}-[0-9]{4}",
+            "Phone number must be in the format 123-456-7890",
+           ],
+         }
+       - { name: subtitle, label: Subtitle, widget: string }
+       - { name: description, label: Description, widget: string }
+       - { name: HERO_EXCERPT, label: Hero Excerpt, widget: string }
+       - { name: TEAM_TITLE, label: Team Title, widget: string }
+       - { name: PROJECTS_FILMED, label: Projects Filmed, widget: number }
+       - { name: VIDEOS_RENDERED, label: Videos Rendered, widget: number }
+       - {
+          name: FOOTAGE_PROCESSED_TB,
+          label: Footage Processed Tb,
+          widget: number,
+         }
+       - { name: TOTAL_VIEWS, label: Total Views, widget: number }
+       - { name: CLIENT_TITLE, label: Client Title, widget: string }
+       - { name: CLIENT_SUB_TITLE, label: Client Sub Title, widget: string }
+       - { name: FOOTER_PRETEXT, label: Footer Pretext, widget: string }
+    - name: footer-settings
+      label: Footer Settings
+      file: data/footer.toml
+      editor: { preview: false }
+      create: false
+      delete: false
+      format: toml
+      fields:
+       - { name: mail, label: Mailing Address, widget: string }
+       - name: social
+         label: Social Media
+         widget: object
+         fields:
+          - name: channel
+            label: Channels
+            widget: list
+            summary: "{{fields.name}} - {{fields.url}}"
+            fields:
+             - { name: name, label: Name, widget: string }
+             - {
+                name: url,
+                label: URL,
+                widget: string,
+                pattern: ["https://.*", "Must be a valid URL"],
+               }
+             - { name: icon, label: Icon, widget: image }
