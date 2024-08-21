@@ -22,3 +22,15 @@ collections:
       }
     - { name: "title", label: "title", widget: "string" }
     - { name: "order", label: "order", widget: "number" }
+    - {
+       name: "channel",
+       label: "channels",
+       widget: "list",
+       default: [],
+       fields:
+        [
+         { name: "name", label: "name", widget: "string" },
+         { name: "url", label: "url", widget: "string" },
+         { name: "icon", label: "icon", widget: "string" },
+        ],
+      }
