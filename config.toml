@@ -1,4 +1,4 @@
-baseURL = "https://www.veklabs.com"
+baseURL = "/"
 languageCode = "en-ca"
 title = "Vek Labs"
 ISO8601 = "2006-01-02T15:04:05JST"
