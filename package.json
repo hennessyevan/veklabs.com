@@ -8,6 +8,7 @@
   "build": "hugo",
   "build:branch": "hugo --gc --minify -b $DEPLOY_PRIME_URL",
   "build:split": "hugo --gc --minify --enableGitInfo",
+  "serve-hugo": "hugo server -b http://$(hostname) --bind 0.0.0.0",
   "social-images": "node scripts/social-image.mjs",
   "decap-local": "yarn dlx decap-server",
   "dev": "run-p start decap-local"
