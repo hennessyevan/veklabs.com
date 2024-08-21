@@ -12,7 +12,7 @@
         <a class="top" href="/">Home</a>
         {{ end }}
         {{ range .Site.Menus.main }}
-        <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        <a class="top{{ if (eq .URL $currentPage.RelPermalink) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
         {{ end }}
       </div>
       <div class="right">
@@ -28,7 +28,7 @@
       </a>
 
       <div class="center">
-        {{ if (and (not $currentPage.IsHome) (eq .Params.type "top"))}}
+        {{ if (and (not $currentPage.IsHome)) }}
         {{ $currentPage.Name }}
         {{end}}
       </div>

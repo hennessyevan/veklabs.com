@@ -1,12 +1,5 @@
 +++
 title = "Video Production Company Calgary"
-type = "top"
-
-[cta]
-title = "Get In Touch"
-description = "info@veklabs.com"
-button_title = "Email"
-button_link = "mailto:info@veklabs.com"
 
 [[featured]]
 brand = "unsplash"
