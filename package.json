@@ -6,6 +6,8 @@
  "scripts": {
   "start": "yarn dlx tinacms dev -c 'hugo server -D -p 1313'",
   "build": "hugo",
+  "build:branch": "hugo --gc --minify -b $DEPLOY_PRIME_URL",
+  "build:split": "hugo --gc --minify --enableGitInfo",
   "social-images": "node scripts/social-image.mjs"
  },
  "dependencies": {
