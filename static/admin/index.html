@@ -10,6 +10,10 @@
 </head>
 
 <body>
+  <script src="/global.js"></script>
+  <script src="/blog.js"></script>
+  <script src="/features.js"></script>
+  <script src="/home.js"></script>
   <!-- Include the script that builds the page and powers Decap CMS -->
   <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/date-fns/1.0.0/date_fns.min.js"
@@ -77,6 +81,31 @@
       }
     })
 
+    const VideoPreview = createClass({
+      render: function () {
+        const entry = this.props.entry
+
+        return (
+          h('div', { className: 'video-grid-wrapper', style: { margin: 0 } }, [
+            h('div', { className: 'video-grid' }, [
+              h('div', { className: 'video', id: entry.getIn(['data', 'videoId']), style: { maxWidth: 480 } }, [
+                h('span', { className: 'title' }, [
+                  entry.getIn(['data', 'title'])
+                ]),
+                h('span', { className: 'type {{ anchorize . }}' }, [
+                  entry.getIn(['data', 'type'])
+                ]),
+                h('div', { className: 'image-wrapper' }, [
+                  h('img', { src: this.props.getAsset(entry.getIn(['data', 'image'])), width: 478, height: 269 })
+                ])
+              ])
+            ])
+          ])
+        )
+      }
+    })
+
+    CMS.registerPreviewTemplate("videos", VideoPreview);
     CMS.registerPreviewTemplate("team", TeamPreview);
     CMS.registerPreviewTemplate("reports", PostPreview);
 

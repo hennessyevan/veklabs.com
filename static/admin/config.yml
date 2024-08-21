@@ -13,8 +13,7 @@ collections:
    create: true
    slug: "{{name}}"
    label_singular: "Team Member"
-   editor:
-    preview: true
+   editor: { preview: true }
    fields:
     - { name: "name", label: "name", widget: "string" }
     - { name: "image", label: "image", widget: "image" }
@@ -50,3 +49,88 @@ collections:
       }
     - { name: "keywords", label: "keywords", widget: "string" }
     - { label: "Body", name: "body", widget: "markdown" }
+
+ - name: "videos"
+   label: "Videos"
+   folder: "content/videos"
+   create: true
+   slug: "{{title}}"
+   label_singular: "Video"
+   editor: { preview: true }
+   fields:
+    - { name: "title", label: "title", widget: "string" }
+    - { name: "videoID", label: "videoID", widget: "string" }
+    - { name: "videoURL", label: "videoURL", widget: "string" }
+    - { name: "previewURL", label: "previewURL", widget: "string" }
+    - { name: "image", label: "image", widget: "image" }
+    - {
+       name: "type",
+       label: "type",
+       widget: "select",
+       options:
+        [
+         "Entertainment",
+         "Promotional",
+         "Social Media",
+         "Corporate",
+         "Short Documentary",
+        ],
+      }
+
+ - name: "products"
+   label: "Products"
+   folder: "content/products"
+   create: true
+   slug: "{{title}}"
+   label_singular: "Product"
+   editor: { preview: false }
+   fields:
+    - { name: "title", label: "title", widget: "string" }
+    - { name: "image", label: "image", widget: "image" }
+    - { name: "order", label: "order", widget: "number" }
+    - { name: "speed", label: "speed", widget: "number" }
+    - { name: "summary", label: "summary", widget: "text" }
+
+ - name: "features"
+   label: "Features"
+   folder: "content/features"
+   create: true
+   slug: "{{title}}"
+   label_singular: "Feature"
+   editor: { preview: false }
+   fields:
+    - { name: "title", label: "title", widget: "string" }
+    - { name: "category", label: "category", widget: "string" }
+    - { name: "videoURL", label: "videoURL", widget: "string" }
+    - { name: "videoID", label: "videoID", widget: "string" }
+    - {
+       name: "publishDate",
+       label: "publishDate",
+       widget: "datetime",
+       date_format: "YYYY-MM-DD",
+      }
+    - { name: "image", label: "image", widget: "image" }
+    - {
+       name: "site",
+       label: "site",
+       widget: "string",
+       pattern: ["https://.*", "Must be a valid URL"],
+      }
+    - { name: "body", label: "Body", widget: "markdown" }
+
+ - name: "services"
+   label: "Services"
+   folder: "content/services"
+   create: true
+   slug: "{{title}}"
+   label_singular: "Service"
+   identifier_field: title
+   editor: { preview: false }
+   fields:
+    - { name: "title", label: "title", widget: "string" }
+    - { name: "page_title", label: "page_title", widget: "string" }
+    - { name: "image", label: "image", widget: "image" }
+    - { name: "order", label: "order", widget: "number" }
+    - { name: "speed", label: "speed", widget: "number" }
+    - { name: "summary", label: "summary", widget: "text" }
+    - { name: "body", label: "Body", widget: "markdown" }
