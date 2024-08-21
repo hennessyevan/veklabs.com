@@ -1,4 +1,4 @@
-local_backend: true
+# local_backend: true
 
 backend:
  name: git-gateway
@@ -20,15 +20,13 @@ collections:
     - { name: "category", label: "category", widget: "string" }
     - { name: "date", label: "date", widget: "datetime" }
     - { name: "title", label: "title", widget: "string" }
-    - {
-       name: "author",
-       label: "author",
-       widget: "relation",
-       collection: "team",
-       search_fields: ["name"],
-       value_field: "name",
-       display_fields: ["name"],
-      }
+    - name: "author"
+      label: "author"
+      widget: "relation"
+      collection: "team"
+      search_fields: ["name"]
+      value_field: "name"
+      display_fields: ["name"]
     - { name: "keywords", label: "keywords", widget: "string" }
     - { label: "Body", name: "body", widget: "markdown" }
 
