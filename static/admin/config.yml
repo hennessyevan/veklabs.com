@@ -3,30 +3,11 @@
 backend:
  name: git-gateway
  branch: Summer2024
+logo_url: /assets/logo-black.svg
 locale: en
 media_folder: assets/images
 public_folder: images
 collections:
- - name: "team"
-   label: "Team"
-   folder: "content/team"
-   create: true
-   slug: "{{name}}"
-   label_singular: "Team Member"
-   editor: { preview: true }
-   fields:
-    - { name: "name", label: "name", widget: "string" }
-    - { name: "image", label: "image", widget: "image" }
-    - {
-       name: "competencies",
-       label: "competencies",
-       widget: "list",
-       default: [],
-      }
-    - { name: "title", label: "title", widget: "string" }
-    - { name: "order", label: "order", widget: "number" }
-    - { name: "body", label: "Body", widget: "markdown" }
-
  - name: "reports"
    label: "Reports"
    folder: "content/reports"
@@ -49,6 +30,27 @@ collections:
       }
     - { name: "keywords", label: "keywords", widget: "string" }
     - { label: "Body", name: "body", widget: "markdown" }
+
+ - name: "team"
+   label: "Team"
+   folder: "content/team"
+   create: true
+   identifier_field: name
+   slug: "{{name}}"
+   label_singular: "Team Member"
+   editor: { preview: true }
+   fields:
+    - { name: "name", label: "name", widget: "string" }
+    - { name: "image", label: "image", widget: "image" }
+    - {
+       name: "competencies",
+       label: "competencies",
+       widget: "list",
+       default: [],
+      }
+    - { name: "title", label: "title", widget: "string" }
+    - { name: "order", label: "order", widget: "number" }
+    - { name: "body", label: "Body", widget: "markdown" }
 
  - name: "videos"
    label: "Videos"
