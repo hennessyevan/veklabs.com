@@ -19,29 +19,31 @@ seenOn:
 offerings:
   - title: Video Marketing Services
     tag: h2
-    image: images/Pre-Production-Video.png
-    description: Vek Labs specializes in producing video content for companies from
-      nearly any industry in Calgary and across Alberta. We have worked on video
-      marketing projects for the entertainment industry, corporate companies,
-      oil & gas companies, and political campaigns. How can we help you create a
-      visually stunning piece of film to help market your company or project?
-      Contact us today to find out.
+    image: images/vek-team-6.jpg
+    description: Vek Labs specializes in producing high-quality video content for a
+      diverse range of industries in Calgary and across Alberta. Our portfolio
+      includes video marketing projects for the entertainment sector, corporate
+      clients, oil and gas companies, and political campaigns. Whether you need
+      a visually compelling film to market your company or project, we are here
+      to assist. Contact us today to explore how we can support your visual
+      marketing needs.
     rel: /services/video-production/
   - title: Professional Film Production Services
     tag: h2
-    image: images/Video-Production-Vek.png
-    description: The Vek Labs crew is filled with professional film producers,
-      editors, photographers, talent, and uses only the finest equipment
-      available on the market today. Our team can help you get the most out of
-      your video, increasing your engagement and views online or on the
-      television screen.
+    image: images/vek-team-7.jpg
+    description: The team at Vek Labs comprises seasoned film producers, editors,
+      photographers, and talent, all equipped with the highest-quality tools and
+      technology available today. We are dedicated to maximizing the impact of
+      your video content, whether it's for online platforms or the big screen,
+      ensuring your project achieves optimal engagement and visibility.
     rel: /services/video-production/
   - title: Post-Production Services
     tag: h3
-    image: images/video-editing.png
-    description: Our expert editors can transform your footage with advanced video
-      finishing, sound editing, and motion graphics techniques. This is where
-      the magic happens, and allows us to create a breathtaking experience that
-      our directors and writers intended.
+    image: images/vek-team-8.jpg
+    description: Our skilled editors specialize in advanced video finishing, sound
+      design, and motion graphics, ensuring your footage is transformed into a
+      polished final product. This crucial stage of post-production is where the
+      creative vision truly comes to life, allowing us to deliver the immersive
+      experience envisioned by our directors and writers.
     rel: /services/video-editing/
 ---
