@@ -1,0 +1,91 @@
+---
+import { title, baseURL, menu } from "../config.json"
+import logoFullSVG from "../images/logo-full.svg?url"
+
+import { Image } from "astro:assets"
+import HeaderLink from "./HeaderLink.astro"
+
+const nameForCurrentPath =
+  menu.main.find((item) => item.url === Astro.url.pathname)?.name ?? ""
+---
+
+<header
+  class="md:px-6 md:py-4 py-3 px-4 border-b-0.5 border-white/10 sticky z-50 bg-background/65 backdrop-blur-xl backdrop-saturate-150 top-0 w-full"
+  role="banner"
+>
+  <div>
+    <div class="hidden md:flex justify-between items-center">
+      <a href={baseURL}>
+        <img
+          class="max-w-24 md:max-w-28 w-full justify-self-start"
+          src={logoFullSVG}
+          alt={title}
+        />
+      </a>
+      <div class="flex flex-nowrap overflow-auto gap-4">
+        {Astro.url.pathname !== "/" && <HeaderLink href="/">Home</HeaderLink>}
+        {
+          menu.main.map((menuItem) => (
+            <HeaderLink href={menuItem.url}>{menuItem.name}</HeaderLink>
+          ))
+        }
+      </div>
+      <div class="right">
+        <HeaderLink href="#contact">Contact</HeaderLink>
+      </div>
+    </div>
+
+    <!-- <div class="small menu">
+
+      <a class="anchor left" href={baseURL}>
+        <img class="header-logo" src={`${baseURL}/assets/logo.svg`} alt={title} />
+      </a>
+
+      <div class="center">
+        {Astro.url.pathname !== '/' && nameForCurrentPath}
+      </div>
+
+      <div class="right">
+        <div class="menu">
+          <span class="hamburger menu-link">
+            <svg viewBox="0 0 24 24">
+              <use href="/assets/menu.svg#icon"></use>
+            </svg>
+          </span>
+        </div>
+      </div>
+
+    </div> -->
+  </div>
+
+  <!-- <div class="drawer">
+    <div id="inner-drawer">
+      <div class="submenu small">
+        {{ $currentPage := . }}
+        {{ range .Site.Menus.main }}
+        <a class="top{{ if ($currentPage.IsMenuCurrent "main" .  ) }} active{{ end }}" href="{{ .URL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+
+      <div class="contact">
+        <a href={`mailto:${EMAIL}`} class="button email" target="_blank">
+          <div class="icon">
+            <img src="/assets/envelope.svg" aria-describedby={EMAIL} alt="" />
+          </div>
+          <span>
+            {EMAIL}
+          </span>
+        </a>
+
+        <a href={`tel:${PHONE}`} class="button phone" target="_blank">
+          <div class="icon">
+            <img src="/assets/phone.svg" aria-describedby={PHONE} alt="" />
+          </div>
+          <span>
+            {PHONE}
+          </span>
+        </a>
+      </div>
+    </div>
+  </div> -->
+</header>
