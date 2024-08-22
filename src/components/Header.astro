@@ -1,6 +1,6 @@
 ---
 import { title, baseURL, menu } from "../config.json"
-import logoFullSVG from "../images/logo-full.svg"
+import logoFullSVG from "../images/logo-full.svg?url"
 
 import { Image } from "astro:assets"
 import HeaderLink from "./HeaderLink.astro"
@@ -16,7 +16,7 @@ const nameForCurrentPath =
   <div>
     <div class="hidden md:flex justify-between items-center">
       <a href={baseURL}>
-        <Image
+        <img
           class="max-w-24 md:max-w-28 w-full justify-self-start"
           src={logoFullSVG}
           alt={title}

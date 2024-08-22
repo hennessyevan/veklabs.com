@@ -17,9 +17,9 @@ const buttonClasses = `size-3 lg:size-4 rounded-lg lg:rounded-xl py-3 px-4 box-c
     preload="true"
     muted="true"
     loop="true"
-    playsinline="true"
-    poster={await import(`../images/${config.hero.image}?url`)}></video>
+    playsinline="true"></video>
 
+  <!-- poster={await import(`../images/${config.hero.image}?url`)} -->
   <div class="flex absolute top-2 right-2 lg:top-8 lg:right-8 gap-3">
     <VolumeX class={buttonClasses} alt="Turn volume on" />
     <!-- <Volume1 alt="Turn volume off" hidden /> -->
