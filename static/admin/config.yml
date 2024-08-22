@@ -105,20 +105,6 @@ collections:
         ],
       }
 
- - name: "products"
-   label: "Products"
-   folder: "content/products"
-   create: true
-   slug: "{{title}}"
-   label_singular: "Product"
-   editor: { preview: false }
-   fields:
-    - { name: "title", label: "title", widget: "string" }
-    - { name: "image", label: "image", widget: "image" }
-    - { name: "order", label: "order", widget: "number" }
-    - { name: "speed", label: "speed", widget: "number" }
-    - { name: "summary", label: "summary", widget: "text" }
-
  - name: "features"
    label: "Features"
    folder: "content/features"

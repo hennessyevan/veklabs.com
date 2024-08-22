@@ -22,7 +22,7 @@
    justify-content: center;
    align-items: center;
 
-   @media (--desktop) {
+   @media (--tablet) {
     scroll-snap-align: start;
     scroll-padding-top: 17maj;
     padding: 12maj 0;
