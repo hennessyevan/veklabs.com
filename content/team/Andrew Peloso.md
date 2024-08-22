@@ -1,6 +1,6 @@
 ---
 name: ANDREW
-image: images/Spring2020_VekLabs-189.jpg
+image: images/vek-team-4.jpg
 competencies:
   - Cinematography
   - Writing
