@@ -9,7 +9,7 @@
  width: 100%;
 
  @supports (color: color-contrast(black vs white, tan)) {
-   background: var(--gray6);
+  background: var(--gray6);
  }
 
  @supports (padding: minmax(0px)) {
@@ -134,10 +134,12 @@
 
  & a.top {
   color: var(--white);
-  font-weight: 600;
+  font-weight: 500;
+  font-size: 0.8rem;
   transition: var(--slow);
-  padding: 1maj 2maj;
+  padding: 1maj 1.5maj;
   border-radius: 1maj;
+  text-transform: uppercase;
 
   &.active {
    color: var(--background);
