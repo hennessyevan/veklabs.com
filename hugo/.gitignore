@@ -1,0 +1,13 @@
+
+/public
+/node_modules
+
+/functions
+/resources
+.DS_Store
+
+/dist
+# Local Netlify folder
+.netlify
+scripts/cache.json
+yarn-error.log
