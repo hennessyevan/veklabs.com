@@ -11,3 +11,6 @@
 .netlify
 scripts/cache.json
 yarn-error.log
+
+.astro
+hugo

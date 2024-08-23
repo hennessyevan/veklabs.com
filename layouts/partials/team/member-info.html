@@ -32,7 +32,7 @@
       {{ if hasPrefix .icon "http" }}
       <img src="{{ .icon }}" alt="{{ .name }}">
       {{ else }}
-      <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
+      <img src="/assets/{{ .icon }}" alt="{{ .name }}">
       {{ end }}
 
 

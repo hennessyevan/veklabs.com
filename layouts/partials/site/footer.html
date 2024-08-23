@@ -10,13 +10,13 @@
 
   <div class="inner">
     <div class="left">
-      <img class="footer-flag" src="{{ .Site.BaseURL }}/assets/canada.svg" alt="Canadian Flag">
+      <img class="footer-flag" src="/assets/canada.svg" alt="Canadian Flag">
       {{ .Site.Data.en.FOOTER_PRETEXT}}
     </div>
 
     <div class="center">
       <div class="site-footer__codivyright">
-        &copy; {{ now.Format "2006" }} <a href="{{ .Site.BaseURL }}">{{ .Site.Title }} Inc.</a>
+        &copy; {{ now.Format "2006" }} <a href="/">{{ .Site.Title }} Inc.</a>
       </div>
     </div>
 
@@ -28,7 +28,7 @@
         {{ if hasPrefix .icon "http" }}
         <img src="{{ .icon }}" alt="{{ .name }}">
         {{ else }}
-        <img src="{{ .Site.BaseURL }}/assets/{{ .icon }}" alt="{{ .name }}">
+        <img src="/assets/{{ .icon }}" alt="{{ .name }}">
         {{ end }}
 
 

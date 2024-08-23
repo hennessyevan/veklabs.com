@@ -3,7 +3,7 @@
 
     <div class="large menu">
 
-      <a class="anchor left" href="{{ .Site.BaseURL }}">
+      <a class="anchor left" href="/">
         <img class="header-logo" src="/assets/logo.svg" alt="Vek Labs" />
       </a>
       <div class="center">
@@ -23,8 +23,8 @@
 
     <div class="small menu">
 
-      <a class="anchor left" href="{{ .Site.BaseURL }}">
-        <img class="header-logo" src="{{ .Site.BaseURL }}/assets/logo.svg" alt="Vek Labs" />
+      <a class="anchor left" href="/">
+        <img class="header-logo" src="/assets/logo.svg" alt="Vek Labs" />
       </a>
 
       <div class="center">
@@ -59,8 +59,7 @@
 
       <div class="contact">
         <a href="mailto:{{.Site.Data.en.EMAIL}}" class="button email" target="_blank">
-          <div class="icon"><img src="{{ .Site.BaseURL }}/assets/envelope.svg"
-              aria-describedby="{{.Site.Data.en.EMAIL}}" alt="">
+          <div class="icon"><img src="/assets/envelope.svg" aria-describedby="{{.Site.Data.en.EMAIL}}" alt="">
           </div>
           <span>
             {{.Site.Data.en.EMAIL}}
@@ -69,8 +68,7 @@
         </a>
 
         <a href="tel:{{.Site.Data.en.PHONE}}" class="button phone" target="_blank">
-          <div class="icon"><img src="{{ .Site.BaseURL }}/assets/phone.svg" aria-describedby="{{.Site.Data.en.PHONE}}"
-              alt="">
+          <div class="icon"><img src="/assets/phone.svg" aria-describedby="{{.Site.Data.en.PHONE}}" alt="">
           </div>
           <span>
             {{.Site.Data.en.PHONE}}
