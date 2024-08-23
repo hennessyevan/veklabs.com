@@ -1,0 +1,10 @@
+---
+title: Sacred Art by Tianna Williams
+category: Mini-Documentary
+videoURL: https://youtu.be/j017KzoCkpc?feature=shared
+videoID: j017KzoCkpc
+publishDate: 2022-09-21
+image: images/maxresdefault.jpg
+site: https://sacredartbytianna.com/
+---
+**"Sacred Art by Tianna"** is a captivating mini-documentary that delves into the creative world of Tianna, a gifted Canadian artist renowned for her evocative oil paintings. The film offers an intimate portrait of Tianna’s artistic journey, exploring the inspiration behind her sacred art and the meticulous process she employs to bring her visions to life. Through stunning visuals and personal reflections, "Sacred Art by Tianna" reveals the profound connection between the artist, her work, and the spiritual themes that resonate deeply within her canvases. This documentary is a tribute to Tianna's ability to transform ordinary moments into sacred expressions of beauty and meaning.
