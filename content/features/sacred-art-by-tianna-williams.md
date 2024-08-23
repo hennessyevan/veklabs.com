@@ -3,7 +3,7 @@ title: Sacred Art by Tianna Williams
 category: Mini-Documentary
 videoURL: https://player.vimeo.com/external/900212118.m3u8?s=e53ac806d603d77336b6c869af90f2d9229c9048&logging=false
 videoID: "900212118"
-publishDate: 2022-09-21
+publishDate: 2024-08-22
 image: images/maxresdefault.jpg
 site: https://sacredartbytianna.com/
 ---
