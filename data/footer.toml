@@ -1,21 +1,21 @@
 mail = "PO Box 46068 Inglewood, Calgary, AB T2G5H7"
 
-# Add a new channel by adding a new [[channel]] block with a name, url and icon from static/assets
+[social]
 
 [[social.channel]]
-  name = "Upcity"
-  url = "https://upcity.com/profiles/vek-labs"
-  icon = "https://app.upcity.com/images/badges/tla.png"
+name = "Upcity"
+url = "https://upcity.com/profiles/vek-labs"
+icon = "https://app.upcity.com/images/badges/tla.png"
 
 [[social.channel]]
-  name = "Facebook"
-  url = "https://www.facebook.com/veklabs/"
-  icon = "facebook.svg"
+name = "Facebook"
+url = "https://www.facebook.com/veklabs/"
+icon = "facebook.svg"
 
 [[social.channel]]
-  name = "Twitter"
-  url = "https://twitter.com/VekLabs"
-  icon = "twitter.svg"
+name = "Twitter"
+url = "https://twitter.com/VekLabs"
+icon = "twitter.svg"
 
 [[social.channel]]
 name = "Instagram"
@@ -24,7 +24,7 @@ icon = "instagram.svg"
 
 [[social.channel]]
 name = "Youtube"
-url = "https://www.youtube.com/social.channel/UC_8CmynHCINGSOZftHJGoUQ"
+url = "https://www.youtube.com/channel/UC_8CmynHCINGSOZftHJGoUQ"
 icon = "youtube.svg"
 
 [[social.channel]]
@@ -38,16 +38,16 @@ url = "https://unsplash.com/@veklabs"
 icon = "camera.svg"
 
 [[social.channel]]
-  name = "Pinterest"
-  url = "https://www.pinterest.ca/veklabs/"
-  icon = "pinterest.svg"
+name = "Pinterest"
+url = "https://www.pinterest.ca/veklabs/"
+icon = "pinterest.svg"
 
 [[social.channel]]
- name = "Anchor"
- url = "https://anchor.fm/vek-labs"
- icon = "anchor.svg"
+name = "Anchor"
+url = "https://anchor.fm/vek-labs"
+icon = "anchor.svg"
 
 [[social.channel]]
- name = "Vimeo"
- url = "https://vimeo.com/veklabs"
- icon = "vimeo.svg"
+name = "Vimeo"
+url = "https://vimeo.com/veklabs"
+icon = "vimeo.svg"
