@@ -1,6 +1,6 @@
 ---
 name: DANIELLE
-image: images/vek-team-3.jpg
+image: images/danielle.jpg
 competencies:
   - Storytelling/Tone/Voice
 title: Research & Development
