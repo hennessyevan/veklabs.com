@@ -1,6 +1,4 @@
-import defaultConfig from "tailwindcss/defaultConfig"
 import type { Config } from "tailwindcss"
-import type { PluginAPI } from "tailwindcss/types/config"
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}"],
@@ -10,6 +8,9 @@ export default {
         background: colors.neutral[900],
         foreground: colors.neutral[100],
       }),
+      width: {
+        container: "calc(100vw - clamp(1.5rem, 2.5vw, 3rem))",
+      },
       borderWidth: {
         0.5: "0.5px",
       },

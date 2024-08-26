@@ -1,8 +1,7 @@
 ---
-import { title, baseURL, menu } from "../config.json"
+import { baseURL, menu, title } from "../config.json"
 import logoFullSVG from "../images/logo-full.svg?url"
 
-import { Image } from "astro:assets"
 import HeaderLink from "./HeaderLink.astro"
 
 const nameForCurrentPath =
@@ -10,10 +9,10 @@ const nameForCurrentPath =
 ---
 
 <header
-  class="md:px-6 md:py-4 py-3 px-4 border-b-0.5 border-white/10 sticky z-50 bg-background/65 backdrop-blur-xl backdrop-saturate-150 top-0 w-full"
+  class="md:py-4 py-3 border-b-0.5 border-white/10 sticky z-50 bg-background/65 backdrop-blur-xl backdrop-saturate-150 top-0"
   role="banner"
 >
-  <div>
+  <div class="w-container mx-auto">
     <div class="hidden md:flex justify-between items-center">
       <a href={baseURL}>
         <img

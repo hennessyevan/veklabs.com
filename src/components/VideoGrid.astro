@@ -1,0 +1,54 @@
+---
+import { Image } from "astro:assets"
+import type { ImageMetadata } from "astro"
+import { getCollection } from "astro:content"
+
+const videos = await getCollection("videos")
+
+const images = import.meta.glob("../images/*.{jpg,jpeg,png}")
+---
+
+<section class="grid grid-cols-[24px_1fr_24px] w-full overflow-x-scroll snap-x">
+  <div style="grid-column: 2;" class="grid grid-rows-3 grid-flow-col gap-6">
+    {
+      videos.map(async (video) => (
+        <div class="relative size-full aspect-video h-[269px] w-[480px] border-neutral-300 rounded-xl overflow-hidden snap-start scroll-mx-6">
+          <span class="absolute bottom-8 left-8 font-semibold text-2 drop-shadow-sm flex items-center duration-200 -translate-x-6 z-0">
+            {video.data.title}
+          </span>
+          {/* {video.type && (
+                <span class={kebabCase(video.type)}>{video.type}</span>
+              )} */}
+          <video
+            class="preview"
+            src={video.data.previewUrl}
+            preload="none"
+            muted="true"
+            loop="true"
+            playsinline="true"
+          />
+          <Image
+            class="object-cover size-full aspect-video absolute inset-0"
+            src={import(`/src/${video.data.image}`)}
+            loading="lazy"
+            alt=""
+          />
+          {/* {{ partial "site/img" (dict "image" .Params.image "width" 478 "height" 269) }} */}
+        </div>
+      ))
+    }
+
+    <!-- <div class="scroll-arrows">
+      <span class="arrow-left page-number">
+        <svg viewBox="0 0 24 24">
+          <use href="/assets/arrow-left.svg#icon"></use>
+        </svg>
+      </span>
+      <span class="arrow-right page-number">
+        <svg viewBox="0 0 24 24">
+          <use href="/assets/arrow-right.svg#icon"></use>
+        </svg>
+      </span>
+    </div> -->
+  </div>
+</section>

@@ -23,6 +23,9 @@ dependencies:
   astro:
     specifier: ^4.14.4
     version: 4.14.4(typescript@5.5.4)
+  lodash:
+    specifier: ^4.17.21
+    version: 4.17.21
   lucide-astro:
     specifier: ^0.429.0
     version: 0.429.0(astro@4.14.4)
@@ -34,6 +37,9 @@ dependencies:
     version: 5.5.4
 
 devDependencies:
+  '@types/lodash':
+    specifier: ^4.17.7
+    version: 4.17.7
   prettier:
     specifier: ^3.3.3
     version: 3.3.3
@@ -1173,6 +1179,10 @@ packages:
     dependencies:
       '@types/unist': 3.0.3
     dev: false
+
+  /@types/lodash@4.17.7:
+    resolution: {integrity: sha512-8wTvZawATi/lsmNu10/j2hk1KEP0IvjubqPE3cu1Xz7xfXXt5oCq3SNUz4fMIP4XGF9Ky+Ue2tBA3hcS7LSBlA==}
+    dev: true
 
   /@types/mdast@4.0.4:
     resolution: {integrity: sha512-kGaNbPh1k7AFzgpud/gMdvIm5xuECykRR+JnWKQno9TAXVa6WIVCGTPvYGekIDL4uwCZQSYbUxNBSb1aUo79oA==}
