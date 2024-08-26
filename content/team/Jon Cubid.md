@@ -5,7 +5,7 @@ competencies:
   - Post-Production and Narrative
   - Motion Graphics
 title: Advisor
-order: 6
+order: 7
 channel:
   - name: LinkedIn
     url: https://www.linkedin.com/in/jonathan-cubid-14a86a96/
