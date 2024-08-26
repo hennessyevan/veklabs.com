@@ -92,11 +92,6 @@
   "social": {
     "channel": [
       {
-        "icon": "https://app.upcity.com/images/badges/tla.png",
-        "name": "Upcity",
-        "url": "https://upcity.com/profiles/vek-labs"
-      },
-      {
         "icon": "facebook.svg",
         "name": "Facebook",
         "url": "https://www.facebook.com/veklabs/"
