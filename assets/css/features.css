@@ -6,8 +6,8 @@
   overflow-y: scroll;
   padding: 6maj;
 
-  @media (--mobile) {
-   padding: 6maj 1maj;
+  @media (max-width: 768px) {
+   padding: 6maj 2maj;
   }
 
   .card {
@@ -22,18 +22,18 @@
    justify-content: center;
    align-items: center;
 
-   @media (--tablet) {
+   @media (max-width: 1024px) {
+    flex-direction: column;
     scroll-snap-align: start;
     scroll-padding-top: 17maj;
     padding: 12maj 0;
-    flex-direction: column;
    }
   }
  }
 
  .left {
   width: 65%;
-  @media (--desktop) {
+  @media (max-width: 1024px) {
    width: 100%;
   }
  }
@@ -46,13 +46,13 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media (--desktop) {
+  @media (max-width: 1024px) {
    width: 100%;
   }
 
-  @media (--mobile) {
+  @media (max-width: 768px) {
    padding-left: initial;
-   padding: 2maj;
+   padding: 1maj;
   }
  }
 
