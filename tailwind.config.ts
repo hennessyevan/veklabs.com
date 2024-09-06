@@ -15,6 +15,9 @@ export default {
       borderWidth: {
         0.5: "0.5px",
       },
+      fontSize: {
+        xxs: "0.6rem",
+      },
       textShadow: {
         sm: "0 1px 2px var(--tw-shadow-color)",
         DEFAULT: "0 0px 4px var(--tw-shadow-color)",
