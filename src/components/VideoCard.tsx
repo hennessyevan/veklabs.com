@@ -93,7 +93,7 @@ export default function VideoCard(videoData: VideoData) {
       <LayoutGroup id={title}>
         <motion.div
           className="relative size-full z-50 aspect-video h-[269px] w-[480px] border-neutral-300 rounded-xl snap-start scroll-mx-6 cursor-pointer"
-          style={{ zIndex: hovered || popupIsShown ? 100 : undefined }}
+          style={{ zIndex: popupIsShown ? 100 : hovered ? 50 : undefined }}
           onMouseEnter={() => !popupWasJustShown && setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           onClick={() => setPopupIsShown(true)}
