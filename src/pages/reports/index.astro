@@ -8,4 +8,43 @@ const posts = (await getCollection("reports")).sort(
 )
 ---
 
-<DefaultLayout />
+<DefaultLayout>
+  <section id="blog" class="padding">
+    <div class="container">
+      <h1>Lab Reports</h1>
+
+      <div class="post-list">
+        {
+          posts.map((post) => (
+            <a href={`/reports/${post.slug}`} class="listing">
+              <article>
+                <div class="image">
+                  {/* {{ with .Params.category}}
+              <span class="type {{ anchorize . }}">{{.}}</span>
+              {{end}} */}
+
+                  {/* {{ if hasPrefix .Params.image "http"}}
+              <img src="{{ .Params.image }}" alt="">
+              {{ else }}
+              {{ partial "site/img" (dict "image" .Params.image "width" 458 "height" 240) }}
+              {{ end }} */}
+                </div>
+                <div class="content">
+                  <h2 class="title">{post.data.title}</h2>
+                  {/* {{ with .Params.date }} */}
+                  {post.data.pubDate instanceof Date && (
+                    <span class="date">
+                      <FormattedDate date={post.data.pubDate} />
+                    </span>
+                  )}
+                  {/* <p class="excerpt">{post.data.summary}</p> */}
+                  {/* // {{ partial "blog/readtime" . }} */}
+                </div>
+              </article>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+</DefaultLayout>

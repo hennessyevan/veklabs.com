@@ -17,10 +17,12 @@ function getImageUrl(image: string) {
 }
 ---
 
-<section class="grid grid-cols-[24px_1fr_24px] w-full snap-x overflow-x-auto">
+<section
+  class="grid grid-cols-[24px_1fr_24px] w-full snap-x snap-proximity overflow-x-auto"
+>
   <div
     style="grid-column: 2;"
-    class="grid grid-rows-3 grid-flow-col gap-6 py-3"
+    class="grid grid-rows-2 grid-flow-col gap-6 py-3"
   >
     {
       videos.map((video) => (

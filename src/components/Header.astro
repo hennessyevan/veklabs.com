@@ -24,13 +24,15 @@ const nameForCurrentPath =
       <div class="flex flex-nowrap overflow-auto gap-4">
         {Astro.url.pathname !== "/" && <HeaderLink href="/">Home</HeaderLink>}
         {
-          menu.main.map((menuItem) => (
-            <HeaderLink href={menuItem.url}>{menuItem.name}</HeaderLink>
-          ))
+          menu.main
+            .filter((menuItem) => ["Reports"].includes(menuItem.name))
+            .map((menuItem) => (
+              <HeaderLink href={menuItem.url}>{menuItem.name}</HeaderLink>
+            ))
         }
       </div>
       <div class="right">
-        <HeaderLink href="#contact">Contact</HeaderLink>
+        <!-- <HeaderLink href="#contact">Contact</HeaderLink> -->
       </div>
     </div>
 
