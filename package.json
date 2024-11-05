@@ -33,7 +33,9 @@
   },
   "devDependencies": {
     "@types/lodash-es": "^4.17.12",
+    "astro-reading-time": "^0.1.13",
     "prettier": "^3.3.3",
-    "prettier-plugin-astro": "^0.14.1"
+    "prettier-plugin-astro": "^0.14.1",
+    "prettier-plugin-tailwindcss": "^0.6.8"
   }
 }

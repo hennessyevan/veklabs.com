@@ -1,89 +1,107 @@
 ---
 import type { CollectionEntry } from "astro:content"
-import BaseHead from "../components/BaseHead.astro"
-import Header from "../components/Header.astro"
-import Footer from "../components/Footer.astro"
 import FormattedDate from "../components/FormattedDate.astro"
+import CategoryBadge from "../components/CategoryBadge.astro"
 
-type Props = CollectionEntry<"report">["data"]
+type Props = CollectionEntry<"report">["data"] & { id: string }
 
-const { title, description, pubDate, updatedDate, heroImage } = Astro.props
+const { title, date, category, image, id } = Astro.props
+
+const images: Record<string, { default: ImageMetadata }> = import.meta.glob(
+  "../images/*.{jpg,jpeg,png}",
+  { eager: true },
+)
+
+function getImageUrl(image: string) {
+  const key = Object.keys(images).find((key) => key.includes(image))
+  if (!key) return ""
+  return images[key]?.default?.src || ""
+}
 ---
 
-<html lang="en">
-  <head>
-    <BaseHead title={title} description={description} />
-    <style>
-      main {
-        width: calc(100% - 2em);
-        max-width: 100%;
-        margin: 0;
-      }
-      .hero-image {
-        width: 100%;
-      }
-      .hero-image img {
-        display: block;
-        margin: 0 auto;
-        border-radius: 12px;
-        box-shadow: var(--box-shadow);
-      }
-      .prose {
-        width: 720px;
-        max-width: calc(100% - 2em);
-        margin: auto;
-        padding: 1em;
-        color: rgb(var(--gray-dark));
-      }
-      .title {
-        margin-bottom: 1em;
-        padding: 1em 0;
-        text-align: center;
-        line-height: 1;
-      }
-      .title h1 {
-        margin: 0 0 0.5em 0;
-      }
-      .date {
-        margin-bottom: 0.5em;
-        color: rgb(var(--gray));
-      }
-      .last-updated-on {
-        font-style: italic;
-      }
-    </style>
-  </head>
+<style is:global>
+  p {
+    line-height: 24px;
+  }
 
-  <body>
-    <Header />
-    <main>
-      <article>
-        <div class="hero-image">
-          {
-            heroImage && (
-              <img width={1020} height={510} src={heroImage} alt="" />
-            )
-          }
+  p::before {
+    content: "";
+    display: table;
+    width: 160px;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  iframe {
+    padding-block: 16px;
+  }
+</style>
+
+<div
+  id="post"
+  class="mx-auto w-[calc(100%-24px)] overflow-hidden pb-20 pt-6 lg:max-w-[980px]"
+>
+  <article class="flex flex-col gap-8">
+    {
+      image && (
+        <div
+          class:list={[
+            "hero-image relative z-10 w-full overflow-hidden rounded-xl shadow-xl",
+            { "": !image },
+          ]}
+        >
+          <a
+            class="absolute left-4 top-4 z-20 flex items-center gap-1 rounded-full bg-black/50 px-4 py-2 text-sm text-foreground backdrop-blur-md transition-all duration-200 hover:bg-black/75"
+            href="/reports"
+          >
+            <svg viewBox="0 0 24 24" class="w-[0.65rem] fill-current">
+              <use href="/assets/arrow-left.svg#icon" />
+            </svg>
+            All Posts
+          </a>
+          <img
+            transition:name={`image-${image}`}
+            src={getImageUrl(image)}
+            alt=""
+            class:list={[
+              "w-full rounded-lg border border-gray-800 object-cover shadow-lg transition-all duration-200 group-hover:scale-[1.0125] group-hover:shadow-2xl",
+            ]}
+          />
+
+          {category && (
+            <CategoryBadge
+              class="left-[unset] right-8"
+              id={id}
+              category={category}
+            />
+          )}
+
+          <span
+            transition:name={`date-${id}`}
+            class="absolute bottom-8 right-4 z-20 font-mono text-xl font-bold text-orange-400 mix-blend-screen"
+          >
+            <FormattedDate date={date} />
+          </span>
         </div>
-        <div class="prose">
-          <div class="title">
-            <div class="date">
-              <FormattedDate date={pubDate} />
-              {
-                updatedDate && (
-                  <div class="last-updated-on">
-                    Last updated on <FormattedDate date={updatedDate} />
-                  </div>
-                )
-              }
-            </div>
-            <h1>{title}</h1>
-            <hr />
-          </div>
-          <slot />
-        </div>
-      </article>
-    </main>
-    <Footer />
-  </body>
-</html>
+      )
+    }
+
+    <section class="content flex max-w-[80ch] flex-col gap-5">
+      <h1 transition:name={`title-${id}`} class="m-0 text-5xl font-semibold">
+        {title}
+      </h1>
+
+      <p class="animate-fade-up">
+        <slot />
+      </p>
+
+      <!-- {{ if isset .Params "author" }}
+       {{ partial "blog/author.html" . }}
+       {{ end }} -->
+    </section>
+  </article>
+
+  <!-- // {{ partial "blog/more.html" . }} -->
+</div>

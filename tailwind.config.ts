@@ -23,6 +23,15 @@ export default {
         DEFAULT: "0 0px 4px var(--tw-shadow-color)",
         lg: "0 0px 16px var(--tw-shadow-color)",
       },
+      animation: {
+        "fade-up": "fade-up 0.5s ease-out",
+      },
+      keyframes: {
+        "fade-up": {
+          "0%": { opacity: "0", transform: "translateY(1rem)" },
+          "100%": { opacity: "1", transform: "translateY(0)" },
+        },
+      },
     },
   },
   plugins: [

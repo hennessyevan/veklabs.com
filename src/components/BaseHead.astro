@@ -1,4 +1,5 @@
 ---
+import { ViewTransitions } from "astro:transitions"
 import config from "../config.json"
 import logo from "../images/logo.svg?url"
 interface Props {
@@ -48,3 +49,33 @@ const title =
 <meta property="twitter:title" content={title} />
 <meta property="twitter:description" content={description} />
 <meta property="twitter:image" content={new URL(image, Astro.url)} />
+
+<ViewTransitions />
+
+<script>
+  document.addEventListener("astro:before-swap", () => {
+    sessionStorage.setItem(
+      `scrollPosition-${window.location.pathname}`,
+      window.scrollY.toString(),
+    )
+  })
+
+  document.addEventListener("astro:after-swap", () => {
+    const scrollPosition = sessionStorage.getItem(
+      `scrollPosition-${window.location.pathname}`,
+    )
+    if (scrollPosition) {
+      window.scrollTo({
+        top: parseInt(scrollPosition, 10),
+        behavior: "instant",
+      })
+      sessionStorage.removeItem(`scrollPosition-${window.location.pathname}`)
+    }
+  })
+</script>
+
+<style is:global>
+  a {
+    text-decoration: none;
+  }
+</style>
