@@ -8,6 +8,11 @@ import react from "@astrojs/react"
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://example.com",
+  prefetch: true,
+  redirects: {
+    "/reports": "/reports/page/1",
+    "/reports/page": "/reports/page/1",
+  },
+  site: "https://veklabs.com",
   integrations: [readingTime(), mdx(), sitemap(), tailwind(), react()],
 })

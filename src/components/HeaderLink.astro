@@ -5,19 +5,27 @@ type Props = HTMLAttributes<"a">
 
 const { href, class: className, ...props } = Astro.props
 
-const { pathname } = Astro.url
-const subpath = pathname.match(/[^\/]+/g)
-const isActive = href === pathname || href === "/" + subpath?.[0]
+const removeTrailingSlash = (str: string) =>
+  str.endsWith("/") ? str.slice(0, -1) : str
+
+const currentUrl = new URL(Astro.url.pathname, Astro.site)
+const headerUrl = new URL(href, Astro.site)
+
+const isActive =
+  removeTrailingSlash(headerUrl.pathname) &&
+  removeTrailingSlash(currentUrl.pathname).includes(
+    removeTrailingSlash(headerUrl.pathname),
+  )
 ---
 
 <a
   href={href}
-  class="font-medium text-sm duration-300 py-2 px-3 rounded-lg uppercase"
+  class="rounded-lg px-3 py-2 text-sm font-medium uppercase duration-300"
   class:list={[
     className,
     {
-      "text-black bg-white": isActive,
-      "text-white hover:bg-white/15": !isActive,
+      "bg-white text-black hover:text-black": isActive,
+      "text-white hover:bg-white/15 hover:text-white": !isActive,
     },
   ]}
   {...props}

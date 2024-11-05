@@ -78,7 +78,8 @@ function getImageUrl(image: string) {
       }
       <!-- <p class="excerpt"><Content /></p> -->
       <span
-        class="time-to-read mt-3 block whitespace-nowrap text-sm text-blue-500"
+        transition:name={`readtime-${id}`}
+        class="time-to-read text-accent-500 mt-3 block whitespace-nowrap text-sm"
       >
         {remarkPluginFrontmatter.minutesRead}
       </span>

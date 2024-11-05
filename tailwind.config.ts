@@ -8,6 +8,7 @@ export default {
       colors: ({ colors }) => ({
         background: colors.neutral[900],
         foreground: colors.neutral[100],
+        accent: colors.blue,
       }),
       width: {
         container: "calc(100vw - clamp(1.5rem, 2.5vw, 3rem))",
