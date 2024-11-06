@@ -13,6 +13,7 @@ export default defineConfig({
     "/reports": "/reports/page/1",
     "/reports/page": "/reports/page/1",
   },
+  output: "static",
   site: "https://veklabs.com",
   integrations: [readingTime(), mdx(), sitemap(), tailwind(), react()],
 })

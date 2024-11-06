@@ -13,7 +13,7 @@ const nameForCurrentPath =
   role="banner"
 >
   <div class="mx-auto w-container">
-    <div class="hidden items-center justify-between md:flex">
+    <div class="relative hidden h-8 items-center justify-between md:flex">
       <a href={baseURL}>
         <img
           class="w-full max-w-24 justify-self-start md:max-w-28"
@@ -21,11 +21,15 @@ const nameForCurrentPath =
           alt={title}
         />
       </a>
-      <div class="flex flex-nowrap gap-4 overflow-auto">
+      <div
+        class="absolute left-1/2 flex -translate-x-1/2 flex-nowrap gap-4 overflow-auto"
+      >
         {Astro.url.pathname !== "/" && <HeaderLink href="/">Home</HeaderLink>}
         {
           menu.main
-            .filter((menuItem) => ["Reports"].includes(menuItem.name))
+            .filter((menuItem) =>
+              ["Reports", "Services"].includes(menuItem.name),
+            )
             .map((menuItem) => (
               <HeaderLink href={menuItem.url}>{menuItem.name}</HeaderLink>
             ))
