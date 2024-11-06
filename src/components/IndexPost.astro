@@ -2,22 +2,12 @@
 import type { CollectionEntry } from "astro:content"
 import FormattedDate from "./FormattedDate.astro"
 import CategoryBadge from "./CategoryBadge.astro"
+import getImageUrl from "../utils/getImageUrl"
 
 type Props = CollectionEntry<"reports"> & { featured?: boolean }
 
 const { featured = false, slug, render, data = {}, id, body } = Astro.props
 const { remarkPluginFrontmatter, Content } = await render()
-
-const images: Record<string, { default: ImageMetadata }> = import.meta.glob(
-  "../images/*.{jpg,jpeg,png}",
-  { eager: true },
-)
-
-function getImageUrl(image: string) {
-  const key = Object.keys(images).find((key) => key.includes(image))
-  if (!key) return ""
-  return images[key]?.default?.src || ""
-}
 ---
 
 <a
@@ -79,7 +69,7 @@ function getImageUrl(image: string) {
       <!-- <p class="excerpt"><Content /></p> -->
       <span
         transition:name={`readtime-${id}`}
-        class="time-to-read text-accent-500 mt-3 block whitespace-nowrap text-sm"
+        class="time-to-read mt-3 block whitespace-nowrap text-sm text-accent-500"
       >
         {remarkPluginFrontmatter.minutesRead}
       </span>

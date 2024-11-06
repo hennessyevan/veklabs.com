@@ -27,4 +27,16 @@ const video = defineCollection({
   }),
 })
 
-export const collections = { report, video }
+const service = defineCollection({
+  type: "content",
+  schema: z.object({
+    title: z.string(),
+    page_title: z.string(),
+    image: z.string(),
+    order: z.number(),
+    speed: z.number(),
+    summary: z.string(),
+  }),
+})
+
+export const collections = { report, video, service }

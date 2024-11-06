@@ -2,6 +2,7 @@
 import type { CollectionEntry } from "astro:content"
 import FormattedDate from "../components/FormattedDate.astro"
 import CategoryBadge from "../components/CategoryBadge.astro"
+import getImageUrl from "../utils/getImageUrl"
 
 type Props = CollectionEntry<"report">["data"] & {
   id: string
@@ -9,17 +10,6 @@ type Props = CollectionEntry<"report">["data"] & {
 }
 
 const { title, date, category, image, id, frontmatter } = Astro.props
-
-const images: Record<string, { default: ImageMetadata }> = import.meta.glob(
-  "../images/*.{jpg,jpeg,png}",
-  { eager: true },
-)
-
-function getImageUrl(image: string) {
-  const key = Object.keys(images).find((key) => key.includes(image))
-  if (!key) return ""
-  return images[key]?.default?.src || ""
-}
 ---
 
 <style is:global>
@@ -98,7 +88,7 @@ function getImageUrl(image: string) {
 
       <span
         transition:name={`readtime-${id}`}
-        class="time-to-read text-accent-500 mt-3 block whitespace-nowrap text-sm"
+        class="time-to-read mt-3 block whitespace-nowrap text-sm text-accent-500"
       >
         {frontmatter.minutesRead}
       </span>

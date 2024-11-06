@@ -1,0 +1,76 @@
+---
+import type { CollectionEntry } from "astro:content"
+import getImageUrl from "../utils/getImageUrl"
+import { random } from "lodash-es"
+
+type Props = CollectionEntry<"service">["data"] &
+  CollectionEntry<"service"> & { i: number }
+
+const { title, speed, summary, slug, order, i, body, image } = Astro.props
+
+const start = Math.abs(speed) * 5
+const end = Math.abs(speed) * -5
+---
+
+<div
+  class="relative flex max-w-[980px] pb-32"
+  class:list={{
+    "justify-end": [1, 4, 7].includes(i + 1),
+    "justify-start": [2, 5, 9].includes(i + 1),
+    "justify-center": [3, 6, 8, 10].includes(i + 1),
+  }}
+>
+  <div class="block w-full max-w-[400px] text-foreground">
+    <div
+      class="timeline-view animate-parallax -parallax-start-32 parallax-end-0 absolute -z-10 h-56 w-40 overflow-hidden rounded-xl drop-shadow-2xl [animation-timing-function:linear] lg:h-[400px] lg:w-72"
+      style={{
+        animationTimeline: "scroll(root)",
+        "--parallax-start": `${start}%`,
+        "--parallax-end": `${end}%`,
+      }}
+      class:list={{
+        "-right-32 md:-right-40": [1, 4, 7].includes(i + 1),
+        "-left-20": [2, 5, 9].includes(i + 1),
+        "-right-8": [3, 8, 6, 10].includes(i + 1),
+      }}
+    >
+      <img
+        class="size-full rounded-xl object-cover"
+        src={getImageUrl(image)}
+        alt=""
+        width="280"
+        height="400"
+      />
+    </div>
+
+    <div
+      class="relative flex flex-col gap-4"
+      style={{
+        zIndex: order ?? 2,
+        filter: "drop-shadow(0 0 16px #000000) drop-shadow(0 0 48px #000000)",
+      }}
+    >
+      <h2 class="text-3xl">
+        {title}
+      </h2>
+
+      <div class="font-medium leading-5">
+        {summary}
+      </div>
+
+      {
+        body.length > 1 && (
+          <a
+            class="inline-flex w-max items-center rounded-lg bg-black/60 px-3 py-2 text-sm backdrop-blur-md duration-200 hover:bg-black hover:ring-1 hover:ring-blue-500/30"
+            href={`/services/${slug}`}
+          >
+            Learn More
+            <svg class="ml-2 size-[1cap] fill-current">
+              <use href="/assets/arrow-right.svg#icon" />
+            </svg>
+          </a>
+        )
+      }
+    </div>
+  </div>
+</div>

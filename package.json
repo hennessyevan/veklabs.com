@@ -32,6 +32,7 @@
     "typescript": "^5.6.3"
   },
   "devDependencies": {
+    "@adam.plesnik/tailwindcss-scroll-driven-animations": "^0.2.7",
     "@types/lodash-es": "^4.17.12",
     "astro-reading-time": "^0.1.13",
     "prettier": "^3.3.3",

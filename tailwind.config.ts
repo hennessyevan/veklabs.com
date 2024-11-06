@@ -1,5 +1,6 @@
 import type { Config } from "tailwindcss"
 import plugin from "tailwindcss/plugin"
+import scrollDrivenAnimations from "@adam.plesnik/tailwindcss-scroll-driven-animations"
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,vue}"],
@@ -26,16 +27,22 @@ export default {
       },
       animation: {
         "fade-up": "fade-up 0.5s ease-out",
+        parallax: "parallax",
       },
       keyframes: {
         "fade-up": {
           "0%": { opacity: "0", transform: "translateY(1rem)" },
           "100%": { opacity: "1", transform: "translateY(0)" },
         },
+        parallax: {
+          "0%": { transform: "translateY(var(--parallax-start, 0))" },
+          "100%": { transform: "translateY(var(--parallax-end, 50%))" },
+        },
       },
     },
   },
   plugins: [
+    scrollDrivenAnimations,
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {
@@ -45,12 +52,30 @@ export default {
         },
         { values: theme("textShadow") },
       )
+      matchUtilities(
+        {
+          "parallax-start": (value) => ({
+            "--parallax-start": value,
+          }),
+        },
+        { values: theme("translate"), supportsNegativeValues: true },
+      )
+      matchUtilities(
+        {
+          "parallax-end": (value) => ({
+            "--parallax-end": value,
+          }),
+        },
+        { values: theme("translate"), supportsNegativeValues: true },
+      )
     }),
-    plugin(({ addVariant }: any) => {
+    plugin(({ addVariant }) => {
       addVariant("starting", "@starting-style")
     }),
     plugin(({ addUtilities }) => {
       addUtilities([
+        { "timeline-root": "animation-timeline: scroll(root);" },
+        { parallax: "animation-name: parallax;" },
         {
           "allow-discrete": "transition-behavior: allow-discrete;",
         },
