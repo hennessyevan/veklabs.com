@@ -38,7 +38,7 @@
       {
         "identifier": "reports",
         "name": "Reports",
-        "url": "/reports/",
+        "url": "/reports/page/1",
         "weight": 4
       },
       {
