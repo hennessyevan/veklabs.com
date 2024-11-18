@@ -98,7 +98,7 @@ export default function VideoCard(videoData: VideoData) {
     <MotionConfig transition={{ type: "spring" }}>
       <LayoutGroup id={title}>
         <motion.div
-          className="relative aspect-video size-full h-[269px] w-[480px] cursor-pointer snap-start scroll-mx-6 rounded-xl border-neutral-300"
+          className="relative aspect-video size-full max-w-full cursor-pointer snap-start scroll-mx-6 rounded-xl border-neutral-300"
           style={{
             zIndex: popupIsShown
               ? 100
@@ -116,7 +116,7 @@ export default function VideoCard(videoData: VideoData) {
           transition={{ duration: POPUP_DURATION, type: "spring" }}
         >
           <motion.span
-            className="pointer-events-none absolute isolate z-10 flex items-center text-lg font-semibold shadow-neutral-950 duration-200 text-shadow-lg"
+            className="pointer-events-none absolute isolate z-10 flex items-center text-xs shadow-neutral-950 duration-200 text-shadow-lg sm:text-lg sm:font-semibold"
             variants={titleVariants}
             initial="initial"
             animate={hovered && !popupWasJustShown ? "hover" : "initial"}

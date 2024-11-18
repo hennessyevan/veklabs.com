@@ -1,0 +1,105 @@
+---
+import Image from "astro/components/Image.astro"
+import checkImage from "../images/3d/Flag 1.png"
+import cupImage from "../images/3d/Cup 2.png"
+import cameraImage from "../images/3d/Video camera 1.png"
+import getImageUrl from "../utils/getImageUrl"
+
+const logos = [
+  {
+    href: "https://upcity.com/profiles/vek-labs",
+    src: getImageUrl("../images/local-excellence-badge.png"),
+  },
+  {
+    href: "https://upcity.com/profiles/vek-labs",
+    src: getImageUrl("../images/video-winner-2021.png"),
+  },
+  {
+    href: "https://upcity.com/profiles/vek-labs",
+    src: "https://upcity-marketplace.s3.amazonaws.com/badges/fb2e7d64b3c931ed6e964e74f1c3d1f8.png",
+  },
+  {
+    href: "https://communo.com",
+    src: getImageUrl("../images/communo-badge.png"),
+  },
+] as const
+---
+
+<section class="mx-auto my-16 w-container">
+  <div class="flex flex-col items-stretch gap-6 lg:flex-row">
+    <div class="w-full lg:max-w-[500px]">
+      <div
+        class="relative flex aspect-video flex-col gap-4 overflow-y-clip rounded-3xl bg-black/70 px-16 py-20 ring-1 ring-white/5 lg:aspect-[4/5]"
+      >
+        <div class="z-10 mb-auto flex flex-col gap-4">
+          <h2 class="text-4xl font-bold">Our Guarantee</h2>
+          <p class="guarantee-text">
+            When specified, we deliver a curated-RAW video render of all usable
+            content to you within 24 hours of filming <strong
+              >at no additional cost.</strong
+            >
+          </p>
+        </div>
+        <Image
+          src={checkImage}
+          alt=""
+          class="-mb--24 parallax-start-30 timeline-root absolute -left-12 bottom-0 animate-parallax opacity-30 mix-blend-difference parallax-end-40"
+        />
+      </div>
+    </div>
+
+    <div class="w-full">
+      <div
+        class="relative flex h-full w-full gap-4 overflow-hidden rounded-3xl bg-black p-20 px-16 ring-1 ring-white/5"
+      >
+        <Image
+          src={cameraImage}
+          alt=""
+          class="absolute -right-36 -top-24 w-full max-w-[700px] animate-parallax opacity-35 mix-blend-difference -parallax-start-48 parallax-end-48 [animation-timeline:scroll(root)]"
+        />
+        <div class="z-10 mr-auto mt-auto flex w-full">
+          <div class="flex flex-col gap-4">
+            <h2 class="max-w-96 text-pretty text-4xl font-bold">
+              Cutting-edge Film & Storytelling For Businesses.
+            </h2>
+            <h4 class="text-pretty text-xl text-gray-400">
+              Premium Video. Painless Production.
+            </h4>
+            <p class="max-w-96 text-pretty">
+              At Vek Labs, we are a video production company that prides
+              ourselves by offering production services to agencies, companies
+              and organizations who want to create cinematic productions without
+              hassle. We reverse-engineer a custom solution for your video
+              project; consulting your budget, timeline and creative vision
+              throughout the entire process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="relative flex aspect-video flex-col gap-12 overflow-clip rounded-3xl bg-black/70 p-12 ring-1 ring-white/5 lg:aspect-[4/5]"
+    >
+      <h2 class="text-xl font-light uppercase tracking-widest">Awards</h2>
+      <Image
+        src={cupImage}
+        alt=""
+        class="absolute -bottom-0 -right-6 w-full max-w-[300px] animate-parallax opacity-35 mix-blend-difference -parallax-start-40 parallax-end-24 [animation-timeline:scroll(root)]"
+      />
+      <div class="z-10 flex flex-wrap gap-6">
+        {
+          logos.map((logo) => (
+            <a href={logo.href} class="min-w-10 max-w-32">
+              <img alt="" src={logo.src} loading="lazy" />
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+  <div class="block h-96"></div>
+  <div class="block h-96"></div>
+  <div class="block h-96"></div>
+  <div class="block h-96"></div>
+</section>

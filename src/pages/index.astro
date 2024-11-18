@@ -1,4 +1,5 @@
 ---
+import GuaranteeSection from "../components/GuaranteeSection.astro"
 import HeroVideo from "../components/HeroVideo.tsx"
 import VideoGrid from "../components/VideoGrid.astro"
 import DefaultLayout from "../layouts/DefaultLayout.astro"
@@ -8,5 +9,6 @@ import DefaultLayout from "../layouts/DefaultLayout.astro"
   <div class="my-6 flex flex-col gap-6">
     <HeroVideo client:idle />
     <VideoGrid />
+    <GuaranteeSection />
   </div>
 </DefaultLayout>

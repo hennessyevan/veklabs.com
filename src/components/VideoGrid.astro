@@ -1,30 +1,26 @@
 ---
-import type { ImageMetadata } from "astro"
 import VideoCard from "./VideoCard.tsx"
 import { getCollection } from "astro:content"
 import getImageUrl from "../utils/getImageUrl"
+import { take } from "lodash-es"
 
 const videos = await getCollection("videos")
 ---
 
 <section
-  class="grid w-full snap-x snap-proximity grid-cols-[24px_1fr_24px] overflow-x-auto"
+  class="xs:grid-cols-[repeat(auto-fit,_minmax(400px,1fr))] mx-auto grid w-container grid-cols-2 gap-2 sm:gap-5 lg:grid-cols-3"
 >
-  <div
-    style="grid-column: 2;"
-    class="grid grid-flow-col grid-rows-2 gap-6 py-3"
-  >
-    {
-      videos.map((video) => (
-        <VideoCard
-          {...video.data}
-          image={getImageUrl(video.data.image)}
-          client:idle
-        />
-      ))
-    }
+  {
+    take(videos, 6).map((video) => (
+      <VideoCard
+        {...video.data}
+        image={getImageUrl(video.data.image)}
+        client:idle
+      />
+    ))
+  }
 
-    <!-- <div class="scroll-arrows">
+  <!-- <div class="scroll-arrows">
       <span class="arrow-left page-number">
         <svg viewBox="0 0 24 24">
           <use href="/assets/arrow-left.svg#icon"></use>
@@ -36,5 +32,4 @@ const videos = await getCollection("videos")
         </svg>
       </span>
     </div> -->
-  </div>
 </section>

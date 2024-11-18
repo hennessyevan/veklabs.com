@@ -5,9 +5,9 @@
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
-    "old:build": "astro check && astro build",
     "build": "astro build",
     "preview": "astro preview",
+    "decap-local": "pnpx decap-server",
     "astro": "astro"
   },
   "dependencies": {
@@ -21,7 +21,9 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "astro": "^4.16.9",
+    "astro-decap-cms": "^0.2.0",
     "classnames": "^2.5.1",
+    "decap-cms-app": "^3.4.0",
     "framer-motion": "^11.11.11",
     "lodash-es": "^4.17.21",
     "lucide-astro": "^0.454.0",

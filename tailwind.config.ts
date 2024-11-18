@@ -73,13 +73,11 @@ export default {
       addVariant("starting", "@starting-style")
     }),
     plugin(({ addUtilities }) => {
-      addUtilities([
-        { "timeline-root": "animation-timeline: scroll(root);" },
-        { parallax: "animation-name: parallax;" },
-        {
-          "allow-discrete": "transition-behavior: allow-discrete;",
-        },
-      ])
+      addUtilities({
+        ".timeline-root": { "animation-timeline": "scroll(root);" },
+        ".parallax": { "animation-name": "parallax;" },
+        ".allow-discrete": { "transition-behavior": "allow-discrete;" },
+      })
     }),
   ],
 } satisfies Config
