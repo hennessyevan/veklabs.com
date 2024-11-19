@@ -3,5 +3,11 @@
   "prettier.configPath": ".prettierrc.mjs",
   "[astro]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
-  }
+  },
+  "json.schemas": [
+    {
+      "fileMatch": ["/src/content/offerings/**"],
+      "url": "./.astro/collections/offering.schema.json"
+    }
+  ]
 }

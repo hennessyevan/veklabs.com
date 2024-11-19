@@ -1,7 +1,6 @@
 ---
 import type { CollectionEntry } from "astro:content"
 import getImageUrl from "../utils/getImageUrl"
-import { random } from "lodash-es"
 
 type Props = CollectionEntry<"service">["data"] &
   CollectionEntry<"service"> & { i: number }

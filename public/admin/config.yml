@@ -154,7 +154,7 @@ collections:
     files:
       - label: "Site Settings"
         name: "config"
-        file: "src/config.json"
+        file: "src/content/site-settings.json"
         editor: { preview: false }
         create: false
         delete: false
