@@ -1,0 +1,92 @@
+---
+import type { CollectionEntry } from "astro:content"
+import { kebabCase } from "lodash-es"
+import { ArrowRight, Loader2 } from "lucide-astro"
+
+type Props = CollectionEntry<"video">["data"]
+const { title, previewURL, type, image, ...videoData } = Astro.props
+const id = kebabCase(title)
+---
+
+<div
+  class:list={[
+    "group relative aspect-video size-full max-w-full cursor-pointer snap-start scroll-mx-6 rounded-xl border-neutral-300",
+    "spring-bounce-60 spring-duration-500",
+    "hover:-translate-y-1 hover:shadow-2xl hover:shadow-black",
+  ]}
+  onclick={`document.getElementById('${id}').showModal()`}
+>
+  <span
+    class:list={[
+      "pointer-events-none absolute bottom-6 left-6 isolate z-10 flex items-center text-xs shadow-neutral-950 duration-700 text-shadow-lg sm:text-lg sm:font-semibold",
+      "opacity-100 allow-discrete",
+      "group-hover:bottom-12 group-hover:left-6 group-hover:opacity-60",
+    ]}
+  >
+    {title}
+    <span
+      class="hidden opacity-100 duration-300 allow-discrete group-has-[&:not(.loaded)]:group-hover:block starting:opacity-0"
+    >
+      <Loader2 class="ml-2 size-4 animate-spin" />
+    </span>
+  </span>
+  <span
+    class="spring-bounce-30 spring-duration-700 absolute bottom-0 left-6 z-10 inline-flex items-center gap-2 text-xs uppercase tracking-widest opacity-0 delay-200 group-hover:bottom-6 group-hover:opacity-50"
+  >
+    {
+      type && (
+        <span class="spring-bounce-30 spring-duration-700 hidden translate-x-0 uppercase tracking-widest opacity-100 delay-300 allow-discrete group-hover:block starting:translate-x-4 starting:opacity-0">
+          {type}
+          {" | "}
+        </span>
+      )
+    }
+    <span class="inline-flex items-center"
+      >Learn More <ArrowRight class="ml-1 size-3" /></span
+    >
+  </span>
+
+  <video
+    controls={false}
+    class="hidden size-full overflow-hidden rounded-xl object-cover group-hover:block"
+    src={previewURL}
+    preload="none"
+    autoplay
+    muted
+    playsinline
+    loop
+    onloadeddata="this.closest('.group').classList.add('loaded')"
+    ontimeupdate="if (this.currentTime > 10) { this.currentTime = 0 }"
+    onerror="e=>console.error(e)"></video>
+
+  <img
+    class:list={[
+      "absolute inset-0 aspect-video size-full rounded-xl object-cover duration-300",
+      "opacity-100 blur-0 allow-discrete group-hover:hidden starting:opacity-0 starting:blur-sm",
+    ]}
+    src={image}
+    loading="lazy"
+    alt=""
+  />
+</div>
+
+<dialog
+  id={id}
+  class:list={[
+    "fixed left-0 top-0 z-50 h-screen min-h-screen w-screen overscroll-contain bg-transparent",
+    "backdrop:h-full backdrop:overflow-y-scroll backdrop:bg-neutral-950/70 backdrop:opacity-100 backdrop:backdrop-blur-3xl backdrop:backdrop-brightness-200 backdrop:backdrop-saturate-200 backdrop:duration-700 backdrop:allow-discrete starting:backdrop:opacity-0",
+    "[&.ending]:backdrop:opacity-0",
+  ]}
+>
+  Dialog!
+  <button
+    onclick="this.closest('dialog').classList.add('ending'); setTimeout(() => this.closest('dialog').close().classList.remove('ending'), 700);"
+    >Close</button
+  >
+</dialog>
+
+<!-- <VideoInformationPopupWrapper
+          isOpen={popupIsShown}
+          onOpenChange={setPopupIsShown}
+          {...videoData}
+        /> -->

@@ -29,7 +29,7 @@ const logos = [
   <div class="flex flex-col items-stretch gap-6 lg:flex-row">
     <div class="w-full lg:max-w-[500px]">
       <div
-        class="relative flex aspect-video flex-col gap-4 overflow-y-clip rounded-3xl bg-black/70 px-16 py-20 ring-1 ring-white/5 lg:aspect-[4/5]"
+        class="relative flex aspect-video flex-col gap-4 overflow-clip rounded-3xl bg-black/70 px-16 py-20 ring-1 ring-white/5 lg:aspect-[4/5]"
       >
         <div class="z-10 mb-auto flex flex-col gap-4">
           <h2 class="text-4xl font-bold">Our Guarantee</h2>
@@ -43,14 +43,14 @@ const logos = [
         <Image
           src={checkImage}
           alt=""
-          class="-mb--24 parallax-start-30 timeline-root absolute -left-12 bottom-0 animate-parallax opacity-30 mix-blend-difference parallax-end-40"
+          class="-mb--24 parallax-start-30 absolute -left-12 bottom-0 animate-parallax opacity-30 mix-blend-difference parallax-end-40 timeline-root"
         />
       </div>
     </div>
 
     <div class="w-full">
       <div
-        class="relative flex h-full w-full gap-4 overflow-hidden rounded-3xl bg-black p-20 px-16 ring-1 ring-white/5"
+        class="relative flex h-full w-full gap-4 overflow-clip rounded-3xl bg-black p-20 px-16 ring-1 ring-white/5"
       >
         <Image
           src={cameraImage}
@@ -87,10 +87,10 @@ const logos = [
         alt=""
         class="absolute -bottom-0 -right-6 w-full max-w-[300px] animate-parallax opacity-35 mix-blend-difference -parallax-start-40 parallax-end-24 [animation-timeline:scroll(root)]"
       />
-      <div class="z-10 flex flex-wrap gap-6">
+      <div class="z-10 flex w-full flex-wrap gap-8">
         {
           logos.map((logo) => (
-            <a href={logo.href} class="min-w-10 max-w-32">
+            <a href={logo.href} class="w-5/12 max-w-32 shrink">
               <img alt="" src={logo.src} loading="lazy" />
             </a>
           ))
@@ -98,8 +98,4 @@ const logos = [
       </div>
     </div>
   </div>
-  <div class="block h-96"></div>
-  <div class="block h-96"></div>
-  <div class="block h-96"></div>
-  <div class="block h-96"></div>
 </section>

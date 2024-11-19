@@ -1,6 +1,7 @@
 ---
 import GuaranteeSection from "../components/GuaranteeSection.astro"
 import HeroVideo from "../components/HeroVideo.tsx"
+import Metrics from "../components/Metrics.tsx"
 import VideoGrid from "../components/VideoGrid.astro"
 import DefaultLayout from "../layouts/DefaultLayout.astro"
 ---
@@ -10,5 +11,6 @@ import DefaultLayout from "../layouts/DefaultLayout.astro"
     <HeroVideo client:idle />
     <VideoGrid />
     <GuaranteeSection />
+    <Metrics client:idle />
   </div>
 </DefaultLayout>

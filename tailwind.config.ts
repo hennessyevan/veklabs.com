@@ -1,6 +1,7 @@
 import type { Config } from "tailwindcss"
 import plugin from "tailwindcss/plugin"
 import scrollDrivenAnimations from "@adam.plesnik/tailwindcss-scroll-driven-animations"
+import spring from "tailwindcss-spring"
 
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,vue}"],
@@ -42,7 +43,11 @@ export default {
     },
   },
   plugins: [
+    spring,
     scrollDrivenAnimations,
+    plugin(({ addVariant }) => {
+      addVariant("starting", "@starting-style")
+    }),
     plugin(({ matchUtilities, theme }) => {
       matchUtilities(
         {
@@ -68,9 +73,6 @@ export default {
         },
         { values: theme("translate"), supportsNegativeValues: true },
       )
-    }),
-    plugin(({ addVariant }) => {
-      addVariant("starting", "@starting-style")
     }),
     plugin(({ addUtilities }) => {
       addUtilities({
