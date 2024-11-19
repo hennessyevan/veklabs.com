@@ -1,0 +1,42 @@
+---
+import { offerings } from "../config.json"
+import getImageUrl from "../utils/getImageUrl"
+---
+
+<section>
+  <div>
+    <div
+      class="grid snap-x snap-proximity grid-cols-[40px_1fr_40px] gap-[--gap] overflow-x-scroll overscroll-x-none no-scrollbar [--gap:8px] before:content-end after:content-end lg:[--gap:40px]"
+    >
+      <div
+        class="grid grid-cols-[repeat(var(--cards),90%)] content-start gap-[--gap] lg:grid-cols-[repeat(var(--cards),clamp(800px,40vw,1600px))]"
+        style={{ "--cards": offerings.length }}
+      >
+        {
+          offerings.map((offering) => (
+            <div class="flex snap-center flex-col overflow-hidden rounded-2xl border border-neutral-800 bg-black lg:flex-row">
+              <img
+                src={getImageUrl(offering.image)}
+                alt={offering.title}
+                class="relative w-full overflow-hidden rounded-2xl object-cover [mask-image:linear-gradient(#000_75%,transparent)] lg:w-1/2 lg:[mask-image:linear-gradient(90deg,#000_75%,transparent)]"
+              />
+
+              <div class="flex w-full flex-col content-start gap-6 p-10 lg:w-1/2">
+                <h2 class="text-2xl font-semibold">{offering.title}</h2>
+
+                <p class="text-gray-500">{offering.description}</p>
+
+                <a
+                  class="ml-auto rounded-md px-4 py-2 shadow-sm shadow-accent-600 ring-1 ring-accent-500 duration-200 hover:bg-accent-400/15"
+                  href={offering.rel}
+                >
+                  Learn More
+                </a>
+              </div>
+            </div>
+          ))
+        }
+      </div>
+    </div>
+  </div>
+</section>

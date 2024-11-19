@@ -6,6 +6,10 @@ import spring from "tailwindcss-spring"
 export default {
   content: ["./src/**/*.{astro,html,js,jsx,md,mdx,ts,tsx,vue}"],
   theme: {
+    colors: ({ colors }) => ({
+      ...colors,
+      gray: colors.neutral,
+    }),
     extend: {
       colors: ({ colors }) => ({
         background: colors.neutral[900],
@@ -79,6 +83,11 @@ export default {
         ".timeline-root": { "animation-timeline": "scroll(root);" },
         ".parallax": { "animation-name": "parallax;" },
         ".allow-discrete": { "transition-behavior": "allow-discrete;" },
+        ".no-scrollbar": {
+          "&::-webkit-scrollbar": { display: "none" },
+          "scrollbar-width": "none",
+          "-ms-overflow-style": "none",
+        },
       })
     }),
   ],
