@@ -17,7 +17,7 @@ import getImageUrl from "../utils/getImageUrl"
           offerings.map((offering) => (
             <div class="flex snap-center flex-col overflow-hidden rounded-2xl border border-neutral-800 bg-black lg:flex-row">
               <Image
-                src={import(getImageUrl(offering.image))}
+                src={import(/* @vite-ignore */ getImageUrl(offering.image))}
                 width={800}
                 height={800}
                 decoding="async"

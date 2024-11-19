@@ -29,10 +29,10 @@ const logos = [
   <div class="flex flex-col items-stretch gap-6 lg:flex-row">
     <div class="w-full lg:max-w-[500px]">
       <div
-        class="relative flex aspect-video flex-col gap-4 overflow-clip rounded-3xl bg-black/70 px-16 py-20 ring-1 ring-white/5 lg:aspect-[4/5]"
+        class="relative flex aspect-video flex-col gap-4 overflow-clip rounded-3xl bg-black/70 px-12 py-14 ring-1 ring-white/5 lg:aspect-[4/5] lg:px-16 lg:py-20"
       >
         <div class="z-10 mb-auto flex flex-col gap-4">
-          <h2 class="text-4xl font-bold">Our Guarantee</h2>
+          <h2 class="text-2xl font-bold lg:text-4xl">Our Guarantee</h2>
           <p class="guarantee-text">
             When specified, we deliver a curated-RAW video render of all usable
             content to you within 24 hours of filming <strong
@@ -50,7 +50,7 @@ const logos = [
 
     <div class="w-full">
       <div
-        class="relative flex h-full w-full gap-4 overflow-clip rounded-3xl bg-black p-20 px-16 ring-1 ring-white/5"
+        class="relative flex h-full w-full gap-4 overflow-clip rounded-3xl bg-black px-12 py-14 ring-1 ring-white/5 lg:p-20 lg:px-16"
       >
         <Image
           src={cameraImage}
@@ -59,7 +59,7 @@ const logos = [
         />
         <div class="z-10 mr-auto mt-auto flex w-full">
           <div class="flex flex-col gap-4">
-            <h2 class="max-w-96 text-pretty text-4xl font-bold">
+            <h2 class="max-w-96 text-pretty text-2xl font-bold lg:text-4xl">
               Cutting-edge Film & Storytelling For Businesses.
             </h2>
             <h4 class="text-pretty text-xl text-gray-400">
@@ -81,7 +81,9 @@ const logos = [
     <div
       class="relative flex aspect-video flex-col gap-12 overflow-clip rounded-3xl bg-black/70 p-12 ring-1 ring-white/5 lg:aspect-[4/5]"
     >
-      <h2 class="text-xl font-light uppercase tracking-widest">Awards</h2>
+      <h2 class="text-2xl font-light uppercase tracking-widest lg:text-4xl">
+        Awards
+      </h2>
       <Image
         src={cupImage}
         alt=""

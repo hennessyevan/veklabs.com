@@ -12,10 +12,18 @@ import {
   LayoutGroup,
   motion,
   MotionConfig,
+  useInView,
   type Variants,
 } from "framer-motion"
 import { ArrowRight, Loader2 } from "lucide-react"
-import { forwardRef, useEffect, useRef, useState } from "react"
+import {
+  forwardRef,
+  useEffect,
+  useRef,
+  useState,
+  type MutableRefObject,
+  type Ref,
+} from "react"
 
 type VideoData = CollectionEntry<"video">["data"]
 
@@ -55,12 +63,12 @@ const videoVariants: Variants = {
 const titleVariants: Variants = {
   initial: {
     opacity: 1,
-    bottom: 24,
-    left: 36,
+    bottom: "var(--bottom,24px)",
+    left: "var(--left,36px)",
   },
   hover: {
-    left: 24,
-    bottom: 24,
+    left: "var(--hover-left,24px)",
+    bottom: "var(--hover-bottom,24px)",
     opacity: 0.6,
   },
 }
@@ -98,7 +106,7 @@ export default function VideoCard(videoData: VideoData) {
           transition={{ duration: POPUP_DURATION, type: "spring" }}
         >
           <motion.span
-            className="pointer-events-none absolute isolate z-10 flex items-center text-xs shadow-neutral-950 duration-200 text-shadow-lg sm:text-xl sm:font-semibold"
+            className="pointer-events-none absolute isolate z-10 flex items-center text-xs shadow-neutral-950 duration-200 text-shadow-lg [--bottom:16px] [--hover-bottom:14px] [--hover-left:14px] [--left:14px] sm:text-xl sm:font-semibold lg:[--bottom:36px] lg:[--hover-bottom:24px] lg:[--hover-left:24px] lg:[--left:24px]"
             variants={titleVariants}
             initial="initial"
             animate={hovered && !popupWasJustShown ? "hover" : "initial"}
@@ -127,9 +135,9 @@ export default function VideoCard(videoData: VideoData) {
             {hovered && (
               <AnimatePresence>
                 <motion.span
-                  className="absolute left-6 z-10 inline-flex items-center text-xs uppercase tracking-widest opacity-50"
-                  initial={{ bottom: 40, opacity: 0 }}
-                  animate={{ bottom: 55, opacity: 0.5 }}
+                  className="absolute left-4 z-10 inline-flex items-center text-xxs uppercase tracking-widest opacity-50 md:text-xs lg:left-6"
+                  initial={{ bottom: "clamp(20px,5vw,40px)", opacity: 0 }}
+                  animate={{ bottom: "clamp(30px,5.5vw,55px)", opacity: 0.5 }}
                   transition={{
                     duration: HOVER_DURATION,
                     delay: HOVER_DURATION / 2,
@@ -195,8 +203,14 @@ export default function VideoCard(videoData: VideoData) {
                 className={cx(
                   "absolute inset-0 aspect-video size-full rounded-xl object-cover duration-300",
                 )}
-                initial={{ opacity: 0, filter: "blur(5px)" }}
-                animate={{ opacity: 1, filter: "blur(0px)" }}
+                initial={{
+                  opacity: 0,
+                  filter: "blur(5px)",
+                }}
+                animate={{
+                  opacity: 1,
+                  filter: "blur(0px)",
+                }}
                 exit={{ opacity: 0, filter: "blur(5px)" }}
                 transition={{ duration: HOVER_DURATION / 2 }}
                 src={image}
