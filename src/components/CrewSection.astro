@@ -1,0 +1,22 @@
+---
+import { getCollection } from "astro:content"
+
+import config from "../config.json"
+import { sortBy } from "lodash-es"
+import CrewComponent from "./CrewComponent.tsx"
+
+const teamMembers = await getCollection("team")
+---
+
+<section class="mx-auto mt-16 w-container py-16 md:mb-12 md:mt-28">
+  <h2 class="text-center text-4xl font-semibold">{config.TEAM_TITLE}</h2>
+  <div
+    class="mx-auto flex w-full snap-x snap-mandatory scroll-pl-6 flex-wrap items-center justify-start justify-center gap-12 p-6 no-scrollbar md:justify-center"
+  >
+    {
+      sortBy(teamMembers, "order").map((member) => (
+        <CrewComponent client:visible {...member} />
+      ))
+    }
+  </div>
+</section>

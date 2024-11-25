@@ -92,7 +92,7 @@ He created content that worked perfectly within the beta. His channel is focused
 
 As there is a low-supply for this type of content and high demand for it, his videos were quickly put on the Short Shelf, and it started a tremendous effect that took his channel from nothing to getting more views per month than Pewdiepie (the second-largest channel on YouTube).
 
-![](https://lh4.googleusercontent.com/dzMHPBjdX1wjAIHTfC7vM76XIK73Rrz2IhBlGKOyWTYBHCK4r45Bj5Cd8sh44C_0OPWbyPHPuats6ydeW5qd8AmHOHAxeZUbnYFTur4acyXfKR7nBmRCLpd3iGDaV0awCSoIxQqe =602x165)
+![](https://lh4.googleusercontent.com/dzMHPBjdX1wjAIHTfC7vM76XIK73Rrz2IhBlGKOyWTYBHCK4r45Bj5Cd8sh44C_0OPWbyPHPuats6ydeW5qd8AmHOHAxeZUbnYFTur4acyXfKR7nBmRCLpd3iGDaV0awCSoIxQqe: 602x165)
 
 ### How do I make YouTube Shorts?
 
