@@ -40,7 +40,7 @@ const service = defineCollection({
 })
 
 const offering = defineCollection({
-  type: "data",
+  type: "content",
   schema: ({ image }) =>
     z.object({
       title: z.string(),

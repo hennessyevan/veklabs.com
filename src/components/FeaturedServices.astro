@@ -1,13 +1,8 @@
 ---
 import { Image } from "astro:assets"
-import getImageUrl from "../utils/getImageUrl"
-import { getCollection, getEntry } from "astro:content"
+import { getCollection } from "astro:content"
 
 const offerings = await getCollection("offerings")
-
-// const images = offerings
-//   .map((offering) => getImageUrl(offering.image))
-//   .map(async (url) => await import(url))
 ---
 
 <section class="py-8">

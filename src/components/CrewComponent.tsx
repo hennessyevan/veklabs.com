@@ -36,7 +36,7 @@ function CrewImage({ id, src, width, height, alt }: ComponentProps<"img">) {
   )
 }
 
-const MotionOverlay = motion(FloatingOverlay)
+const MotionOverlay = motion.create(FloatingOverlay)
 
 export default function CrewComponent(member: Props) {
   const id = kebabCase(member.data.name)
@@ -59,7 +59,7 @@ export default function CrewComponent(member: Props) {
     <>
       <motion.div
         layoutId={id + "container"}
-        className="group relative flex snap-center flex-col items-center gap-6 py-0.5 md:snap-start md:py-10"
+        className="group relative flex min-w-36 snap-center flex-col items-center gap-6 py-0.5 md:snap-start md:py-10"
         onClick={() => setModalIsOpen(true)}
       >
         <CrewImage
