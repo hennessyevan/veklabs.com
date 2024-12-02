@@ -3,6 +3,7 @@ import type { CollectionEntry } from "astro:content"
 import FormattedDate from "../components/FormattedDate.astro"
 import CategoryBadge from "../components/CategoryBadge.astro"
 import getImageUrl from "../utils/getImageUrl"
+import { Image } from "astro:assets"
 
 type Props = CollectionEntry<"report">["data"] & {
   id: string
@@ -54,9 +55,9 @@ const { title, date, category, image, id, frontmatter } = Astro.props
             </svg>
             All Posts
           </a>
-          <img
+          <Image
             transition:name={`image-${image}`}
-            src={getImageUrl(image)}
+            src={image}
             alt=""
             class:list={[
               "aspect-video w-full rounded-lg border border-gray-800 object-cover shadow-lg transition-all duration-200 group-hover:scale-[1.0125] group-hover:shadow-2xl",

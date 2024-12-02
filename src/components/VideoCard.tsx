@@ -12,18 +12,10 @@ import {
   LayoutGroup,
   motion,
   MotionConfig,
-  useInView,
   type Variants,
 } from "framer-motion"
 import { ArrowRight, Loader2 } from "lucide-react"
-import {
-  forwardRef,
-  useEffect,
-  useRef,
-  useState,
-  type MutableRefObject,
-  type Ref,
-} from "react"
+import { forwardRef, useRef, useState } from "react"
 
 type VideoData = CollectionEntry<"video">["data"]
 

@@ -2,7 +2,7 @@
 author: "Andrew Peloso"
 category: "Video Production"
 date: 2020-11-25T00:00:00Z
-image: "images/videoproductionin2021_calgary.png"
+image: "/src/images/videoproductionin2021_calgary.png"
 keywords: "calgary video production, video production calgary, calgary video company"
 title: "Why Video Production Is Important In 2021"
 ---

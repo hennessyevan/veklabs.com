@@ -1,7 +1,7 @@
 ---
 title: "VEKCAST: How to get started in the Film Industry"
 date: 2020-07-16
-image: "images/Calgary_Video_Production_6.jpg"
+image: "/src/images/Calgary_Video_Production_6.jpg"
 category: "VEKCAST"
 author: "Andrew Peloso"
 keywords: "calgary video production, video production calgary, calgary video company"

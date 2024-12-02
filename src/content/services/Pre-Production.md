@@ -1,7 +1,7 @@
 ---
 title: "Pre-Production"
 page_title: "Video Pre-Production Services Calgary"
-image: "images/Pre-Production-Video.png"
+image: "/src/images/Pre-Production-Video.png"
 order: 2
 speed: 2
 summary: "Our pre-production planning process creates a foundation for your video's vision to come to life and give your team the information you need to move forward"

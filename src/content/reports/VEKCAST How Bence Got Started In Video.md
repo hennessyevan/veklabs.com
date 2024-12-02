@@ -1,7 +1,7 @@
 ---
 title: "VEKCAST: How Bence Got Started In Video"
 date: 2020-05-12
-image: "images/Calgary_Video_Production_5.jpg"
+image: "/src/images/Calgary_Video_Production_5.jpg"
 category: "VEKCAST"
 author: "Andrew Peloso"
 keywords: "calgary video production, video production calgary, calgary video company"

@@ -2,7 +2,7 @@
 author: "Riley Patten"
 category: "Photography"
 date: 2020-10-21T00:00:00Z
-image: "images/Calgary_Video_Production_VL_C.jpg"
+image: "/src/images/Calgary_Video_Production_VL_C.jpg"
 keywords: "calgary video production, video production calgary, calgary video company"
 title: "7  Basic Rules for Taking Great Photos"
 ---

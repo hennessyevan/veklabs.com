@@ -1,7 +1,7 @@
 ---
 title: "Post-Production"
 page_title: "Post-Production Services Calgary"
-image: "images/video-editing.png"
+image: /src/images/video-editing.png
 order: 8
 speed: 5
 summary: "Our team utilizes the finest in video editing technology and post-production techniques to create compelling videos that create an impact and drive emotion."

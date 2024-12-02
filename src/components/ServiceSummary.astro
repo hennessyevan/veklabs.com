@@ -1,6 +1,6 @@
 ---
+import { Image } from "astro:assets"
 import type { CollectionEntry } from "astro:content"
-import getImageUrl from "../utils/getImageUrl"
 
 type Props = CollectionEntry<"service">["data"] &
   CollectionEntry<"service"> & { i: number }
@@ -33,9 +33,9 @@ const end = Math.abs(speed) * -5
         "-right-8": [3, 8, 6, 10].includes(i + 1),
       }}
     >
-      <img
+      <Image
         class="size-full rounded-xl object-cover"
-        src={getImageUrl(image)}
+        src={image}
         alt=""
         width="280"
         height="400"

@@ -2,7 +2,7 @@
 author: "Andrew Peloso"
 category: "Content Creation"
 date: 2020-03-23T00:00:00Z
-image: "images/Make-Your-Content-Work-For-You-Vek-Labs.png"
+image: "/src/images/Make-Your-Content-Work-For-You-Vek-Labs.png"
 keywords: "marketing,content creation,brand"
 title: "Make Your Content Work For You"
 ---

@@ -2,7 +2,7 @@
 author: "Andrew Peloso"
 category: "Calgary"
 date: 2020-10-22T00:00:00Z
-image: "images/Calgary_Video_Production_VL_P.png"
+image: "/src/images/Calgary_Video_Production_VL_P.png"
 keywords: "calgary video production, video production calgary, calgary video company"
 title: "The 5 Best Calgary Skyline Photo Spots"
 ---

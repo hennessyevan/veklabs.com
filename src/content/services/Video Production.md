@@ -1,7 +1,7 @@
 ---
 title: "Production"
 page_title: "Video Production Services Calgary"
-image: "images/Video-Production-Vek.png"
+image: "/src/images/Video-Production-Vek.png"
 order: 4
 speed: -8
 summary: "Calgary video production services that captivate viewers and invigorate brands. Learn more about how we provide premium videos and painless productions."

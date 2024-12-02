@@ -2,7 +2,7 @@
 author: "Andrew Peloso"
 category: "Production"
 date: 2020-05-21T00:00:00Z
-image: "images/Calgary_Video_Production_VL.jpg"
+image: "/src/images/Calgary_Video_Production_VL.jpg"
 keywords: "calgary video production, video production calgary, calgary video company"
 title: "10 Best Locations to Film and Photoshoot In Calgary"
 ---

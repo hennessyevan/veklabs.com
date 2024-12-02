@@ -1,7 +1,7 @@
 ---
 title: "VEKCAST: Finding Your Voice As A Videographer"
 date: 2020-06-30
-image: "images/Calgary_Video_Production_7.jpg"
+image: "/src/images/Calgary_Video_Production_7.jpg"
 category: "VEKCAST"
 author: "Andrew Peloso"
 keywords: "calgary video production, video production calgary, calgary video company"

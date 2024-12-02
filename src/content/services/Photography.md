@@ -3,8 +3,8 @@ title: "Photography"
 page_title: "Professional Photography Services Calgary"
 order: 1
 speed: 6
-image: "images/Event-Video.png"
-summary_image: "images/Event-Video.png"
+image: "/src/images/Event-Video.png"
+summary_image: "/src/images/Event-Video.png"
 summary: "Professional photography services for companies looking for corporate photography, live event coverage, press conference or for your next creative marketing project"
 ---
 

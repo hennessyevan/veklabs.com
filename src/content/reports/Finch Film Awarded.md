@@ -1,7 +1,7 @@
 ---
 title: "Finch Film Awarded Best Short - 2020 & Best Actress - 2020 at CAFF"
 date: 2020-11-18
-image: "images/Finch_Film_Award_CAFF.jpg"
+image: "/src/images/Finch_Film_Award_CAFF.jpg"
 category: "Film"
 author: "Andrew Peloso"
 keywords: "calgary video production, alberta film festival, caff film festival"

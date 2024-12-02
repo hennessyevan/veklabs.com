@@ -1,7 +1,7 @@
 ---
 title: "VEKCAST: What We Are Watching"
 date: 2020-04-28
-image: "images/Calgary_Video_Production_1.jpg"
+image: "/src/images/Calgary_Video_Production_1.jpg"
 category: "VEKCAST"
 author: "Andrew Peloso"
 keywords: "calgary video production, video production calgary, calgary video company"

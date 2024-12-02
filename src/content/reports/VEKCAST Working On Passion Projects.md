@@ -1,7 +1,7 @@
 ---
 title: "VEKCAST: Working On Passion Projects"
 date: 2020-07-29
-image: "images/Calgary_Video_Production_8.jpg"
+image: "/src/images/Calgary_Video_Production_8.jpg"
 category: "VEKCAST"
 author: "Andrew Peloso"
 keywords: "calgary video production, video production calgary, calgary video company"

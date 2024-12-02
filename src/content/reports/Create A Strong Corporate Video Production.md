@@ -2,7 +2,7 @@
 author: "Riley Patten"
 category: "Corporate Video"
 date: 2020-12-19T00:00:00Z
-image: "images/corporate_video_production_calgary_canada.png"
+image: "/src/images/corporate_video_production_calgary_canada.png"
 keywords: "calgary video production, video production calgary, calgary video company"
 title: "How To Create A Strong Corporate Video Production"
 ---

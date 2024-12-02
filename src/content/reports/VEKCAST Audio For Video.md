@@ -1,7 +1,7 @@
 ---
 title: "VEKCAST: How Sound Engineering Improves Video"
 date: 2020-04-28
-image: "images/Calgary_Video_Production_3.jpg"
+image: "/src/images/Calgary_Video_Production_3.jpg"
 category: "VEKCAST"
 author: "Riley Patten"
 keywords: "calgary video production, video production calgary, calgary video company"

@@ -1,7 +1,7 @@
 ---
 title: "Equipment Rentals"
 page_title: "Video and Photography Equipment Rentals in Calgary"
-image: "images/video-rentals.png"
+image: "/src/images/video-rentals.png"
 order: 7
 speed: -5
 summary: "When our equipment is not in use, Vek Labs offers pro-level camera gear and gaff accessories to fellow creatives in need of resources."

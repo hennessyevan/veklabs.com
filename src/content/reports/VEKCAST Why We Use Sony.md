@@ -1,7 +1,7 @@
 ---
 title: "VEKCAST: Why Do We Use Sony Cameras?"
 date: 2020-04-14
-image: "images/Calgary_Video_Production_2.jpg"
+image: "/src/images/Calgary_Video_Production_2.jpg"
 category: "VEKCAST"
 author: "Jon Cubid"
 keywords: "calgary video production, video production calgary, calgary video company"
