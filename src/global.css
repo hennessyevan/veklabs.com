@@ -30,3 +30,7 @@ h3,
   font-size: 1.15rem;
   font-weight: 500;
 }
+
+a {
+  @apply text-accent-400 no-underline underline-offset-2 hover:underline;
+}
