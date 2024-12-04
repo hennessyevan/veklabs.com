@@ -1,8 +1,8 @@
 ---
-import VideoCard from "./VideoCard.tsx"
 import { getCollection } from "astro:content"
-import getImageUrl from "../utils/getImageUrl"
 import { take } from "lodash-es"
+import VideoCard from "./VideoCard.tsx"
+import { Image } from "astro:assets"
 
 const videos = await getCollection("videos")
 ---
@@ -11,12 +11,10 @@ const videos = await getCollection("videos")
   class="xs:grid-cols-[repeat(auto-fit,_minmax(400px,1fr))] mx-auto grid w-container grid-cols-2 gap-2 sm:gap-5 lg:grid-cols-3"
 >
   {
-    take(videos, 6).map((video) => (
-      <VideoCard
-        {...video.data}
-        image={getImageUrl(video.data.image)}
-        client:idle
-      />
+    take(videos, 6).map(async (video) => (
+      <VideoCard {...video.data} client:idle>
+        <Image src={video.data.image} alt="" />
+      </VideoCard>
     ))
   }
 

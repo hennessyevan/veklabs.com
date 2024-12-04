@@ -3,12 +3,13 @@ import { getCollection } from "astro:content"
 import DefaultLayout from "../../../layouts/DefaultLayout.astro"
 import IndexPost from "../../../components/IndexPost.astro"
 import Pagination from "../../../components/Pagination.astro"
+import type { GetStaticPathsOptions } from "astro"
 
 const posts = (await getCollection("reports")).sort(
   (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
 )
 
-export async function getStaticPaths({ paginate }) {
+export async function getStaticPaths({ paginate }: GetStaticPathsOptions) {
   const posts = (await getCollection("reports")).sort(
     (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
   )

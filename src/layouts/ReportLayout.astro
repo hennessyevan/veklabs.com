@@ -2,10 +2,9 @@
 import type { CollectionEntry } from "astro:content"
 import FormattedDate from "../components/FormattedDate.astro"
 import CategoryBadge from "../components/CategoryBadge.astro"
-import getImageUrl from "../utils/getImageUrl"
 import { Image } from "astro:assets"
 
-type Props = CollectionEntry<"report">["data"] & {
+type Props = CollectionEntry<"reports">["data"] & {
   id: string
   frontmatter: Record<string, any>
 }
@@ -56,7 +55,7 @@ const { title, date, category, image, id, frontmatter } = Astro.props
             All Posts
           </a>
           <Image
-            transition:name={`image-${image}`}
+            transition:name={`image-${title}`}
             src={image}
             alt=""
             class:list={[

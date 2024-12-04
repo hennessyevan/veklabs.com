@@ -2,7 +2,7 @@
 author: "Andrew Peloso"
 category: "press"
 date: 2021-03-25T21:13:35Z
-image: "/images/youtube-marketing-2021.jpg"
+image: "/src/images/youtube-marketing-2021.jpg"
 keywords: "youtube marketing"
 title: "YouTube Marketing in 2021"
 ---
@@ -91,8 +91,6 @@ Why did Jake Fellman’s channel do so well with Shorts you might say?
 He created content that worked perfectly within the beta. His channel is focused on the game “Among Us” and creates animated shorts to depict different pop culture topics taken from the community.
 
 As there is a low-supply for this type of content and high demand for it, his videos were quickly put on the Short Shelf, and it started a tremendous effect that took his channel from nothing to getting more views per month than Pewdiepie (the second-largest channel on YouTube).
-
-![](https://lh4.googleusercontent.com/dzMHPBjdX1wjAIHTfC7vM76XIK73Rrz2IhBlGKOyWTYBHCK4r45Bj5Cd8sh44C_0OPWbyPHPuats6ydeW5qd8AmHOHAxeZUbnYFTur4acyXfKR7nBmRCLpd3iGDaV0awCSoIxQqe: 602x165)
 
 ### How do I make YouTube Shorts?
 

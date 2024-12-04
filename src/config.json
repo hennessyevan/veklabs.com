@@ -28,26 +28,17 @@
       {
         "identifier": "features",
         "name": "Features",
-        "url": "/features/",
-        "weight": 1
+        "url": "/features/"
       },
       {
         "identifier": "services",
         "name": "Services",
-        "url": "/services/",
-        "weight": 2
+        "url": "/services/"
       },
       {
         "identifier": "reports",
         "name": "Reports",
-        "url": "/reports/page/1",
-        "weight": 4
-      },
-      {
-        "identifier": "testimonials",
-        "name": "Testimonials",
-        "url": "/testimonials/",
-        "weight": 5
+        "url": "/reports/page/1"
       }
     ]
   },

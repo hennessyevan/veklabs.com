@@ -12,7 +12,7 @@ export default {
     }),
     extend: {
       colors: ({ colors }) => ({
-        background: colors.neutral[900],
+        background: colors.neutral[950],
         foreground: colors.neutral[100],
         accent: colors.blue,
       }),

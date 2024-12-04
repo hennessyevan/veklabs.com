@@ -1,6 +1,7 @@
 ---
+import { Image } from "astro:assets"
 import { baseURL, menu, title } from "../config.json"
-import logoFullSVG from "../images/logo-full.svg?url"
+import logoFullSVG from "../images/logo-full.svg"
 
 import HeaderLink from "./HeaderLink.astro"
 
@@ -15,7 +16,7 @@ const nameForCurrentPath =
   <div class="mx-auto w-container">
     <div class="relative hidden h-8 items-center justify-between md:flex">
       <a href={baseURL}>
-        <img
+        <Image
           class="w-full max-w-24 justify-self-start md:max-w-28"
           src={logoFullSVG}
           alt={title}
@@ -26,13 +27,9 @@ const nameForCurrentPath =
       >
         {Astro.url.pathname !== "/" && <HeaderLink href="/">Home</HeaderLink>}
         {
-          menu.main
-            .filter((menuItem) =>
-              ["Reports", "Services"].includes(menuItem.name),
-            )
-            .map((menuItem) => (
-              <HeaderLink href={menuItem.url}>{menuItem.name}</HeaderLink>
-            ))
+          menu.main.map((menuItem) => (
+            <HeaderLink href={menuItem.url}>{menuItem.name}</HeaderLink>
+          ))
         }
       </div>
       <HeaderLink href="/contact">Contact</HeaderLink>

@@ -1,9 +1,8 @@
 ---
 import PaginationButton from "./PaginationButton.astro"
 
-const { length, currentUrl, currentPage, firstUrl, prevUrl, nextUrl, lastUrl } =
-  Astro.props
-const paginationList = Array.from({ length: `${length}` }, (_, i) => i + 1)
+const { length, currentPage, prevUrl, nextUrl } = Astro.props
+const paginationList = Array.from({ length }, (_, i) => i + 1)
 ---
 
 <ul
@@ -23,7 +22,7 @@ const paginationList = Array.from({ length: `${length}` }, (_, i) => i + 1)
     ))
   }
 
-  <PaginationButton disabled={currentPage === length} href={prevUrl}>
+  <PaginationButton disabled={currentPage === length} href={nextUrl}>
     <svg viewBox="0 0 24 24" class="m-0 size-2">
       <use href="/assets/arrow-right.svg#icon"></use>
     </svg>

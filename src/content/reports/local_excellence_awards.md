@@ -2,7 +2,7 @@
 author: "Andrew Peloso"
 category: "blog"
 date: 2021-04-13T21:13:35Z
-image: "/images/Calgary_Video_Production_VL_UPCITY.jpg"
+image: "/src/images/Calgary_Video_Production_VL_UPCITY.jpg"
 keywords: "upcity calgary"
 title: "Awarded Local Excellence for 2021 by Upcity"
 ---

@@ -1,21 +1,20 @@
 import { defineCollection, reference, z } from "astro:content"
 
-const report = defineCollection({
+const reports = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
       title: z.string(),
       category: z.string().optional(),
       author: z.string(),
-      keywords: z.array(z.string()).optional(),
-      // Transform string to Date object
+      keywords: z.string().optional(),
       date: z.coerce.date(),
       updatedDate: z.coerce.date().optional(),
-      image: image().optional(),
+      image: image(),
     }),
 })
 
-const service = defineCollection({
+const services = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
@@ -28,14 +27,14 @@ const service = defineCollection({
     }),
 })
 
-const offering = defineCollection({
+const offerings = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
       title: z.string(),
       image: image(),
       description: z.string(),
-      rel: reference("service"),
+      rel: reference("services"),
     }),
 })
 
@@ -59,7 +58,7 @@ const team = defineCollection({
     }),
 })
 
-const video = defineCollection({
+const videos = defineCollection({
   type: "content",
   schema: ({ image }) =>
     z.object({
@@ -71,4 +70,11 @@ const video = defineCollection({
       type: z.string(),
     }),
 })
-export const collections = { report, video, service, offering, team }
+
+export const collections = {
+  reports,
+  videos,
+  services,
+  offerings,
+  team,
+}

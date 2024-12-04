@@ -2,12 +2,12 @@
 import type { CollectionEntry } from "astro:content"
 import FormattedDate from "./FormattedDate.astro"
 import CategoryBadge from "./CategoryBadge.astro"
-import getImageUrl from "../utils/getImageUrl"
+import { Picture } from "astro:assets"
 
 type Props = CollectionEntry<"reports"> & { featured?: boolean }
 
-const { featured = false, slug, render, data = {}, id, body } = Astro.props
-const { remarkPluginFrontmatter, Content } = await render()
+const { featured = false, slug, render, data, id } = Astro.props
+const { remarkPluginFrontmatter } = await render()
 ---
 
 <a
@@ -30,21 +30,18 @@ const { remarkPluginFrontmatter, Content } = await render()
       ]}
     >
       {data.category && <CategoryBadge id={id} category={data.category} />}
-      <img
-        transition:name={`image-${data.image}`}
-        src={getImageUrl(data.image)}
-        alt=""
-        class:list={[
-          "z-10 aspect-video w-full rounded-lg border border-gray-800 object-cover shadow-lg transition-all duration-200 group-hover:scale-[1.0125] group-hover:shadow-2xl md:h-60",
-          { ["md:h-80"]: featured },
-        ]}
-      />
       {
-        /* {{ if hasPrefix .Params.image "http"}}
-              <img src="{{ .Params.image }}" alt="">
-              {{ else }}
-              {{ partial "site/img" (dict "image" .Params.image "width" 458 "height" 240) }}
-              {{ end }} */
+        data.image.src && (
+          <Picture
+            transition:name={`image-${data.title}`}
+            src={data.image}
+            alt=""
+            class:list={[
+              "z-10 aspect-video w-full rounded-lg border border-gray-800 object-cover shadow-lg transition-all duration-200 group-hover:scale-[1.0125] group-hover:shadow-2xl md:h-60",
+              { ["md:h-80"]: featured },
+            ]}
+          />
+        )
       }
     </div>
     <div

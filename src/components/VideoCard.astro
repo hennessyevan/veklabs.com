@@ -4,7 +4,7 @@ import { kebabCase } from "lodash-es"
 import { ArrowRight, Loader2 } from "lucide-astro"
 
 type Props = CollectionEntry<"video">["data"]
-const { title, previewURL, type, image, ...videoData } = Astro.props
+const { title, previewURL, type, image } = Astro.props
 const id = kebabCase(title)
 ---
 
@@ -31,11 +31,11 @@ const id = kebabCase(title)
     </span>
   </span>
   <span
-    class="spring-bounce-30 spring-duration-700 absolute bottom-0 left-6 z-10 inline-flex items-center gap-2 text-xs uppercase tracking-widest opacity-0 delay-200 group-hover:bottom-6 group-hover:opacity-50"
+    class="absolute bottom-0 left-6 z-10 inline-flex items-center gap-2 text-xs uppercase tracking-widest opacity-0 delay-200 spring-bounce-30 spring-duration-700 group-hover:bottom-6 group-hover:opacity-50"
   >
     {
       type && (
-        <span class="spring-bounce-30 spring-duration-700 hidden translate-x-0 uppercase tracking-widest opacity-100 delay-300 allow-discrete group-hover:block starting:translate-x-4 starting:opacity-0">
+        <span class="hidden translate-x-0 uppercase tracking-widest opacity-100 delay-300 spring-bounce-30 spring-duration-700 allow-discrete group-hover:block starting:translate-x-4 starting:opacity-0">
           {type}
           {" | "}
         </span>
@@ -59,7 +59,7 @@ const id = kebabCase(title)
     ontimeupdate="if (this.currentTime > 10) { this.currentTime = 0 }"
     onerror="e=>console.error(e)"></video>
 
-  <img
+  <Image
     class:list={[
       "absolute inset-0 aspect-video size-full rounded-xl object-cover duration-300",
       "opacity-100 blur-0 allow-discrete group-hover:hidden starting:opacity-0 starting:blur-sm",

@@ -15,9 +15,9 @@ import {
   type Variants,
 } from "framer-motion"
 import { ArrowRight, Loader2 } from "lucide-react"
-import { forwardRef, useRef, useState } from "react"
+import { forwardRef, useRef, useState, type PropsWithChildren } from "react"
 
-type VideoData = CollectionEntry<"video">["data"]
+type VideoData = PropsWithChildren<CollectionEntry<"videos">["data"]>
 
 const SPEED_MULTIPLIER = 1
 const POPUP_DURATION = 0.75 / SPEED_MULTIPLIER
@@ -191,9 +191,9 @@ export default function VideoCard(videoData: VideoData) {
 
           <AnimatePresence initial={false}>
             {(!hovered || !loaded) && (
-              <motion.img
+              <motion.div
                 className={cx(
-                  "absolute inset-0 aspect-video size-full rounded-xl object-cover duration-300",
+                  "absolute inset-0 aspect-video size-full overflow-hidden rounded-xl object-cover duration-300",
                 )}
                 initial={{
                   opacity: 0,
@@ -205,10 +205,9 @@ export default function VideoCard(videoData: VideoData) {
                 }}
                 exit={{ opacity: 0, filter: "blur(5px)" }}
                 transition={{ duration: HOVER_DURATION / 2 }}
-                src={image}
-                loading="lazy"
-                alt=""
-              />
+              >
+                {videoData.children}
+              </motion.div>
             )}
           </AnimatePresence>
         </motion.div>
