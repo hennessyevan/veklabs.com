@@ -49,13 +49,16 @@ export default function VideoCard({
           onMouseEnter={() => !popupWasJustShown && setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           onClick={() => setPopupIsShown(true)}
-          animate={
+          whileHover={
             !popupWasJustShown && !popupIsShown && hovered ? "hover" : undefined
           }
+          animate="animate"
+          initial="initial"
+          exit="exit"
           variants={containerVariants}
           layoutId={`video-${title}`}
           layout
-          transition={{ duration: POPUP_DURATION, type: "spring" }}
+          transition={{ layout: { duration: POPUP_DURATION, type: "spring" } }}
         >
           <motion.span
             className="pointer-events-none absolute isolate z-10 flex items-center text-xs shadow-neutral-950 duration-200 text-shadow-lg [--bottom:16px] [--hover-bottom:14px] [--hover-left:14px] [--left:14px] sm:text-xl sm:font-semibold lg:[--bottom:36px] lg:[--hover-bottom:24px] lg:[--hover-left:24px] lg:[--left:24px]"

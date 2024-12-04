@@ -11,6 +11,13 @@ export const POPUP_DURATION = 0.75 / SPEED_MULTIPLIER
 export const HOVER_DURATION = 0.75 / SPEED_MULTIPLIER
 
 export const containerVariants: Variants = {
+  initial: { opacity: 0, scale: 0.5, transition: { duration: HOVER_DURATION } },
+  animate: { scale: 1, opacity: 1, transition: { duration: HOVER_DURATION } },
+  exit: {
+    opacity: 0,
+    scale: 0.5,
+    transition: { duration: HOVER_DURATION / 2 },
+  },
   hover: {
     y: -5,
     boxShadow: "0 10px 25px black",

@@ -1,0 +1,20 @@
+---
+import { getCollection } from "astro:content"
+import DefaultLayout from "../layouts/DefaultLayout.astro"
+import { take } from "lodash-es"
+import VideoCard from "../components/VideoCard.tsx"
+import { Image } from "astro:assets"
+import { PortfolioGrid } from "../components/PortfolioGrid.tsx"
+
+const videos = await getCollection("videos")
+---
+
+<DefaultLayout title="Portfolio">
+  <section class="mx-auto w-container py-14">
+    <div class="flex items-center gap-6 px-4 pb-4">
+      <h2 class="text-3xl">Portfolio</h2>
+    </div>
+
+    <PortfolioGrid videos={videos} client:load />
+  </section>
+</DefaultLayout>

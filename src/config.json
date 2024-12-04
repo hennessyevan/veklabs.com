@@ -31,6 +31,11 @@
         "url": "/features/"
       },
       {
+        "identifier": "portfolio",
+        "name": "Portfolio",
+        "url": "/portfolio/"
+      },
+      {
         "identifier": "services",
         "name": "Services",
         "url": "/services/"
