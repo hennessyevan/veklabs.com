@@ -41,6 +41,11 @@
         "url": "/services/"
       },
       {
+        "identifier": "clients",
+        "name": "Clients",
+        "url": "/clients/"
+      },
+      {
         "identifier": "reports",
         "name": "Reports",
         "url": "/reports/page/1"

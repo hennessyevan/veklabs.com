@@ -34,7 +34,7 @@ const offerings = await getCollection("offerings")
 
                 <a
                   class="ml-auto mt-auto rounded-md px-4 py-2 text-sm shadow-sm shadow-accent-600 ring-1 ring-accent-500 duration-200 hover:bg-accent-400/15"
-                  href={offering.data.rel.slug}
+                  href={`/services/${offering.data.rel.slug}`}
                 >
                   Learn More
                 </a>
