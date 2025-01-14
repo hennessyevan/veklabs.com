@@ -1,5 +1,5 @@
 import type { CollectionEntry } from "astro:content"
-import type { Variants } from "framer-motion"
+import type { Variants } from "motion/react"
 import type { PropsWithChildren } from "react"
 
 export type VideoData = PropsWithChildren<

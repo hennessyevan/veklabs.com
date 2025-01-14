@@ -5,7 +5,7 @@ import {
   LayoutGroup,
   motion,
   MotionConfig,
-} from "framer-motion"
+} from "motion/react"
 import { ArrowRight, Loader2 } from "lucide-react"
 import { useRef, useState } from "react"
 import {

@@ -1,7 +1,7 @@
 import NumberFlow from "@number-flow/react"
 import config from "../config.json"
 import { useEffect, useRef, useState } from "react"
-import { useInView, motion } from "framer-motion"
+import { useInView, motion } from "motion/react"
 
 const {
   PROJECTS_FILMED,

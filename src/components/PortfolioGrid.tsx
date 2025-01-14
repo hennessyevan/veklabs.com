@@ -2,7 +2,7 @@ import type { CollectionEntry } from "astro:content"
 import VideoCard from "./VideoCard"
 import { useMemo, useState } from "react"
 import classNames from "classnames"
-import { AnimatePresence } from "framer-motion"
+import { AnimatePresence } from "motion/react"
 
 export interface PortfolioGridProps {
   videos: CollectionEntry<"videos">[]

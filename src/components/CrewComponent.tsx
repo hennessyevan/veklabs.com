@@ -1,23 +1,13 @@
-import { Image } from "astro:assets"
-import { AnimatePresence, LayoutGroup, motion } from "framer-motion"
-import type { CollectionEntry } from "astro:content"
-import { kebabCase } from "lodash-es"
-import Dialog from "./Dialog.astro"
-import {
-  useEffect,
-  useRef,
-  useState,
-  type ComponentProps,
-  type PropsWithChildren,
-} from "react"
-import classNames from "classnames"
 import {
   FloatingOverlay,
-  FloatingPortal,
   useDismiss,
   useFloating,
   useInteractions,
 } from "@floating-ui/react"
+import type { CollectionEntry } from "astro:content"
+import { AnimatePresence, motion, MotionConfig } from "motion/react"
+import { kebabCase } from "lodash-es"
+import { useState, type ComponentProps } from "react"
 
 type Props = CollectionEntry<"team">
 
@@ -56,7 +46,7 @@ export default function CrewComponent(member: Props) {
   const { getFloatingProps } = useInteractions([dismiss])
 
   return (
-    <>
+    <MotionConfig transition={{ type: "spring", bounce: 0.2 }}>
       <motion.div
         layoutId={id + "container"}
         className="group relative flex min-w-36 snap-center flex-col items-center gap-6 py-0.5 md:snap-start md:py-10"
@@ -142,6 +132,6 @@ export default function CrewComponent(member: Props) {
           </MotionOverlay>
         ) : null}
       </AnimatePresence>
-    </>
+    </MotionConfig>
   )
 }

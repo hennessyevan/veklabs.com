@@ -2,6 +2,7 @@
 import { Image } from "astro:assets"
 import { baseURL, menu, title } from "../config.json"
 import logoFullSVG from "../images/logo-full.svg"
+import { Menu } from "lucide-astro"
 
 import HeaderLink from "./HeaderLink.astro"
 
@@ -33,6 +34,42 @@ const nameForCurrentPath =
         }
       </div>
       <HeaderLink href="/contact">Contact</HeaderLink>
+    </div>
+
+    <div class="relative flex h-8 items-center justify-between md:hidden">
+      <a href={baseURL}>
+        <Image
+          class="w-full max-w-24 justify-self-start"
+          src={logoFullSVG}
+          alt={title}
+        />
+      </a>
+      <div
+        id="mobilemenu"
+        popover
+        class="absolute left-0 top-0 size-full bg-background/30 p-4 backdrop-blur-lg"
+      >
+        <button
+          popovertarget="mobilemenu"
+          class="absolute right-3 top-4 text-foreground"
+        >
+          <Menu size="24" />
+        </button>
+
+        <div class="flex flex-col gap-4 pt-8">
+          {Astro.url.pathname !== "/" && <HeaderLink href="/">Home</HeaderLink>}
+          {
+            menu.main.map((menuItem) => (
+              <HeaderLink href={menuItem.url}>{menuItem.name}</HeaderLink>
+            ))
+          }
+          <HeaderLink href="/contact">Contact</HeaderLink>
+        </div>
+      </div>
+
+      <button popovertarget="mobilemenu">
+        <Menu size="24" />
+      </button>
     </div>
   </div>
 </header>
