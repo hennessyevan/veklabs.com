@@ -59,7 +59,14 @@ export function VideoInformationPopup({
         {...getFloatingProps()}
       >
         <motion.div className="w-full">
-          <motion.div className="relative mx-auto w-container max-w-7xl p-10">
+          <motion.div className="relative mx-auto w-container max-w-7xl md:p-10">
+            <motion.img
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 0.15 }}
+              transition={{ delay: POPUP_DURATION, duration: POPUP_DURATION }}
+              src={image.src}
+              className="absolute scale-150 blur-2xl brightness-150 saturate-150 md:-m-5"
+            />
             <motion.video
               layoutId={`video-${title}`}
               controls
@@ -80,7 +87,7 @@ export function VideoInformationPopup({
                   )
                 }
               }}
-              className="absolute aspect-video w-full rounded-xl object-cover shadow-lg shadow-neutral-950 ring-2 ring-white/5"
+              className="absolute aspect-video rounded-xl object-cover shadow-lg shadow-neutral-950 ring-2 ring-white/5 md:w-[calc(100%-5rem)]"
               src={videoURL}
               poster={image.src}
               transition={{
@@ -151,6 +158,7 @@ export function VideoInformationPopup({
                       Object.entries(meta as Record<string, string>).map(
                         ([key, value]) => (
                           <motion.div
+                            key={key}
                             className="flex flex-col"
                             variants={{
                               hidden: { opacity: 0 },

@@ -9,6 +9,7 @@ import react from "@astrojs/react"
 // https://astro.build/config
 export default defineConfig({
   prefetch: true,
+  experimental: { clientPrerender: true },
   redirects: {
     "/reports": "/reports/page/1",
     "/reports/page": "/reports/page/1",

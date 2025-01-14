@@ -41,18 +41,21 @@ export function PortfolioGrid({ videos }: PortfolioGridProps) {
   >({})
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex w-full flex-col gap-8">
       {Object.entries(filters).map(([key, values]) => (
-        <div key={key} className="flex flex-col gap-2">
+        <div
+          key={key}
+          className="flex w-full flex-col gap-2 overflow-x-auto px-4 py-1 no-scrollbar"
+        >
           <h4 className="text-xs uppercase text-accent-300">{key}</h4>
-          <ul className="flex gap-2">
+          <ul className="flex w-full gap-2">
             {values.map((value) => (
               <li key={value}>
                 <button
                   data-active={filtersState[key] === value}
                   className={classNames([
                     getCategoryColor(value),
-                    "rounded-full px-3 py-1 text-xs font-medium uppercase duration-200",
+                    "whitespace-nowrap rounded-full px-3 py-1 text-xs font-medium uppercase duration-200",
                   ])}
                   onClick={() => {
                     setFiltersState((prev) => {
@@ -73,8 +76,8 @@ export function PortfolioGrid({ videos }: PortfolioGridProps) {
         </div>
       ))}
 
-      <div className="xs:grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] grid grid-cols-2 gap-2 sm:gap-5 lg:grid-cols-5">
-        <AnimatePresence mode="popLayout" initial={false}>
+      <div className="grid grid-cols-[repeat(auto-fit,_minmax(300px,1fr))] gap-2 px-4 sm:gap-5 xl:grid-cols-4">
+        <AnimatePresence initial={false}>
           {videos
             .filter((video) => {
               if (Object.keys(filtersState).length === 0) return true
@@ -84,7 +87,7 @@ export function PortfolioGrid({ videos }: PortfolioGridProps) {
               )
             })
             .map((video) => (
-              <VideoCard key={video.id} {...video.data}>
+              <VideoCard key={video.id} presenceAnimations {...video.data}>
                 <img src={video.data.image.src} alt="" />
               </VideoCard>
             ))}

@@ -11,15 +11,23 @@ export const POPUP_DURATION = 0.75 / SPEED_MULTIPLIER
 export const HOVER_DURATION = 0.75 / SPEED_MULTIPLIER
 
 export const containerVariants: Variants = {
-  initial: { opacity: 0, scale: 0.5, transition: { duration: HOVER_DURATION } },
-  animate: { scale: 1, opacity: 1, transition: { duration: HOVER_DURATION } },
-  exit: {
+  initial: {
     opacity: 0,
-    scale: 0.5,
-    transition: { duration: HOVER_DURATION / 2 },
+    transition: { duration: HOVER_DURATION },
   },
+  animate: ({ presenceAnimations = false }) => ({
+    opacity: 1,
+    transition: {
+      visualDuration: presenceAnimations ? 0.1 : HOVER_DURATION,
+    },
+  }),
+  exit: ({ presenceAnimations = false } = {}) => ({
+    opacity: 0,
+    transition: {
+      duration: presenceAnimations ? 0.1 : HOVER_DURATION / 2,
+    },
+  }),
   hover: {
-    y: -5,
     boxShadow: "0 10px 25px black",
   },
 }

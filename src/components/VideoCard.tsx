@@ -21,8 +21,9 @@ import classNames from "classnames"
 
 export default function VideoCard({
   className,
+  presenceAnimations,
   ...videoData
-}: VideoData & { className?: string }) {
+}: VideoData & { className?: string; presenceAnimations?: boolean }) {
   const { title, previewURL, category, type = category } = videoData
   const video = useRef<HTMLVideoElement>(null)
   const [hovered, setHovered] = useState(false)
@@ -46,6 +47,7 @@ export default function VideoCard({
                 ? 1
                 : undefined,
           }}
+          custom={{ presenceAnimations }}
           onMouseEnter={() => !popupWasJustShown && setHovered(true)}
           onMouseLeave={() => setHovered(false)}
           onClick={() => setPopupIsShown(true)}
@@ -58,10 +60,16 @@ export default function VideoCard({
           variants={containerVariants}
           layoutId={`video-${title}`}
           layout
-          transition={{ layout: { duration: POPUP_DURATION, type: "spring" } }}
+          transition={{
+            layout: {
+              duration: POPUP_DURATION,
+              type: "spring",
+              bounce: 0.2,
+            },
+          }}
         >
           <motion.span
-            className="pointer-events-none absolute isolate z-10 flex items-center text-xs shadow-neutral-950 duration-200 text-shadow-lg [--bottom:16px] [--hover-bottom:14px] [--hover-left:14px] [--left:14px] sm:text-xl sm:font-semibold lg:[--bottom:36px] lg:[--hover-bottom:24px] lg:[--hover-left:24px] lg:[--left:24px]"
+            className="pointer-events-none absolute isolate z-10 line-clamp-1 flex max-w-[80%] items-center text-ellipsis whitespace-nowrap text-xs duration-200 text-shadow-lg [--bottom:16px] [--hover-bottom:14px] [--hover-left:14px] [--left:14px] sm:text-xl sm:font-semibold lg:[--bottom:36px] lg:[--hover-bottom:24px] lg:[--hover-left:24px] lg:[--left:24px]"
             variants={titleVariants}
             initial="initial"
             animate={hovered && !popupWasJustShown ? "hover" : "initial"}
@@ -75,7 +83,7 @@ export default function VideoCard({
           >
             {title}
             <AnimatePresence>
-              {!loaded && hovered && !isLowPowerMode && (
+              {!loaded && hovered && !isLowPowerMode && !presenceAnimations && (
                 <motion.span
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
@@ -117,7 +125,7 @@ export default function VideoCard({
           </AnimatePresence>
 
           <AnimatePresence>
-            {hovered && !isLowPowerMode && (
+            {hovered && !isLowPowerMode && !presenceAnimations && (
               <motion.video
                 controls={false}
                 onUpdate={() => {
