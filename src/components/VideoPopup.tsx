@@ -8,11 +8,14 @@ import { useSessionStorage } from "@uidotdev/usehooks"
 import { motion } from "motion/react"
 import { type Ref } from "react"
 import { POPUP_DURATION, type VideoData } from "./videoConstants"
+import { useHistory } from "../hooks/useHistory"
+import { snakeCase } from "lodash-es"
 
 type VideoInformationPopupProps = VideoData & {
   isOpen: boolean
   onOpenChange: (isOpen: boolean) => void
   ref: Ref<HTMLDivElement>
+  nextVideo?: VideoData
 }
 
 export function VideoInformationPopup({
@@ -22,6 +25,8 @@ export function VideoInformationPopup({
   title,
   body,
   type,
+  nextVideo,
+  prevVideo,
   onOpenChange,
   ref,
 }: VideoInformationPopupProps) {
@@ -30,6 +35,8 @@ export function VideoInformationPopup({
     open: true,
     onOpenChange,
   })
+
+  const history = useHistory()
 
   const dismiss = useDismiss(context)
 
@@ -58,7 +65,8 @@ export function VideoInformationPopup({
         ref={refs.setFloating}
         {...getFloatingProps()}
       >
-        <motion.div className="w-full">
+        <motion.div className="grid w-full grid-cols-[1fr_auto_1fr]">
+          <div />
           <motion.div className="relative mx-auto w-container max-w-7xl md:p-10">
             <motion.img
               initial={{ opacity: 0 }}
@@ -176,6 +184,44 @@ export function VideoInformationPopup({
                 ) : null}
               </div>
             </motion.div>
+          </motion.div>
+
+          <motion.div>
+            {nextVideo && (
+              <motion.div
+                onClick={() => {
+                  const nextVideoSlug = snakeCase(nextVideo.title)
+                  history.replace({
+                    search: new URLSearchParams([
+                      ["video", nextVideoSlug],
+                    ]).toString(),
+                  })
+                }}
+                className="absolute aspect-video w-container max-w-5xl p-10"
+                initial={{ x: "100%", opacity: 0 }}
+                animate={{ x: 0, opacity: 1 }}
+                transition={{
+                  duration: POPUP_DURATION * 2,
+                  type: "spring",
+                  bounce: 0.2,
+                  delay: POPUP_DURATION,
+                }}
+              >
+                <motion.img
+                  src={nextVideo.image.src}
+                  className="origin-top-left cursor-pointer rounded-xl object-cover opacity-50 shadow-lg"
+                  whileHover={{ opacity: 0.7, scale: 1.015 }}
+                />
+                <div className="pointer-events-none absolute bottom-1/4 left-0 flex translate-y-full rotate-90 flex-col">
+                  <span className="text-lg font-bold tracking-[0.2em]">
+                    NEXT
+                  </span>
+                  <span className="text-xl font-semibold text-white shadow-black/50 text-shadow-lg">
+                    {nextVideo.title}
+                  </span>
+                </div>
+              </motion.div>
+            )}
           </motion.div>
         </motion.div>
       </motion.div>

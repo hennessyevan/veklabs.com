@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"name": "veklabs-hugo",
+		"path": "../../../veklabs-hugo/veklabs.com"
+	},
+	{
+		"path": "../.."
+	}
+],
+  "settings": {
+    "files.associations": {
+      "*.css": "postcss"
+    }
+  }
+}

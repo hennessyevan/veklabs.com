@@ -52,14 +52,16 @@ export function PortfolioGrid({ videos }: PortfolioGridProps) {
             {values.map((value) => (
               <li key={value}>
                 <button
-                  data-active={filtersState[key] === value}
+                  data-active={
+                    filtersState[key as keyof typeof filtersState] === value
+                  }
                   className={classNames([
                     getCategoryColor(value),
                     "whitespace-nowrap rounded-full px-3 py-1 text-xs font-medium uppercase duration-200",
                   ])}
                   onClick={() => {
                     setFiltersState((prev) => {
-                      if (prev[key] === value) {
+                      if (prev[key as keyof typeof filtersState] === value) {
                         const { [key]: _, ...rest } = prev
                         return rest
                       }

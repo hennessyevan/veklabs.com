@@ -1,6 +1,6 @@
 {
   "ISO8601": "2006-01-02T15:04:05JST",
-  "baseURL": "/",
+  "baseURL": "https://veklabs.com",
   "languageCode": "en-ca",
   "title": "Vek Labs",
   "CLIENT_SUB_TITLE": "Some of the clients we have had the privilege of creating with.",

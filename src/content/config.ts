@@ -48,13 +48,15 @@ const team = defineCollection({
       title: z.string(),
       order: z.number().optional(),
 
-      channel: z.array(
-        z.object({
-          name: z.string(),
-          url: z.string().url(),
-          icon: z.string(),
-        }),
-      ),
+      channel: z
+        .array(
+          z.object({
+            name: z.string(),
+            url: z.string().url(),
+            icon: z.string(),
+          }),
+        )
+        .optional(),
     }),
 })
 

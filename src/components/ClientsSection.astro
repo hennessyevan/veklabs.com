@@ -2,9 +2,9 @@
 import { Image } from "astro:assets"
 import config from "../config.json"
 
-const logos = await Astro.glob("/src/images/logos/*").then((files) =>
-  files.map((file) => file.default),
-)
+const logos = Object.values(
+  import.meta.glob("/src/images/logos/*", { eager: true }),
+).map((file) => file.default)
 ---
 
 <section class="py-8 text-center md:pb-20 md:pt-12">

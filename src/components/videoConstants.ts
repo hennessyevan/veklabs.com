@@ -15,18 +15,18 @@ export const containerVariants: Variants = {
     opacity: 0,
     transition: { duration: HOVER_DURATION },
   },
-  animate: ({ presenceAnimations = false }) => ({
+  animate: {
     opacity: 1,
     transition: {
-      visualDuration: presenceAnimations ? 0.1 : HOVER_DURATION,
+      visualDuration: HOVER_DURATION,
     },
-  }),
-  exit: ({ presenceAnimations = false } = {}) => ({
+  },
+  exit: {
     opacity: 0,
     transition: {
-      duration: presenceAnimations ? 0.1 : HOVER_DURATION / 2,
+      duration: HOVER_DURATION / 2,
     },
-  }),
+  },
   hover: {
     boxShadow: "0 10px 25px black",
   },

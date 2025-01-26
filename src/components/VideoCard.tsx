@@ -1,13 +1,15 @@
 import { FloatingPortal } from "@floating-ui/react"
-import cx from "classnames"
+import { default as classNames, default as cx } from "classnames"
+import { snakeCase } from "lodash-es"
+import { ArrowRight, Loader2 } from "lucide-react"
 import {
   AnimatePresence,
   LayoutGroup,
   motion,
   MotionConfig,
 } from "motion/react"
-import { ArrowRight, Loader2 } from "lucide-react"
-import { useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
+import { useHistory } from "../hooks/useHistory"
 import {
   containerVariants,
   HOVER_DURATION,
@@ -17,20 +19,39 @@ import {
   type VideoData,
 } from "./videoConstants"
 import { VideoInformationPopup } from "./VideoPopup"
-import classNames from "classnames"
+
+export type VideoCardProps = VideoData & {
+  className?: string
+  presenceAnimations?: boolean
+  nextVideo?: VideoData
+  prevVideo?: VideoData
+}
 
 export default function VideoCard({
   className,
   presenceAnimations,
   ...videoData
-}: VideoData & { className?: string; presenceAnimations?: boolean }) {
+}: VideoCardProps) {
   const { title, previewURL, category, type = category } = videoData
+  const slug = snakeCase(title)
   const video = useRef<HTMLVideoElement>(null)
   const [hovered, setHovered] = useState(false)
-  const [popupIsShown, setPopupIsShown] = useState(false)
   const [loaded, setLoaded] = useState(false)
   const [isLowPowerMode, setIsLowPowerMode] = useState(false)
   const [popupWasJustShown, setPopupWasJustShown] = useState(false)
+  const [popupIsShown, setPopupIsShown] = useState(false)
+  const history = useHistory()
+
+  useEffect(() => {
+    history?.listen(({ location }) => {
+      const searchParams = new URLSearchParams(location.search)
+      if (searchParams.get("video") === slug) {
+        setPopupIsShown(true)
+      } else {
+        setPopupIsShown(false)
+      }
+    })
+  }, [history])
 
   return (
     <MotionConfig transition={{ type: "spring" }}>
@@ -50,7 +71,11 @@ export default function VideoCard({
           custom={{ presenceAnimations }}
           onMouseEnter={() => !popupWasJustShown && setHovered(true)}
           onMouseLeave={() => setHovered(false)}
-          onClick={() => setPopupIsShown(true)}
+          onClick={() => {
+            history.replace({
+              search: new URLSearchParams([["video", slug]]).toString(),
+            })
+          }}
           whileHover={
             !popupWasJustShown && !popupIsShown && hovered ? "hover" : undefined
           }
@@ -195,7 +220,8 @@ export default function VideoCard({
                   if (!isShown) {
                     setPopupWasJustShown(true)
                   }
-                  setPopupIsShown(isShown)
+
+                  history.replace({ search: "" })
                 }}
                 {...videoData}
               />
