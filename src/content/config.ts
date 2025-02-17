@@ -1,18 +1,53 @@
 import { defineCollection, reference, z } from "astro:content"
+import {
+  pocketbaseLoader,
+  type PocketBaseLoaderOptions,
+} from "astro-loader-pocketbase"
+
+import {
+  POCKETBASE_URL,
+  POCKETBASE_USER,
+  POCKETBASE_PASS,
+} from "astro:env/server"
+
+const createPocketbaseLoader = (
+  collectionName: string,
+  options?: Partial<PocketBaseLoaderOptions>,
+) =>
+  pocketbaseLoader({
+    superuserCredentials: {
+      email: POCKETBASE_USER,
+      password: POCKETBASE_PASS,
+    },
+    improveTypes: true,
+    url: POCKETBASE_URL,
+    collectionName,
+    updatedField: "updated",
+    ...options,
+  })
 
 const reports = defineCollection({
-  type: "content",
-  schema: ({ image }) =>
-    z.object({
-      title: z.string(),
-      category: z.string().optional(),
-      author: z.string(),
-      keywords: z.string().optional(),
-      date: z.coerce.date(),
-      updatedDate: z.coerce.date().optional(),
-      image: image(),
-    }),
+  loader: createPocketbaseLoader("posts", { idField: "title" }),
+  type: "content_layer",
 })
+
+const categories = defineCollection({
+  loader: createPocketbaseLoader("categories"),
+})
+
+// const reports = defineCollection({
+//   type: "content",
+//   schema: ({ image }) =>
+//     z.object({
+//       title: z.string(),
+//       category: z.string().optional(),
+//       author: z.string(),
+//       keywords: z.string().optional(),
+//       date: z.coerce.date(),
+//       updatedDate: z.coerce.date().optional(),
+//       image: image(),
+//     }),
+// })
 
 const services = defineCollection({
   type: "content",
@@ -90,6 +125,7 @@ const features = defineCollection({
 
 export const collections = {
   reports,
+  categories,
   videos,
   services,
   offerings,

@@ -9,12 +9,12 @@ const features = (await getCollection("features")).sort(
 ---
 
 <DefaultLayout>
-  <div class="mx-auto max-w-7xl">
-    <h1 class="py-16">Features</h1>
+  <section class="mx-auto w-container py-14">
+    <h1 class="mx-auto max-w-7xl py-16">Features</h1>
     <div
       class="mx-auto grid max-w-7xl snap-y snap-mandatory grid-flow-row grid-cols-1 gap-14 overflow-y-auto py-10"
     >
       {features.map(async (feature) => <FeatureCard {...feature} />)}
     </div>
-  </div>
+  </section>
 </DefaultLayout>

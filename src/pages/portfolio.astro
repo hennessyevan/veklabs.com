@@ -1,9 +1,6 @@
 ---
 import { getCollection } from "astro:content"
 import DefaultLayout from "../layouts/DefaultLayout.astro"
-import { take } from "lodash-es"
-import VideoCard from "../components/VideoCard.tsx"
-import { Image } from "astro:assets"
 import { PortfolioGrid } from "../components/PortfolioGrid.tsx"
 
 const videos = await getCollection("videos")

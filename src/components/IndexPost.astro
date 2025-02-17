@@ -1,17 +1,15 @@
 ---
 import type { CollectionEntry } from "astro:content"
-import FormattedDate from "./FormattedDate.astro"
 import CategoryBadge from "./CategoryBadge.astro"
-import { Picture } from "astro:assets"
+import FormattedDate from "./FormattedDate.astro"
 
 type Props = CollectionEntry<"reports"> & { featured?: boolean }
 
-const { featured = false, slug, render, data, id } = Astro.props
-const { remarkPluginFrontmatter } = await render()
+const { featured = false, data, id } = Astro.props
 ---
 
 <a
-  href={`/reports/${slug}`}
+  href={`/reports/${id}`}
   class:list={[
     "listing group col-span-full w-full rounded-xl transition-all",
     {
@@ -31,8 +29,8 @@ const { remarkPluginFrontmatter } = await render()
     >
       {data.category && <CategoryBadge id={id} category={data.category} />}
       {
-        data.image.src && (
-          <Picture
+        data.image && (
+          <img
             transition:name={`image-${data.title}`}
             src={data.image}
             alt=""
@@ -64,12 +62,12 @@ const { remarkPluginFrontmatter } = await render()
         )
       }
       <!-- <p class="excerpt"><Content /></p> -->
-      <span
+      <!-- <span
         transition:name={`readtime-${id}`}
         class="time-to-read mt-3 block whitespace-nowrap text-sm text-accent-500"
       >
         {remarkPluginFrontmatter.minutesRead}
-      </span>
+      </span> -->
     </div>
   </article>
 </a>

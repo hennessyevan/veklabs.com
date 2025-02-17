@@ -21,6 +21,12 @@ export const containerVariants: Variants = {
       visualDuration: HOVER_DURATION,
     },
   },
+  popupShown: {
+    opacity: 1,
+    transition: {
+      duration: POPUP_DURATION,
+    },
+  },
   exit: {
     opacity: 0,
     transition: {

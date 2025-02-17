@@ -87,7 +87,7 @@ export default function CrewComponent(member: Props) {
             initial="hidden"
             animate="visible"
             exit="hidden"
-            className="fixed left-0 top-0 z-50 flex h-screen min-h-screen w-screen items-center justify-center overscroll-contain bg-black/20 backdrop-blur-lg"
+            className="fixed left-0 top-0 z-50 flex h-screen min-h-screen w-screen items-center justify-center overscroll-contain bg-black/30 backdrop-blur-lg"
           >
             <motion.div
               {...getFloatingProps()}
@@ -100,7 +100,7 @@ export default function CrewComponent(member: Props) {
               initial="hidden"
               animate="visible"
               exit="hidden"
-              className="my-0 flex w-container max-w-[800px] flex-wrap items-center justify-center gap-8 rounded-2xl bg-gray-950/70 p-10 text-center text-lg font-medium text-white shadow-2xl md:flex-nowrap md:justify-start md:text-start"
+              className="my-0 flex w-container max-w-[800px] flex-wrap items-center justify-center gap-8 p-10 text-center text-lg font-medium text-white md:flex-nowrap md:justify-start md:text-start"
             >
               <CrewImage
                 id={id + "image"}

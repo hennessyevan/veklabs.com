@@ -1,19 +1,22 @@
 import { baseURL } from "../config.json"
+import { useHeaderContext } from "../context/headerContext"
 
 type HeaderLinkProps = React.AnchorHTMLAttributes<HTMLAnchorElement> & {
   href: string
-  currentPath: string
 }
 
 const removeTrailingSlash = (str: string) =>
   str.endsWith("/") ? str.slice(0, -1) : str
 
+/**
+ * Must be used within a Header / HeaderProvider
+ */
 export default function HeaderLink({
   href,
   className,
-  currentPath,
   ...props
 }: HeaderLinkProps) {
+  const { currentPath } = useHeaderContext()
   const currentUrl = URL.canParse(currentPath, baseURL)
     ? new URL(currentPath, baseURL)
     : new URL(baseURL)

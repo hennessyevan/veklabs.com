@@ -1,7 +1,14 @@
 ---
 import DefaultLayout from "../layouts/DefaultLayout.astro"
+import ContactForm from "../components/ContactForm.tsx"
 ---
 
-<DefaultLayout>
-  <div class="my-6 flex flex-col gap-6">Contact</div>
+<DefaultLayout title="Contact">
+  <section class="mx-auto w-container py-14">
+    <div class="flex items-center gap-6 px-4 pb-4">
+      <h2 class="text-3xl">Contact</h2>
+    </div>
+
+    <ContactForm />
+  </section>
 </DefaultLayout>

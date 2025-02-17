@@ -6,18 +6,15 @@ import DefaultLayout from "../../layouts/DefaultLayout.astro"
 export async function getStaticPaths() {
   const posts = await getCollection("reports")
   return posts.map((post) => ({
-    params: { slug: post.slug },
+    params: { slug: post.id },
     props: post,
   }))
 }
 type Props = CollectionEntry<"reports">
 
 const post = Astro.props
-const { Content, remarkPluginFrontmatter } = await post.render()
 ---
 
 <DefaultLayout>
-  <BlogPost {...post.data} frontmatter={remarkPluginFrontmatter} id={post.id}>
-    <Content />
-  </BlogPost>
+  <BlogPost {...post.data} id={post.id} />
 </DefaultLayout>
